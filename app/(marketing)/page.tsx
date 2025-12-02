@@ -2,14 +2,19 @@ import {
   HeroSection,
   CategorySection,
   BrandShowcase,
-  ExperienceSection,
   CTASection,
+  TrustSignals,
+  AdvantagesSection,
+  BookingSection,
 } from "@/components/sections/home";
+import { FAQSection } from "@/components/sections/shared";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
+
+      <BrandShowcase />
 
       <CategorySection
         id="luxury-cars"
@@ -39,27 +44,33 @@ export default function HomePage() {
         viewAllHref="/fleet?category=suv"
       />
 
-      <CategorySection
-        id="convertibles"
-        title="Convertibles"
-        subtitle="Open Air Freedom"
-        description="Feel the Dubai breeze with our stunning convertible collection. Perfect for coastal drives and unforgettable experiences."
-        category="convertible"
-        viewAllHref="/fleet?category=convertible"
-        alternateBackground
-      />
+      {/* <CategorySection */}
+      {/*   id="convertibles" */}
+      {/*   title="Convertibles" */}
+      {/*   subtitle="Open Air Freedom" */}
+      {/*   description="Feel the Dubai breeze with our stunning convertible collection. Perfect for coastal drives and unforgettable experiences." */}
+      {/*   category="convertible" */}
+      {/*   viewAllHref="/fleet?category=convertible" */}
+      {/*   alternateBackground */}
+      {/* /> */}
 
-      <CategorySection
-        id="sport-cars"
-        title="Sport Cars"
-        subtitle="Performance Driven"
-        description="Experience precision engineering and thrilling performance with our collection of Porsches and sports cars."
-        category="sports"
-        viewAllHref="/fleet?category=sports"
-      />
+      {/* <CategorySection */}
+      {/*   id="sport-cars" */}
+      {/*   title="Sport Cars" */}
+      {/*   subtitle="Performance Driven" */}
+      {/*   description="Experience precision engineering and thrilling performance with our collection of Porsches and sports cars." */}
+      {/*   category="sports" */}
+      {/*   viewAllHref="/fleet?category=sports" */}
+      {/* /> */}
 
-      <BrandShowcase />
-      {/* <ExperienceSection /> */}
+      <TrustSignals />
+
+      <AdvantagesSection />
+
+      <BookingSection />
+
+      <FAQSection limit={5} alternateBackground />
+
       <CTASection />
     </>
   );

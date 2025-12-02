@@ -4,7 +4,7 @@ export const brands: Brand[] = [
   {
     id: "rolls-royce",
     name: "Rolls-Royce",
-    logo: "/images/brands/rolls-royce.svg",
+    logo: "/brands/rolls-royce.svg",
     description: "The pinnacle of luxury automotive craftsmanship since 1906.",
     country: "United Kingdom",
     founded: 1906,
@@ -12,7 +12,7 @@ export const brands: Brand[] = [
   {
     id: "lamborghini",
     name: "Lamborghini",
-    logo: "/images/brands/lamborghini.svg",
+    logo: "/brands/lamborghini.svg",
     description: "Italian manufacturer of luxury sports cars and SUVs.",
     country: "Italy",
     founded: 1963,
@@ -20,7 +20,7 @@ export const brands: Brand[] = [
   {
     id: "ferrari",
     name: "Ferrari",
-    logo: "/images/brands/ferrari.svg",
+    logo: "/brands/ferrari-logo-2002-download.png",
     description: "Italian luxury sports car manufacturer synonymous with racing excellence.",
     country: "Italy",
     founded: 1947,
@@ -28,7 +28,7 @@ export const brands: Brand[] = [
   {
     id: "bentley",
     name: "Bentley",
-    logo: "/images/brands/bentley.svg",
+    logo: "/brands/bentley-logo-2002-download.png",
     description: "British manufacturer of luxury grand tourers and SUVs.",
     country: "United Kingdom",
     founded: 1919,
@@ -36,7 +36,7 @@ export const brands: Brand[] = [
   {
     id: "mercedes",
     name: "Mercedes-Benz",
-    logo: "/images/brands/mercedes.svg",
+    logo: "/brands/Mercedes-Benz-logo-2009-1920x1080.png",
     description: "German manufacturer of luxury vehicles, buses, coaches, and trucks.",
     country: "Germany",
     founded: 1926,
@@ -44,7 +44,7 @@ export const brands: Brand[] = [
   {
     id: "bmw",
     name: "BMW",
-    logo: "/images/brands/bmw.svg",
+    logo: "/brands/bmw-logo-2020-white-download.png",
     description: "German multinational manufacturer of luxury vehicles and motorcycles.",
     country: "Germany",
     founded: 1916,
@@ -52,34 +52,19 @@ export const brands: Brand[] = [
   {
     id: "porsche",
     name: "Porsche",
-    logo: "/images/brands/porsche.svg",
+    logo: "/brands/porsche-logo-2014-download.png",
     description: "German automobile manufacturer specializing in high-performance sports cars.",
     country: "Germany",
     founded: 1931,
   },
   {
-    id: "range-rover",
-    name: "Range Rover",
-    logo: "/images/brands/range-rover.svg",
-    description: "British manufacturer of luxury all-terrain vehicles.",
-    country: "United Kingdom",
-    founded: 1970,
-  },
-  {
     id: "audi",
     name: "Audi",
-    logo: "/images/brands/audi.svg",
+    logo: "/brands/audi-logo-2016-download.png",
     description: "German automobile manufacturer known for sophisticated engineering.",
     country: "Germany",
     founded: 1909,
-  },
-  {
-    id: "mclaren",
-    name: "McLaren",
-    logo: "/images/brands/mclaren.svg",
-    description: "British automotive manufacturer of luxury, high-performance supercars.",
-    country: "United Kingdom",
-    founded: 1963,
+    invert: true,
   },
 ];
 

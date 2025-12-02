@@ -21,6 +21,7 @@ export function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -33,9 +34,6 @@ export function Header() {
           "fixed top-0 left-0 py-6 right-0 z-50 transition-all duration-300 border",
           isScrolled ? "glass" : "bg-transparent border-transparent",
         )}
-        variants={navSlideDown}
-        initial="initial"
-        animate="animate"
       >
         <Container>
           <div className="flex items-center justify-between">
@@ -45,9 +43,9 @@ export function Header() {
               className="flex basis-0 grow mr-auto items-center gap-2 text-xl font-bold tracking-tight"
             >
               <Image
-                src="/logo.png"
+                src="/logo-wide.png"
                 alt="Uptown Rent a Car"
-                className="md:h-16 h-14 w-fit"
+                className="md:h-8 h-14 w-fit"
                 width={120}
                 height={120}
                 priority

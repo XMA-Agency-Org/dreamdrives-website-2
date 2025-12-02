@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { Container, Heading, Text } from "@/components/ui";
+import { Badge, Container, Heading, Text } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { brands } from "@/data/brands";
 
@@ -11,25 +11,9 @@ export function BrandShowcase() {
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <section className="py-20 lg:py-28 bg-background-elevated border-y border-border">
-      <Container>
-        <RevealOnScroll className="text-center mb-12">
-          <Text
-            size="sm"
-            color="primary"
-            weight="semibold"
-            className="uppercase tracking-widest mb-4"
-          >
-            World-Class Brands
-          </Text>
-          <Heading as="h2" size="xl">
-            The Finest Marques
-          </Heading>
-        </RevealOnScroll>
-      </Container>
-
+    <section className="py-12 bg-background-elevated border-y border-border">
       {/* Logo Marquee */}
-      <div className="relative overflow-clip py-8">
+      <div className="relative overflow-clip">
         {/* Left fade */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background-elevated to-transparent z-10" />
         {/* Right fade */}
@@ -38,7 +22,7 @@ export function BrandShowcase() {
         <motion.div
           className="flex items-center gap-16"
           animate={{
-            x: [0, -50 * brands.length],
+            x: [0, -180 * brands.length],
           }}
           transition={{
             x: {
@@ -52,18 +36,15 @@ export function BrandShowcase() {
           {duplicatedBrands.map((brand, index) => (
             <div
               key={`${brand.id}-${index}`}
-              className="flex-none flex items-center justify-center w-32 h-20 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+              className="flex-none flex items-center justify-center w-40 h-20 opacity-60 hover:opacity-100 transition-opacity duration-300"
             >
-              {/* Placeholder for brand logo - replace with actual SVGs */}
-              <div className="text-center">
-                <Text
-                  size="sm"
-                  weight="semibold"
-                  className="uppercase tracking-wider text-foreground-muted"
-                >
-                  {brand.name}
-                </Text>
-              </div>
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                width={160}
+                height={80}
+                className={`object-contain max-h-16 w-auto ${brand.invert ? "invert" : ""}`}
+              />
             </div>
           ))}
         </motion.div>

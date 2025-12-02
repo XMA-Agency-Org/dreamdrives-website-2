@@ -1,21 +1,13 @@
 "use client";
 
-import { MapPin } from "lucide-react";
-import { Heading, Text, Button } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { cn } from "@/lib/utils";
 
 interface MapPlaceholderProps {
-  address: string;
-  mapsUrl?: string;
   className?: string;
 }
 
-export function MapPlaceholder({
-  address,
-  mapsUrl = "https://maps.google.com/?q=Dubai,UAE",
-  className,
-}: MapPlaceholderProps) {
+export function MapPlaceholder({ className }: MapPlaceholderProps) {
   return (
     <RevealOnScroll className={className}>
       <div
@@ -23,25 +15,15 @@ export function MapPlaceholder({
           "relative aspect-[21/9] overflow-clip bg-background-elevated border border-border rounded-lg"
         )}
       >
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-            <Heading as="h3" size="md" className="mb-2">
-              Visit Our Showroom
-            </Heading>
-            <Text color="muted">{address}</Text>
-            <Button
-              as="a"
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outline"
-              className="mt-4"
-            >
-              Open in Maps
-            </Button>
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28882.57015091845!2d55.284715!3d25.192386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682451441c35%3A0xd41f8110a04d2fd9!2sUptown%20Rent%20a%20Car%20-%20Luxury%20Cars%20for%20Rent%20in%20Dubai!5e0!3m2!1sen!2sae!4v1764700687565!5m2!1sen!2sae"
+          className="absolute inset-0 w-full h-full"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Uptown Rent a Car Location"
+        />
       </div>
     </RevealOnScroll>
   );

@@ -1,27 +1,57 @@
 "use client";
 
-import { type LucideIcon } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Text } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
+import { COMPANY } from "@/lib/constants";
+import { getWhatsAppUrl } from "@/lib/utils";
 
-export interface ContactItem {
-  icon: LucideIcon;
+interface ContactItem {
+  icon: typeof Phone;
   label: string;
   value: string;
   href: string;
   isExternal?: boolean;
 }
 
+const contactItems: ContactItem[] = [
+  {
+    icon: Phone,
+    label: "Phone",
+    value: COMPANY.phone,
+    href: `tel:${COMPANY.phoneClean}`,
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: COMPANY.phone,
+    href: getWhatsAppUrl(),
+    isExternal: true,
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: COMPANY.email,
+    href: `mailto:${COMPANY.email}`,
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: COMPANY.address,
+    href: "https://maps.google.com/?q=Dubai,UAE",
+    isExternal: true,
+  },
+];
+
 interface ContactInfoProps {
-  items: ContactItem[];
   className?: string;
 }
 
-export function ContactInfo({ items, className }: ContactInfoProps) {
+export function ContactInfo({ className }: ContactInfoProps) {
   return (
     <RevealOnScroll className={className}>
       <div className="space-y-4">
-        {items.map((item) => {
+        {contactItems.map((item) => {
           const Icon = item.icon;
           return (
             <a

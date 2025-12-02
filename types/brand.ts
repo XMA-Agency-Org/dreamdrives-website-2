@@ -7,4 +7,5 @@ export interface Brand {
   description: string;
   country: string;
   founded: number;
+  invert?: boolean;
 }

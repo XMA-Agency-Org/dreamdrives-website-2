@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
 import {
@@ -7,46 +6,14 @@ import {
   BusinessHours,
   ContactForm,
   MapPlaceholder,
-  type ContactItem,
   type HoursItem,
 } from "@/components/sections/contact";
-import { COMPANY } from "@/lib/constants";
-import { getWhatsAppUrl } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Uptown Rent a Car. Available 24/7 for luxury car rental inquiries in Dubai. Call, WhatsApp, or visit our showroom.",
 };
-
-const contactInfo: ContactItem[] = [
-  {
-    icon: Phone,
-    label: "Phone",
-    value: COMPANY.phone,
-    href: `tel:${COMPANY.phoneClean}`,
-  },
-  {
-    icon: MessageCircle,
-    label: "WhatsApp",
-    value: COMPANY.phone,
-    href: getWhatsAppUrl(),
-    isExternal: true,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: COMPANY.email,
-    href: `mailto:${COMPANY.email}`,
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: COMPANY.address,
-    href: "https://maps.google.com/?q=Dubai,UAE",
-    isExternal: true,
-  },
-];
 
 const hours: HoursItem[] = [
   { day: "Monday - Friday", time: "24 Hours" },
@@ -70,7 +37,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-2 space-y-8">
-              <ContactInfo items={contactInfo} />
+              <ContactInfo />
               <BusinessHours hours={hours} />
             </div>
 
@@ -85,7 +52,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="pb-24 bg-background">
         <Container>
-          <MapPlaceholder address={COMPANY.address} />
+          <MapPlaceholder />
         </Container>
       </section>
     </>
