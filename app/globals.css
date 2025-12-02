@@ -1,26 +1,253 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================
+   UPTOWN DUBAI - DESIGN SYSTEM
+   Luxury Car Rental | "Gangster Luxury" Aesthetic
+   All colors in OKLCH - Never use hex/rgb
+   ============================================ */
+
+@theme {
+  /* ========== BRAND COLORS (ORANGE) ========== */
+
+  --color-carrot-50: oklch(0.976 0.011 45.81);
+  --color-carrot-100: oklch(0.95 0.023 44.38);
+  --color-carrot-200: oklch(0.892 0.054 45.72);
+  --color-carrot-300: oklch(0.842 0.085 48.06);
+  --color-carrot-400: oklch(0.786 0.128 52.79);
+  --color-carrot-500: oklch(0.733 0.155 57.12); /* Primary brand color: #f08c35 converted to OKLCH */
+  --color-carrot-600: oklch(0.613 0.129 56.95);
+  --color-carrot-700: oklch(0.499 0.106 57.08);
+  --color-carrot-800: oklch(0.376 0.079 57.54);
+  --color-carrot-900: oklch(0.263 0.055 58.63);
+  --color-carrot-950: oklch(0.201 0.042 60);
+
+  --color-primary-50: var(--color-carrot-50);
+  --color-primary-100: var(--color-carrot-100);
+  --color-primary-200: var(--color-carrot-200);
+  --color-primary-300: var(--color-carrot-300);
+  --color-primary-400: var(--color-carrot-400);
+  --color-primary-500: var(--color-carrot-500);
+  --color-primary-600: var(--color-carrot-600);
+  --color-primary-700: var(--color-carrot-700);
+  --color-primary-800: var(--color-carrot-800);
+  --color-primary-900: var(--color-carrot-900);
+  --color-primary-950: var(--color-carrot-950);
+
+  /* ========== SEMANTIC COLORS ========== */
+  --color-background: oklch(0.06 0 0);
+  --color-background-elevated: oklch(0.10 0 0);
+  --color-background-subtle: oklch(0.13 0 0);
+  --color-foreground: oklch(0.98 0 0);
+  --color-foreground-muted: oklch(0.70 0 0);
+  --color-foreground-subtle: oklch(0.70 0 0);
+  --color-border: oklch(0.20 0 0);
+  --color-border-hover: oklch(0.30 0 0);
+
+  /* ========== FEEDBACK COLORS ========== */
+  --color-success: oklch(0.72 0.17 142);
+  --color-warning: oklch(0.80 0.15 85);
+  --color-error: oklch(0.65 0.22 25);
+
+  /* ========== GLASS EFFECTS ========== */
+  --color-glass: oklch(0.10 0 0 / 0.6);
+  --color-glass-border: oklch(0.30 0 0 / 0.3);
+
+  /* ========== TYPOGRAPHY ========== */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-grunge: var(--font-grunge), ui-sans-serif, system-ui, sans-serif;
+  --font-display-alt: var(--font-display-alt), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* ========== ANIMATION ========== */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  --duration-slowest: 1000ms;
+
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ========== SPACING ========== */
+  --section-padding-mobile: 4rem;
+  --section-padding-desktop: 8rem;
+  --container-max: 1280px;
+  --container-wide: 1536px;
+
+  /* ========== BORDER RADIUS ========== */
+  /* Boxy aesthetic - minimal radius for grunge/aggressive look */
+  /* Change --radius-base to adjust all radii globally */
+  --radius-base: 0rem; /* 0 = sharp corners, 0.25rem = subtle, 0.5rem = soft */
+
+  --radius-none: 0rem;
+  --radius-sm: calc(var(--radius-base) + 0.125rem);
+  --radius-md: calc(var(--radius-base) + 0.25rem);
+  --radius-lg: calc(var(--radius-base) + 0.375rem);
+  --radius-xl: calc(var(--radius-base) + 0.5rem);
+  --radius-2xl: calc(var(--radius-base) + 0.75rem);
+  --radius-full: 9999px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========== BASE STYLES ========== */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== SELECTION ========== */
+::selection {
+  background-color: oklch(0.72 0.18 50 / 0.3);
+  color: var(--color-foreground);
+}
+
+/* ========== SCROLLBAR (Webkit) ========== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-700);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-600);
+}
+
+/* ========== FOCUS STYLES ========== */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* ========== UTILITY CLASSES ========== */
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-400) 0%,
+    var(--color-primary-500) 50%,
+    var(--color-primary-600) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-500) 0%,
+    var(--color-primary-600) 100%
+  );
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(
+    180deg,
+    var(--color-background) 0%,
+    var(--color-background-elevated) 100%
+  );
+}
+
+/* Glass morphism effect */
+.glass {
+  background: var(--color-glass);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+/* Grunge noise texture overlay */
+.noise-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* Grunge headline with glow */
+.grunge-heading {
+  font-family: var(--font-grunge);
+  filter: drop-shadow(0 0 30px oklch(0.72 0.18 50 / 0.5));
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in var(--duration-slow) var(--ease-out) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up var(--duration-slower) var(--ease-out) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right var(--duration-slower) var(--ease-out) forwards;
+}
+
+/* ========== REDUCED MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
