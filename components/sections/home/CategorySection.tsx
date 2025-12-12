@@ -54,7 +54,7 @@ export function CategorySection({
   return (
     <section
       id={id}
-      className={`py-24 lg:py-16 ${
+      className={`py-12 sm:py-16 lg:py-24 ${
         alternateBackground ? "bg-background-elevated" : "bg-background"
       }`}
     >

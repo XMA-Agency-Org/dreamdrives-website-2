@@ -9,7 +9,7 @@ import { getWhatsAppUrl } from "@/lib/utils";
 
 export function CTASection() {
   return (
-    <section className="relative py-24 lg:py-16 overflow-clip">
+    <section className="relative py-12 sm:py-16 lg:py-24 overflow-clip">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-background to-background" />
 

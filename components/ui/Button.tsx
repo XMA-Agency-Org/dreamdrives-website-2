@@ -22,7 +22,7 @@ const buttonVariants = cva(
           "bg-transparent border border-primary-500 text-primary-500 hover:bg-primary-500/10 active:bg-primary-500/20 backdrop-blur-sm",
       },
       size: {
-        sm: "h-10 px-4 text-sm gap-2",
+        sm: "h-11 px-4 text-sm gap-2",
         md: "h-12 px-6 text-base gap-2",
         lg: "h-14 px-8 text-lg gap-3",
       },

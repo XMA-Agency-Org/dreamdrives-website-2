@@ -67,7 +67,7 @@ const advantages = [
 
 export function AdvantagesSection() {
   return (
-    <section className="py-24 lg:py-16 bg-background">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background">
       <Container>
         {/* Section Header */}
         <RevealOnScroll className="text-center mb-12">

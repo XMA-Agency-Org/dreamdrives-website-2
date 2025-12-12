@@ -119,7 +119,7 @@ export function FleetGrid() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="bg-background-elevated border border-border rounded-md px-3 py-2 text-sm text-foreground focus:outline-none focus:border-primary-500 cursor-pointer"
+              className="h-11 bg-background-elevated border border-border rounded-md px-3 text-sm text-foreground focus:outline-none focus:border-primary-500 cursor-pointer"
             >
               {SORT_OPTIONS.map((option) => (
                 <option key={option.id} value={option.id}>
@@ -134,26 +134,26 @@ export function FleetGrid() {
             <button
               onClick={() => setViewMode("grid")}
               className={cn(
-                "p-2 rounded-sm transition-colors",
+                "p-2.5 rounded-sm transition-colors",
                 viewMode === "grid"
                   ? "bg-primary-500 text-neutral-950"
                   : "text-foreground-muted hover:text-foreground hover:bg-neutral-800"
               )}
               aria-label="Grid view"
             >
-              <LayoutGrid className="w-4 h-4" />
+              <LayoutGrid className="w-5 h-5" />
             </button>
             <button
               onClick={() => setViewMode("list")}
               className={cn(
-                "p-2 rounded-sm transition-colors",
+                "p-2.5 rounded-sm transition-colors",
                 viewMode === "list"
                   ? "bg-primary-500 text-neutral-950"
                   : "text-foreground-muted hover:text-foreground hover:bg-neutral-800"
               )}
               aria-label="List view"
             >
-              <List className="w-4 h-4" />
+              <List className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -161,7 +161,7 @@ export function FleetGrid() {
 
       {/* Cards */}
       {viewMode === "grid" ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCars.map((car, index) => (
             <CarCard
               key={car.id}

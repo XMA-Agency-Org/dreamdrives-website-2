@@ -16,7 +16,7 @@ export function WhatsAppCTA({ message, className }: WhatsAppCTAProps) {
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "fixed bottom-6 right-6 z-40",
+        "fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40",
         "flex items-center justify-center",
         "w-14 h-14 rounded-full",
         "bg-[oklch(0.55_0.17_142)] hover:bg-[oklch(0.50_0.17_142)]", // WhatsApp green in OKLCH

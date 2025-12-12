@@ -34,7 +34,7 @@ export function CarSpecs({ specs }: CarSpecsProps) {
         Specifications
       </Heading>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {specItems.map((item, index) => {
           const Icon = item.icon;
           const value = specs[item.key as keyof CarSpecsType];
