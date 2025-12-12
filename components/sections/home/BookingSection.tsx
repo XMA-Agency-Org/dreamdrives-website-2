@@ -68,11 +68,12 @@ export function BookingSection() {
               {/* Date Row */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm text-foreground-muted mb-2">
+                  <label htmlFor="booking-from-date" className="block text-sm text-foreground-muted mb-2">
                     <Calendar className="w-4 h-4 inline mr-2" />
                     From Date
                   </label>
                   <input
+                    id="booking-from-date"
                     type="date"
                     value={fromDate}
                     onChange={(e) => setFromDate(e.target.value)}
@@ -85,11 +86,12 @@ export function BookingSection() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-foreground-muted mb-2">
+                  <label htmlFor="booking-to-date" className="block text-sm text-foreground-muted mb-2">
                     <Calendar className="w-4 h-4 inline mr-2" />
                     To Date
                   </label>
                   <input
+                    id="booking-to-date"
                     type="date"
                     value={toDate}
                     onChange={(e) => setToDate(e.target.value)}
@@ -105,11 +107,12 @@ export function BookingSection() {
 
               {/* Car Selection */}
               <div>
-                <label className="block text-sm text-foreground-muted mb-2">
+                <label htmlFor="booking-car-select" className="block text-sm text-foreground-muted mb-2">
                   <Car className="w-4 h-4 inline mr-2" />
                   Select Car (Optional)
                 </label>
                 <select
+                  id="booking-car-select"
                   value={selectedCar}
                   onChange={(e) => setSelectedCar(e.target.value)}
                   className={cn(

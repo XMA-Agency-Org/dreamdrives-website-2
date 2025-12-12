@@ -32,7 +32,7 @@ export function HeroSection() {
 
       {/* Content */}
       <Container className="relative z-20 pt-32 pb-20 flex-1 flex items-center justify-center">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

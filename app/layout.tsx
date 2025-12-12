@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Rubik_Dirt, Bebas_Neue } from "next/font/google";
+import { Inter, Rubik_Dirt, Bebas_Neue, Zen_Dots, Orbitron, Zain, Outfit } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const rubikDirt = Rubik_Dirt({
+const rubikDirt = Outfit({
   weight: "400",
   subsets: ["latin"],
   display: "swap",

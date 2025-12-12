@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   HeroSection,
   CategorySection,
@@ -7,6 +8,12 @@ import {
   BookingSection,
 } from "@/components/sections/home";
 import { FAQSection } from "@/components/sections/shared";
+
+export const metadata: Metadata = {
+  title: "Luxury Car Rental Dubai | Uptown Rent a Car",
+  description:
+    "Premium luxury car rental in Dubai. Rent Rolls Royce, Lamborghini, Ferrari, Bentley and more exotic cars. 24/7 delivery, competitive prices.",
+};
 
 export default function HomePage() {
   return (

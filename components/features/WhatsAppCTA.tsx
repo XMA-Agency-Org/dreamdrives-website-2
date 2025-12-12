@@ -1,10 +1,8 @@
 "use client";
 
 import { motion } from "motion/react";
-import { MessageCircle } from "lucide-react";
-import { getWhatsAppUrl } from "@/lib/utils";
-import { cn } from "@/lib/utils";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
+import { getWhatsAppUrl, cn } from "@/lib/utils";
 
 interface WhatsAppCTAProps {
   message?: string;

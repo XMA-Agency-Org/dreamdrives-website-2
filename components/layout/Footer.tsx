@@ -64,9 +64,9 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
               Quick Links
-            </h4>
+            </p>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
@@ -91,9 +91,9 @@ export function Footer() {
 
           {/* Popular Brands */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
               Popular Brands
-            </h4>
+            </p>
             <ul className="space-y-3">
               {CAR_BRANDS.slice(0, 6).map((brand) => (
                 <li key={brand.id}>
@@ -110,9 +110,9 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
               Contact Us
-            </h4>
+            </p>
             <ul className="space-y-3">
               <li>
                 <a

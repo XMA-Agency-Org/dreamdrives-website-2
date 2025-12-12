@@ -45,7 +45,7 @@ export function Heading({
       className={cn(
         "text-foreground",
         sizeStyles[size],
-        useGrungeFont && "font-[family-name:var(--font-grunge)]",
+        useGrungeFont && "font-grunge",
         gradient && "text-gradient",
         className
       )}
