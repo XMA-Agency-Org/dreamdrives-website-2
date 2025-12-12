@@ -11,7 +11,7 @@ import {
   Tag,
   ArrowRight,
 } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import cars from "@/data/cars-data";
 import { CAR_BRANDS, CAR_CATEGORIES } from "@/lib/constants";
@@ -74,6 +74,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const searchParams = useSearchParams();
+  const pathname = usePathname();
 
   // Load search history from localStorage on mount
   useEffect(() => {
@@ -337,9 +338,12 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
               onClick={() => {
                 setQuery("");
                 setSelectedIndex(-1);
-                const params = new URLSearchParams(searchParams.toString());
-                params.delete("search");
-                router.push(`/fleet?${params.toString()}`);
+                // Only navigate if we're on the fleet page, otherwise just clear locally
+                if (pathname === "/fleet") {
+                  const params = new URLSearchParams(searchParams.toString());
+                  params.delete("search");
+                  router.push(`/fleet?${params.toString()}`);
+                }
               }}
               className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-neutral-800 rounded transition-colors text-foreground-subtle hover:text-foreground cursor-pointer"
               aria-label="Clear search"
