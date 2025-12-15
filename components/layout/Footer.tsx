@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-background-elevated border-t border-border">
       <Container className="py-16 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link
@@ -31,12 +31,12 @@ export function Footer() {
               with unmatched service.
             </Text>
             {/* Social Links */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <a
                 href={SOCIAL.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-foreground-muted hover:text-primary-500 transition-colors"
+                className="p-2.5 text-foreground-muted hover:text-primary-500 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -45,7 +45,7 @@ export function Footer() {
                 href={SOCIAL.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-foreground-muted hover:text-primary-500 transition-colors"
+                className="p-2.5 text-foreground-muted hover:text-primary-500 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -54,7 +54,7 @@ export function Footer() {
                 href={SOCIAL.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-foreground-muted hover:text-primary-500 transition-colors"
+                className="p-2.5 text-foreground-muted hover:text-primary-500 transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />

@@ -48,7 +48,7 @@ export function FeaturedFleet() {
     .slice(0, 9);
 
   return (
-    <section id="featured-fleet" className="py-24 lg:py-16 bg-background">
+    <section id="featured-fleet" className="py-12 sm:py-16 lg:py-24 bg-background">
       <Container>
         {/* Section Header */}
         <RevealOnScroll className="text-center mb-12">
@@ -72,7 +72,7 @@ export function FeaturedFleet() {
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={cn(
-                  "px-4 py-2 sm:px-6 sm:py-2.5 rounded-full text-sm font-medium transition-all duration-300",
+                  "px-4 py-2.5 sm:px-6 sm:py-3 rounded-full text-sm font-medium transition-all duration-300",
                   activeCategory === category.id
                     ? "bg-primary-500 text-neutral-950"
                     : "bg-background-elevated border border-border text-foreground-muted hover:border-primary-500/50 hover:text-foreground"

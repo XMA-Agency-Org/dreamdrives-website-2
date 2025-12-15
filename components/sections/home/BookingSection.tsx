@@ -48,7 +48,7 @@ export function BookingSection() {
   const today = new Date().toISOString().split("T")[0];
 
   return (
-    <section className="py-24 lg:py-16 bg-background-elevated">
+    <section className="py-12 sm:py-16 lg:py-24">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Form */}
@@ -66,7 +66,7 @@ export function BookingSection() {
 
             <div className="space-y-4">
               {/* Date Row */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="booking-from-date" className="block text-sm text-foreground-muted mb-2">
                     <Calendar className="w-4 h-4 inline mr-2" />
@@ -79,7 +79,7 @@ export function BookingSection() {
                     onChange={(e) => setFromDate(e.target.value)}
                     min={today}
                     className={cn(
-                      "w-full px-4 py-3 bg-background border border-border rounded-md",
+                      "w-full h-11 px-4 bg-background-elevated border border-border rounded-md",
                       "text-foreground placeholder:text-foreground-subtle",
                       "focus:outline-none focus:border-primary-500 transition-colors"
                     )}
@@ -97,7 +97,7 @@ export function BookingSection() {
                     onChange={(e) => setToDate(e.target.value)}
                     min={fromDate || today}
                     className={cn(
-                      "w-full px-4 py-3 bg-background border border-border rounded-md",
+                      "w-full h-11 px-4 bg-background-elevated border border-border rounded-md",
                       "text-foreground placeholder:text-foreground-subtle",
                       "focus:outline-none focus:border-primary-500 transition-colors"
                     )}
@@ -116,7 +116,7 @@ export function BookingSection() {
                   value={selectedCar}
                   onChange={(e) => setSelectedCar(e.target.value)}
                   className={cn(
-                    "w-full px-4 py-3 bg-background border border-border rounded-md",
+                    "w-full h-11 px-4 bg-background-elevated border border-border rounded-md",
                     "text-foreground",
                     "focus:outline-none focus:border-primary-500 transition-colors cursor-pointer"
                   )}
@@ -146,7 +146,7 @@ export function BookingSection() {
 
           {/* Right: Contact Info */}
           <RevealOnScroll className="lg:pl-8">
-            <div className="bg-background border border-border rounded-md p-8">
+            <div className="bg-background-elevated  border border-border rounded-md p-8">
               <Heading as="h3" size="md" className="mb-6">
                 Prefer to Talk?
               </Heading>

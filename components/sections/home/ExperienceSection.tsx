@@ -18,7 +18,7 @@ const features = [
 
 export function ExperienceSection() {
   return (
-    <section className="py-24 lg:py-16 bg-background">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background overflow-clip">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}

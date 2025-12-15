@@ -36,7 +36,6 @@ export default function HomePage() {
         description="Turn heads with our exclusive collection of Lamborghinis, Ferraris, and the world's most coveted supercars."
         category="exotic"
         viewAllHref="/fleet?category=exotic"
-        alternateBackground
       />
 
       <CategorySection
@@ -73,7 +72,7 @@ export default function HomePage() {
 
       <BookingSection />
 
-      <FAQSection limit={5} alternateBackground />
+      <FAQSection limit={5} />
 
       <CTASection />
     </>

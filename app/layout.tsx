@@ -100,7 +100,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${rubikDirt.variable} ${bebasNeue.variable}`}>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+      <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
         {children}
       </body>
     </html>

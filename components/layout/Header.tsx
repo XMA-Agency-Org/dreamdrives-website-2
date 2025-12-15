@@ -46,7 +46,7 @@ export function Header() {
               <Image
                 src="/logo-wide.png"
                 alt="Uptown Rent a Car"
-                className="md:h-8 h-14 w-fit"
+                className="h-8 md:h-10 w-fit"
                 width={120}
                 height={120}
                 priority
@@ -83,7 +83,7 @@ export function Header() {
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-2 text-foreground hover:text-primary-500 transition-colors"
+                className="md:hidden p-3 text-foreground hover:text-primary-500 transition-colors"
                 aria-label="Open menu"
               >
                 <Menu className="w-6 h-6" />

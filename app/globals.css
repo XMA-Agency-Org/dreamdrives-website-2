@@ -36,11 +36,11 @@
   --color-primary-950: var(--color-carrot-950);
 
   /* ========== SEMANTIC COLORS ========== */
-  --color-background: oklch(0.15 0 0);
-  --color-background-elevated: oklch(0.21 0 0);
-  --color-background-subtle: oklch(0.2 0 0);
+  --color-background: hsl(0, 0, 5%);
+  --color-background-elevated: hsl(0, 0, 8%);
+  --color-background-subtle: hsl(0, 0, 12%);
   --color-foreground: oklch(0.98 0 0);
-  --color-foreground-muted: oklch(0.7 0 0);
+  --color-foreground-muted: oklch(0.8 0 0);
   --color-foreground-subtle: oklch(0.7 0 0);
   --color-border: oklch(0.2 0 0);
   --color-border-hover: oklch(0.3 0 0);
@@ -306,13 +306,12 @@ body {
 }
 
 .button--mimas {
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 0.85rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-weight: 700;
+	font-size: 0.85rem;
+	overflow: hidden;
+	color: white;
   background: var(--color-primary-900);
 }
 
@@ -331,4 +330,14 @@ body {
 
 .button--mimas:hover::before {
   transform: translate3d(100%, 0, 0);
+}
+
+/* ========== SCROLLBAR HIDE UTILITY ========== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

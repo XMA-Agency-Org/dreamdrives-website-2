@@ -27,7 +27,7 @@ export function getImagesForSlug(
     }));
 }
 
-function getThumbnail(slug: string): string {
+export function getThumbnail(slug: string): string {
   const carData = (carImagesData as CarImageData[]).find(
     (car) => car.carSlug === slug,
   );

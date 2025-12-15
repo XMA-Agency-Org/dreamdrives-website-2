@@ -59,38 +59,30 @@ export default async function CarDetailPage({ params }: CarDetailPageProps) {
 
   return (
     <>
-      {/* Hero Section */}
       <CarHero car={car} />
 
-      {/* Main Content */}
-      <section className="py-16 bg-background">
+      <section className="mb-16 bg-background">
         <Container>
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Left Column - Gallery and Details */}
-            <div className="lg:col-span-2 space-y-12">
-              {/* Gallery */}
-              <RevealOnScroll>
-                <CarGallery images={car.images} carName={car.name} />
-              </RevealOnScroll>
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="lg:col-span-2 space-y-8 lg:space-y-12">
+              <CarGallery images={car.images} carName={car.name} />
 
-              {/* Description */}
-              <RevealOnScroll>
-                <div>
-                  <Heading as="h2" size="md" className="mb-4">
-                    About This Vehicle
-                  </Heading>
-                  <Text color="muted" className="leading-relaxed">
-                    {car.description}
-                  </Text>
-                </div>
-              </RevealOnScroll>
+              {/* Pricing Card - Mobile only */}
+              <div className="lg:hidden">
+                <PricingCard car={car} />
+              </div>
 
-              {/* Specifications */}
+              <div>
+                <Heading as="h2" size="md" className="mb-4">
+                  About This Vehicle
+                </Heading>
+                <Text color="muted" className="leading-relaxed">
+                  {car.description}
+                </Text>
+              </div>
               <RevealOnScroll>
                 <CarSpecs specs={car.specs} />
               </RevealOnScroll>
-
-              {/* Features */}
               <RevealOnScroll>
                 <div>
                   <Heading as="h2" size="md" className="mb-6">
@@ -137,14 +129,9 @@ export default async function CarDetailPage({ params }: CarDetailPageProps) {
               </RevealOnScroll>
             </div>
 
-            {/* Right Column - Pricing Card */}
-            <div className="lg:col-span-1">
-              <PricingCard
-                pricing={car.pricing}
-                carName={car.name}
-                carYear={car.year}
-                features={car.features}
-              />
+            {/* Pricing Card - Desktop only */}
+            <div className="hidden lg:block lg:col-span-1">
+              <PricingCard car={car} />
             </div>
           </div>
         </Container>

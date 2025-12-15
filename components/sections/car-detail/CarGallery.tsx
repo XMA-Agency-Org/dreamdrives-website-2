@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { CarImage } from "@/types";
 
@@ -34,36 +34,60 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
     <>
       <div className="space-y-4">
         {/* Main Image */}
-        <motion.div
-          className="relative aspect-[16/10] overflow-clip bg-background-elevated cursor-pointer rounded-md"
-          onClick={() => setIsLightboxOpen(true)}
-          whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Image
-            src={selectedImage?.src || "/images/cars/placeholder.jpg"}
-            alt={selectedImage?.alt || carName}
-            fill
-            className="object-cover object-bottom"
-            sizes="(max-width: 1024px) 100vw, 60vw"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-foreground text-sm bg-background/80 px-4 py-2 rounded-sm">
-              Click to enlarge
-            </span>
-          </div>
-        </motion.div>
+        <div className="group relative">
+          <motion.div
+            className="relative aspect-16/10 overflow-clip bg-background-elevated cursor-pointer rounded-md"
+            onClick={() => setIsLightboxOpen(true)}
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Image
+              src={selectedImage?.src || "/images/cars/placeholder.jpg"}
+              alt={selectedImage?.alt || carName}
+              fill
+              className="object-cover object-bottom"
+              sizes="(max-width: 1024px) 100vw, 60vw"
+              priority
+            />
+            
+          </motion.div>
+
+          {/* Arrow Navigation */}
+          {images.length > 1 && (
+            <>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goToPrev();
+                }}
+                className="absolute cursor-pointer left-3 top-1/2 -translate-y-1/2 p-2 bg-background/80 border border-border hover:border-primary-500 hover:bg-background transition-all opacity-0 group-hover:opacity-100 z-10 rounded-full"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goToNext();
+                }}
+                className="absolute cursor-pointer right-3 top-1/2 -translate-y-1/2 p-2 bg-background/80 border border-border hover:border-primary-500 hover:bg-background transition-all opacity-0 group-hover:opacity-100 z-10 rounded-full"
+                aria-label="Next image"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </>
+          )}
+        </div>
 
         {/* Thumbnails */}
         {images.length > 1 && (
-          <div className="flex gap-3 overflow-x-auto p-2">
+          <div className="flex flex-wrap gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide p-2">
             {images.map((image, index) => (
               <button
                 key={index}
                 onClick={() => setSelectedIndex(index)}
                 className={cn(
-                  "relative flex-none w-24 h-16 overflow-clip transition-all rounded-sm",
+                  "relative flex-none w-[calc(33%-12px)] md:w-24 h-16 overflow-clip transition-all rounded-sm snap-start",
                   selectedIndex === index
                     ? "ring-2 ring-primary-500 ring-offset-2 ring-offset-background"
                     : "opacity-60 hover:opacity-100"
