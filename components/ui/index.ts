@@ -8,3 +8,4 @@ export { Textarea, textareaVariants, type TextareaProps } from "./Textarea";
 export { Select, selectVariants, type SelectProps, type SelectOption } from "./Select";
 export { FilterGroup, type FilterItem } from "./FilterGroup";
 export { MobileDrawer } from "./MobileDrawer";
+export { SpeedometerGauge } from "./SpeedometerGauge";
