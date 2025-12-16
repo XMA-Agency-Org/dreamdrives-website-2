@@ -37,7 +37,7 @@ export function TrustSignals() {
           {/* Text content on the right */}
           <RevealOnScroll className="space-y-6 w-full flex flex-col items-center lg:items-center">
             <div className="text-center lg:text-center">
-              <Heading as="h2" size="xl" className="mb-4">
+              <Heading as="h2" size="lg" className="mb-4">
                 {currentSlide.label}
               </Heading>
               <Text size="lg" color="muted" className="mb-8">

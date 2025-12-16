@@ -9,7 +9,7 @@ interface MarqueeProps {
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
-  gap?: number;
+  innerClassName?: string;
 }
 
 const speedMap = {
@@ -24,7 +24,7 @@ export function Marquee({
   speed = "normal",
   pauseOnHover = true,
   className,
-  gap = 16,
+  innerClassName,
 }: MarqueeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -58,11 +58,11 @@ export function Marquee({
     >
       <div
         ref={scrollerRef}
-        style={{ gap: `${gap}px` }}
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap",
           isReady && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
+          innerClassName
         )}
       >
         {children}

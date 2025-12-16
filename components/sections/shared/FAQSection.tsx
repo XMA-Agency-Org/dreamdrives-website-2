@@ -80,7 +80,7 @@ export function FAQSection({
             <Badge variant="outline" size="sm" font="display" className="mb-4">
               FAQ
             </Badge>
-            <Heading as="h2" size="2xl" className="mb-6">
+            <Heading as="h2" size="lg" className="mb-6">
               Before You Ask
             </Heading>
             <Text color="muted" size="lg" className="max-w-2xl mx-auto">

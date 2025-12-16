@@ -162,7 +162,7 @@ export function TestimonialsSection() {
             Testimonials
           </Badge>
 
-          <Heading as="h2" size="2xl" className="mt-5 text-center">
+          <Heading as="h2" size="lg" className="mt-5 text-center">
             4.9 Stars. 2,664 Reviews.
           </Heading>
 

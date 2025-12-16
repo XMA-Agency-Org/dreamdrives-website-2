@@ -56,7 +56,7 @@ export function BookingSection() {
             <Badge variant="outline" size="sm" font="display" className="mb-4">
               Quick Booking
             </Badge>
-            <Heading as="h2" size="2xl" className="mb-4">
+            <Heading as="h2" size="lg" className="mb-4">
               We Handle Everything. You Just Drive.
             </Heading>
             <Text color="muted" size="lg" className="mb-8">

@@ -72,7 +72,7 @@ export function CategorySection({
             {subtitle}
           </Badge>
         )}
-        <Heading as="h2" size="2xl" className="text-center mb-6">
+        <Heading as="h2" size="lg" className="text-center mb-6">
           {title}
         </Heading>
         {description && (
