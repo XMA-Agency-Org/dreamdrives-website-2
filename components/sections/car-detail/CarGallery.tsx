@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
-import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { CarImage } from "@/types";
 
@@ -11,6 +11,12 @@ interface CarGalleryProps {
   images: CarImage[];
   carName: string;
 }
+
+const navButtonBase = cn(
+  "p-2.5 bg-background/80 backdrop-blur-sm border border-border",
+  "hover:border-primary-500 hover:bg-background",
+  "transition-all rounded-full z-10"
+);
 
 export function CarGallery({ images, carName }: CarGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -33,10 +39,9 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
   return (
     <>
       <div className="space-y-4">
-        {/* Main Image */}
         <div className="group relative">
           <motion.div
-            className="relative aspect-16/10 overflow-clip bg-background-elevated cursor-pointer rounded-md"
+            className="relative aspect-16/10 overflow-clip bg-background-elevated cursor-pointer rounded-lg"
             onClick={() => setIsLightboxOpen(true)}
             whileHover={{ scale: 1.01 }}
             transition={{ duration: 0.3 }}
@@ -49,10 +54,8 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
               sizes="(max-width: 1024px) 100vw, 60vw"
               priority
             />
-            
           </motion.div>
 
-          {/* Arrow Navigation */}
           {images.length > 1 && (
             <>
               <button
@@ -60,7 +63,11 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
                   e.stopPropagation();
                   goToPrev();
                 }}
-                className="absolute cursor-pointer left-3 top-1/2 -translate-y-1/2 p-2 bg-background/80 border border-border hover:border-primary-500 hover:bg-background transition-all opacity-0 group-hover:opacity-100 z-10 rounded-full"
+                className={cn(
+                  navButtonBase,
+                  "absolute left-3 top-1/2 -translate-y-1/2",
+                  "opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                )}
                 aria-label="Previous image"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -70,7 +77,11 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
                   e.stopPropagation();
                   goToNext();
                 }}
-                className="absolute cursor-pointer right-3 top-1/2 -translate-y-1/2 p-2 bg-background/80 border border-border hover:border-primary-500 hover:bg-background transition-all opacity-0 group-hover:opacity-100 z-10 rounded-full"
+                className={cn(
+                  navButtonBase,
+                  "absolute right-3 top-1/2 -translate-y-1/2",
+                  "opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                )}
                 aria-label="Next image"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -79,15 +90,14 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
           )}
         </div>
 
-        {/* Thumbnails */}
         {images.length > 1 && (
-          <div className="flex flex-wrap gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide p-2">
+          <div className="hidden md:flex flex-wrap gap-3 p-2">
             {images.map((image, index) => (
               <button
                 key={index}
                 onClick={() => setSelectedIndex(index)}
                 className={cn(
-                  "relative flex-none w-[calc(33%-12px)] md:w-24 h-16 overflow-clip transition-all rounded-sm snap-start",
+                  "relative flex-none w-24 h-16 overflow-clip transition-all rounded-lg",
                   selectedIndex === index
                     ? "ring-2 ring-primary-500 ring-offset-2 ring-offset-background"
                     : "opacity-60 hover:opacity-100"
@@ -106,45 +116,44 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
         )}
       </div>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {isLightboxOpen && (
           <motion.div
-            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center h-full"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            {/* Close button */}
             <button
               onClick={() => setIsLightboxOpen(false)}
-              className="absolute top-6 right-6 p-2 text-foreground-muted hover:text-foreground transition-colors z-10"
+              className="absolute top-6 right-6 p-2.5 text-foreground-muted hover:text-foreground transition-colors z-10 rounded-full hover:bg-neutral-800"
+              aria-label="Close lightbox"
             >
-              <X className="w-8 h-8" />
+              <X className="w-7 h-7" />
             </button>
 
-            {/* Navigation */}
             {images.length > 1 && (
               <>
                 <button
                   onClick={goToPrev}
-                  className="absolute left-6 p-3 bg-background-elevated border border-border hover:border-primary-500 transition-colors z-10 rounded-sm"
+                  className={cn(navButtonBase, "absolute left-6")}
+                  aria-label="Previous image"
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <button
                   onClick={goToNext}
-                  className="absolute right-6 p-3 bg-background-elevated border border-border hover:border-primary-500 transition-colors z-10 rounded-sm"
+                  className={cn(navButtonBase, "absolute right-6")}
+                  aria-label="Next image"
                 >
                   <ChevronRight className="w-6 h-6" />
                 </button>
               </>
             )}
 
-            {/* Image */}
             <motion.div
               key={selectedIndex}
-              className="relative w-full max-w-5xl aspect-[16/10] mx-6"
+              className="relative w-full max-w-5xl aspect-16/10 mx-6"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
@@ -159,8 +168,7 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
               />
             </motion.div>
 
-            {/* Counter */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-foreground-muted">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-sm text-foreground-muted">
               {selectedIndex + 1} / {images.length}
             </div>
           </motion.div>
