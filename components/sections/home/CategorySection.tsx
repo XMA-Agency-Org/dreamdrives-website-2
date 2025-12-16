@@ -75,7 +75,7 @@ export function CategorySection({
       </Container>
 
       {/* Car Grid - Carousel on mobile/tablet, grid on desktop */}
-      <div className="max-lg:flex max-lg:gap-4 max-lg:overflow-x-auto max-lg:snap-x max-lg:snap-mandatory max-lg:scrollbar-hide max-lg:px-4 max-lg:pb-4 max-lg:scroll-pl-4">
+      <div className="max-lg:flex max-lg:gap-4 max-lg:overflow-x-auto max-lg:overflow-y-hidden max-lg:snap-x max-lg:snap-mandatory max-lg:scrollbar-hide max-lg:px-4 max-lg:pb-4 max-lg:scroll-pl-4">
         <Container className="max-lg:p-0 max-lg:max-w-none max-lg:contents">
           <div className="lg:grid lg:grid-cols-4 lg:gap-6 max-lg:contents">
             {filteredCars.map((car, index) => (

@@ -64,6 +64,7 @@ export function PricingCard({ car }: PricingCardProps) {
           href={getCarInquiryUrl(carName, carYear)}
           target="_blank"
           rel="noopener noreferrer"
+          variant="whatsapp"
           size="lg"
           className="w-full"
           leftIcon={<MessageCircle className="w-5 h-5" />}

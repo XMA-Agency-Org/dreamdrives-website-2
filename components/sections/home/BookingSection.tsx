@@ -131,13 +131,15 @@ export function BookingSection() {
 
               {/* Submit Button */}
               <Button
+                as="a"
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
+                variant="whatsapp"
                 size="lg"
                 className="w-full mt-4"
+                leftIcon={<MessageCircle className="w-5 h-5" />}
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
                 Send Inquiry via WhatsApp
               </Button>
             </div>

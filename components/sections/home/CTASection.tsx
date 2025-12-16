@@ -41,6 +41,7 @@ export function CTASection() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              variant="whatsapp"
               size="lg"
               leftIcon={<MessageCircle className="w-5 h-5" />}
             >

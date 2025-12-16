@@ -110,15 +110,18 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 className="mt-auto space-y-3 pt-6 border-t border-border"
               >
                 <motion.div variants={staggerItem}>
-                  <a
+                  <Button
+                    as="a"
                     href={getWhatsAppUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-medium rounded-md transition-colors"
+                    variant="whatsapp"
+                    size="lg"
+                    className="w-full"
+                    leftIcon={<WhatsAppIcon className="w-5 h-5" />}
                   >
-                    <WhatsAppIcon className="w-5 h-5" />
                     WhatsApp
-                  </a>
+                  </Button>
                 </motion.div>
                 <motion.div variants={staggerItem}>
                   <Button

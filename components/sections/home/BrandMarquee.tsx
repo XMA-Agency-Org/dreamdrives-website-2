@@ -18,7 +18,7 @@ export function BrandMarquee({ fadeColor = "from-neutral-950/80" }: BrandMarquee
       <div className={`absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l ${fadeColor} to-transparent z-10`} />
 
       <motion.div
-        className="flex items-center md:gap-16 gap-0"
+        className="flex items-center gap-0"
         animate={{
           x: [0, -180 * brands.length],
         }}
@@ -42,7 +42,7 @@ export function BrandMarquee({ fadeColor = "from-neutral-950/80" }: BrandMarquee
               alt={brand.name}
               width={160}
               height={80}
-              className={`object-contain max-h-16 w-auto ${brand.invert ? "invert" : ""}`}
+              className={`object-contain max-h-14 w-auto ${brand.invert ? "invert" : ""}`}
             />
           </Link>
         ))}

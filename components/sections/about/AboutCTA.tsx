@@ -26,6 +26,7 @@ export function AboutCTA({ className }: AboutCTAProps) {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
+              variant="whatsapp"
               size="lg"
             >
               Get in Touch
