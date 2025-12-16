@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Instagram, Facebook, Youtube } from "lucide-react";
 import { Container, Text } from "@/components/ui";
-import { COMPANY, NAV_LINKS, SOCIAL, CAR_BRANDS } from "@/lib/constants";
+import { COMPANY, NAV_LINKS, SOCIAL, CAR_BRANDS, LOCATIONS } from "@/lib/constants";
 import Image from "next/image";
 
 export function Footer() {
@@ -98,7 +98,7 @@ export function Footer() {
               {CAR_BRANDS.slice(0, 6).map((brand) => (
                 <li key={brand.id}>
                   <Link
-                    href={`/fleet?brand=${brand.id}`}
+                    href={`/cars/brand/${brand.id}`}
                     className="text-foreground-muted hover:text-primary-500 transition-colors"
                   >
                     {brand.label}
@@ -113,7 +113,7 @@ export function Footer() {
             <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
               Contact Us
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-6">
               <li>
                 <a
                   href={`tel:${COMPANY.phoneClean}`}
@@ -124,15 +124,39 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href={`tel:${COMPANY.secondaryPhoneClean}`}
+                  className="text-foreground-muted hover:text-primary-500 transition-colors"
+                >
+                  {COMPANY.secondaryPhone}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`mailto:${COMPANY.email}`}
                   className="text-foreground-muted hover:text-primary-500 transition-colors"
                 >
                   {COMPANY.email}
                 </a>
               </li>
-              <li>
-                <Text color="muted">{COMPANY.address}</Text>
-              </li>
+            </ul>
+            <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
+              Locations
+            </p>
+            <ul className="space-y-3">
+              {LOCATIONS.map((location) => (
+                <li key={location.id}>
+                  <a
+                    href={location.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground-muted hover:text-primary-500 transition-colors block"
+                  >
+                    <span className="font-medium text-foreground">{location.name}</span>
+                    <br />
+                    <span className="text-sm">{location.address}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -154,6 +178,12 @@ export function Footer() {
               className="text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
             >
               Terms of Service
+            </Link>
+            <Link
+              href="/insurance"
+              className="text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
+            >
+              Insurance
             </Link>
           </div>
         </div>

@@ -14,15 +14,15 @@ interface CarHeroProps {
 
 export function CarHero({ car }: CarHeroProps) {
   return (
-    <Section spacing="none" containerSize="none" className="relative flex items-end mb-16">
+    <Section spacing="none" containerSize="none" className="relative flex items-end mb-8">
       <Container className="relative z-10 pt-32">
         <motion.div>
           <Link
-            href="/fleet"
+            href="/cars"
             className="inline-flex items-center gap-2 text-foreground-muted hover:text-primary-500 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Fleet</span>
+            <span>Back to Cars</span>
           </Link>
         </motion.div>
       </Container>

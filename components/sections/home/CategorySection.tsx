@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container, Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
-import { CarCard } from "@/components/sections/fleet";
+import { CarCard } from "@/components/sections/cars";
 import cars from "@/data/cars-data";
 
 type Car = (typeof cars)[0];
@@ -41,7 +41,7 @@ export function CategorySection({
   subtitle,
   description,
   category,
-  viewAllHref = "/fleet",
+  viewAllHref = "/cars",
   alternateBackground = false,
   ctaText
 }: CategorySectionProps) {

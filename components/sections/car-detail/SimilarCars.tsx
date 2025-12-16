@@ -2,7 +2,7 @@
 
 import { Heading, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
-import { CarCard } from "@/components/sections/fleet";
+import { CarCard } from "@/components/sections/cars";
 import type { Car } from "@/types";
 
 interface SimilarCarsProps {
@@ -16,24 +16,24 @@ export function SimilarCars({ cars }: SimilarCarsProps) {
 
   return (
     <Section spacing="lg" background="elevated" border="top" className="py-20">
-        <RevealOnScroll className="mb-10">
-          <Heading as="h2" size="xl">
-            Similar Vehicles
-          </Heading>
-        </RevealOnScroll>
+      <RevealOnScroll className="mb-10">
+        <Heading as="h2" size="xl">
+          Similar Vehicles
+        </Heading>
+      </RevealOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cars.map((car, index) => (
-            <CarCard
-              key={car.id}
-              car={car}
-              index={index}
-              variant="minimal"
-              showBadge={false}
-              showInquiryButton={false}
-            />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {cars.map((car, index) => (
+          <CarCard
+            key={car.id}
+            car={car}
+            index={index}
+            variant="standard-minimal"
+            showBadge={false}
+            showInquiryButton={false}
+          />
+        ))}
+      </div>
     </Section>
   );
 }

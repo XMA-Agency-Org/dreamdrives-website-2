@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronRight, ChevronLeft, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Text, Input } from "@/components/ui";
-import { FleetDropdown } from "./FleetDropdown";
+import { CarsDropdown } from "./CarsDropdown";
 import { CAR_BODY_TYPES, CAR_CATEGORIES } from "@/lib/constants";
 import { getAllBrandsWithCount } from "@/data/cars";
 
@@ -221,7 +221,7 @@ export function Navigation({
                 {CAR_BODY_TYPES.filter((t) => t.id !== "all").map((bodyType) => (
                   <SubNavLink
                     key={bodyType.id}
-                    href={`/fleet/body-type/${bodyType.id}`}
+                    href={`/cars/body-type/${bodyType.id}`}
                     onClick={onLinkClick}
                   >
                     {bodyType.label}
@@ -265,7 +265,7 @@ export function Navigation({
                 {filteredBrands.map((brand) => (
                   <SubNavLink
                     key={brand.id}
-                    href={`/fleet/brand/${brand.id}`}
+                    href={`/cars/brand/${brand.id}`}
                     onClick={onLinkClick}
                     count={brand.count}
                   >
@@ -306,7 +306,7 @@ export function Navigation({
                 {CAR_CATEGORIES.filter((c) => c.id !== "all").map((category) => (
                   <SubNavLink
                     key={category.id}
-                    href={`/fleet/category/${category.id}`}
+                    href={`/cars/category/${category.id}`}
                     onClick={onLinkClick}
                   >
                     {category.label}
@@ -334,7 +334,7 @@ export function Navigation({
         Home
       </Link>
 
-      <FleetDropdown />
+      <CarsDropdown />
 
       <Link
         href="/blog"

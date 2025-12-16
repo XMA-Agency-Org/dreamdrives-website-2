@@ -187,7 +187,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
       // Navigate with search query
       const params = new URLSearchParams(searchParams.toString());
       params.set("search", searchQuery);
-      router.push(`/fleet?${params.toString()}`);
+      router.push(`/cars?${params.toString()}`);
 
       setIsOpen(false);
       inputRef.current?.blur();
@@ -207,7 +207,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
           const params = new URLSearchParams(searchParams.toString());
           params.set("brand", brandId);
           params.delete("search");
-          router.push(`/fleet?${params.toString()}`);
+          router.push(`/cars?${params.toString()}`);
         }
       } else if (suggestion.type === "category") {
         const categoryId = CAR_BODY_TYPES.find(
@@ -217,7 +217,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
           const params = new URLSearchParams(searchParams.toString());
           params.set("category", categoryId);
           params.delete("search");
-          router.push(`/fleet?${params.toString()}`);
+          router.push(`/cars?${params.toString()}`);
         }
       } else {
         handleSearch(suggestion.text);
@@ -338,11 +338,11 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
               onClick={() => {
                 setQuery("");
                 setSelectedIndex(-1);
-                // Only navigate if we're on the fleet page, otherwise just clear locally
-                if (pathname === "/fleet") {
+                // Only navigate if we're on the cars page, otherwise just clear locally
+                if (pathname === "/cars") {
                   const params = new URLSearchParams(searchParams.toString());
                   params.delete("search");
-                  router.push(`/fleet?${params.toString()}`);
+                  router.push(`/cars?${params.toString()}`);
                 }
               }}
               className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-neutral-800 rounded transition-colors text-foreground-subtle hover:text-foreground cursor-pointer"

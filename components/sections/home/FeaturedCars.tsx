@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
-import { CarCard } from "@/components/sections/fleet";
+import { CarCard } from "@/components/sections/cars";
 import cars from "@/data/cars-data";
 import { cn } from "@/lib/utils";
 
@@ -37,7 +37,7 @@ const categoryMapping: Record<string, (car: typeof cars[0]) => boolean> = {
     car.brand === "porsche",
 };
 
-export function FeaturedFleet() {
+export function FeaturedCars() {
   const [activeCategory, setActiveCategory] = useState<string>("all-cars");
 
   const filteredCars = cars
@@ -48,14 +48,14 @@ export function FeaturedFleet() {
     .slice(0, 9);
 
   return (
-    <Section id="featured-fleet" spacing="lg">
+    <Section id="featured-cars" spacing="lg">
         {/* Section Header */}
         <RevealOnScroll className="text-center mb-12">
           <Badge variant="outline" size="sm" font="display" className="mb-4">
             Our Collection
           </Badge>
           <Heading as="h2" size="2xl" className="mb-6">
-            Premium Fleet
+            Premium Cars
           </Heading>
           <Text color="muted" size="lg" className="max-w-2xl mx-auto">
             Discover our handpicked selection of the world&apos;s finest automobiles,
@@ -112,8 +112,8 @@ export function FeaturedFleet() {
 
         {/* View All Link */}
         <RevealOnScroll className="mt-12 text-center">
-          <Button as={Link} href="/fleet" variant="outline" size="lg">
-            View Full Fleet
+          <Button as={Link} href="/cars" variant="outline" size="lg">
+            View All Cars
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </RevealOnScroll>

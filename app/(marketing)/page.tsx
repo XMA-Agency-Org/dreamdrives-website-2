@@ -26,7 +26,7 @@ export default function HomePage() {
         description="The cars our customers keep coming back for. Smooth from start to finish."
         title="Cars Popular with our Customers"
         category="featured"
-        viewAllHref="/fleet"
+        viewAllHref="/cars"
         ctaText="View All Featured Cars"
       />
 
@@ -36,7 +36,7 @@ export default function HomePage() {
         title="Enjoy the thrill of the experience"
         description="Lamborghini, Ferrari, McLaren. The experience lives up to the car."
         category="exotic"
-        viewAllHref="/fleet/body-type/supercar"
+        viewAllHref="/cars/body-type/supercar"
         ctaText="View All Exotic Cars"
       />
 
@@ -47,7 +47,7 @@ export default function HomePage() {
         title="Bring the whole crew"
         description="For the trips where it's not just you. Room for the people and room for the bags." 
         category="suv"
-        viewAllHref="/fleet/body-type/suv"
+        viewAllHref="/cars/body-type/suv"
         ctaText="View All Luxury SUVs"
       />
 
@@ -57,7 +57,7 @@ export default function HomePage() {
       {/*   subtitle="Open Air Freedom" */}
       {/*   description="Feel the Dubai breeze with our stunning convertible collection. Perfect for coastal drives and unforgettable experiences." */}
       {/*   category="convertible" */}
-      {/*   viewAllHref="/fleet?category=convertible" */}
+      {/*   viewAllHref="/cars?category=convertible" */}
       {/*   alternateBackground */}
       {/* /> */}
 
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/*   subtitle="Performance Driven" */}
       {/*   description="Experience precision engineering and thrilling performance with our collection of Porsches and sports cars." */}
       {/*   category="sports" */}
-      {/*   viewAllHref="/fleet?category=sports" */}
+      {/*   viewAllHref="/cars?category=sports" */}
       {/* /> */}
 
       <TrustSignals />

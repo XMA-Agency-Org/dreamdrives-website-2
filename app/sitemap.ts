@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/fleet`,
+      url: `${BASE_URL}/cars`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const brandPages: MetadataRoute.Sitemap = brands.map((brand) => ({
-    url: `${BASE_URL}/fleet/brand/${brand.id}`,
+    url: `${BASE_URL}/cars/brand/${brand.id}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.8,
@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const bodyTypePages: MetadataRoute.Sitemap = CAR_BODY_TYPES.filter(
     (type) => type.id !== "all",
   ).map((type) => ({
-    url: `${BASE_URL}/fleet/body-type/${type.id}`,
+    url: `${BASE_URL}/cars/body-type/${type.id}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.8,
@@ -60,14 +60,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPages: MetadataRoute.Sitemap = CAR_CATEGORIES.filter(
     (cat) => cat.id !== "all",
   ).map((cat) => ({
-    url: `${BASE_URL}/fleet/category/${cat.id}`,
+    url: `${BASE_URL}/cars/category/${cat.id}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   const carPages: MetadataRoute.Sitemap = cars.map((car) => ({
-    url: `${BASE_URL}/fleet/${car.slug}`,
+    url: `${BASE_URL}/cars/${car.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.7,

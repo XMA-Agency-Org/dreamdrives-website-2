@@ -28,7 +28,7 @@ export default function ContactPage() {
         tagline="Get in Touch"
         title="We're Here to"
         gradientText="Help"
-        description="Have a question about our fleet or need assistance with a booking? Our team is available 24/7 to provide you with exceptional service."
+        description="Have a question about our cars or need assistance with a booking? Our team is available 24/7 to provide you with exceptional service."
       />
 
       <Section spacing="none" className="pb-24">

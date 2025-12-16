@@ -359,7 +359,7 @@ import { PageHero } from "@/components/sections/shared";
 Unified car card with multiple display modes.
 
 ```tsx
-import { CarCard } from "@/components/sections/fleet";
+import { CarCard } from "@/components/sections/cars";
 
 // Full variant: specs, pricing section, brand/year header
 <CarCard car={car} variant="full" />

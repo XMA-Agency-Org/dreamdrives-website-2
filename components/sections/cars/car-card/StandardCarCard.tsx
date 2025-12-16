@@ -7,14 +7,12 @@ import { Button, Heading, Text } from "@/components/ui";
 import { formatPrice, getCarInquiryUrl, cn } from "@/lib/utils";
 import {
   type BaseCarCardProps,
-  AvailabilityBadges,
   CategoryBadge,
   FeaturedBadge,
-  FeaturesRow,
   SpecsRow,
 } from "./shared";
 
-export function InlineCarCard({
+export function StandardCarCard({
   car,
   showBadge = true,
   showInquiryButton = true,
@@ -33,43 +31,31 @@ export function InlineCarCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <Link href={`/fleet/${car.slug}`} className="group block">
+      <Link href={`/cars/${car.slug}`} className="group block h-full">
         <div
           className={cn(
             "relative overflow-clip bg-background-elevated border-border",
             "group-hover:border-primary-500/50 transition-all duration-300 rounded-lg",
-            "flex flex-col lg:flex-row",
+            "h-full flex flex-col",
             className
           )}
         >
-          <div
-            className={cn(
-              "relative aspect-[4/3] lg:aspect-auto lg:w-[30%] lg:min-h-[180px] shrink-0"
-            )}
-          >
+          <div className="relative aspect-16/10">
             <Image
               src={primaryImage?.src || "/images/cars/placeholder.jpg"}
               alt={car.name}
               fill
-              className="object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 1024px) 100vw, 300px"
+              className="object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
             />
 
-            {showBadge && (
-              <div className="absolute top-3 left-3">
-                <CategoryBadge category={car.category} />
-              </div>
-            )}
-
-            {displayFeaturedBadge && (
-              <div className="absolute top-3 right-3">
-                <FeaturedBadge />
-              </div>
-            )}
+            <div className="absolute top-3 left-3 right-3 flex items-start justify-between">
+              {showBadge && <CategoryBadge category={car.category} />}
+              {displayFeaturedBadge && <FeaturedBadge />}
+            </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row flex-1 p-4 lg:p-5 gap-4 lg:gap-6">
-            <div className="flex-1 flex flex-col justify-center">
+          <div className="p-5 flex flex-col flex-1">
+            <div className="mb-4">
               <Text
                 size="xs"
                 color="muted"
@@ -77,29 +63,23 @@ export function InlineCarCard({
               >
                 {car.brand.replace("-", " ")}
               </Text>
-
               <Heading
                 as="h3"
                 size="sm"
-                className="group-hover:text-primary-500 transition-colors line-clamp-1 mb-2"
+                className="group-hover:text-primary-500 transition-colors"
               >
                 {car.name} ({car.color}), {car.year}
               </Heading>
-
-              {showSpecs && <SpecsRow specs={car.specs} className="mb-8" />}
-
-              <AvailabilityBadges className="mb-2" />
-              <FeaturesRow />
             </div>
 
-            <div
-              className={cn(
-                "flex flex-row lg:flex-col items-center lg:items-end",
-                "justify-between lg:justify-center gap-3 lg:gap-4",
-                "lg:min-w-[140px] shrink-0"
-              )}
-            >
-              <div className="text-left lg:text-right">
+            {showSpecs && (
+              <div className="mb-4">
+                <SpecsRow specs={car.specs} />
+              </div>
+            )}
+
+            <div className="mt-auto pt-4 border-t border-border flex items-end justify-between gap-4">
+              <div>
                 <Text
                   size="xs"
                   color="muted"
@@ -107,7 +87,7 @@ export function InlineCarCard({
                 >
                   Price per day
                 </Text>
-                <Text size="2xl" color="primary">
+                <Text size="xl" weight="bold" color="primary">
                   {formatPrice(car.pricing.daily)}
                 </Text>
                 <Text size="xs" color="subtle">
@@ -122,7 +102,7 @@ export function InlineCarCard({
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   size="sm"
-                  className="whitespace-nowrap mt-auto"
+                  className="shrink-0"
                 >
                   View Deal
                 </Button>

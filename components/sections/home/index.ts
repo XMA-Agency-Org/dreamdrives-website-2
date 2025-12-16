@@ -1,5 +1,5 @@
 export { HeroSection } from "./HeroSection";
-export { FeaturedFleet } from "./FeaturedFleet";
+export { FeaturedCars } from "./FeaturedCars";
 export { BrandShowcase } from "./BrandShowcase";
 export { BrandMarquee } from "./BrandMarquee";
 export { ExperienceSection } from "./ExperienceSection";

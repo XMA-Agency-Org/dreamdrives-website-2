@@ -1,38 +1,26 @@
 "use client";
 
-import { useMemo, useState, useCallback, useEffect } from "react";
+import { useMemo, useCallback, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { LayoutGrid, List } from "lucide-react";
 import { CarCard } from "./CarCard";
-import { Text, Heading, Pagination } from "@/components/ui";
-import { cn } from "@/lib/utils";
+import { Heading, Pagination, Text } from "@/components/ui";
 import cars from "@/data/cars-data";
 import { PRICE_RANGES } from "@/lib/constants";
 
 const CARS_PER_PAGE = 12;
 
 type ViewMode = "grid" | "list";
-type SortOption =
-  | "featured"
-  | "price-low"
-  | "price-high"
-  | "name-asc"
-  | "newest";
+type SortOption = "featured" | "price-low" | "price-high" | "name-asc" | "newest";
 
-const SORT_OPTIONS: { id: SortOption; label: string }[] = [
-  { id: "featured", label: "Featured" },
-  { id: "price-low", label: "Price: Low to High" },
-  { id: "price-high", label: "Price: High to Low" },
-  { id: "name-asc", label: "Name: A to Z" },
-  { id: "newest", label: "Newest First" },
-];
+interface CarsGridProps {
+  sortBy?: SortOption;
+  viewMode?: ViewMode;
+}
 
-export function FleetGrid() {
+export function CarsGrid({ sortBy = "featured", viewMode = "grid" }: CarsGridProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const [viewMode, setViewMode] = useState<ViewMode>("grid");
-  const [sortBy, setSortBy] = useState<SortOption>("featured");
 
   const currentCategory = searchParams.get("category");
   const currentBrand = searchParams.get("brand");
@@ -138,70 +126,6 @@ export function FleetGrid() {
 
   return (
     <div>
-      {/* Header: Results count + Sort + View toggle */}
-      <div className="flex items-center justify-between mb-6 gap-4">
-        <Text size="sm" color="muted">
-          {filteredCars.length} {filteredCars.length === 1 ? "vehicle" : "vehicles"}
-          {totalPages > 1 && ` · Page ${currentPage} of ${totalPages}`}
-        </Text>
-
-        <div className="flex items-center gap-4">
-          {/* Sort dropdown */}
-          <div className="flex items-center gap-2">
-            <Text size="sm" color="muted" className="hidden sm:block">
-              Sort:
-            </Text>
-            <select
-              value={sortBy}
-              onChange={(e) => {
-                setSortBy(e.target.value as SortOption);
-                if (currentPage !== 1) {
-                  const params = new URLSearchParams(searchParams.toString());
-                  params.delete("page");
-                  router.push(`${pathname}?${params.toString()}`, { scroll: false });
-                }
-              }}
-              className="h-11 bg-background-elevated border border-border rounded-md px-3 text-sm text-foreground focus:outline-none focus:border-primary-500 cursor-pointer"
-            >
-              {SORT_OPTIONS.map((option) => (
-                <option key={option.id} value={option.id}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* View mode toggle */}
-          <div className="md:flex items-center gap-1 p-1 bg-background-elevated border border-border rounded-md hidden">
-            <button
-              onClick={() => setViewMode("grid")}
-              className={cn(
-                "p-2.5 rounded-sm transition-colors",
-                viewMode === "grid"
-                  ? "bg-primary-500 text-neutral-950"
-                  : "text-foreground-muted hover:text-foreground hover:bg-neutral-800",
-              )}
-              aria-label="Grid view"
-            >
-              <LayoutGrid className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => setViewMode("list")}
-              className={cn(
-                "p-2.5 rounded-sm transition-colors",
-                viewMode === "list"
-                  ? "bg-primary-500 text-neutral-950"
-                  : "text-foreground-muted hover:text-foreground hover:bg-neutral-800",
-              )}
-              aria-label="List view"
-            >
-              <List className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Cards */}
       {viewMode === "grid" ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {paginatedCars.map((car, index) => (

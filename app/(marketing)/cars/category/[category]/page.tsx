@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
-import { StaticFleetGrid } from "@/components/sections/fleet";
+import { StaticCarsGrid } from "@/components/sections/cars";
 import { getAllCars, getFeaturedCars } from "@/data/cars";
 import { CAR_CATEGORIES } from "@/lib/constants";
 import type { Car } from "@/types";
@@ -74,42 +74,22 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
-  const descriptions: Record<string, string> = {
-    luxury:
-      "Experience the pinnacle of automotive excellence with our luxury collection. Premium vehicles for those who demand the best.",
-    business:
-      "Professional vehicles perfect for corporate travel and business meetings. Make an impression wherever you go.",
-    economy:
-      "Quality vehicles at competitive prices. Perfect for budget-conscious travelers without compromising on comfort.",
-    popular:
-      "Our most sought-after vehicles. Discover what makes these cars the top choice for our customers.",
-    "new-arrivals":
-      "Be the first to drive our latest additions. Fresh arrivals featuring the newest models.",
-    "special-offers":
-      "Limited-time deals on premium vehicles. Don't miss these exclusive rental opportunities.",
-  };
-
   return (
     <>
       <PageHero
-        tagline={categoryLabel}
         title={`${categoryLabel} Vehicles`}
-        description={
-          descriptions[category] ||
-          `Browse our ${categoryLabel.toLowerCase()} vehicle collection available for rent in Dubai.`
-        }
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Fleet", href: "/fleet" },
+          { label: "Cars", href: "/cars" },
           { label: categoryLabel },
         ]}
       />
 
-      <Section spacing="none" className="pb-24">
-          <StaticFleetGrid
-            cars={cars}
-            emptyMessage={`No ${categoryLabel.toLowerCase()} vehicles available`}
-          />
+      <Section spacing="none">
+        <StaticCarsGrid
+          cars={cars}
+          emptyMessage={`No ${categoryLabel.toLowerCase()} vehicles available`}
+        />
       </Section>
     </>
   );

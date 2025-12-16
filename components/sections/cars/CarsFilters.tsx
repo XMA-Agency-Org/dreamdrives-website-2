@@ -2,14 +2,10 @@
 
 import { useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Button, FilterGroup } from "@/components/ui";
+import { FilterGroup } from "@/components/ui";
 import { CAR_BODY_TYPES, CAR_BRANDS, PRICE_RANGES } from "@/lib/constants";
 
-interface FleetFiltersProps {
-  onClose?: () => void;
-}
-
-export function FleetFilters({ onClose }: FleetFiltersProps) {
+export function CarsFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -27,30 +23,13 @@ export function FleetFilters({ onClose }: FleetFiltersProps) {
         params.set(key, value);
       }
 
-      router.push(`/fleet?${params.toString()}`, { scroll: false });
+      router.push(`/cars?${params.toString()}`, { scroll: false });
     },
     [router, searchParams]
   );
 
-  const clearAllFilters = useCallback(() => {
-    router.push("/fleet", { scroll: false });
-  }, [router]);
-
-  const hasActiveFilters = currentCategory || currentBrand || currentPriceRange;
-
   return (
     <div className="space-y-8">
-      {hasActiveFilters && (
-        <div className="flex justify-end">
-          <button
-            onClick={clearAllFilters}
-            className="text-sm text-primary-500 hover:text-primary-400 transition-colors"
-          >
-            Clear all
-          </button>
-        </div>
-      )}
-
       <FilterGroup
         title="Body Type"
         items={CAR_BODY_TYPES}
@@ -73,12 +52,6 @@ export function FleetFilters({ onClose }: FleetFiltersProps) {
         value={currentPriceRange}
         onChange={(value) => updateFilter("price", value)}
       />
-
-      {onClose && (
-        <Button onClick={onClose} className="w-full">
-          Apply Filters
-        </Button>
-      )}
     </div>
   );
 }

@@ -7,10 +7,35 @@ export const COMPANY = {
   tagline: "Drive Your Dream",
   phone: "+971 58 68 77777",
   phoneClean: "971586877777",
+  secondaryPhone: "+971 4 362 3817",
+  secondaryPhoneClean: "97143623817",
   email: "info@uptowndxb.com",
-  address: "Dubai, United Arab Emirates",
   website: "https://uptowndxb.com",
 } as const;
+
+export const LOCATIONS = [
+  {
+    id: "head-office",
+    name: "Head Office",
+    address: "Al Quoz Industrial Area 1",
+    city: "Dubai",
+    mapUrl: "https://maps.google.com/?q=Uptown+Rent+A+Car+Al+Quoz+Dubai",
+  },
+  {
+    id: "w-hotel",
+    name: "W Dubai The Palm",
+    address: "W Dubai The Palm Hotel, Ground Floor",
+    city: "Palm Jumeirah, Dubai",
+    mapUrl: "https://maps.google.com/?q=W+Dubai+The+Palm+Hotel",
+  },
+  {
+    id: "business-bay",
+    name: "Business Bay",
+    address: "Empire Heights Towers, 95 Marasi Drive",
+    city: "Business Bay, Dubai",
+    mapUrl: "https://maps.google.com/?q=Empire+Heights+Business+Bay+Dubai",
+  },
+] as const;
 
 export const SOCIAL = {
   instagram: "https://instagram.com/uptowndxb",
@@ -21,7 +46,7 @@ export const SOCIAL = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Fleet", href: "/fleet" },
+  { label: "Cars", href: "/cars" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -34,7 +59,6 @@ export const CAR_BODY_TYPES = [
   { id: "suv", label: "SUVs" },
   { id: "sports", label: "Sports Cars" },
   { id: "convertible", label: "Convertibles" },
-  { id: "coupe", label: "Coupes" },
 ] as const;
 
 export const CAR_CATEGORIES = [

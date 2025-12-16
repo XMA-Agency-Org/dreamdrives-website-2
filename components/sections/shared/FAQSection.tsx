@@ -40,7 +40,7 @@ export const faqData = [
   {
     question: "What types of luxury cars are available?",
     answer:
-      "Our fleet includes Ferrari, Lamborghini, Rolls Royce, Bentley, Mercedes-Benz, BMW, Porsche, Range Rover, and many more. From supercars to luxury SUVs, we have options for every preference.",
+      "We have Ferrari, Lamborghini, Rolls Royce, Bentley, Mercedes-Benz, BMW, Porsche, Range Rover, and many more. From supercars to luxury SUVs, we have options for every preference.",
   },
   {
     question: "Is it cheaper to rent or buy a luxury car in Dubai?",

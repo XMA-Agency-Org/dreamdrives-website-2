@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
-import { StaticFleetGrid } from "@/components/sections/fleet";
+import { StaticCarsGrid } from "@/components/sections/cars";
 import { getCarsByBodyType } from "@/data/cars";
 import { CAR_BODY_TYPES } from "@/lib/constants";
 
@@ -57,21 +57,19 @@ export default async function BodyTypePage({ params }: BodyTypePageProps) {
   return (
     <>
       <PageHero
-        tagline={typeLabel}
         title={`${typeLabel} Rental`}
-        description={`Explore our premium selection of ${typeLabel.toLowerCase()} available for rent in Dubai. From daily rentals to monthly leases, find the perfect vehicle for your needs.`}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Fleet", href: "/fleet" },
+          { label: "Cars", href: "/cars" },
           { label: typeLabel },
         ]}
       />
 
-      <Section spacing="none" className="pb-24">
-          <StaticFleetGrid
-            cars={cars}
-            emptyMessage={`No ${typeLabel.toLowerCase()} available`}
-          />
+      <Section spacing="none">
+        <StaticCarsGrid
+          cars={cars}
+          emptyMessage={`No ${typeLabel.toLowerCase()} available`}
+        />
       </Section>
     </>
   );

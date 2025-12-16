@@ -10,7 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BgPic from "@/public/banner.png";
 import { BrandMarquee } from "./BrandMarquee";
-import { VehicleSearch } from "@/components/sections/fleet";
+import { VehicleSearch } from "@/components/sections/cars";
 
 function SearchFallback() {
   return (

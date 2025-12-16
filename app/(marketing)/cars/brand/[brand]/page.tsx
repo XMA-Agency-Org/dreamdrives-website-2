@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
-import { StaticFleetGrid } from "@/components/sections/fleet";
+import { StaticCarsGrid } from "@/components/sections/cars";
 import {
   getCarsByBrand,
   getAllBrandsWithCount,
@@ -56,21 +56,19 @@ export default async function BrandPage({ params }: BrandPageProps) {
   return (
     <>
       <PageHero
-        tagline={`${brandName} Collection`}
         title={`${brandName} Rental`}
-        description={`Discover our handpicked selection of ${brandName} vehicles. Experience the pinnacle of ${brandName} engineering and luxury in Dubai.`}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Fleet", href: "/fleet" },
+          { label: "Cars", href: "/cars" },
           { label: brandName },
         ]}
       />
 
-      <Section spacing="none" className="pb-24">
-          <StaticFleetGrid
-            cars={cars}
-            emptyMessage={`No ${brandName} vehicles available`}
-          />
+      <Section spacing="none">
+        <StaticCarsGrid
+          cars={cars}
+          emptyMessage={`No ${brandName} vehicles available`}
+        />
       </Section>
     </>
   );

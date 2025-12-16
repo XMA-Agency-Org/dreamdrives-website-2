@@ -8,7 +8,7 @@ import { Badge, Button, Heading, Text } from "@/components/ui";
 import { formatPrice, getCarInquiryUrl, cn } from "@/lib/utils";
 import type { BaseCarCardProps } from "./shared";
 
-export function MinimalCarCard({
+export function CompactCarCard({
   car,
   index = 0,
   showBadge = true,
@@ -25,10 +25,10 @@ export function MinimalCarCard({
       viewport={{ once: true }}
       transition={{ delay: index * 0.03, duration: 0.2 }}
     >
-      <Link href={`/fleet/${car.slug}`} className="group block h-full">
+      <Link href={`/cars/${car.slug}`} className="group block h-full">
         <div
           className={cn(
-            "relative overflow-clip bg-background border-border",
+            "relative overflow-clip bg-background-elevated border-border",
             "group-hover:border-primary-500/50 transition-all duration-300 rounded-lg",
             "h-full aspect-[4/3]",
             className
@@ -43,7 +43,13 @@ export function MinimalCarCard({
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+            <div
+              className={cn(
+                "absolute inset-0 transition-opacity",
+                "bg-gradient-to-t from-background via-background/20 to-transparent",
+                "opacity-60 group-hover:opacity-80"
+              )}
+            />
 
             {showBadge && (
               <div className="absolute top-4 left-4 flex items-center gap-2">
@@ -70,19 +76,24 @@ export function MinimalCarCard({
             )}
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 p-4">
+          <div className="absolute bottom-0 left-0 right-0 p-5">
             <Heading
               as="h3"
-              size="xs"
+              size="sm"
               grunge
               className="group-hover:text-primary-500 transition-colors line-clamp-1 mb-2"
             >
               {car.name}
             </Heading>
 
-            <Text size="sm" color="primary" weight="semibold" className="mt-2">
-              {formatPrice(car.pricing.daily)}/day
-            </Text>
+            <div className="flex items-baseline gap-1">
+              <Text size="base" weight="bold" color="primary">
+                {formatPrice(car.pricing.daily)}
+              </Text>
+              <Text size="xs" color="subtle">
+                / day
+              </Text>
+            </div>
           </div>
         </div>
       </Link>

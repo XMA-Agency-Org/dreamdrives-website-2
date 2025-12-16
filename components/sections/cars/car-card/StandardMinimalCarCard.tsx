@@ -22,7 +22,7 @@ export function StandardMinimalCarCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <Link href={`/fleet/${car.slug}`} className="group block h-full">
+      <Link href={`/cars/${car.slug}`} className="group block h-full">
         <div
           className={cn(
             "relative transition-all duration-300",
@@ -54,7 +54,7 @@ export function StandardMinimalCarCard({
               {car.name}
             </Heading>
 
-            <Text size="lg" weight="bold">
+            <Text size="sm" weight="bold">
               {formatPrice(car.pricing.daily)}
               <Text as="span" size="xs" color="muted" weight="normal">
                 {" "}per day

@@ -53,11 +53,11 @@ const brandIconMap: Record<
   maserati: MaseratiIconDark,
 };
 
-interface FleetDropdownProps {
+interface CarsDropdownProps {
   className?: string;
 }
 
-export function FleetDropdown({ className }: FleetDropdownProps) {
+export function CarsDropdown({ className }: CarsDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -123,7 +123,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        Fleet
+        Cars
         <ChevronDown
           className={cn(
             "w-4 h-4 transition-transform duration-200",
@@ -173,7 +173,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
                     return (
                       <Link
                         key={brand.id}
-                        href={`/fleet/brand/${brand.id}`}
+                        href={`/cars/brand/${brand.id}`}
                         onClick={closeDropdown}
                         className="group flex items-center gap-2.5 px-2 py-1.5 rounded-sm hover:bg-background-elevated transition-colors"
                       >
@@ -239,7 +239,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
                     return (
                       <Link
                         key={bodyType.id}
-                        href={`/fleet/body-type/${bodyType.id}`}
+                        href={`/cars/body-type/${bodyType.id}`}
                         onClick={closeDropdown}
                         className="group flex items-center justify-between px-2 py-2 rounded-sm hover:bg-background-elevated transition-colors"
                       >
@@ -265,7 +265,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
                 </div>
 
                 <Link
-                  href="/fleet"
+                  href="/cars"
                   onClick={closeDropdown}
                   className="block px-2 pt-3 border-t border-border"
                 >
@@ -276,7 +276,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
                     color="primary"
                     className="hover:opacity-80 transition-opacity"
                   >
-                    View All Vehicles →
+                    View All Cars →
                   </Text>
                 </Link>
               </div>
@@ -297,7 +297,7 @@ export function FleetDropdown({ className }: FleetDropdownProps) {
                   {CAR_CATEGORIES.filter((cat) => cat.id !== "all").map((category) => (
                     <Link
                       key={category.id}
-                      href={`/fleet/category/${category.id}`}
+                      href={`/cars/category/${category.id}`}
                       onClick={closeDropdown}
                       className="group flex items-center justify-between px-2 py-2 rounded-sm hover:bg-background-elevated transition-colors"
                     >

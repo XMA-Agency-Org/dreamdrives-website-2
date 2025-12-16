@@ -22,8 +22,8 @@ bun lint         # Run ESLint
 ### App Router Structure
 - `app/(marketing)/` - Route group for public marketing pages
   - `page.tsx` - Homepage
-  - `fleet/page.tsx` - Fleet listing
-  - `fleet/[slug]/page.tsx` - Individual car detail pages
+  - `cars/page.tsx` - Cars listing
+  - `cars/[slug]/page.tsx` - Individual car detail pages
   - `about/`, `contact/`, `faq/` - Static marketing pages
 - `app/layout.tsx` - Root layout with fonts and metadata
 - `app/globals.css` - Design system tokens and base styles
@@ -35,8 +35,8 @@ components/
 ├── features/       # Business logic components (WhatsAppCTA)
 ├── layout/         # Header, Footer, Navigation, MobileMenu
 ├── sections/       # Page-specific section components
-│   ├── home/       # Homepage sections (HeroSection, FeaturedFleet, etc.)
-│   ├── fleet/      # Fleet page (VehicleSearch, FleetFilters, car-card variants)
+│   ├── home/       # Homepage sections (HeroSection, FeaturedCars, etc.)
+│   ├── cars/       # Cars page (VehicleSearch, CarsFilters, car-card variants)
 │   ├── car-detail/ # Car detail page sections
 │   ├── about/      # About page sections
 │   ├── contact/    # Contact page sections
@@ -88,7 +88,7 @@ The `Heading` component auto-applies grunge font for `hero`, `3xl`, `2xl`, `xl` 
 
 ## Car Card Variants
 
-The fleet uses multiple card variants in `components/sections/fleet/car-card/`:
+Multiple card variants in `components/sections/cars/car-card/`:
 - `StandardCarCard` - Full specs, pricing, brand header
 - `CompactCarCard` - Image overlay style for grids
 - `MinimalCarCard` - Smallest display for similar cars

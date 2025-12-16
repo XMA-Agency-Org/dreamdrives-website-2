@@ -31,8 +31,8 @@ export function AboutCTA({ className }: AboutCTAProps) {
             >
               Get in Touch
             </Button>
-            <Button as="a" href="/fleet" variant="outline" size="lg">
-              Browse Fleet
+            <Button as="a" href="/cars" variant="outline" size="lg">
+              Browse Cars
             </Button>
           </div>
         </RevealOnScroll>
