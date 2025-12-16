@@ -7,6 +7,7 @@ import { formatPrice, getCarInquiryUrl } from "@/lib/utils";
 import { COMPANY } from "@/lib/constants";
 import type { CarPricing } from "@/types";
 import { Car } from "@/types";
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 
 interface PricingCardProps {
   car: Car;
@@ -16,7 +17,7 @@ export function PricingCard({ car }: PricingCardProps) {
   const { pricing, name: carName, year: carYear, features } = car;
 
   return (
-    <motion.div className="lg:sticky lg:top-24 p-6 bg-background-elevated border border-border rounded-lg">
+    <motion.div className="lg:sticky lg:top-24 lg:p-6 lg:bg-background-elevated lg:border lg:border-border rounded-lg">
       {/* Price Display */}
       <Text size="2xl" weight="semibold" className="mb-4">
         {carName}
@@ -67,7 +68,7 @@ export function PricingCard({ car }: PricingCardProps) {
           variant="whatsapp"
           size="lg"
           className="w-full"
-          leftIcon={<MessageCircle className="w-5 h-5" />}
+          leftIcon={<FaWhatsapp className="w-5 h-5" />}
         >
           Inquire on WhatsApp
         </Button>

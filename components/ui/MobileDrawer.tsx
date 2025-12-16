@@ -12,6 +12,7 @@ interface DrawerProps {
   onClose: () => void;
   title?: string;
   children: React.ReactNode;
+  footer?: React.ReactNode;
   className?: string;
   side?: DrawerSide;
 }
@@ -34,6 +35,7 @@ export function Drawer({
   onClose,
   title,
   children,
+  footer,
   className,
   side = "left",
 }: DrawerProps) {
@@ -86,6 +88,12 @@ export function Drawer({
             </div>
 
             <div className="flex-1 overflow-y-auto p-4 sm:p-6">{children}</div>
+
+            {footer && (
+              <div className="p-4 border-t border-border bg-background-elevated">
+                {footer}
+              </div>
+            )}
           </motion.div>
         </>
       )}

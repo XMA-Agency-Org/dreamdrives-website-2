@@ -9,10 +9,10 @@ import { RevealOnScroll } from "@/components/animation";
 import { cn } from "@/lib/utils";
 
 export interface PageHeroProps {
-  tagline: string;
+  tagline?: string;
   title: string;
   gradientText?: string;
-  description: string;
+  description?: string;
   align?: "left" | "center";
   size?: "default" | "large";
   className?: string;
@@ -29,23 +29,27 @@ export function PageHero({
   className,
   breadcrumbs,
 }: PageHeroProps) {
+  const hasContent = tagline || description;
+
   return (
     <Section
       spacing="none"
       className={cn(
-        size === "large" ? "pt-32 pb-20" : "pt-32 pb-16",
+        "pt-32",
+        hasContent ? (size === "large" ? "pb-20" : "pb-16") : "pb-8",
         className,
       )}
     >
-        <div
-          className={cn(
-            align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl",
+      <div
+        className={cn(
+          align === "center" ? "max-w-3xl mx-auto text-center" : "max-w-3xl",
+        )}
+      >
+        <RevealOnScroll>
+          {breadcrumbs && breadcrumbs.length > 0 && (
+            <Breadcrumbs items={breadcrumbs} className="mb-6" />
           )}
-        >
-          <RevealOnScroll>
-            {breadcrumbs && breadcrumbs.length > 0 && (
-              <Breadcrumbs items={breadcrumbs} className="mb-6" />
-            )}
+          {tagline && (
             <Text
               size="sm"
               color="primary"
@@ -54,12 +58,14 @@ export function PageHero({
             >
               {tagline}
             </Text>
-            <Heading as="h1" size="2xl" className="mb-6">
-              {title}{" "}
-              {gradientText && (
-                <span className="text-gradient">{gradientText}</span>
-              )}
-            </Heading>
+          )}
+          <Heading as="h1" size="2xl" className={description ? "mb-6" : undefined}>
+            {title}{" "}
+            {gradientText && (
+              <span className="text-gradient">{gradientText}</span>
+            )}
+          </Heading>
+          {description && (
             <Text
               color="muted"
               size="lg"
@@ -67,8 +73,9 @@ export function PageHero({
             >
               {description}
             </Text>
-          </RevealOnScroll>
-        </div>
+          )}
+        </RevealOnScroll>
+      </div>
     </Section>
   );
 }
