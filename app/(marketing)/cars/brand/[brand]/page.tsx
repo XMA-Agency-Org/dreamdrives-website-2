@@ -34,10 +34,10 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Rent ${brandName} Cars in Dubai | Uptown Car Rental`,
+    title: `Rent ${brandName} Cars in Dubai | Dream Drives`,
     description: `Browse our collection of ${cars.length} ${brandName} luxury vehicles available for rent in Dubai. Premium ${brandName} car rental with delivery.`,
     openGraph: {
-      title: `${brandName} Car Rental Dubai | Uptown`,
+      title: `${brandName} Car Rental Dubai | Dream Drives`,
       description: `Rent ${brandName} luxury cars in Dubai. ${cars.length} vehicles available.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },

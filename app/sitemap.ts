@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllBrandsWithCount, getAllCars } from "@/data/cars";
 import { CAR_BODY_TYPES, CAR_CATEGORIES } from "@/lib/constants";
 
-const BASE_URL = "https://uptowndxb.com";
+const BASE_URL = "https://dreamdrives.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const brands = getAllBrandsWithCount();

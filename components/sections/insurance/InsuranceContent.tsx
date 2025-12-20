@@ -74,7 +74,7 @@ export function InsuranceContent() {
       <div className="max-w-4xl">
         <RevealOnScroll>
           <Text color="muted" className="mb-8 leading-relaxed">
-            Uptown Rent A Car LLC offers additional protection products that you
+            Dream Drives LLC offers additional protection products that you
             can purchase along with your rental vehicle. We offer our customers
             Damage Waiver, Supplemental Liability Protection, and Roadside
             Assistance Protection.
@@ -349,17 +349,10 @@ export function InsuranceContent() {
               When one of the covered circumstances happens during your rental,
               contact our Assistance Service at{" "}
               <a
-                href="tel:+97143623817"
+                href="tel:+971545555402"
                 className="text-primary-500 hover:underline"
               >
-                +971 4 362 3817
-              </a>{" "}
-              or{" "}
-              <a
-                href="tel:+971526192929"
-                className="text-primary-500 hover:underline"
-              >
-                +971 52 619 2929
+                +971 54 555 5402
               </a>
               .
             </Text>

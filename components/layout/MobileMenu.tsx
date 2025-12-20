@@ -5,9 +5,10 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Phone } from "lucide-react";
 import { Navigation } from "./Navigation";
-import { Button } from "@/components/ui";
+import { Button, ThemeSwitcher } from "@/components/ui";
 import { COMPANY } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { trackPhoneClick } from "@/lib/analytics";
 import { mobileMenuSlide, staggerContainer, staggerItem } from "@/lib/animations";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -72,18 +73,21 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               <div className="flex items-center justify-between mb-8">
                 <Image
                   src="/logo-wide.png"
-                  alt="Uptown"
+                  alt="Dream Drives"
                   width={120}
                   height={120}
                   className="object-contain"
                 />
-                <button
-                  onClick={onClose}
-                  className="p-2 text-foreground-muted hover:text-foreground transition-colors focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:outline-none rounded-sm"
-                  aria-label="Close menu"
-                >
-                  <X className="w-6 h-6" />
-                </button>
+                <div className="flex items-center gap-2">
+                  <ThemeSwitcher />
+                  <button
+                    onClick={onClose}
+                    className="p-2 text-foreground-muted hover:text-foreground transition-colors focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:outline-none rounded-sm"
+                    aria-label="Close menu"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                </div>
               </div>
 
               {/* Navigation */}
@@ -127,6 +131,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   <Button
                     as="a"
                     href={`tel:${COMPANY.phoneClean}`}
+                    onClick={() => trackPhoneClick("mobile_menu")}
                     variant="outline"
                     size="lg"
                     className="w-full"

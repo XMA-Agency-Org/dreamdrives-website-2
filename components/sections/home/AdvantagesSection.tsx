@@ -74,10 +74,10 @@ export function AdvantagesSection() {
             Why Choose Us
           </Badge>
           <Heading as="h2" size="2xl" className="mb-6">
-            The Uptown Advantage
+            The Dream Drives Advantage
           </Heading>
           <Text color="muted" size="lg" className="max-w-2xl mx-auto">
-            Discover why discerning travelers choose Uptown Rent a Car for their
+            Discover why discerning travelers choose Dream Drives for their
             luxury driving experience in Dubai.
           </Text>
         </RevealOnScroll>

@@ -15,6 +15,7 @@ import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import cars from "@/data/cars-data";
 import { CAR_BRANDS, CAR_BODY_TYPES } from "@/lib/constants";
+import { trackCarFilter } from "@/lib/analytics";
 import type { Car } from "@/types";
 
 interface SearchSuggestion {
@@ -173,6 +174,9 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
     (searchQuery: string) => {
       if (!searchQuery.trim()) return;
 
+      // Track the search
+      trackCarFilter({ filterType: "search", filterValue: searchQuery });
+
       // Add to search history
       const newHistory = [
         searchQuery,
@@ -204,6 +208,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
           (b) => b.label.toLowerCase() === suggestion.text.toLowerCase()
         )?.id;
         if (brandId) {
+          trackCarFilter({ filterType: "brand", filterValue: brandId });
           const params = new URLSearchParams(searchParams.toString());
           params.set("brand", brandId);
           params.delete("search");
@@ -214,6 +219,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
           (c) => c.label.toLowerCase() === suggestion.text.toLowerCase()
         )?.id;
         if (categoryId) {
+          trackCarFilter({ filterType: "category", filterValue: categoryId });
           const params = new URLSearchParams(searchParams.toString());
           params.set("category", categoryId);
           params.delete("search");
@@ -331,7 +337,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
             onKeyDown={handleKeyDown}
             autoComplete="off"
             spellCheck={false}
-            className="w-full pl-11 h-12 bg-neutral-800 border border-white/10 text-foreground placeholder:text-foreground-subtle transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed rounded-xl"
+            className="w-full pl-11 h-12 bg-input-bg border border-border text-foreground placeholder:text-foreground-subtle transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed rounded-xl"
           />
           {query && (
             <button
@@ -345,7 +351,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
                   router.push(`/cars?${params.toString()}`);
                 }
               }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-neutral-800 rounded transition-colors text-foreground-subtle hover:text-foreground cursor-pointer"
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 hover:bg-surface-hover rounded transition-colors text-foreground-subtle hover:text-foreground cursor-pointer"
               aria-label="Clear search"
             >
               <X className="w-4 h-4" />
@@ -357,7 +363,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
         {showDropdown && (
           <div
             ref={dropdownRef}
-            className="absolute top-full left-0 right-0 mt-2 bg-neutral-800 border border-border rounded-xl shadow-2xl z-[200] max-h-[400px] overflow-y-auto"
+            className="absolute top-full left-0 right-0 mt-2 bg-background-elevated border border-border rounded-xl shadow-2xl z-[200] max-h-[400px] overflow-y-auto"
           >
             {/* Popular Searches - shown when input is empty */}
             {query.length === 0 && (
@@ -380,7 +386,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
                         "px-3 py-2 text-sm rounded-full transition-colors duration-200 border cursor-pointer",
                         selectedIndex === index
                           ? "bg-primary-500/20 border-primary-500/50 text-primary-300"
-                          : "bg-neutral-700 border-neutral-600 text-foreground-muted hover:bg-neutral-800 hover:text-foreground"
+                          : "bg-surface border-border text-foreground-muted hover:bg-surface-hover hover:text-foreground"
                       )}
                     >
                       {popular}
@@ -421,7 +427,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
                           "w-full text-left p-3 text-sm rounded-lg transition-all duration-200 flex items-center gap-3 group cursor-pointer",
                           selectedIndex === historyIndex
                             ? "bg-primary-500/20 border border-primary-500/50"
-                            : "hover:bg-neutral-800 border border-transparent"
+                            : "hover:bg-surface-hover border border-transparent"
                         )}
                       >
                         <Clock className="w-4 h-4 text-foreground-muted group-hover:text-primary-500 transition-colors flex-shrink-0" />
@@ -465,7 +471,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
                               "w-full text-left p-3 rounded-lg transition-all duration-200 flex items-center gap-3 group cursor-pointer",
                               selectedIndex === index
                                 ? "bg-primary-500/20 border border-primary-500/50"
-                                : "hover:bg-neutral-800 border border-transparent"
+                                : "hover:bg-surface-hover border border-transparent"
                             )}
                           >
                             <div className="flex-shrink-0 p-2 bg-background rounded-lg group-hover:bg-primary-500/20 transition-colors">

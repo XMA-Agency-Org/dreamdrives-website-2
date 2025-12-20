@@ -27,10 +27,10 @@ export function PrivacyContent() {
       <div className="max-w-4xl">
         <RevealOnScroll>
           <Text color="muted" className="mb-12 leading-relaxed">
-            Your privacy is important to you and to us. Uptown Rent A Car is
+            Your privacy is important to you and to us. Dream Drives is
             committed to protecting its members, website visitors, and app
             users&apos; privacy. The following Privacy and Cookie Policy
-            outlines the information Uptown Rent A Car may process and how we
+            outlines the information Dream Drives may process and how we
             may use that information to better serve users while using our
             website, mobile application, and services.
           </Text>
@@ -38,10 +38,10 @@ export function PrivacyContent() {
             If you have questions about this Privacy and Cookie Policy, please
             contact us at{" "}
             <a
-              href="mailto:info@uptowndxb.com"
+              href="mailto:info@dreamdrives.com"
               className="text-primary-500 hover:underline"
             >
-              info@uptowndxb.com
+              info@dreamdrives.com
             </a>
           </Text>
         </RevealOnScroll>
@@ -49,7 +49,7 @@ export function PrivacyContent() {
         <PolicySection title="Definitions">
           <Text color="muted">
             <strong>&quot;User&quot;</strong> means a person who has signed up
-            and has a booking with Uptown Rent A Car for the use or potential
+            and has a booking with Dream Drives for the use or potential
             use of the Service.
           </Text>
         </PolicySection>
@@ -159,7 +159,7 @@ export function PrivacyContent() {
             bound not to disclose or use it for any other purpose.
           </Text>
           <Text color="muted">
-            Uptown Rent A Car will disclose your personal data to the extent
+            Dream Drives will disclose your personal data to the extent
             that this is legally required, or necessary for the establishment,
             exercise or defense of legal claims and legal process; or in the
             event of an emergency pertaining to your health and/or safety.
@@ -170,10 +170,10 @@ export function PrivacyContent() {
             you would like a copy of the information held on you, please write
             to{" "}
             <a
-              href="mailto:info@uptowndxb.com"
+              href="mailto:info@dreamdrives.com"
               className="text-primary-500 hover:underline"
             >
-              info@uptowndxb.com
+              info@dreamdrives.com
             </a>
           </Text>
           <Text color="muted">

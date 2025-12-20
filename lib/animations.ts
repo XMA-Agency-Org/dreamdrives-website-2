@@ -1,6 +1,6 @@
 /**
- * Motion animation variants for Uptown Dubai
- * Cinematic, luxury-feel animations
+ * Motion animation variants for Dream Drives
+ * Elegant, refined luxury animations
  */
 
 import type { Variants, Transition } from "motion/react";

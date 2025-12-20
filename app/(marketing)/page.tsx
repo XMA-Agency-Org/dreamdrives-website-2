@@ -10,9 +10,9 @@ import {
 import { FAQSection } from "@/components/sections/shared";
 
 export const metadata: Metadata = {
-  title: "Luxury Car Rental Dubai | Free Delivery | Uptown",
+  title: "Luxury Car Rental Dubai | Free Delivery | Dream Drives",
   description:
-    "Rent Rolls Royce, Lamborghini, Ferrari from 250 AED/day. Free delivery to your hotel or airport. 24/7 service. Rated 4.9 stars.",
+    "Rent Mercedes, BMW, Range Rover and more from competitive rates. Free delivery to your hotel or airport. Exceptional service in Dubai.",
 };
 
 export default function HomePage() {

@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FilterGroup } from "@/components/ui";
 import { CAR_BODY_TYPES, CAR_BRANDS, PRICE_RANGES } from "@/lib/constants";
+import { trackCarFilter } from "@/lib/analytics";
 
 export function CarsFilters() {
   const router = useRouter();
@@ -21,6 +22,8 @@ export function CarsFilters() {
         params.delete(key);
       } else {
         params.set(key, value);
+        const filterType = key === "category" ? "category" : key === "brand" ? "brand" : "price";
+        trackCarFilter({ filterType, filterValue: value });
       }
 
       router.push(`/cars?${params.toString()}`, { scroll: false });

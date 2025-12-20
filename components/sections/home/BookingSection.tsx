@@ -6,9 +6,10 @@ import { Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import cars from "@/data/cars-data";
 import { cn } from "@/lib/utils";
+import { trackPhoneClick } from "@/lib/analytics";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 
-const PHONE_NUMBER = "+971586877777";
+const PHONE_NUMBER = "+971545555402";
 const WHATSAPP_BASE_URL = "https://api.whatsapp.com/send";
 
 export function BookingSection() {
@@ -25,12 +26,12 @@ export function BookingSection() {
 
   // Generate WhatsApp message
   const getWhatsAppUrl = () => {
-    let message = "Hello Uptown Rent a Car, I'm interested in renting a car.";
+    let message = "Hello Dream Drives, I'm interested in renting a car.";
 
     if (selectedCar) {
       const car = availableCars.find((c) => c.id === selectedCar);
       if (car) {
-        message = `Hello Uptown Rent a Car, I'm interested in renting the ${car.name} (${car.year}).`;
+        message = `Hello Dream Drives, I'm interested in renting the ${car.name} (${car.year}).`;
       }
     }
 
@@ -161,6 +162,7 @@ export function BookingSection() {
               <div className="space-y-4">
                 <Button
                   href={`tel:${PHONE_NUMBER}`}
+                  onClick={() => trackPhoneClick("booking_section")}
                   variant="outline"
                   size="lg"
                   className="w-full justify-start"
@@ -170,12 +172,12 @@ export function BookingSection() {
                     <span className="text-xs text-foreground-muted">
                       Call Us
                     </span>
-                    <span>+971 58 687 7777</span>
+                    <span>+971 54 555 5402</span>
                   </span>
                 </Button>
 
                 <Button
-                  href={`${WHATSAPP_BASE_URL}?phone=${PHONE_NUMBER.replace(/\+/g, "")}&text=${encodeURIComponent("Hello Uptown Rent a Car, I'm interested in renting a car. Please share your prices and current offers.")}`}
+                  href={`${WHATSAPP_BASE_URL}?phone=${PHONE_NUMBER.replace(/\+/g, "")}&text=${encodeURIComponent("Hello Dream Drives, I'm interested in renting a car. Please share your prices and current offers.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="whatsappOutline"
@@ -187,7 +189,7 @@ export function BookingSection() {
                     <span className="text-xs text-foreground-muted">
                       WhatsApp
                     </span>
-                    <span>+971 58 687 7777</span>
+                    <span>+971 54 555 5402</span>
                   </span>
                 </Button>
               </div>

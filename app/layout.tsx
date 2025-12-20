@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Rubik_Dirt, Bebas_Neue, Zen_Dots, Orbitron, Zain, Outfit } from "next/font/google";
+import { Inter, Bebas_Neue, Outfit } from "next/font/google";
+import Script from "next/script";
+import { Suspense } from "react";
+import { AnalyticsProvider, ThemeProvider } from "@/components/providers";
 import "./globals.css";
+
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,11 +13,11 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const rubikDirt = Outfit({
-  weight: "400",
+const outfit = Outfit({
+  weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-grunge",
+  variable: "--font-display",
 });
 
 const bebasNeue = Bebas_Neue({
@@ -24,57 +29,57 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: {
-    default: "Uptown Rent a Car | Luxury Car Rental Dubai",
-    template: "%s | Uptown Dubai",
+    default: "Dream Drives | Luxury Car Rental Dubai",
+    template: "%s | Dream Drives",
   },
   description:
-    "Experience premium luxury car rental in Dubai. Rent Rolls Royce, Lamborghini, Ferrari, Bentley & more. Starting from 250 AED/day. 24/7 service.",
+    "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more. Competitive rates with exceptional service.",
   keywords: [
     "luxury car rental dubai",
-    "exotic car rental",
-    "supercar hire dubai",
-    "rolls royce rental",
-    "lamborghini rental dubai",
-    "ferrari rental dubai",
-    "bentley rental",
-    "sports car rental",
+    "car rental dubai",
     "premium car hire",
+    "mercedes rental dubai",
+    "bmw rental dubai",
+    "range rover rental",
+    "suv rental dubai",
+    "sports car rental",
     "dubai car rental",
+    "dream drives",
   ],
-  authors: [{ name: "Uptown Rent a Car" }],
-  creator: "Uptown Rent a Car",
-  publisher: "Uptown Rent a Car",
+  authors: [{ name: "Dream Drives" }],
+  creator: "Dream Drives",
+  publisher: "Dream Drives",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://uptowndxb.com"),
+  metadataBase: new URL("https://dreamdrives.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://uptowndxb.com",
-    siteName: "Uptown Rent a Car",
-    title: "Uptown Rent a Car | Luxury Car Rental Dubai",
+    url: "https://dreamdrives.com",
+    siteName: "Dream Drives",
+    title: "Dream Drives | Luxury Car Rental Dubai",
     description:
-      "Experience premium luxury car rental in Dubai. Rent Rolls Royce, Lamborghini, Ferrari, Bentley & more.",
+      "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Uptown Rent a Car - Luxury Car Rental Dubai",
+        alt: "Dream Drives - Luxury Car Rental Dubai",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Uptown Rent a Car | Luxury Car Rental Dubai",
+    title: "Dream Drives | Luxury Car Rental Dubai",
     description:
-      "Experience premium luxury car rental in Dubai. Rent Rolls Royce, Lamborghini, Ferrari & more.",
+      "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -99,9 +104,50 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${rubikDirt.variable} ${bebasNeue.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${outfit.variable} ${bebasNeue.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('dream-drives-theme') || 'dark';
+                  if (theme === 'system') {
+                    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  }
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+        {GOOGLE_ADS_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-ads" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GOOGLE_ADS_ID}');
+              `}
+            </Script>
+          </>
+        )}
+      </head>
       <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
-        {children}
+        <ThemeProvider>
+          <Suspense fallback={null}>
+            <AnalyticsProvider>{children}</AnalyticsProvider>
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   );

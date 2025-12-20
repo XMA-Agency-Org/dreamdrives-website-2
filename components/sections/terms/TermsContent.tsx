@@ -52,7 +52,7 @@ export function TermsContent() {
         <RevealOnScroll>
           <Text color="muted" className="mb-12 leading-relaxed">
             These Terms and Conditions govern the rental services provided by
-            Uptown Rent A Car LLC. By renting a vehicle from Uptown Rent A Car
+            Dream Drives LLC. By renting a vehicle from Uptown Rent A Car
             LLC, you agree to the following terms and conditions:
           </Text>
         </RevealOnScroll>
@@ -127,7 +127,7 @@ export function TermsContent() {
         <TermsSection title="6. Accidents and Damage">
           <Text color="muted">
             6.1. In the event of an accident, the renter must immediately notify
-            Uptown Rent A Car LLC and the relevant UAE authorities.
+            Dream Drives LLC and the relevant UAE authorities.
           </Text>
           <Text color="muted">
             6.2. A police report is mandatory for all damages, accidents, or
@@ -200,12 +200,12 @@ export function TermsContent() {
           <Text color="muted">
             10.4. Clients are solely responsible for all credit card, banking,
             service, cellular, data, or access fees or charges incurred in
-            relation to any payment to Uptown Rent A Car LLC in terms of
+            relation to any payment to Dream Drives LLC in terms of
             insufficient funds or the use of any of the services and features.
           </Text>
           <Text color="muted">
             10.5. For all payments taken against a client&apos;s credit card,
-            Uptown Rent A Car LLC will send a payment confirmation email to the
+            Dream Drives LLC will send a payment confirmation email to the
             registered email address within 48-72 hours of the payment.
           </Text>
           <Text color="muted">
@@ -242,7 +242,7 @@ export function TermsContent() {
           <Text color="muted">
             11.1. The vehicle must be returned in the same condition it was
             rented, along with all accessories (e.g., GPS devices, child seats)
-            provided by Uptown Rent A Car LLC.
+            provided by Dream Drives LLC.
           </Text>
           <Text color="muted">
             11.2. Late returns will incur additional charges as per the rental
@@ -278,7 +278,7 @@ export function TermsContent() {
 
         <TermsSection title="12. Liability">
           <Text color="muted">
-            12.1. Uptown Rent A Car LLC is not liable for any personal items
+            12.1. Dream Drives LLC is not liable for any personal items
             left in the vehicle during or after the rental period.
           </Text>
           <Text color="muted">
@@ -302,7 +302,7 @@ export function TermsContent() {
             Applications and any updates thereto.
           </Text>
           <Text color="muted">
-            13.3. Uptown Rent A Car LLC does not guarantee that the Services, or
+            13.3. Dream Drives LLC does not guarantee that the Services, or
             any portion thereof, will function on any particular hardware or
             devices.
           </Text>
@@ -315,7 +315,7 @@ export function TermsContent() {
         <TermsSection title="Insurance and Its Criteria">
           <TermsSubSection title="Comprehensive Insurance">
             <Text color="muted">
-              At Uptown Rent a Car LLC, all vehicles are provided with
+              At Dream Drives LLC, all vehicles are provided with
               comprehensive insurance in compliance with UAE law. In the event
               of an accident or damage, it is mandatory for clients to notify
               the police immediately. The vehicle must not be moved unless the
@@ -357,7 +357,7 @@ export function TermsContent() {
 
         <TermsSection title="14. Termination of Agreement">
           <Text color="muted">
-            14.1. Uptown Rent A Car LLC reserves the right to terminate the
+            14.1. Dream Drives LLC reserves the right to terminate the
             rental agreement at any time if the terms and conditions are
             violated.
           </Text>
@@ -365,7 +365,7 @@ export function TermsContent() {
 
         <TermsSection title="15. Governing Law">
           <Text color="muted">
-            This Agreement between the client and Uptown Rent a Car LLC,
+            This Agreement between the client and Dream Drives LLC,
             including any access to or use of the vehicle or services, shall be
             governed by the laws and regulations of the United Arab Emirates and
             shall be applicable to the emirate where the agreement is executed.

@@ -4,11 +4,11 @@ import { InsuranceContent } from "@/components/sections/insurance";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "Insurance & Protection | Uptown Car Rental Dubai",
+  title: "Insurance & Protection | Dream Drives Dubai",
   description:
     "Learn about our comprehensive insurance and protection options for luxury car rentals in Dubai. Collision damage, theft protection, and roadside assistance available.",
   openGraph: {
-    title: "Insurance & Protection | Uptown Car Rental",
+    title: "Insurance & Protection | Dream Drives",
     description:
       "Comprehensive insurance and protection products for luxury car rentals in Dubai, UAE.",
   },

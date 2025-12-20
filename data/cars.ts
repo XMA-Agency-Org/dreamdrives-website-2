@@ -1,6 +1,14 @@
 import type { Car } from "@/types";
 import carImagesData from "./car-images.json";
 import cars from "./cars-data";
+import { isContentfulConfigured } from "@/lib/contentful";
+import {
+  getAllVehiclesFromContentful,
+  getVehicleBySlugFromContentful,
+  getFeaturedVehiclesFromContentful,
+  getVehiclesByBrandFromContentful,
+  getVehiclesByCategoryFromContentful,
+} from "@/lib/contentful-api";
 
 type CarImageData = {
   carName: string;
@@ -143,4 +151,64 @@ export function getCarsByBodyType(bodyType: string): Car[] {
 
 export function getAllCars(): Car[] {
   return cars.filter((car) => car.isAvailable);
+}
+
+export async function getAllCarsAsync(): Promise<Car[]> {
+  if (isContentfulConfigured()) {
+    const contentfulCars = await getAllVehiclesFromContentful();
+    if (contentfulCars.length > 0) {
+      return contentfulCars.filter((car) => car.isAvailable);
+    }
+  }
+  return getAllCars();
+}
+
+export async function getCarBySlugAsync(slug: string): Promise<Car | undefined> {
+  if (isContentfulConfigured()) {
+    const car = await getVehicleBySlugFromContentful(slug);
+    if (car) return car;
+  }
+  return getCarBySlug(slug);
+}
+
+export async function getFeaturedCarsAsync(): Promise<Car[]> {
+  if (isContentfulConfigured()) {
+    const contentfulCars = await getFeaturedVehiclesFromContentful();
+    if (contentfulCars.length > 0) {
+      return contentfulCars.filter((car) => car.isAvailable);
+    }
+  }
+  return getFeaturedCars();
+}
+
+export async function getCarsByBrandAsync(brand: string): Promise<Car[]> {
+  if (isContentfulConfigured()) {
+    const contentfulCars = await getVehiclesByBrandFromContentful(brand);
+    if (contentfulCars.length > 0) {
+      return contentfulCars.filter((car) => car.isAvailable);
+    }
+  }
+  return getCarsByBrand(brand);
+}
+
+export async function getCarsByCategoryAsync(category: string): Promise<Car[]> {
+  if (isContentfulConfigured()) {
+    const contentfulCars = await getVehiclesByCategoryFromContentful(category);
+    if (contentfulCars.length > 0) {
+      return contentfulCars.filter((car) => car.isAvailable);
+    }
+  }
+  return getCarsByCategory(category);
+}
+
+export async function getSimilarCarsAsync(car: Car, limit: number = 4): Promise<Car[]> {
+  const allCars = await getAllCarsAsync();
+  return allCars
+    .filter(
+      (c) =>
+        c.id !== car.id &&
+        c.isAvailable &&
+        (c.brand === car.brand || c.category === car.category),
+    )
+    .slice(0, limit);
 }

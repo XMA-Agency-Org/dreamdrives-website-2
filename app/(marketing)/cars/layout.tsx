@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Cars for Rent | Uptown Rent a Car Dubai",
+  title: "Luxury Cars for Rent | Dream Drives Dubai",
   description:
-    "Browse our complete collection of luxury and exotic cars in Dubai. Rolls Royce, Lamborghini, Ferrari, Bentley, Porsche and more available for rent.",
+    "Browse our complete collection of luxury cars in Dubai. Mercedes, BMW, Range Rover, and more premium vehicles available for rent.",
 };
 
 export default function CarsLayout({

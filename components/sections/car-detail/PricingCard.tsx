@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { Heading, Text, Button } from "@/components/ui";
 import { formatPrice, getCarInquiryUrl } from "@/lib/utils";
 import { COMPANY } from "@/lib/constants";
+import { trackPhoneClick } from "@/lib/analytics";
 import type { CarPricing } from "@/types";
 import { Car } from "@/types";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
@@ -75,6 +76,7 @@ export function PricingCard({ car }: PricingCardProps) {
         <Button
           as="a"
           href={`tel:${COMPANY.phoneClean}`}
+          onClick={() => trackPhoneClick("car_detail")}
           variant="secondary"
           size="lg"
           className="w-full"

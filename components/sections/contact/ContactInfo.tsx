@@ -5,6 +5,7 @@ import { Heading, Text } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { COMPANY, LOCATIONS } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { trackPhoneClick } from "@/lib/analytics";
 
 interface ContactItem {
   icon: typeof Phone;
@@ -59,6 +60,9 @@ export function ContactInfo({ className }: ContactInfoProps) {
                 href={item.href}
                 target={item.isExternal ? "_blank" : undefined}
                 rel={item.isExternal ? "noopener noreferrer" : undefined}
+                onClick={() => {
+                  if (item.icon === Phone) trackPhoneClick("contact_info");
+                }}
                 className="flex items-start gap-4 p-4 bg-background-elevated border border-border hover:border-primary-500/50 transition-all group rounded-md"
               >
                 <div className="flex-none w-12 h-12 bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500/30 transition-colors rounded-md">

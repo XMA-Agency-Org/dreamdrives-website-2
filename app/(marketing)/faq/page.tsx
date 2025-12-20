@@ -4,7 +4,7 @@ import { FAQSection } from "@/components/sections/shared/FAQSection";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "FAQ - Luxury Car Rental Dubai | Uptown Rent a Car",
+  title: "FAQ - Luxury Car Rental Dubai | Dream Drives",
   description:
     "Find answers to frequently asked questions about renting luxury cars in Dubai. Learn about documents required, age limits, insurance, and more.",
 };

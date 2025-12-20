@@ -9,7 +9,6 @@ interface HeadingProps {
   children: React.ReactNode;
   className?: string;
   gradient?: boolean;
-  grunge?: boolean;
 }
 
 const sizeStyles: Record<HeadingSize, string> = {
@@ -23,29 +22,18 @@ const sizeStyles: Record<HeadingSize, string> = {
   hero: "text-4xl font-black tracking-tighter sm:text-5xl lg:text-7xl xl:text-8xl",
 };
 
-const grungeEligibleSizes: HeadingSize[] = ["hero", "3xl", "2xl", "xl"];
-
-function shouldApplyGrunge(size: HeadingSize, grunge?: boolean): boolean {
-  if (grunge !== undefined) return grunge;
-  return grungeEligibleSizes.includes(size);
-}
-
 export function Heading({
   as: Component = "h2",
   size = "lg",
   children,
   className,
   gradient = false,
-  grunge,
 }: HeadingProps) {
-  const useGrungeFont = shouldApplyGrunge(size, grunge);
-
   return (
     <Component
       className={cn(
-        "text-foreground",
+        "text-foreground font-display",
         sizeStyles[size],
-        useGrungeFont && "font-grunge",
         gradient && "text-gradient",
         className
       )}

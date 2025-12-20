@@ -4,13 +4,13 @@ import { PrivacyContent } from "@/components/sections/privacy";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Uptown Car Rental Dubai",
+  title: "Privacy Policy | Dream Drives Dubai",
   description:
-    "Learn how Uptown Rent A Car LLC collects, uses, and protects your personal information. Read our privacy and cookie policy.",
+    "Learn how Dream Drives collects, uses, and protects your personal information. Read our privacy and cookie policy.",
   openGraph: {
-    title: "Privacy Policy | Uptown Car Rental",
+    title: "Privacy Policy | Dream Drives",
     description:
-      "Privacy and cookie policy for Uptown Rent A Car LLC in Dubai, UAE.",
+      "Privacy and cookie policy for Dream Drives in Dubai, UAE.",
   },
 };
 

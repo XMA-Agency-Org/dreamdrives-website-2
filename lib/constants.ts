@@ -1,53 +1,38 @@
 /**
- * Uptown Dubai - Constants
+ * Dream Drives - Constants
  */
 
 export const COMPANY = {
-  name: "Uptown Rent a Car",
+  name: "Dream Drives",
   tagline: "Drive Your Dream",
-  phone: "+971 58 68 77777",
-  phoneClean: "971586877777",
-  secondaryPhone: "+971 4 362 3817",
-  secondaryPhoneClean: "97143623817",
-  email: "info@uptowndxb.com",
-  website: "https://uptowndxb.com",
+  phone: "+971 54 555 5402",
+  phoneClean: "971545555402",
+  secondaryPhone: "+971 54 555 5403",
+  secondaryPhoneClean: "971545555403",
+  email: "info@dreamdrives.com",
+  website: "https://dreamdrives.com",
 } as const;
 
 export const LOCATIONS = [
   {
-    id: "head-office",
-    name: "Head Office",
-    address: "Al Quoz Industrial Area 1",
+    id: "main-office",
+    name: "Main Office",
+    address: "Office 405, Business Avenue, Port Saeed Road",
     city: "Dubai",
-    mapUrl: "https://maps.google.com/?q=Uptown+Rent+A+Car+Al+Quoz+Dubai",
-  },
-  {
-    id: "w-hotel",
-    name: "W Dubai The Palm",
-    address: "W Dubai The Palm Hotel, Ground Floor",
-    city: "Palm Jumeirah, Dubai",
-    mapUrl: "https://maps.google.com/?q=W+Dubai+The+Palm+Hotel",
-  },
-  {
-    id: "business-bay",
-    name: "Business Bay",
-    address: "Empire Heights Towers, 95 Marasi Drive",
-    city: "Business Bay, Dubai",
-    mapUrl: "https://maps.google.com/?q=Empire+Heights+Business+Bay+Dubai",
+    mapUrl: "https://maps.google.com/?q=Business+Avenue+Port+Saeed+Dubai",
   },
 ] as const;
 
 export const SOCIAL = {
-  instagram: "https://instagram.com/uptowndxb",
-  facebook: "https://facebook.com/uptowndxb",
-  youtube: "https://youtube.com/@uptowndxb",
-  tiktok: "https://tiktok.com/@uptowndxb",
+  instagram: "https://instagram.com/dreamdrives",
+  facebook: "https://facebook.com/dreamdrives",
+  youtube: "https://youtube.com/@dreamdrives",
+  tiktok: "https://tiktok.com/@dreamdrives",
 } as const;
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Cars", href: "/cars" },
-  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;

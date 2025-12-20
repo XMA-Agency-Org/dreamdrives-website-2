@@ -84,7 +84,7 @@ export function ExperienceSection() {
               <span className="text-gradient">Car Rental</span>
             </Heading>
             <Text color="muted" size="lg" className="mb-8 leading-relaxed">
-              At Uptown Dubai, we deliver an experience that transcends
+              At Dream Drives, we deliver an experience that transcends
               traditional car rental. From the moment you contact us to the
               second you return the keys, every interaction is crafted for your
               satisfaction.

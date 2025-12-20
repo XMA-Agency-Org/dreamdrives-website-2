@@ -9,5 +9,3 @@ export type {
 } from "./car";
 
 export type { Brand } from "./brand";
-
-export type { BlogPost, BlogCategory, BlogFilters } from "./blog";

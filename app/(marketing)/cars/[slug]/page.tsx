@@ -40,7 +40,7 @@ export async function generateMetadata({
     title: `Rent ${car.name} in Dubai`,
     description: `${car.description} Available for rent starting from ${car.pricing.daily} AED/day.`,
     openGraph: {
-      title: `Rent ${car.name} in Dubai | Uptown`,
+      title: `Rent ${car.name} in Dubai | Dream Drives`,
       description: car.tagline,
       images: car.images[0]?.src ? [car.images[0].src] : [],
     },

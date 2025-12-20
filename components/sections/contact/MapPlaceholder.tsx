@@ -16,13 +16,13 @@ export function MapPlaceholder({ className }: MapPlaceholderProps) {
         )}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28882.57015091845!2d55.284715!3d25.192386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682451441c35%3A0xd41f8110a04d2fd9!2sUptown%20Rent%20a%20Car%20-%20Luxury%20Cars%20for%20Rent%20in%20Dubai!5e0!3m2!1sen!2sae!4v1764700687565!5m2!1sen!2sae"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.285050459924!2d55.32!3d25.26!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc61e76d379%3A0x5d07f5b0a3ffa4ef!2sPort%20Saeed%20-%20Deira%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sae!4v1702900000000!5m2!1sen!2sae"
           className="absolute inset-0 w-full h-full"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Uptown Rent a Car Location"
+          title="Dream Drives Location"
         />
       </div>
     </RevealOnScroll>

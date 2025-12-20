@@ -14,92 +14,82 @@ import type { Testimonial } from "@/components/ui";
 
 const testimonials: Testimonial[] = [
   {
-    text: "I've rented luxury cars in Dubai several times from this company, and every experience has been nothing short of exceptional. The cars are always spotless, stylish, and in perfect condition. Their service is truly top-notch — professional and reliable.",
-    name: "Anass Elamrani",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocI6THU2smtdDL1tSJ5aHJZTSbpIblvfVND0RaFe_0hXpLvIBw=s64-c-rp-mo-br100",
+    text: "Absolutely outstanding experience! I rented a G Wagon for 5 days from Dream Drives Rent A Car, and everything from start to finish was seamless. The vehicle was in immaculate condition.",
+    name: "Gappu Mohite",
     role: "Google Review",
   },
   {
-    text: "Super happy with Uptown Rent a Car! They delivered the car straight to our hotel and picked it up again when we were done, super convenient. The whole process was smooth from start to finish.",
-    name: "Kenneth Christensen",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocLAUWgaVX32JIi0WDDQsUGaKazTG312N7x1-UfKFRtUKsFmdQ=s64-c-rp-mo-br100",
+    text: "I had an absolutely great experience with Dream Drives Rent a Car. The service was fast and professional, and the car I rented was clean and ready to go. The staff were friendly, helpful, and guided me through everything from booking to return.",
+    name: "Majd Hitalani",
     role: "Google Review",
   },
   {
-    text: "I rent a Range Rover Evoque for 450 AED daily. The car was nice, clean and smell good. You can choose the pick up and drop off localisation without additional fee. Highly recommended!",
-    name: "Binh Tran Ba",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocJoq1hwBiU5TqjBsjqB5HdxrY8ZVl-vV4_HAgO5AiUX521T1w=s64-c-rp-mo-br100",
+    text: "I had a great experience with Dream Drives in Dubai. The booking was easy, the team was very helpful, and the car was in perfect condition. Everything went smoothly from start to finish. I highly recommend Dream Drives if you want to enjoy Dubai in style.",
+    name: "Nado M",
     role: "Google Review",
   },
   {
-    text: "I've been dealing with this car rental company in Dubai for years, and their service has always been excellent. I would like to thank Mr. Hameed for his outstanding professionalism and continuous support over the years.",
-    name: "fmk1681",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocLUXvxwpssClMIToFKcXjLyRHBaEEYZtmpuu7Sv6pV_bleAYQ=s64-c-rp-mo-br100",
+    text: "Dream drives the name says it all. The company cars and their service is impeccable. I thoroughly enjoyed my time with Mr. Guri who was our chauffeur and took us all around Dubai. Very clean and new cars, on time and always has a smiling face.",
+    name: "Manan Mehta",
+    role: "Local Guide",
+  },
+  {
+    text: "I had an excellent experience with this car company. From start to finish, the process was smooth and effortless. The team was highly professional, knowledgeable, and attentive, making everything stress-free and straightforward.",
+    name: "Hamza Baban",
     role: "Google Review",
   },
   {
-    text: "Landed at DXB 4am and car was waiting for me at arrivals. Great service from Ubaid and Rasheed. Car was immaculate. Highly recommend Uptown!",
-    name: "Ben",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocJhHLJYWE8Kl5JPndkCP53xZTmO5jp2Xf2tLroJ1t_aSDl6yg=s64-c-rp-mo-br100",
+    text: "Best car rental in Dubai. Wide variety of cars at top quality not giving me any problems. This is the right place to go to if you're going to be in Dubai.",
+    name: "Yousef Alfaraj",
     role: "Google Review",
   },
   {
-    text: "Rented 3 days from Uptown Rent a Car. Staff Ubaid and other staffs are friendly. Love the Corvette car. Will come back again to rent Ferrari. Transaction is fast and easy going.",
-    name: "Eugene Tan",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocKgpQmeh3S5G7oZBEHj6UnIUDmRjylClZP6I_7gdXj7-ovZbw=s64-c-rp-mo-ba2-br100",
+    text: "I had an excellent experience with this car rental company. Everything went smoothly, and Guri provided exceptional assistance. He's a genuinely nice and sweet guy who made the process transparent and fair. I highly recommend their services.",
+    name: "Zaid Khan",
     role: "Google Review",
   },
   {
-    text: "Good service. They delivered and picked up the car in time. The car in good condition. Full pack of documents. Quick response. Riyas arranged the car pick up in a very professional way.",
-    name: "Nata KriGo",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocKEgwJQLTm5SCHL0Vyoo8Q1oHPsU9qAyd4bzPcmsqJm_eFHjw=s64-c-rp-mo-ba3-br100",
+    text: "Outstanding service, rental process was quick and smooth, the vehicle was spotless. Highly recommended for anyone looking for premium cars. Well done Dream Drives!",
+    name: "Firas Bardan",
+    role: "Local Guide",
+  },
+  {
+    text: "Very flexible team and always support with every request I have. Any car needed at anytime they are your go to company with the best prices too.",
+    name: "Prithvi Jeswani",
     role: "Google Review",
   },
   {
-    text: "Wonderful experience from Ali and the team. Requested a car at 11pm the night before, and it was delivered to my apartment at 8am the next day. Would definitely use again.",
-    name: "Punit Rawal",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocLewoKWl8xNYrCDRGI0LTggmlPntIud8AVXCtVBLQE8M24LVw=s64-c-rp-mo-br100",
+    text: "Best car rental service in the whole of UAE! Professional, quick and efficient with amazing options. Special thanks to Omar!",
+    name: "Nana Nasser",
     role: "Google Review",
   },
   {
-    text: "Just rented a Lambo and the whole experience was unreal. Muhammad Mubashir was genuinely a pleasure to deal with. He was polite, patient, and made everything feel effortless. The door to door service was spot on.",
-    name: "Jon Goodwin",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocJ3BrnXSOWRSFmtmm_a-wyh16rOngJ5P6c1MH5esYWi_TTBpw=s64-c-rp-mo-br100",
+    text: "The cars are new and the company staff are very respectful. They delivered the car to me upon arrival at the airport and received it upon departure at the airport.",
+    name: "Abdulkader Khazneh",
     role: "Google Review",
   },
   {
-    text: "I rented a Ferrari F8 Spider in Dubai from Ali and I'm absolutely impressed! Ali delivered the car to my hotel free of charge and took perfect care of everything from start to finish — super friendly, reliable, and professional.",
-    name: "Mehmet Örün",
-    image:
-      "https://lh3.googleusercontent.com/a/ACg8ocIxNS7MphEA5TUxrzeSL3TYO--FLCBAze0QjgxIUUEbHxYiqA=s64-c-rp-mo-ba2-br100",
+    text: "I had a great experience with Dream Drives Rent a Car. The process was smooth, the car was clean, and the staff were very helpful.",
+    name: "Rama Alhammouri",
     role: "Google Review",
   },
   {
-    text: "We rented two high-end cars here in Dubai and the service was exceptional from start to finish. The team was professional, attentive, and made the whole experience smooth and enjoyable. The vehicles were in perfect condition.",
-    name: "KYH Grand Capital",
-    role: "Google Review",
+    text: "These guys were great, respectful, car was clean. Delivery on point. Great service, good people.",
+    name: "A. Al.",
+    role: "Local Guide",
   },
   {
-    text: "It is the first time for me to rent and to drive a car outside of my country. The cooperation, prices, and the customer service were super good starting from booking to return.",
-    name: "Hussain T. Karawi",
-    role: "Google Review",
+    text: "Just rented a car from Dream Drives Rent A Car. I was very happy with the car I received. Excellent service all around.",
+    name: "Yousuf Yonan",
+    role: "Local Guide",
   },
 ];
 
-const firstColumn = testimonials.slice(0, 4);
-const secondColumn = testimonials.slice(4, 8);
-const thirdColumn = testimonials.slice(8, 12);
+const firstColumn = testimonials.slice(0, 5);
+const secondColumn = testimonials.slice(5, 10);
+const thirdColumn = testimonials.slice(10, 14);
 
-const GOOGLE_REVIEWS_URL = "https://maps.app.goo.gl/YXxgYeZG9WwFsYe79";
+const GOOGLE_REVIEWS_URL = "https://www.google.com/search?client=firefox-b-d&hs=jn0o&sca_esv=0f93a91dde52a008&channel=entpr&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_0HMqqUU5FT7B1n9BcTYNFDMwsoYEpZJ8eyJR3KcML3ZEi3eSF1EjY7CDfl-hLMiNO10gqS6tZYpxC3eSzIAVb764JF_6sN5d8ZaCdPrZ80_t_HQQ%3D%3D&q=Dream+Drives+Rent+A+Car+Reviews&sa=X&ved=2ahUKEwjrhYbzlcyRAxXghf0HHUeOGIYQ0bkNegQIOBAE&biw=1348&bih=833&dpr=1.2";
 
 function GoogleRatingBadge() {
   return (
@@ -129,7 +119,7 @@ function GoogleRatingBadge() {
       </svg>
       <div className="flex flex-col">
         <div className="flex items-center gap-1.5">
-          <span className="text-xl font-semibold text-foreground">4.9</span>
+          <span className="text-xl font-semibold text-foreground">5.0</span>
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -140,7 +130,7 @@ function GoogleRatingBadge() {
           </div>
         </div>
         <span className="text-sm text-muted-foreground">
-          2,664 Google Reviews
+          70 Google Reviews
         </span>
       </div>
     </a>
@@ -163,7 +153,7 @@ export function TestimonialsSection() {
           </Badge>
 
           <Heading as="h2" size="lg" className="mt-5 text-center">
-            4.9 Stars. 2,664 Reviews.
+            5 Stars. 70 Reviews.
           </Heading>
 
           <Text color="muted" size="lg" className="text-center mt-5 max-w-md">

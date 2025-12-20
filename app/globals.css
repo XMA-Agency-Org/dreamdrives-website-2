@@ -2,49 +2,52 @@
 @plugin "@tailwindcss/typography";
 
 /* ============================================
-   UPTOWN DUBAI - DESIGN SYSTEM
-   Luxury Car Rental | "Gangster Luxury" Aesthetic
+   DREAM DRIVES - DESIGN SYSTEM
+   Luxury Car Rental | "Refined Elegance" Aesthetic
    All colors in OKLCH - Never use hex/rgb
    ============================================ */
 
 @theme {
-  /* ========== BRAND COLORS (ORANGE) ========== */
+  /* ========== BRAND COLORS (NAVY BLUE) ========== */
 
-  --color-carrot-50: oklch(0.976 0.011 45.81);
-  --color-carrot-100: oklch(0.95 0.023 44.38);
-  --color-carrot-200: oklch(0.892 0.054 45.72);
-  --color-carrot-300: oklch(0.842 0.085 48.06);
-  --color-carrot-400: oklch(0.786 0.128 52.79);
-  --color-carrot-500: oklch(
-    0.733 0.155 57.12
-  ); /* Primary brand color: #f08c35 converted to OKLCH */
-  --color-carrot-600: oklch(0.613 0.129 56.95);
-  --color-carrot-700: oklch(0.499 0.106 57.08);
-  --color-carrot-800: oklch(0.376 0.079 57.54);
-  --color-carrot-900: oklch(0.263 0.055 58.63);
-  --color-carrot-950: oklch(0.201 0.042 60);
+  --color-navy-50: oklch(0.97 0.015 255);
+  --color-navy-100: oklch(0.93 0.03 255);
+  --color-navy-200: oklch(0.86 0.06 255);
+  --color-navy-300: oklch(0.76 0.10 255);
+  --color-navy-400: oklch(0.65 0.14 255);
+  --color-navy-500: oklch(0.55 0.16 250);
+  --color-navy-600: oklch(0.45 0.14 250);
+  --color-navy-700: oklch(0.38 0.12 250);
+  --color-navy-800: oklch(0.30 0.09 250);
+  --color-navy-900: oklch(0.22 0.06 250);
+  --color-navy-950: oklch(0.15 0.04 250);
 
-  --color-primary-50: var(--color-carrot-50);
-  --color-primary-100: var(--color-carrot-100);
-  --color-primary-200: var(--color-carrot-200);
-  --color-primary-300: var(--color-carrot-300);
-  --color-primary-400: var(--color-carrot-400);
-  --color-primary-500: var(--color-carrot-500);
-  --color-primary-600: var(--color-carrot-600);
-  --color-primary-700: var(--color-carrot-700);
-  --color-primary-800: var(--color-carrot-800);
-  --color-primary-900: var(--color-carrot-900);
-  --color-primary-950: var(--color-carrot-950);
+  --color-primary-50: var(--color-navy-50);
+  --color-primary-100: var(--color-navy-100);
+  --color-primary-200: var(--color-navy-200);
+  --color-primary-300: var(--color-navy-300);
+  --color-primary-400: var(--color-navy-400);
+  --color-primary-500: var(--color-navy-500);
+  --color-primary-600: var(--color-navy-600);
+  --color-primary-700: var(--color-navy-700);
+  --color-primary-800: var(--color-navy-800);
+  --color-primary-900: var(--color-navy-900);
+  --color-primary-950: var(--color-navy-950);
 
-  /* ========== SEMANTIC COLORS ========== */
-  --color-background: hsl(0, 0, 5%);
-  --color-background-elevated: hsl(0, 0, 8%);
-  --color-background-subtle: hsl(0, 0, 12%);
+  /* ========== SEMANTIC COLORS (Dark Mode Default) ========== */
+  --color-background: oklch(0.06 0 0);
+  --color-background-elevated: oklch(0.10 0 0);
+  --color-background-subtle: oklch(0.13 0 0);
   --color-foreground: oklch(0.98 0 0);
-  --color-foreground-muted: oklch(0.8 0 0);
-  --color-foreground-subtle: oklch(0.7 0 0);
-  --color-border: oklch(0.2 0 0);
-  --color-border-hover: oklch(0.3 0 0);
+  --color-foreground-muted: oklch(0.70 0 0);
+  --color-foreground-subtle: oklch(0.50 0 0);
+  --color-border: oklch(0.20 0 0);
+  --color-border-hover: oklch(0.30 0 0);
+
+  /* Surface colors for components */
+  --color-surface: oklch(0.15 0 0);
+  --color-surface-hover: oklch(0.18 0 0);
+  --color-input-bg: oklch(0.12 0 0);
 
   /* ========== FEEDBACK COLORS ========== */
   --color-success: oklch(0.72 0.17 142);
@@ -57,9 +60,8 @@
 
   /* ========== TYPOGRAPHY ========== */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-grunge: var(--font-grunge), ui-sans-serif, system-ui, sans-serif;
-  --font-display-alt: var(--font-display-alt), ui-sans-serif, system-ui,
+  --font-display: var(--font-display), "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display-alt: var(--font-display-alt), "Bebas Neue", ui-sans-serif, system-ui,
     sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
@@ -81,9 +83,9 @@
   --container-wide: 1536px;
 
   /* ========== BORDER RADIUS ========== */
-  /* Boxy aesthetic - minimal radius for grunge/aggressive look */
+  /* Refined elegance - subtle radius for sophisticated look */
   /* Change --radius-base to adjust all radii globally */
-  --radius-base: 0rem; /* 0 = sharp corners, 0.25rem = subtle, 0.5rem = soft */
+  --radius-base: 0.25rem; /* 0 = sharp corners, 0.25rem = subtle, 0.5rem = soft */
 
   --radius-none: 0rem;
   --radius-sm: calc(var(--radius-base) + 0.125rem);
@@ -96,6 +98,27 @@
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite;
+}
+
+/* ========== LIGHT MODE OVERRIDES ========== */
+[data-theme="light"] {
+  --color-background: oklch(0.985 0 0);
+  --color-background-elevated: oklch(0.98 0 0);
+  --color-background-subtle: oklch(0.96 0 0);
+  --color-foreground: oklch(0.15 0 0);
+  --color-foreground-muted: oklch(0.35 0 0);
+  --color-foreground-subtle: oklch(0.50 0 0);
+  --color-border: oklch(0.88 0 0);
+  --color-border-hover: oklch(0.80 0 0);
+
+  /* Surface colors for light mode */
+  --color-surface: oklch(0.96 0 0);
+  --color-surface-hover: oklch(0.94 0 0);
+  --color-input-bg: oklch(0.98 0 0);
+
+  /* Glass effects for light mode */
+  --color-glass: oklch(1 0 0 / 0.85);
+  --color-glass-border: oklch(0.85 0 0 / 0.5);
 }
 
 @keyframes scroll {
@@ -122,8 +145,13 @@ body {
 
 /* ========== SELECTION ========== */
 ::selection {
-  background-color: oklch(0.72 0.18 50 / 0.3);
+  background-color: oklch(0.55 0.16 250 / 0.3);
   color: var(--color-foreground);
+}
+
+[data-theme="light"] ::selection {
+  background-color: oklch(0.55 0.16 250 / 0.25);
+  color: oklch(0.15 0 0);
 }
 
 /* ========== SCROLLBAR (Webkit) ========== */
@@ -137,12 +165,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-neutral-700);
+  background: oklch(0.35 0 0);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-neutral-600);
+  background: oklch(0.45 0 0);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: oklch(0.78 0 0);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.70 0 0);
 }
 
 /* ========== FOCUS STYLES ========== */
@@ -195,10 +231,10 @@ body {
   pointer-events: none;
 }
 
-/* Grunge headline with glow */
+/* Headline with subtle glow effect */
 .grunge-heading {
-  font-family: var(--font-grunge);
-  filter: drop-shadow(0 0 30px oklch(0.72 0.18 50 / 0.5));
+  font-family: var(--font-display);
+  filter: drop-shadow(0 0 30px oklch(0.55 0.16 250 / 0.3));
 }
 
 /* ========== ANIMATIONS ========== */
@@ -274,7 +310,6 @@ body {
   cursor: pointer;
   position: relative;
   white-space: nowrap;
-  color: var(--color-foreground);
 }
 
 .link::before,

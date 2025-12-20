@@ -6,6 +6,7 @@ import { Container, Heading, Text, Button, Badge, Section } from "@/components/u
 import { RevealOnScroll } from "@/components/animation";
 import { COMPANY } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { trackPhoneClick } from "@/lib/analytics";
 
 export function CTASection() {
   return (
@@ -50,6 +51,7 @@ export function CTASection() {
             <Button
               as="a"
               href={`tel:${COMPANY.phoneClean}`}
+              onClick={() => trackPhoneClick("cta_section")}
               variant="secondary"
               size="lg"
               leftIcon={<Phone className="w-5 h-5" />}

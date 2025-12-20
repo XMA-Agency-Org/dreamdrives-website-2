@@ -1,10 +1,10 @@
-# Uptown Dubai - Design System
+# Dream Drives - Design System
 
 ## Brand Identity
-- **Client**: Uptown Dubai - Luxury/Exotic Car Rental
-- **Aesthetic**: Bold & Aggressive + Minimalist Premium ("Gangster Luxury")
+- **Client**: Dream Drives - Luxury Car Rental Dubai
+- **Aesthetic**: Refined Elegance - sophisticated, modern, premium
 - **Theme**: Dark mode primary
-- **Target**: Tourists, visitors, influencers, content creators
+- **Target**: Tourists, visitors, business travelers, luxury seekers
 
 ---
 
@@ -12,20 +12,20 @@
 
 All colors use OKLCH color space. Never use hex or RGB values.
 
-### Brand Colors (Orange)
+### Brand Colors (Navy/Blue)
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--color-primary-50` | `oklch(0.98 0.02 50)` | Lightest tint |
-| `--color-primary-100` | `oklch(0.95 0.05 50)` | Light backgrounds |
-| `--color-primary-200` | `oklch(0.90 0.10 50)` | Light accents |
-| `--color-primary-300` | `oklch(0.85 0.14 50)` | Hover states |
-| `--color-primary-400` | `oklch(0.78 0.17 52)` | Secondary buttons |
-| `--color-primary-500` | `oklch(0.72 0.18 50)` | **Primary brand color** |
-| `--color-primary-600` | `oklch(0.65 0.17 48)` | Hover on primary |
-| `--color-primary-700` | `oklch(0.55 0.15 46)` | Active states |
-| `--color-primary-800` | `oklch(0.45 0.12 44)` | Dark accents |
-| `--color-primary-900` | `oklch(0.35 0.09 42)` | Darkest shade |
+| `--color-primary-50` | `oklch(0.97 0.015 255)` | Lightest tint |
+| `--color-primary-100` | `oklch(0.93 0.03 255)` | Light backgrounds |
+| `--color-primary-200` | `oklch(0.86 0.06 255)` | Light accents |
+| `--color-primary-300` | `oklch(0.76 0.10 255)` | Hover states |
+| `--color-primary-400` | `oklch(0.65 0.14 255)` | Secondary buttons |
+| `--color-primary-500` | `oklch(0.55 0.16 250)` | **Primary brand color** |
+| `--color-primary-600` | `oklch(0.45 0.14 250)` | Hover on primary |
+| `--color-primary-700` | `oklch(0.38 0.12 250)` | Active states |
+| `--color-primary-800` | `oklch(0.30 0.09 250)` | Dark accents |
+| `--color-primary-900` | `oklch(0.22 0.06 250)` | Darkest shade |
 
 ### Neutral Colors (Dark Theme)
 
@@ -61,32 +61,16 @@ All colors use OKLCH color space. Never use hex or RGB values.
 ## Typography
 
 ### Font Families
-- **Grunge/Display**: Rubik Dirt (H1, H2, large headlines only)
+- **Display**: Outfit (headings, hero text)
 - **Display Alt**: Bebas Neue (labels, badges, condensed text)
-- **Body**: Inter (paragraphs, UI text, card headings)
-- **Mono**: JetBrains Mono (code, specs)
-
-### Grunge Typography Usage
-
-| Element | Font | Rationale |
-|---------|------|-----------|
-| H1, H2 (hero, 2xl, xl sizes) | Rubik Dirt | Grunge texture works at scale |
-| H3, H4, card titles | Inter (semibold) | Better readability at smaller sizes |
-| Body text | Inter | Clean, professional |
-| Labels/badges | Bebas Neue or Inter uppercase | Condensed, punchy |
-
-The `Heading` component automatically applies Rubik Dirt for sizes: `hero`, `3xl`, `2xl`, `xl`.
-Use `grunge={false}` prop to override and keep Inter for any size.
+- **Body**: Inter (paragraphs, UI text, card content)
 
 ### CSS Variables
 ```css
---font-grunge: "Rubik Dirt", ui-sans-serif, system-ui, sans-serif;
+--font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
 --font-display-alt: "Bebas Neue", ui-sans-serif, system-ui, sans-serif;
+--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 ```
-
-### Utility Classes
-- `.grunge-heading` - Applies grunge font with orange glow effect
-- `.noise-texture` - Adds subtle noise texture overlay for grunge aesthetic
 
 ### Font Sizes (Modular Scale 1.25)
 
@@ -104,7 +88,6 @@ Use `grunge={false}` prop to override and keep Inter for any size.
 | `text-6xl` | 3.75rem (60px) | Display |
 | `text-7xl` | 4.5rem (72px) | Large display |
 | `text-8xl` | 6rem (96px) | Hero |
-| `text-9xl` | 8rem (128px) | Giant hero |
 
 ### Font Weights
 - `font-normal`: 400 (body text)
@@ -113,37 +96,33 @@ Use `grunge={false}` prop to override and keep Inter for any size.
 - `font-bold`: 700 (headings)
 - `font-black`: 900 (hero headlines)
 
-### Letter Spacing
-- `tracking-tighter`: -0.05em (hero headlines)
-- `tracking-tight`: -0.025em (headings)
-- `tracking-normal`: 0 (body)
-- `tracking-wide`: 0.025em (labels)
-- `tracking-widest`: 0.1em (uppercase labels)
-
 ---
 
 ## Border Radius System
 
-Use standard Tailwind border radius utilities for consistent styling.
+Uses soft corners for a refined, elegant feel.
+
+### Base Radius
+```css
+--radius-base: 0.25rem; /* 4px */
+```
 
 ### Radius Scale
 
 | Class | Usage |
 |-------|-------|
-| `rounded-none` | No rounding |
 | `rounded-sm` | Buttons, badges, small elements |
 | `rounded-md` | Cards, inputs, medium elements |
 | `rounded-lg` | Large cards, modals |
 | `rounded-xl` | Hero sections |
 | `rounded-2xl` | Full-page containers |
-| `rounded-full` | Circular elements (use sparingly) |
 
 ### Design Philosophy
 
-The boxy aesthetic reinforces the "Gangster Luxury" brand:
-- Sharp corners = aggressive, bold, confident
-- Minimal rounding = premium, intentional design
-- Consistent application = professional, cohesive look
+The soft corner aesthetic reinforces "Refined Elegance":
+- Subtle rounding = sophisticated, approachable
+- Consistent application = professional, cohesive
+- Not too round = maintains premium feel
 
 ---
 
@@ -161,7 +140,6 @@ The boxy aesthetic reinforces the "Gangster Luxury" brand:
 | `spacing-16` | 4rem (64px) | Section padding (mobile) |
 | `spacing-20` | 5rem (80px) | Large section gaps |
 | `spacing-24` | 6rem (96px) | Section padding (desktop) |
-| `spacing-32` | 8rem (128px) | Hero padding |
 
 ---
 
@@ -185,10 +163,7 @@ The boxy aesthetic reinforces the "Gangster Luxury" brand:
 
 ### Primitive Components (CVA)
 
-All primitive UI components use **class-variance-authority (CVA)** for variant management. This provides:
-- Type-safe variant props
-- Consistent API across components
-- Easy composition with `cn()` utility
+All primitive UI components use **class-variance-authority (CVA)** for variant management.
 
 Example Button implementation:
 ```tsx
@@ -199,13 +174,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "...",
-        secondary: "...",
+        primary: "bg-primary-500 text-white",
+        secondary: "bg-background-elevated text-foreground",
+        outline: "border border-primary-500 text-primary-500",
       },
       size: {
-        sm: "...",
-        md: "...",
-        lg: "...",
+        sm: "h-10 px-4 text-sm",
+        md: "h-12 px-6",
+        lg: "h-14 px-8 text-lg",
       },
     },
     defaultVariants: {
@@ -214,23 +190,19 @@ const buttonVariants = cva(
     },
   }
 );
-
-interface ButtonProps extends VariantProps<typeof buttonVariants> {
-  // additional props
-}
 ```
 
 ### Buttons
-- **Primary**: Orange background, dark text
+- **Primary**: Navy background, white text
 - **Secondary**: Dark background, white text
-- **Outline**: Transparent with orange border, orange text
+- **Outline**: Transparent with navy border, navy text
 - **Ghost**: Transparent, white text
-- Heights: 40px (sm), 48px (md), 56px (lg)
+- **WhatsApp**: Green background for WhatsApp CTAs
 
 ### Cards
 - Background: `--color-background-elevated`
 - Border: `--color-border`
-- Border radius: `var(--radius-md)` (controlled by radius system)
+- Border radius: `rounded-md`
 - No ambient glow decorations
 
 ### Inputs
@@ -247,129 +219,6 @@ interface ButtonProps extends VariantProps<typeof buttonVariants> {
 2. **Section Padding**: 64px (mobile), 128px (desktop)
 3. **Grid**: 12-column grid with 24px gutters
 4. **Breakpoints**: sm(640), md(768), lg(1024), xl(1280), 2xl(1536)
-
----
-
-## UI Component Library
-
-### Form Primitives
-
-All form components use CVA for variants and `forwardRef` for proper ref forwarding.
-
-#### Input
-```tsx
-import { Input } from "@/components/ui";
-
-<Input
-  label="Email"
-  placeholder="you@example.com"
-  variant="default" // or "error"
-  size="sm" | "md" | "lg"
-  error="Invalid email"
-  helperText="We'll never share your email"
-  leftIcon={<MailIcon />}
-  rightIcon={<CheckIcon />}
-/>
-```
-
-#### Textarea
-```tsx
-import { Textarea } from "@/components/ui";
-
-<Textarea
-  label="Message"
-  placeholder="Your message..."
-  rows={4}
-  maxLength={500}
-  showCount
-  variant="default" | "error"
-/>
-```
-
-#### Select
-```tsx
-import { Select, type SelectOption } from "@/components/ui";
-
-const options: SelectOption[] = [
-  { value: "option1", label: "Option 1" },
-  { value: "option2", label: "Option 2" },
-];
-
-<Select
-  label="Category"
-  options={options}
-  placeholder="Select an option"
-  variant="default" | "error"
-/>
-```
-
-#### FilterGroup
-```tsx
-import { FilterGroup, type FilterItem } from "@/components/ui";
-
-const items: FilterItem[] = [
-  { id: "all", label: "All" },
-  { id: "category1", label: "Category 1" },
-];
-
-<FilterGroup
-  title="Category"
-  items={items}
-  value={selectedValue}
-  onChange={setValue}
-  allOptionId="all"
-  scrollable={false}
-/>
-```
-
-### Layout Components
-
-#### MobileDrawer
-```tsx
-import { MobileDrawer } from "@/components/ui";
-
-<MobileDrawer
-  isOpen={isOpen}
-  onClose={() => setIsOpen(false)}
-  title="Filters"
->
-  {children}
-</MobileDrawer>
-```
-
-### Section Components
-
-#### PageHero
-Reusable hero section for marketing pages.
-
-```tsx
-import { PageHero } from "@/components/sections/shared";
-
-<PageHero
-  tagline="Our Story"
-  title="Welcome to"
-  gradientText="Uptown"
-  description="Your premium car rental partner"
-  align="left" | "center"
-  size="default" | "large"
-/>
-```
-
-#### CarCard (with variants)
-Unified car card with multiple display modes.
-
-```tsx
-import { CarCard } from "@/components/sections/cars";
-
-// Full variant: specs, pricing section, brand/year header
-<CarCard car={car} variant="full" />
-
-// Compact variant: image overlay style, used in grids
-<CarCard car={car} variant="compact" />
-
-// Minimal variant: smallest display, for similar cars
-<CarCard car={car} variant="minimal" showBadge={false} showInquiryButton={false} />
-```
 
 ---
 

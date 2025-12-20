@@ -32,10 +32,10 @@ export function formatNumber(num: number): string {
  * Generate WhatsApp URL with pre-filled message
  */
 export function getWhatsAppUrl(message?: string): string {
-  const phone = "971586877777";
+  const phone = "971545555402";
   const baseUrl = "https://api.whatsapp.com/send";
   const encodedMessage = encodeURIComponent(
-    message || "Hello Uptown, I'm interested in renting a car. Please share your prices and current offers."
+    message || "Hello Dream Drives, I'm interested in renting a car. Please share your prices and current offers."
   );
   return `${baseUrl}?phone=${phone}&text=${encodedMessage}`;
 }
@@ -44,7 +44,7 @@ export function getWhatsAppUrl(message?: string): string {
  * Generate WhatsApp URL for specific car inquiry
  */
 export function getCarInquiryUrl(carName: string, carYear: number): string {
-  const message = `Hello Uptown, I'm interested in renting the ${carYear} ${carName}. Please share availability and pricing.`;
+  const message = `Hello Dream Drives, I'm interested in renting the ${carYear} ${carName}. Please share availability and pricing.`;
   return getWhatsAppUrl(message);
 }
 

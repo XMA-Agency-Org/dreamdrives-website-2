@@ -19,7 +19,7 @@ export function Footer() {
             >
               <Image
                 src="/logo.png"
-                alt="Uptown Rent a Car"
+                alt="Dream Drives"
                 className="h-20 w-full"
                 width={120}
                 height={120}

@@ -55,10 +55,10 @@ export async function generateMetadata({
   const cars = getCarsByMarketingCategory(category);
 
   return {
-    title: `${categoryLabel} Cars for Rent in Dubai | Uptown Car Rental`,
+    title: `${categoryLabel} Cars for Rent in Dubai | Dream Drives`,
     description: `Browse our ${categoryLabel.toLowerCase()} car collection. ${cars.length} vehicles available for rent in Dubai with premium service.`,
     openGraph: {
-      title: `${categoryLabel} Car Rental Dubai | Uptown`,
+      title: `${categoryLabel} Car Rental Dubai | Dream Drives`,
       description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai. ${cars.length} vehicles available.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },

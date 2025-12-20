@@ -18,6 +18,7 @@ interface NavigationProps {
   currentView?: string;
   onNavigate?: (view: string) => void;
   onBack?: () => void;
+  isScrolled?: boolean;
 }
 
 const slideVariants = {
@@ -133,6 +134,7 @@ export function Navigation({
   currentView = "main",
   onNavigate,
   onBack,
+  isScrolled = true,
 }: NavigationProps) {
   const pathname = usePathname();
   const allBrands = useMemo(() => getAllBrandsWithCount(), []);
@@ -320,55 +322,27 @@ export function Navigation({
     );
   }
 
+  const getLinkClass = () =>
+    cn(
+      "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
+      isScrolled
+        ? "text-foreground-muted hover:text-foreground"
+        : "text-white/80 hover:text-white",
+    );
+
   return (
     <nav className={cn("hidden md:flex items-center gap-8", className)}>
-      <Link
-        href="/"
-        className={cn(
-          "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
-          pathname === "/"
-            ? "text-primary-500"
-            : "text-foreground-muted hover:text-foreground",
-        )}
-      >
+      <Link href="/" className={getLinkClass()}>
         Home
       </Link>
 
-      <CarsDropdown />
+      <CarsDropdown isScrolled={isScrolled} />
 
-      <Link
-        href="/blog"
-        className={cn(
-          "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
-          pathname?.startsWith("/blog")
-            ? "text-primary-500"
-            : "text-foreground-muted hover:text-foreground",
-        )}
-      >
-        Blog
-      </Link>
-
-      <Link
-        href="/about"
-        className={cn(
-          "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
-          pathname === "/about"
-            ? "text-primary-500"
-            : "text-foreground-muted hover:text-foreground",
-        )}
-      >
+      <Link href="/about" className={getLinkClass()}>
         About
       </Link>
 
-      <Link
-        href="/contact"
-        className={cn(
-          "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
-          pathname === "/contact"
-            ? "text-primary-500"
-            : "text-foreground-muted hover:text-foreground",
-        )}
-      >
+      <Link href="/contact" className={getLinkClass()}>
         Contact
       </Link>
     </nav>

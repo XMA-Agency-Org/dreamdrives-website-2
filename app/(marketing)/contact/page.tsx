@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Uptown Rent a Car. Available 24/7 for luxury car rental inquiries in Dubai. Call, WhatsApp, or visit our showroom.",
+    "Get in touch with Dream Drives. Available 24/7 for luxury car rental inquiries in Dubai. Call, WhatsApp, or visit our office.",
 };
 
 const hours: HoursItem[] = [

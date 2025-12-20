@@ -30,8 +30,8 @@ const badgeVariants = cva(
       },
       font: {
         default: "font-semibold",
-        display: "font-grunge tracking-wider",
-        grunge: "font-grunge",
+        display: "font-display tracking-wider",
+        accent: "font-display-alt",
       },
     },
     defaultVariants: {

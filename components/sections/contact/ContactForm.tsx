@@ -4,6 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { Heading, Text, Button, Input, Textarea, Select } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { trackContactFormSubmit } from "@/lib/analytics";
 
 const carCategories = [
   { value: "supercar", label: "Supercars" },
@@ -28,7 +29,13 @@ export function ContactForm({ className }: ContactFormProps) {
           Fill out the form below and we&apos;ll get back to you as soon as possible.
         </Text>
 
-        <form className="space-y-6">
+        <form
+          className="space-y-6"
+          onSubmit={(e) => {
+            e.preventDefault();
+            trackContactFormSubmit({ formType: "inquiry" });
+          }}
+        >
           <div className="grid sm:grid-cols-2 gap-6">
             <Input
               id="name"

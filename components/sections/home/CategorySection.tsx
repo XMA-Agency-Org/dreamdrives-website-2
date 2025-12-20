@@ -55,7 +55,7 @@ export function CategorySection({
   const filterFn = categoryFilters[category];
   const filteredCars = cars
     .filter((car) => filterFn(car) && car.isAvailable)
-    .slice(0, 4);
+    .slice(0, 3);
 
   if (filteredCars.length === 0) return null;
 
@@ -84,7 +84,7 @@ export function CategorySection({
 
       {/* Desktop Grid */}
       <Container className="hidden lg:block">
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-3 gap-6">
           {filteredCars.map((car, index) => (
             <CarCard key={car.id} car={car} index={index} variant="standard-minimal" />
           ))}

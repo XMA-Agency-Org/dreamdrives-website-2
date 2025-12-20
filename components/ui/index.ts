@@ -15,3 +15,4 @@ export { InitialsAvatar } from "./InitialsAvatar";
 export { Pagination } from "./Pagination";
 export { Section, sectionVariants } from "./Section";
 export { Marquee } from "./Marquee";
+export { ThemeSwitcher } from "./ThemeSwitcher";

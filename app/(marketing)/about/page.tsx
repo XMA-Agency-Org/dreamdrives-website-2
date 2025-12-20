@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Uptown Rent a Car - Dubai's premier luxury car rental service with over 5 years of experience and 100+ premium vehicles.",
+    "Learn about Dream Drives - Dubai's premier luxury car rental service with exceptional vehicles and outstanding customer service.",
 };
 
 const stats: StatItem[] = [
@@ -36,13 +36,13 @@ export default function AboutPage() {
         tagline="Our Story"
         title="Redefining Luxury"
         gradientText="Car Rental in Dubai"
-        description="Uptown Rent a Car was born from a passion for exceptional automobiles and an unwavering commitment to customer satisfaction. We believe that driving a luxury car should be an experience, not just transportation."
+        description="Dream Drives was born from a passion for exceptional automobiles and an unwavering commitment to customer satisfaction. We believe that driving a luxury car should be an experience, not just transportation."
         size="large"
       />
 
       <ShowroomImage
         src="/images/about/showroom.jpg"
-        alt="Uptown Dubai Showroom"
+        alt="Dream Drives Dubai Showroom"
       />
 
       <StatsGrid stats={stats} />

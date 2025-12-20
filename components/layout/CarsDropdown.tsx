@@ -55,9 +55,10 @@ const brandIconMap: Record<
 
 interface CarsDropdownProps {
   className?: string;
+  isScrolled?: boolean;
 }
 
-export function CarsDropdown({ className }: CarsDropdownProps) {
+export function CarsDropdown({ className, isScrolled = true }: CarsDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -116,8 +117,11 @@ export function CarsDropdown({ className }: CarsDropdownProps) {
       <button
         className={cn(
           "flex items-center gap-1 text-sm font-medium tracking-wide uppercase transition-colors duration-200",
-          "text-foreground-muted hover:text-foreground",
-          isOpen && "text-primary-500",
+          isOpen
+            ? "text-primary-500"
+            : isScrolled
+              ? "text-foreground-muted hover:text-foreground"
+              : "text-white/80 hover:text-white",
         )}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}

@@ -6,10 +6,11 @@ import { motion } from "motion/react";
 import { Menu, Phone } from "lucide-react";
 import { Navigation } from "./Navigation";
 import { MobileMenu } from "./MobileMenu";
-import { Container, Button } from "@/components/ui";
+import { Container, Button, ThemeSwitcher } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { COMPANY } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { trackPhoneClick } from "@/lib/analytics";
 import { navSlideDown } from "@/lib/animations";
 import Image from "next/image";
 
@@ -45,7 +46,7 @@ export function Header() {
             >
               <Image
                 src="/logo-wide.png"
-                alt="Uptown Rent a Car"
+                alt="Dream Drives"
                 className="h-8 md:h-10 w-fit"
                 width={120}
                 height={120}
@@ -55,18 +56,27 @@ export function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <Navigation />
+            <Navigation isScrolled={isScrolled} />
 
             {/* Actions */}
-            <div className="flex basis-0 grow ml-auto justify-end gap-4">
+            <div className="flex basis-0 grow ml-auto justify-end items-center gap-2 md:gap-4">
               {/* Phone - Desktop only */}
               <a
                 href={`tel:${COMPANY.phoneClean}`}
-                className="hidden lg:flex items-center gap-2 text-sm text-foreground-muted hover:text-foreground transition-colors"
+                onClick={() => trackPhoneClick("header")}
+                className={cn(
+                  "hidden lg:flex items-center gap-2 text-sm transition-colors",
+                  isScrolled
+                    ? "text-foreground-muted hover:text-foreground"
+                    : "text-white/80 hover:text-white"
+                )}
               >
                 <Phone className="w-4 h-4" />
                 <span>{COMPANY.phone}</span>
               </a>
+
+              {/* Theme Switcher */}
+              <ThemeSwitcher className="hidden md:flex" />
 
               {/* WhatsApp CTA - Desktop */}
               <Button
@@ -83,7 +93,12 @@ export function Header() {
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-3 text-foreground hover:text-primary-500 transition-colors"
+                className={cn(
+                  "md:hidden p-3 transition-colors",
+                  isScrolled
+                    ? "text-foreground hover:text-primary-500"
+                    : "text-white hover:text-white/80"
+                )}
                 aria-label="Open menu"
               >
                 <Menu className="w-6 h-6" />
