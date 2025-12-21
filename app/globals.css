@@ -35,9 +35,9 @@
   --color-primary-950: var(--color-navy-950);
 
   /* ========== SEMANTIC COLORS (Dark Mode Default) ========== */
-  --color-background: oklch(0.06 0 0);
-  --color-background-elevated: oklch(0.10 0 0);
-  --color-background-subtle: oklch(0.13 0 0);
+  --color-background: oklch(0.16 0 0);
+  --color-background-elevated: oklch(0.20 0 0);
+  --color-background-subtle: oklch(0.23 0 0);
   --color-foreground: oklch(0.98 0 0);
   --color-foreground-muted: oklch(0.70 0 0);
   --color-foreground-subtle: oklch(0.50 0 0);
@@ -389,4 +389,23 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* ========== THEME-AWARE VISIBILITY ========== */
+.show-on-dark {
+  opacity: 1;
+  transition: opacity 700ms ease-in-out;
+}
+
+.show-on-light {
+  opacity: 0;
+  transition: opacity 700ms ease-in-out;
+}
+
+[data-theme="light"] .show-on-dark {
+  opacity: 0;
+}
+
+[data-theme="light"] .show-on-light {
+  opacity: 1;
 }

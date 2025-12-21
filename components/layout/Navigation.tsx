@@ -18,7 +18,7 @@ interface NavigationProps {
   currentView?: string;
   onNavigate?: (view: string) => void;
   onBack?: () => void;
-  isScrolled?: boolean;
+  useHeroStyle?: boolean;
 }
 
 const slideVariants = {
@@ -134,7 +134,7 @@ export function Navigation({
   currentView = "main",
   onNavigate,
   onBack,
-  isScrolled = true,
+  useHeroStyle = false,
 }: NavigationProps) {
   const pathname = usePathname();
   const allBrands = useMemo(() => getAllBrandsWithCount(), []);
@@ -325,9 +325,9 @@ export function Navigation({
   const getLinkClass = () =>
     cn(
       "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200 link link--metis",
-      isScrolled
-        ? "text-foreground-muted hover:text-foreground"
-        : "text-white/80 hover:text-white",
+      useHeroStyle
+        ? "text-white/80 hover:text-white"
+        : "text-foreground-muted hover:text-foreground",
     );
 
   return (
@@ -336,7 +336,7 @@ export function Navigation({
         Home
       </Link>
 
-      <CarsDropdown isScrolled={isScrolled} />
+      <CarsDropdown useHeroStyle={useHeroStyle} />
 
       <Link href="/about" className={getLinkClass()}>
         About

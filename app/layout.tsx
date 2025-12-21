@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue, Outfit } from "next/font/google";
+import { Inter, Bebas_Neue, Outfit, Montserrat_Alternates, Montserrat } from "next/font/google";
 import Script from "next/script";
 import { Suspense } from "react";
 import { AnalyticsProvider, ThemeProvider } from "@/components/providers";
@@ -13,7 +13,7 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const outfit = Outfit({
+const outfit = Montserrat({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",

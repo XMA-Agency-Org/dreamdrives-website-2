@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { Menu, Phone } from "lucide-react";
 import { Navigation } from "./Navigation";
@@ -11,12 +12,15 @@ import { cn } from "@/lib/utils";
 import { COMPANY } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
 import { trackPhoneClick } from "@/lib/analytics";
-import { navSlideDown } from "@/lib/animations";
 import Image from "next/image";
 
 export function Header() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const isHomepage = pathname === "/";
+  const useHeroStyle = isHomepage && !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,30 +37,38 @@ export function Header() {
       <motion.header
         className={cn(
           "fixed top-0 left-0 py-6 right-0 z-50 transition-all duration-300 border",
-          isScrolled ? "glass" : "bg-transparent border-transparent",
+          useHeroStyle ? "bg-transparent border-transparent" : "glass",
         )}
       >
         <Container>
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex basis-0 grow mr-auto items-center">
-            <Link
-              href="/"
-                className="flex items-center gap-2 text-xl font-bold tracking-tight"
-            >
-              <Image
-                src="/logo-wide.png"
-                alt="Dream Drives"
-                className="h-8 md:h-10 w-fit"
-                width={120}
-                height={120}
-                priority
-              />
-            </Link>
+              <Link
+                href="/"
+                className="relative flex items-center gap-2 text-xl font-bold tracking-tight"
+              >
+                <Image
+                  src="/logo-light.svg"
+                  alt="Dream Drives"
+                  className="h-8 md:h-14 w-auto show-on-dark"
+                  width={120}
+                  height={40}
+                  priority
+                />
+                <Image
+                  src="/logo-dark.svg"
+                  alt="Dream Drives"
+                  className="h-8 md:h-14 w-auto absolute inset-0 show-on-light"
+                  width={120}
+                  height={40}
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <Navigation isScrolled={isScrolled} />
+            <Navigation useHeroStyle={useHeroStyle} />
 
             {/* Actions */}
             <div className="flex basis-0 grow ml-auto justify-end items-center gap-2 md:gap-4">
@@ -66,9 +78,9 @@ export function Header() {
                 onClick={() => trackPhoneClick("header")}
                 className={cn(
                   "hidden lg:flex items-center gap-2 text-sm transition-colors",
-                  isScrolled
-                    ? "text-foreground-muted hover:text-foreground"
-                    : "text-white/80 hover:text-white"
+                  useHeroStyle
+                    ? "text-white/80 hover:text-white"
+                    : "text-foreground-muted hover:text-foreground"
                 )}
               >
                 <Phone className="w-4 h-4" />
@@ -95,9 +107,9 @@ export function Header() {
                 onClick={() => setIsMobileMenuOpen(true)}
                 className={cn(
                   "md:hidden p-3 transition-colors",
-                  isScrolled
-                    ? "text-foreground hover:text-primary-500"
-                    : "text-white hover:text-white/80"
+                  useHeroStyle
+                    ? "text-white hover:text-white/80"
+                    : "text-foreground hover:text-primary-500"
                 )}
                 aria-label="Open menu"
               >

@@ -8,24 +8,37 @@ import { getWhatsAppUrl } from "@/lib/utils";
 import { heroTitle, heroSubtitle } from "@/lib/animations";
 import Link from "next/link";
 import Image from "next/image";
-import BgPic from "@/public/ferarri-hero-img.jpg";
+import LightModeBanner from "@/public/banner.png";
+import DarkModeBanner from "@/public/banner-2.png";
 
 export function HeroSection() {
   return (
-    <Section spacing="none" containerSize="none" className="relative flex flex-col h-screen">
+    <Section
+      spacing="none"
+      containerSize="none"
+      className="relative flex flex-col h-screen"
+    >
       <div className="absolute inset-0 z-0">
         <Image
-          src={BgPic}
-          alt="McLaren Mercedes GT"
+          src={DarkModeBanner}
+          alt="Dream Drives luxury car"
           fill
-          className="object-cover"
+          className="object-cover show-on-dark"
+          priority
+          sizes="100vw"
+          placeholder="blur"
+        />
+        <Image
+          src={LightModeBanner}
+          alt="Dream Drives luxury car"
+          fill
+          className="object-cover show-on-light"
           priority
           sizes="100vw"
           placeholder="blur"
         />
 
         <div className="absolute inset-0 bg-linear-to-b bg-neutral-900/40" />
-
         <div className="absolute inset-0 noise-texture" />
       </div>
 
@@ -34,7 +47,7 @@ export function HeroSection() {
         <div className="max-w-6xl mx-auto text-center">
           {/* Main Headline */}
           <motion.div variants={heroTitle} initial="initial" animate="animate">
-            <Heading as="h1" size="hero" className="mb-6 text-white">
+            <Heading as="h1" size="hero" className="mb-6 text-white capitalize">
               Any luxury car you desire, delivered clean, anywhere in Dubai
             </Heading>
           </motion.div>
@@ -50,7 +63,8 @@ export function HeroSection() {
               color="muted"
               className="max-w-2xl mx-auto mb-10 leading-relaxed text-neutral-300"
             >
-              From Rolls Royce to Lamborghini. One WhatsApp message, car at your door by morning.
+              From Rolls Royce to Lamborghini. One WhatsApp message, car at your
+              door by morning.
             </Text>
           </motion.div>
 
