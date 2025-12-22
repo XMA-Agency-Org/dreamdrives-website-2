@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "analyze": "next experimental-analyze"
   },
   "dependencies": {
-    "@cardog-icons/react": "^1.1.1",
     "@react-icons/all-files": "^4.1.0",
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
@@ -18,10 +18,10 @@
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.555.0",
     "motion": "^12.23.25",
-    "next": "16.0.10",
+    "next": "^16.1.0",
     "posthog-js": "^1.309.1",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {

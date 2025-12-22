@@ -18,7 +18,7 @@ export function Footer() {
               className="inline-block text-2xl font-bold tracking-tight mb-4"
             >
               <Image
-                src="/logo.png"
+                src="/logo-light.svg"
                 alt="Dream Drives"
                 className="h-20 w-full"
                 width={120}

@@ -28,7 +28,7 @@ import {
   GMCIconDark,
   NissanIconDark,
   MaseratiIconDark,
-} from "@cardog-icons/react";
+} from "@/components/icons/car-brands";
 
 const brandIconMap: Record<
   string,

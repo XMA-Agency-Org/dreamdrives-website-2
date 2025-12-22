@@ -65,12 +65,10 @@ export default async function BodyTypePage({ params }: BodyTypePageProps) {
         ]}
       />
 
-      <Section spacing="none">
-        <StaticCarsGrid
-          cars={cars}
-          emptyMessage={`No ${typeLabel.toLowerCase()} available`}
-        />
-      </Section>
+      <StaticCarsGrid
+        cars={cars}
+        emptyMessage={`No ${typeLabel.toLowerCase()} available`}
+      />
     </>
   );
 }

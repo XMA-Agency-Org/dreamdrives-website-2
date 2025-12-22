@@ -35,7 +35,7 @@
   --color-primary-950: var(--color-navy-950);
 
   /* ========== SEMANTIC COLORS (Dark Mode Default) ========== */
-  --color-background: oklch(0.16 0 0);
+  --color-background: oklch(0.18 0 0);
   --color-background-elevated: oklch(0.20 0 0);
   --color-background-subtle: oklch(0.23 0 0);
   --color-foreground: oklch(0.98 0 0);

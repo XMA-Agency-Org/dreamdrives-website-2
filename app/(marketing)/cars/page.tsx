@@ -44,9 +44,9 @@ function CarsContent() {
   }, []);
 
   return (
-    <Section spacing="lg">
+    <div>
       {/* Header Row: Title + Controls */}
-      <div className="flex items-center justify-between gap-4 mb-12 pt-8">
+      <div className="flex items-center justify-between gap-4 mb-8 pt-8">
         <Heading as="h1" size="2xl">
           Luxury Cars
         </Heading>
@@ -158,7 +158,7 @@ function CarsContent() {
 
       {/* Car Grid */}
       <CarsGrid sortBy={sortBy} viewMode={viewMode} />
-    </Section>
+    </div>
   );
 }
 

@@ -1,3 +1,4 @@
+import { Section } from "@/components/ui";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,5 +12,5 @@ export default function CarsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return <Section className="mt-10">{children}</Section>;
 }
