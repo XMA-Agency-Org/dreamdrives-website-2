@@ -7,8 +7,8 @@ import { ArrowRight } from "lucide-react";
 import { Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { CarCard } from "@/components/sections/cars";
-import cars from "@/data/cars-data";
 import { cn } from "@/lib/utils";
+import type { Car } from "@/types";
 
 const categories = [
   { id: "all-cars", label: "All Cars" },
@@ -19,8 +19,7 @@ const categories = [
   { id: "sport-cars", label: "Sport Cars" },
 ] as const;
 
-// Map category IDs to car categories/brands
-const categoryMapping: Record<string, (car: typeof cars[0]) => boolean> = {
+const categoryMapping: Record<string, (car: Car) => boolean> = {
   "all-cars": () => true,
   "luxury-cars": (car) =>
     car.brand === "rolls-royce" ||
@@ -37,7 +36,11 @@ const categoryMapping: Record<string, (car: typeof cars[0]) => boolean> = {
     car.brand === "porsche",
 };
 
-export function FeaturedCars() {
+interface FeaturedCarsProps {
+  cars: Car[];
+}
+
+export function FeaturedCars({ cars }: FeaturedCarsProps) {
   const [activeCategory, setActiveCategory] = useState<string>("all-cars");
 
   const filteredCars = cars

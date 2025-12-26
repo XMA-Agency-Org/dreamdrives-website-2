@@ -6,9 +6,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Container, Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { CarCard } from "@/components/sections/cars";
-import cars from "@/data/cars-data";
-
-type Car = (typeof cars)[0];
+import type { Car } from "@/types";
 
 type CategoryId = "featured" | "exotic" | "suv" | "convertible" | "sports";
 
@@ -31,6 +29,7 @@ interface CategorySectionProps {
   subtitle?: string;
   description?: string;
   category: CategoryId;
+  cars: Car[];
   viewAllHref?: string;
   alternateBackground?: boolean;
   ctaText?: string;
@@ -42,6 +41,7 @@ export function CategorySection({
   subtitle,
   description,
   category,
+  cars,
   viewAllHref = "/cars",
   alternateBackground = false,
   ctaText

@@ -88,7 +88,7 @@ export function Header() {
               </a>
 
               {/* Theme Switcher */}
-              <ThemeSwitcher className="hidden md:flex" />
+              <ThemeSwitcher />
 
               {/* WhatsApp CTA - Desktop */}
               <Button

@@ -156,7 +156,7 @@ function transformContentfulToCar(entry: Entry<ContentfulRentalVehicle>): Car {
   const specs: CarSpecs = {
     engine: fields.engine || "V8",
     horsepower: fields.horsepower || 400,
-    acceleration: fields.accelerationTime || "4.5s 0-100 km/h",
+    acceleration: fields.accelerationTime || "4.5s  km/h",
     topSpeed: fields.topSpeed || 280,
     transmission: normalizeTransmission(fields.transmissionType),
     fuelType: normalizeFuelType(fields.fuelType),

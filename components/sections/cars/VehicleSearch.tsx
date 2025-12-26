@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import cars from "@/data/cars-data";
 import { CAR_BRANDS, CAR_BODY_TYPES } from "@/lib/constants";
 import { trackCarFilter } from "@/lib/analytics";
 import type { Car } from "@/types";
@@ -27,36 +26,32 @@ interface SearchSuggestion {
 }
 
 interface VehicleSearchProps {
+  cars: Car[];
   className?: string;
 }
 
-export function VehicleSearch({ className }: VehicleSearchProps) {
-  // Get popular cars from different categories
+export function VehicleSearch({ cars, className }: VehicleSearchProps) {
   const popularSearches = useMemo(() => {
     const results: string[] = [];
 
-    // 3 Supercars (first)
     const supercars = cars
       .filter((car) => car.isAvailable && car.category === "supercar")
       .slice(0, 3)
       .map((car) => car.name);
     results.push(...supercars);
 
-    // 3 Sports cars
     const sportsCars = cars
       .filter((car) => car.isAvailable && car.category === "sports")
       .slice(0, 3)
       .map((car) => car.name);
     results.push(...sportsCars);
 
-    // 2 Convertibles
     const convertibles = cars
       .filter((car) => car.isAvailable && car.category === "convertible")
       .slice(0, 2)
       .map((car) => car.name);
     results.push(...convertibles);
 
-    // 1 SUV
     const suvs = cars
       .filter((car) => car.isAvailable && car.category === "suv")
       .slice(0, 1)
@@ -64,7 +59,7 @@ export function VehicleSearch({ className }: VehicleSearchProps) {
     results.push(...suvs);
 
     return results;
-  }, []);
+  }, [cars]);
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [suggestions, setSuggestions] = useState<SearchSuggestion[]>([]);

@@ -1,18 +1,22 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Phone, MessageCircle, Calendar, Car } from "lucide-react";
+import { Phone, Calendar, Car as CarIcon } from "lucide-react";
 import { Heading, Text, Badge, Button, Section } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
-import cars from "@/data/cars-data";
 import { cn } from "@/lib/utils";
 import { trackPhoneClick } from "@/lib/analytics";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
+import type { Car } from "@/types";
 
 const PHONE_NUMBER = "+971545555402";
 const WHATSAPP_BASE_URL = "https://api.whatsapp.com/send";
 
-export function BookingSection() {
+interface BookingSectionProps {
+  cars: Car[];
+}
+
+export function BookingSection({ cars }: BookingSectionProps) {
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
   const [selectedCar, setSelectedCar] = useState("");
@@ -108,7 +112,7 @@ export function BookingSection() {
               {/* Car Selection */}
               <div>
                 <label htmlFor="booking-car-select" className="block text-sm text-foreground-muted mb-2">
-                  <Car className="w-4 h-4 inline mr-2" />
+                  <CarIcon className="w-4 h-4 inline mr-2" />
                   Select Car (Optional)
                 </label>
                 <select

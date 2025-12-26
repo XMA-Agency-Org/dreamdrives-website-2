@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Phone } from "lucide-react";
 import { Navigation } from "./Navigation";
-import { Button, ThemeSwitcher } from "@/components/ui";
+import { Button } from "@/components/ui";
 import { COMPANY } from "@/lib/constants";
 import { getWhatsAppUrl } from "@/lib/utils";
 import { trackPhoneClick } from "@/lib/analytics";
@@ -71,23 +71,27 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className="flex flex-col h-full p-5">
               {/* Header */}
               <div className="flex items-center justify-between mb-8">
-                <Image
-                  src="/logo-wide.png"
-                  alt="Dream Drives"
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
-                <div className="flex items-center gap-2">
-                  <ThemeSwitcher />
-                  <button
-                    onClick={onClose}
-                    className="p-2 text-foreground-muted hover:text-foreground transition-colors focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:outline-none rounded-sm"
-                    aria-label="Close menu"
-                  >
-                    <X className="w-6 h-6" />
-                  </button>
+                <div className="relative h-10 w-24">
+                  <Image
+                    src="/logo-light.svg"
+                    alt="Dream Drives"
+                    fill
+                    className="object-contain object-left show-on-dark"
+                  />
+                  <Image
+                    src="/logo-dark.svg"
+                    alt="Dream Drives"
+                    fill
+                    className="object-contain object-left show-on-light"
+                  />
                 </div>
+                <button
+                  onClick={onClose}
+                  className="p-2 text-foreground-muted hover:text-foreground transition-colors focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:outline-none rounded-sm"
+                  aria-label="Close menu"
+                >
+                  <X className="w-6 h-6" />
+                </button>
               </div>
 
               {/* Navigation */}
