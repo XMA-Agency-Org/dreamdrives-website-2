@@ -19,7 +19,7 @@ const sizeStyles: Record<HeadingSize, string> = {
   xl: "text-4xl font-bold sm:text-5xl",
   "2xl": "text-5xl font-black sm:text-6xl",
   "3xl": "text-6xl font-black sm:text-7xl",
-  hero: "text-4xl font-black sm:text-5xl lg:text-7xl xl:text-8xl",
+  hero: "text-4xl font-black sm:text-5xl lg:text-7xl",
 };
 
 export function Heading({
