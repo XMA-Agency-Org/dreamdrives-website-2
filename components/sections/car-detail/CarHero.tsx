@@ -27,7 +27,7 @@ export function CarHero({ car }: CarHeroProps) {
 
   return (
     <Section spacing="none" containerSize="none" className="relative flex items-end mb-8">
-      <Container className="relative z-10 pt-32">
+      <Container className="relative z-10">
         <motion.div>
           <Link
             href="/cars"

@@ -15,7 +15,7 @@ export function SimilarCars({ cars }: SimilarCarsProps) {
   }
 
   return (
-    <Section spacing="lg" background="elevated" border="top" className="py-20">
+    <Section spacing="sm" background="elevated" border="top">
       <RevealOnScroll className="mb-10">
         <Heading as="h2" size="xl">
           Similar Vehicles
