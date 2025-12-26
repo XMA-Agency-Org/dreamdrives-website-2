@@ -190,56 +190,74 @@ async function main() {
       const isUpdate = existingVehicles.items.length > 0;
       let existingEntry = isUpdate ? existingVehicles.items[0] : null;
 
-      console.log(`  Uploading ${imageData.images.length} images...`);
-      const assetIds: string[] = [];
+      let assetIds: string[] = [];
 
-      for (let i = 0; i < imageData.images.length; i++) {
-        const imagePath = imageData.images[i];
-        const fullPath = join(projectRoot, "public", imagePath);
-        const fileName = imagePath.split("/").pop() || `image-${i}.jpg`;
-        const contentType = fileName.endsWith(".jpeg") || fileName.endsWith(".jpg")
-          ? "image/jpeg"
-          : "image/png";
+      if (isUpdate && existingEntry) {
+        const existingMainImage = existingEntry.fields.mainImage?.["en-US"]?.sys?.id;
+        const existingGallery = existingEntry.fields.imageGallery?.["en-US"] || [];
 
-        try {
-          const fileBuffer = readFileSync(fullPath);
-          const base64 = fileBuffer.toString("base64");
-
-          const asset = await environment.createAssetFromFiles({
-            fields: {
-              title: { "en-US": `${car.name} - Image ${i + 1}` },
-              file: {
-                "en-US": {
-                  contentType,
-                  fileName,
-                  file: Buffer.from(base64, "base64"),
-                },
-              },
-            },
-          });
-
-          await asset.processForAllLocales();
-
-          let processedAsset = await environment.getAsset(asset.sys.id);
-          let attempts = 0;
-          while (!processedAsset.fields.file?.["en-US"]?.url && attempts < 10) {
-            await new Promise((r) => setTimeout(r, 1000));
-            processedAsset = await environment.getAsset(asset.sys.id);
-            attempts++;
+        if (existingMainImage) {
+          assetIds.push(existingMainImage);
+          for (const img of existingGallery) {
+            if (img?.sys?.id) {
+              assetIds.push(img.sys.id);
+            }
           }
-
-          await processedAsset.publish();
-          assetIds.push(processedAsset.sys.id);
-          console.log(`    Uploaded: ${fileName}`);
-        } catch (imgErr) {
-          console.log(`    Failed: ${fileName} - ${imgErr}`);
+          console.log(`  Reusing ${assetIds.length} existing images`);
         }
       }
 
       if (assetIds.length === 0) {
-        console.log(`  No images uploaded, skipping vehicle creation`);
-        failed++;
-        continue;
+        console.log(`  Uploading ${imageData.images.length} images...`);
+
+        for (let i = 0; i < imageData.images.length; i++) {
+          const imagePath = imageData.images[i];
+          const fullPath = join(projectRoot, "public", imagePath);
+          const fileName = imagePath.split("/").pop() || `image-${i}.jpg`;
+          const contentType = fileName.endsWith(".jpeg") || fileName.endsWith(".jpg")
+            ? "image/jpeg"
+            : "image/png";
+
+          try {
+            const fileBuffer = readFileSync(fullPath);
+            const base64 = fileBuffer.toString("base64");
+
+            const asset = await environment.createAssetFromFiles({
+              fields: {
+                title: { "en-US": `${car.name} - Image ${i + 1}` },
+                file: {
+                  "en-US": {
+                    contentType,
+                    fileName,
+                    file: Buffer.from(base64, "base64"),
+                  },
+                },
+              },
+            });
+
+            await asset.processForAllLocales();
+
+            let processedAsset = await environment.getAsset(asset.sys.id);
+            let attempts = 0;
+            while (!processedAsset.fields.file?.["en-US"]?.url && attempts < 10) {
+              await new Promise((r) => setTimeout(r, 1000));
+              processedAsset = await environment.getAsset(asset.sys.id);
+              attempts++;
+            }
+
+            await processedAsset.publish();
+            assetIds.push(processedAsset.sys.id);
+            console.log(`    Uploaded: ${fileName}`);
+          } catch (imgErr) {
+            console.log(`    Failed: ${fileName} - ${imgErr}`);
+          }
+        }
+
+        if (assetIds.length === 0) {
+          console.log(`  No images uploaded, skipping vehicle creation`);
+          failed++;
+          continue;
+        }
       }
 
       const vehicleFields = {
@@ -259,6 +277,9 @@ async function main() {
           },
         },
         dailyPrice: { "en-US": car.pricing.daily },
+        weeklyPrice: { "en-US": car.pricing.weekly },
+        monthlyPrice: { "en-US": car.pricing.monthly },
+        depositAmount: { "en-US": car.pricing.deposit },
         brand: {
           "en-US": {
             sys: { type: "Link", linkType: "Entry", id: brandEntries[car.brand] },
@@ -269,6 +290,21 @@ async function main() {
             sys: { type: "Link", linkType: "Entry", id: categoryEntries[car.category] },
           },
         },
+        modelYear: { "en-US": car.year },
+        tagline: { "en-US": car.tagline },
+        engine: { "en-US": car.specs.engine },
+        horsepower: { "en-US": car.specs.horsepower },
+        accelerationTime: { "en-US": car.specs.acceleration.replace(/[^\d.]/g, "") || "0" },
+        topSpeed: { "en-US": car.specs.topSpeed },
+        transmissionType: { "en-US": car.specs.transmission },
+        fuelType: { "en-US": car.specs.fuelType },
+        passengerCount: { "en-US": car.specs.seats },
+        doorCount: { "en-US": car.specs.doors },
+        vehicleFeatures: { "en-US": car.features },
+        featuredFlag: { "en-US": car.isFeatured || false },
+        availabilityStatus: { "en-US": car.isAvailable },
+        exteriorColor: { "en-US": car.color },
+        interiorColor: { "en-US": car.interiorColor },
         mainImage: {
           "en-US": {
             sys: { type: "Link", linkType: "Asset", id: assetIds[0] },

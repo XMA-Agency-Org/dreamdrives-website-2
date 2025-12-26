@@ -40,8 +40,8 @@ components/
 ├── providers/      # Context providers (AnalyticsProvider, ThemeProvider)
 ├── sections/       # Page-specific section components
 │   ├── home/       # Homepage sections (HeroSection, FeaturedCars, etc.)
-│   ├── cars/       # Cars page (VehicleSearch, CarsFilters, car-card variants)
-│   ├── car-detail/ # Car detail page sections
+│   ├── cars/       # Cars listing (CarSearch, CarsFilters, CarsGrid, car-card variants)
+│   ├── car/        # Single car detail page (CarHero, CarGallery, CarSpecs, etc.)
 │   └── shared/     # Shared sections (PageHero, FAQSection)
 └── ui/             # Primitive UI components with CVA (Button, Input, Badge, etc.)
 ```

@@ -19,7 +19,7 @@ interface CarSpecsProps {
 const specItems = [
   { key: "engine", label: "Engine", icon: Cog },
   { key: "horsepower", label: "Power", icon: Zap, suffix: " HP" },
-  { key: "acceleration", label: " km/h", icon: Gauge },
+  { key: "acceleration", label: "0-100 km/h", icon: Gauge },
   { key: "topSpeed", label: "Top Speed", icon: Gauge, suffix: " km/h" },
   { key: "transmission", label: "Transmission", icon: Cog },
   { key: "fuelType", label: "Fuel Type", icon: Fuel },

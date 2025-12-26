@@ -42,6 +42,7 @@ interface ContentfulRentalVehicle {
   passengerCount?: number;
   doorCount?: number;
   features?: string[];
+  vehicleFeatures?: string[];
   mainImage?: Asset;
   imageGallery?: Asset[];
   featuredFlag?: boolean;
@@ -156,7 +157,7 @@ function transformContentfulToCar(entry: Entry<ContentfulRentalVehicle>): Car {
   const specs: CarSpecs = {
     engine: fields.engine || "V8",
     horsepower: fields.horsepower || 400,
-    acceleration: fields.accelerationTime || "4.5s  km/h",
+    acceleration: fields.accelerationTime ? `${fields.accelerationTime}s` : "4.5s",
     topSpeed: fields.topSpeed || 280,
     transmission: normalizeTransmission(fields.transmissionType),
     fuelType: normalizeFuelType(fields.fuelType),
@@ -179,7 +180,7 @@ function transformContentfulToCar(entry: Entry<ContentfulRentalVehicle>): Car {
     images,
     pricing,
     specs,
-    features: fields.features || ["GPS Navigation", "Bluetooth", "Premium Sound System"],
+    features: fields.vehicleFeatures || fields.features || ["GPS Navigation", "Bluetooth", "Premium Sound System"],
     isFeatured: fields.featuredFlag ?? false,
     isAvailable: fields.availabilityStatus ?? true,
     color: fields.exteriorColor || "Black",

@@ -25,12 +25,12 @@ interface SearchSuggestion {
   price?: number;
 }
 
-interface VehicleSearchProps {
+interface CarSearchProps {
   cars: Car[];
   className?: string;
 }
 
-export function VehicleSearch({ cars, className }: VehicleSearchProps) {
+export function CarSearch({ cars, className }: CarSearchProps) {
   const popularSearches = useMemo(() => {
     const results: string[] = [];
 
@@ -74,7 +74,7 @@ export function VehicleSearch({ cars, className }: VehicleSearchProps) {
 
   // Load search history from localStorage on mount
   useEffect(() => {
-    const savedHistory = localStorage.getItem("vehicle-search-history");
+    const savedHistory = localStorage.getItem("car-search-history");
     if (savedHistory) {
       try {
         setSearchHistory(JSON.parse(savedHistory));
@@ -179,7 +179,7 @@ export function VehicleSearch({ cars, className }: VehicleSearchProps) {
       ].slice(0, 5);
       setSearchHistory(newHistory);
       localStorage.setItem(
-        "vehicle-search-history",
+        "car-search-history",
         JSON.stringify(newHistory)
       );
 
@@ -229,7 +229,7 @@ export function VehicleSearch({ cars, className }: VehicleSearchProps) {
 
   const clearHistory = () => {
     setSearchHistory([]);
-    localStorage.removeItem("vehicle-search-history");
+    localStorage.removeItem("car-search-history");
   };
 
   // Keyboard navigation

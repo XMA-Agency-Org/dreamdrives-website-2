@@ -18,7 +18,7 @@
     "specs": {
       "engine": "1.6L I4",
       "horsepower": 120,
-      "acceleration": " in 10.5s",
+      "acceleration": "10.5s",
       "topSpeed": 185,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -49,7 +49,7 @@
     "specs": {
       "engine": "1.6L I4",
       "horsepower": 120,
-      "acceleration": " in 10.5s",
+      "acceleration": "10.5s",
       "topSpeed": 185,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -80,7 +80,7 @@
     "specs": {
       "engine": "2.0L I4",
       "horsepower": 147,
-      "acceleration": " in 9.2s",
+      "acceleration": "9.2s",
       "topSpeed": 200,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -111,7 +111,7 @@
     "specs": {
       "engine": "2.5L I4",
       "horsepower": 187,
-      "acceleration": " in 8.5s",
+      "acceleration": "8.5s",
       "topSpeed": 200,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -142,7 +142,7 @@
     "specs": {
       "engine": "2.5L I4 Turbo",
       "horsepower": 290,
-      "acceleration": " in 6.6s",
+      "acceleration": "6.6s",
       "topSpeed": 240,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -173,7 +173,7 @@
     "specs": {
       "engine": "2.5L I4",
       "horsepower": 187,
-      "acceleration": " in 8.8s",
+      "acceleration": "8.8s",
       "topSpeed": 195,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -204,7 +204,7 @@
     "specs": {
       "engine": "2.5L I4",
       "horsepower": 186,
-      "acceleration": " in 8.3s",
+      "acceleration": "8.3s",
       "topSpeed": 210,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -235,7 +235,7 @@
     "specs": {
       "engine": "2.5L I4 Turbo",
       "horsepower": 250,
-      "acceleration": " in 7.1s",
+      "acceleration": "7.1s",
       "topSpeed": 230,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -266,7 +266,7 @@
     "specs": {
       "engine": "2.5L I4 Turbo",
       "horsepower": 256,
-      "acceleration": " in 7.5s",
+      "acceleration": "7.5s",
       "topSpeed": 210,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -297,7 +297,7 @@
     "specs": {
       "engine": "2.5L I4 Turbo",
       "horsepower": 256,
-      "acceleration": " in 7.5s",
+      "acceleration": "7.5s",
       "topSpeed": 210,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -328,7 +328,7 @@
     "specs": {
       "engine": "3.0L I6 Turbo",
       "horsepower": 335,
-      "acceleration": " in 5.5s",
+      "acceleration": "5.5s",
       "topSpeed": 250,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -359,7 +359,7 @@
     "specs": {
       "engine": "3.0L I6 Turbo",
       "horsepower": 335,
-      "acceleration": " in 5.5s",
+      "acceleration": "5.5s",
       "topSpeed": 250,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -390,7 +390,7 @@
     "specs": {
       "engine": "1.5L I4 Turbo",
       "horsepower": 204,
-      "acceleration": " in 7.3s",
+      "acceleration": "7.3s",
       "topSpeed": 246,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -421,7 +421,7 @@
     "specs": {
       "engine": "1.5L I4 Turbo",
       "horsepower": 204,
-      "acceleration": " in 7.3s",
+      "acceleration": "7.3s",
       "topSpeed": 246,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -452,7 +452,7 @@
     "specs": {
       "engine": "4.0L V8 Biturbo",
       "horsepower": 577,
-      "acceleration": " in 4.5s",
+      "acceleration": "4.5s",
       "topSpeed": 220,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -483,7 +483,7 @@
     "specs": {
       "engine": "2.5L I4",
       "horsepower": 170,
-      "acceleration": " in 9.8s",
+      "acceleration": "9.8s",
       "topSpeed": 180,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -514,7 +514,7 @@
     "specs": {
       "engine": "3.0L I6 Turbo",
       "horsepower": 395,
-      "acceleration": " in 5.8s",
+      "acceleration": "5.8s",
       "topSpeed": 242,
       "transmission": "Automatic",
       "fuelType": "Petrol",
@@ -545,7 +545,7 @@
     "specs": {
       "engine": "4.0L V8 Twin-Turbo",
       "horsepower": 666,
-      "acceleration": " in 3.5s",
+      "acceleration": "3.5s",
       "topSpeed": 305,
       "transmission": "Automatic",
       "fuelType": "Petrol",

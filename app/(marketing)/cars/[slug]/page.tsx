@@ -8,7 +8,7 @@ import {
   CarSpecs,
   PricingCard,
   SimilarCars,
-} from "@/components/sections/car-detail";
+} from "@/components/sections/car";
 import { getCarBySlugAsync, getSimilarCarsAsync, getAllCarsAsync } from "@/data/cars";
 
 interface CarDetailPageProps {
