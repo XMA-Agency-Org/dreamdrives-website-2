@@ -23,7 +23,10 @@ export type CarBrand =
   | "mini"
   | "gmc"
   | "nissan"
-  | "maserati";
+  | "maserati"
+  | "hyundai"
+  | "kia"
+  | "mazda";
 
 export interface CarImage {
   src: string;

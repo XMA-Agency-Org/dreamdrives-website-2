@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
 import { StaticCarsGrid } from "@/components/sections/cars";
-import { getAllCars, getFeaturedCars } from "@/data/cars";
+import { getAllCarsAsync, getFeaturedCarsAsync } from "@/data/cars";
 import { CAR_CATEGORIES } from "@/lib/constants";
 import type { Car } from "@/types";
 
@@ -22,8 +22,9 @@ function getCategoryLabel(categoryId: string): string {
   return category?.label || categoryId;
 }
 
-function getCarsByMarketingCategory(categoryId: string): Car[] {
-  const allCars = getAllCars();
+async function getCarsByMarketingCategory(categoryId: string): Promise<Car[]> {
+  const allCars = await getAllCarsAsync();
+  const featuredCars = await getFeaturedCarsAsync();
 
   switch (categoryId) {
     case "luxury":
@@ -37,7 +38,7 @@ function getCarsByMarketingCategory(categoryId: string): Car[] {
     case "economy":
       return allCars.filter((car) => car.pricing.daily < 500);
     case "popular":
-      return getFeaturedCars();
+      return featuredCars;
     case "new-arrivals":
       return allCars.filter((car) => car.year >= 2024);
     case "special-offers":
@@ -52,7 +53,7 @@ export async function generateMetadata({
 }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
   const categoryLabel = getCategoryLabel(category);
-  const cars = getCarsByMarketingCategory(category);
+  const cars = await getCarsByMarketingCategory(category);
 
   return {
     title: `${categoryLabel} Cars for Rent in Dubai | Dream Drives`,
@@ -68,7 +69,7 @@ export async function generateMetadata({
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category } = await params;
   const categoryLabel = getCategoryLabel(category);
-  const cars = getCarsByMarketingCategory(category);
+  const cars = await getCarsByMarketingCategory(category);
 
   if (cars.length === 0) {
     notFound();

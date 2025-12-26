@@ -4,7 +4,7 @@ import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
 import { StaticCarsGrid } from "@/components/sections/cars";
 import {
-  getCarsByBrand,
+  getCarsByBrandAsync,
   getAllBrandsWithCount,
   getBrandDisplayName,
 } from "@/data/cars";
@@ -25,7 +25,7 @@ export async function generateMetadata({
 }: BrandPageProps): Promise<Metadata> {
   const { brand } = await params;
   const brandName = getBrandDisplayName(brand);
-  const cars = getCarsByBrand(brand);
+  const cars = await getCarsByBrandAsync(brand);
 
   if (cars.length === 0) {
     return {
@@ -47,7 +47,7 @@ export async function generateMetadata({
 export default async function BrandPage({ params }: BrandPageProps) {
   const { brand } = await params;
   const brandName = getBrandDisplayName(brand);
-  const cars = getCarsByBrand(brand);
+  const cars = await getCarsByBrandAsync(brand);
 
   if (cars.length === 0) {
     notFound();

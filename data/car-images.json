@@ -1,871 +1,298 @@
 [
   {
-    "carName": "Lamborghini Huracan STO",
-    "carSlug": "lamborghini-huracan-sto",
-    "category": "sport-cars",
+    "carName": "Hyundai Accent 2023",
+    "carSlug": "hyundai-accent-2023",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lamborghini-Huracan-STO-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lambo-STO-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lambo-sto-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lambo-sto-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lambo-sto-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/06/hqdefault.jpg"
+      "/CARS/ACCENT 2023/hyundai-accent-2023-1.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-2.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-3.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-4.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-5.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-6.jpg",
+      "/CARS/ACCENT 2023/hyundai-accent-2023-7.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/06/Lamborghini-Huracan-STO-SQ.jpg"
+    "thumbnail": "/CARS/ACCENT 2023/hyundai-accent-2023-1.jpg"
   },
   {
-    "carName": "Ferrari F8 Spider",
-    "carSlug": "ferrari-f8-tributo",
-    "category": "sport-cars",
+    "carName": "Hyundai Accent 2024",
+    "carSlug": "hyundai-accent-2024",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-Dubai-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-4.jpg"
+      "/CARS/ACCENT 2024/hyundai-accent-2024-1.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-2.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-3.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-4.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-5.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-6.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-7.jpg",
+      "/CARS/ACCENT 2024/hyundai-accent-2024-8.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Ferrari-F8-Dubai-SQ.jpg"
+    "thumbnail": "/CARS/ACCENT 2024/hyundai-accent-2024-1.jpg"
   },
   {
-    "carName": "Lamborghini Aventador",
-    "carSlug": "lamborghini-aventador",
-    "category": "sport-cars",
+    "carName": "Hyundai Elantra",
+    "carSlug": "hyundai-elantra",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Aventador-Orange-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Aventador-orange-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Aventador-orange-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Aventador-orange-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Aventador-orange-5-1.jpg"
+      "/CARS/Elantra/hyundai-elantra-1.jpg",
+      "/CARS/Elantra/hyundai-elantra-2.jpg",
+      "/CARS/Elantra/hyundai-elantra-3.jpg",
+      "/CARS/Elantra/hyundai-elantra-4.jpg",
+      "/CARS/Elantra/hyundai-elantra-5.jpg",
+      "/CARS/Elantra/hyundai-elantra-6.jpg",
+      "/CARS/Elantra/hyundai-elantra-7.jpg",
+      "/CARS/Elantra/hyundai-elantra-8.jpg",
+      "/CARS/Elantra/hyundai-elantra-9.jpg",
+      "/CARS/Elantra/hyundai-elantra-10.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Aventador-Orange-SQ.jpg"
+    "thumbnail": "/CARS/Elantra/hyundai-elantra-1.jpg"
   },
   {
-    "carName": "Lamborghini Aventador Roadster",
-    "carSlug": "lamborghini-aventador-roadster",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Aventador-Roadster-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamboghini-Aventador-Roadster-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamboghini-Aventador-Roadster-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamboghini-Aventador-Roadster-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamboghini-Aventador-Roadster-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Aventador-Roadster-SQ.jpg"
-  },
-  {
-    "carName": "Lamborghini Evo",
-    "carSlug": "lamborghini-evo",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Evo-Green-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Evo-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Evo-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Evo-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Evo-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Evo-Green-SQ.jpg"
-  },
-  {
-    "carName": "Black Lamborghini Urus",
-    "carSlug": "lamborghini-urus-black",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-black-SQ-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Black-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Black-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Black-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Black-2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-black-SQ-1.jpg"
-  },
-  {
-    "carName": "Blue Lamborghini Urus",
-    "carSlug": "lamborghini-urus-blue",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-Blue-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-blue-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-blue-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-blue-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-blue-2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-urus-Blue-SQ-.jpg"
-  },
-  {
-    "carName": "Lamborghini Huracan EVO",
-    "carSlug": "lamborghini-huracan-evo-red",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-GL-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-GL-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-GL-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-GL-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/02/Lamborghini-Huracan-Evo-SQ.jpg"
-  },
-  {
-    "carName": "White Lamborghini Urus",
-    "carSlug": "lamborghini-urus-white",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-urus-White-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-Urus-White-GL2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-Urus-White-GL1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-Urus-White-GL3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-Urus-White-GL4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/04/Lamborghini-urus-White-SQ.jpg"
-  },
-  {
-    "carName": "Grey Lamborghini Huracan Spyder",
-    "carSlug": "lamborghini-huracan-spyder",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huranacan-2-BGK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huranacan-2-BGK-.jpg"
-  },
-  {
-    "carName": "Lamborghini Urus",
-    "carSlug": "lamborghini-urus-yellow",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Urus-Yellow-SQ-.jpg"
-  },
-  {
-    "carName": "Lamborghini Huracan Spyder",
-    "carSlug": "lamborghini-huracan-spyder-yellow",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Sryder-Yellow-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-yellow-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-yellow-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-yellow-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Huracan-Spyder-yellow-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Lamborghini-Sryder-Yellow-SQ-.jpg"
-  },
-  {
-    "carName": "Audi RS Q8",
-    "carSlug": "audi-rs-q8",
+    "carName": "Hyundai Tucson",
+    "carSlug": "hyundai-tucson",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-Q8-Rs-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-RS-Q8-White-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-RS-Q8-White-400.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-RS-Q8-White-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-RS-Q8-White-3.jpg"
+      "/CARS/TUCSON/hyundai-tucson-1.jpg",
+      "/CARS/TUCSON/hyundai-tucson-2.jpg",
+      "/CARS/TUCSON/hyundai-tucson-3.jpg",
+      "/CARS/TUCSON/hyundai-tucson-4.jpg",
+      "/CARS/TUCSON/hyundai-tucson-5.jpg",
+      "/CARS/TUCSON/hyundai-tucson-6.jpg",
+      "/CARS/TUCSON/hyundai-tucson-7.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-Q8-Rs-SQ.jpg"
+    "thumbnail": "/CARS/TUCSON/hyundai-tucson-1.jpg"
   },
   {
-    "carName": "Black Audi RS Q8",
-    "carSlug": "audi-rs-q8-black",
+    "carName": "Kia K5",
+    "carSlug": "kia-k5",
+    "category": "sedan",
+    "images": [
+      "/CARS/K5/kia-k5-1.jpg",
+      "/CARS/K5/kia-k5-2.jpg",
+      "/CARS/K5/kia-k5-3.jpg",
+      "/CARS/K5/kia-k5-4.jpg",
+      "/CARS/K5/kia-k5-5.jpg",
+      "/CARS/K5/kia-k5-6.jpg"
+    ],
+    "thumbnail": "/CARS/K5/kia-k5-1.jpg"
+  },
+  {
+    "carName": "Kia Sportage",
+    "carSlug": "kia-sportage",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Audi-Q8-Rs-Black-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/audi-q8-rs-g4-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Audi-q8-rs-G1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/audi-q8-rs-g3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/audi-q8-rs-g2.jpg"
+      "/CARS/SPORTAGE/kia-sportage-1.jpg",
+      "/CARS/SPORTAGE/kia-sportage-2.jpg",
+      "/CARS/SPORTAGE/kia-sportage-3.jpg",
+      "/CARS/SPORTAGE/kia-sportage-4.jpg",
+      "/CARS/SPORTAGE/kia-sportage-5.jpg",
+      "/CARS/SPORTAGE/kia-sportage-6.jpg",
+      "/CARS/SPORTAGE/kia-sportage-7.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/11/Audi-Q8-Rs-Black-SQ.jpg"
+    "thumbnail": "/CARS/SPORTAGE/kia-sportage-1.jpg"
   },
   {
-    "carName": "Porsche 911 Carrera",
-    "carSlug": "porsche-911",
-    "category": "sport-cars",
+    "carName": "Mazda 3",
+    "carSlug": "mazda-3",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-carrera-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-carrera-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-carrera-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-carrera-3.jpg"
+      "/CARS/MAZDA 3/mazda-3-1.jpg",
+      "/CARS/MAZDA 3/mazda-3-2.jpg",
+      "/CARS/MAZDA 3/mazda-3-3.jpg",
+      "/CARS/MAZDA 3/mazda-3-4.jpg",
+      "/CARS/MAZDA 3/mazda-3-5.jpg",
+      "/CARS/MAZDA 3/mazda-3-6.jpg",
+      "/CARS/MAZDA 3/mazda-3-7.jpg",
+      "/CARS/MAZDA 3/mazda-3-8.jpg",
+      "/CARS/MAZDA 3/mazda-3-9.jpg",
+      "/CARS/MAZDA 3/mazda-3-10.jpg",
+      "/CARS/MAZDA 3/mazda-3-11.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-911-SQ.jpg"
+    "thumbnail": "/CARS/MAZDA 3/mazda-3-1.jpg"
   },
   {
-    "carName": "Audi R8",
-    "carSlug": "audi-r8",
-    "category": "convertible",
+    "carName": "Mazda 6",
+    "carSlug": "mazda-6",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-3.jpg"
+      "/CARS/MAZDA 6/mazda-6-1.jpg",
+      "/CARS/MAZDA 6/mazda-6-2.jpg",
+      "/CARS/MAZDA 6/mazda-6-3.jpg",
+      "/CARS/MAZDA 6/mazda-6-4.jpg",
+      "/CARS/MAZDA 6/mazda-6-6.jpg",
+      "/CARS/MAZDA 6/mazda-6-7.jpg",
+      "/CARS/MAZDA 6/mazda-6-8.jpg",
+      "/CARS/MAZDA 6/mazda-6-9.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-R8-SQ.jpg"
+    "thumbnail": "/CARS/MAZDA 6/mazda-6-1.jpg"
   },
   {
-    "carName": "Mercedes GTC",
-    "carSlug": "mercedes-gtc",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GTC-SQ.jpg"
-  },
-  {
-    "carName": "Chevrolet Corvette",
-    "carSlug": "chevrolet-corvette",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-GLR-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-GLR-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-GLR-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-GLR.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/12/Chevrolet-Corvette-SQ-.jpg"
-  },
-  {
-    "carName": "Mercedes GLE53 AMG",
-    "carSlug": "mercedes-gle-53-amg",
+    "carName": "Mazda CX-5",
+    "carSlug": "mazda-cx5",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-3.jpg"
+      "/CARS/CX5/mazda-cx5-1.jpg",
+      "/CARS/CX5/mazda-cx5-2.jpg",
+      "/CARS/CX5/mazda-cx5-3.jpg",
+      "/CARS/CX5/mazda-cx5-4.jpg",
+      "/CARS/CX5/mazda-cx5-5.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/11/Mercedes-GLE53-AMG-SQ.jpg"
+    "thumbnail": "/CARS/CX5/mazda-cx5-1.jpg"
   },
   {
-    "carName": "Porsche Panamera 2023",
-    "carSlug": "porsche-panamera",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rent-Porsche-Panamera-in-Dubai-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rent-Porsche-Panamera-in-Dubai-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Panamera-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-white-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-718-GTS-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/10/maxresdefault.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rent-Porsche-Panamera-in-Dubai-SQ.jpg"
-  },
-  {
-    "carName": "The New Mercedes GT43 AMG",
-    "carSlug": "mercedes-gt-43-amg",
-    "category": "sport-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-AMG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-GL4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-GL2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-GL1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-GL3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/04/Mercedes-GT-43-AMG.jpg"
-  },
-  {
-    "carName": "Mercedes GLE63 AMG",
-    "carSlug": "mercedes-gle-63-amg",
+    "carName": "Mazda CX-5 Red",
+    "carSlug": "mazda-cx5-red",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-gle-63-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLE63-AMG-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLE63-AMG-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLE63-AMG-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLE63-AMG-4.jpg"
+      "/CARS/CX5/RED/mazda-cx5-red-1.jpg",
+      "/CARS/CX5/RED/mazda-cx5-red-2.jpg",
+      "/CARS/CX5/RED/mazda-cx5-red-3.jpg",
+      "/CARS/CX5/RED/mazda-cx5-red-4.jpg",
+      "/CARS/CX5/RED/mazda-cx5-red-5.jpg",
+      "/CARS/CX5/RED/mazda-cx5-red-6.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-gle-63-SQ-.jpg"
+    "thumbnail": "/CARS/CX5/RED/mazda-cx5-red-1.jpg"
   },
   {
-    "carName": "Porsche Cayenne",
-    "carSlug": "porsche-cayenne-white",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-white-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-white-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-white-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-white-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Cayenne-SQ.jpg"
-  },
-  {
-    "carName": "Porsche Boxter 718 GTS",
-    "carSlug": "porsche-boxter-718-gts",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-718-GTS-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-718-GTS-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-718-GTS-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-718-GTS-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Porsche-Boxter-SQ.jpg"
-  },
-  {
-    "carName": "Mini Cooper S",
-    "carSlug": "mini-cooper-s",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-Cooper-S-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-cooper-S-coupe-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-cooper-S-coupe-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-cooper-S-coupe-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-cooper-S-coupe-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mini-Cooper-S-BKG.jpg"
-  },
-  {
-    "carName": "Rolls Royce Phantom",
-    "carSlug": "rolls-royce-phantom",
-    "category": "all-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2023/06/Rolls-Royce-Phantom-SQ.jpg"
-  },
-  {
-    "carName": "Rolls Royce Ghost 2022",
-    "carSlug": "rolls-royce-ghost",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Exotic-cars-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Ghost-P.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Ghost-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Ghost-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Ghost-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Ghost-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Exotic-cars-BKG.jpg"
-  },
-  {
-    "carName": "White Rolls Royce Cullinan",
-    "carSlug": "rolls-royce-cullinan-white",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-W-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-White-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-White-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-White-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-White-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/11/Rolls-Royce-Cullinan-W-SQ.jpg"
-  },
-  {
-    "carName": "Mercedes GLS 600 Maybach",
-    "carSlug": "mercedes-gls-600-maybach",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/08/Mercedes-Gls-600-Maybach.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/09/Maybach-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/09/Maybach-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/09/Maybach-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/09/Maybach-1.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/08/Mercedes-Gls-600-Maybach.jpg"
-  },
-  {
-    "carName": "Rolls Royce Cullinan 2022",
-    "carSlug": "rolls-royce-cullinan",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-P-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-2-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Cullinan-P-SQ.jpg"
-  },
-  {
-    "carName": "Bentley GTC",
-    "carSlug": "bentley-gtc",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-white-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-G1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-g2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-G3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-GTC-white-SQ.jpg"
-  },
-  {
-    "carName": "Rolls Royce Dawn",
-    "carSlug": "rolls-royce-dawn",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-2-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Rolls-Royce-Dawn-SQ.jpg"
-  },
-  {
-    "carName": "Mercedes Maybach s650",
-    "carSlug": "maybach-s650",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Maybach-S650-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Maybach-s650-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Maybach-s650-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Maybach-s650-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Maybach-s650-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Maybach-S650-SQ.jpg"
-  },
-  {
-    "carName": "Bentley Bentayga",
-    "carSlug": "bentley-bentayga",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-Bentayga-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-bentayga-blue-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-bentayga-blue-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-bentayga-blue-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-bentayga-blue-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Bentley-Bentayga-SQ.jpg"
-  },
-  {
-    "carName": "MERCEDES S500",
-    "carSlug": "mercedes-s500",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Black-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Black-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Black-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Black-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-SQ.jpg"
-  },
-  {
-    "carName": "Black Rolls Royce Ghost",
-    "carSlug": "rolls-royce-black",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Rolls-Royce-Ghost-Black-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/RR-Ghost-Black-G4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/RR-Ghost-Black-G2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/RR-Ghost-Black-G1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/RR-Ghost-Black-G3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/01/Rolls-Royce-Ghost-Black-SQ.jpg"
-  },
-  {
-    "carName": "Black Mercedes G63 AMG",
-    "carSlug": "mercedes-g63-amg",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-benz-G63-black-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-black-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-black-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-black-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-black-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-benz-G63-black-SQ-.jpg"
-  },
-  {
-    "carName": "Mercedes G63 AMG",
-    "carSlug": "mercedes-g63-amg-white",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Wagon-G63-White-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-White-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-White-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-White-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-G63-AMG-White-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Wagon-G63-White-SQ.jpg"
-  },
-  {
-    "carName": "BMW XM Starting 2000 AED/Day",
-    "carSlug": "rent-bmw-xm-in-dubai",
-    "category": "all-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW-XM-BG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW_XM_2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW_XM_3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW_XM_93.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW_XM_1.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2024/01/BMW-XM-BG.jpg"
-  },
-  {
-    "carName": "Cadillac Escalade",
-    "carSlug": "cadillac-escalade-black",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-Black-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-Black-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-Black-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-Black-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-SQ.jpg"
-  },
-  {
-    "carName": "Blue Range Rover SVR",
-    "carSlug": "range-rover-svr-blue",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/SVR-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-SVR-Blue-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-SVR-Blue-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-SVR-Blue-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-SVR-Blue-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/SVR-SQ.jpg"
-  },
-  {
-    "carName": "Range Rover SVR",
-    "carSlug": "range-rover-svr-orange",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-SVR-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-SVR-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-SVR-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-svr-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-SVR-2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/12/Range-rover-SVR-SQ-.jpg"
-  },
-  {
-    "carName": "BMW 7 Series",
-    "carSlug": "bmw-7-series-black",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-6.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-7-Series-SQ.jpg"
-  },
-  {
-    "carName": "Cadillac Escalade XL",
-    "carSlug": "cadillac-escalade-b",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-XL-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-escalade-6.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-7.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-escalade-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Cadillac-Escalade-XL-SQ.jpg"
-  },
-  {
-    "carName": "White Mercedes S500 Coupe",
-    "carSlug": "mercedes-s500-coupe-white",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-White-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-coupe-White-BKG.jpg"
-  },
-  {
-    "carName": "Mercedes S500 Coupe",
-    "carSlug": "mercedes-s500-coupe",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Convertible-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-S500-Coupe-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-S500-Coupe-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-S500-Coupe-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-S500-Coupe-2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-s500-Convertible-SQ.jpg"
-  },
-  {
-    "carName": "Range Rover HSE",
-    "carSlug": "range-rover-hse-black",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-SQ-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-black-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-black-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-black-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-black-5.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-HSE-SQ-1.jpg"
-  },
-  {
-    "carName": "Range Rover Vogue",
-    "carSlug": "range-rover-vogue-white",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-rover-Vogue-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-Vogue-white-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-Rover-Vogue-white-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Range-rover-Vogue-SQ-.jpg"
-  },
-  {
-    "carName": "Mercedes Benz Viano",
-    "carSlug": "mercedes-benz-viano",
-    "category": "luxury-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Merecedes-Benz-V-Class-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Benz-Vianno-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Benz-Vianno-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Benz-Vianno-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-Benz-Vianno-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Merecedes-Benz-V-Class-SQ.jpg"
-  },
-  {
-    "carName": "Audi Q7",
-    "carSlug": "audi-q7-blue",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-White-Sq.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-Gl3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-Gl2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-Gl4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-Gl1.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Audi-q8-White-Sq.jpg"
-  },
-  {
-    "carName": "Range Rover Velar",
-    "carSlug": "range-rover-velar-white",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Range-Rover-Velar-White-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/RR-Velar-GL-1-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/RR-Velar-GL-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/RR-Velar-GL-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/RR-Velar-GL-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/02/Range-Rover-Velar-White-SQ.jpg"
-  },
-  {
-    "carName": "BMW X5",
-    "carSlug": "bmw-x5-white",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X5-White-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X5-White-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X5-White-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X5-White-.jpg"
-  },
-  {
-    "carName": "Nissan Patrol",
-    "carSlug": "nissan-patrol",
-    "category": "suv",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrol-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrole-Blue-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrole-Blue-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrole-Blue-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrole-Blue-4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Nissan-Patrol-SQ-.jpg"
-  },
-  {
-    "carName": "BMW X6",
+    "carName": "BMW X6 Black",
     "carSlug": "bmw-x6-black",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6.jpg"
+      "/CARS/BMW X6/black/bmw-x6-black-1.jpeg",
+      "/CARS/BMW X6/black/bmw-x6-black-2.jpeg",
+      "/CARS/BMW X6/black/bmw-x6-black-3.jpeg",
+      "/CARS/BMW X6/black/bmw-x6-black-4.jpeg",
+      "/CARS/BMW X6/black/bmw-x6-black-5.jpeg",
+      "/CARS/BMW X6/black/bmw-x6-black-6.jpg",
+      "/CARS/BMW X6/black/bmw-x6-black-7.jpg",
+      "/CARS/BMW X6/black/bmw-x6-black-8.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-X6-SQ.jpg"
+    "thumbnail": "/CARS/BMW X6/black/bmw-x6-black-1.jpeg"
   },
   {
-    "carName": "Mercedes GLC 300",
-    "carSlug": "mercedes-glc-300",
+    "carName": "BMW X6 White",
+    "carSlug": "bmw-x6-white",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-BKG.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-3.jpg"
+      "/CARS/BMW X6/white/bmw-x6-white-1.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-2.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-3.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-4.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-5.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-6.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-7.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-8.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-9.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-10.jpg",
+      "/CARS/BMW X6/white/bmw-x6-white-11.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-GLC-300-BKG.jpg"
+    "thumbnail": "/CARS/BMW X6/white/bmw-x6-white-1.jpg"
   },
   {
-    "carName": "BMW 520",
-    "carSlug": "bmw-520",
-    "category": "luxury-cars",
+    "carName": "Mercedes C200 Grey",
+    "carSlug": "mercedes-c200-grey",
+    "category": "sedan",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-5-Series-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-520-Black-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-520-Black-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-520-Black-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-520-Black-4.jpg"
+      "/CARS/C200/GREY/mercedes-c200-grey-1.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-2.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-3.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-4.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-5.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-6.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-7.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-8.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-9.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-10.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-11.jpg",
+      "/CARS/C200/GREY/mercedes-c200-grey-12.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/BMW-5-Series-SQ.jpg"
+    "thumbnail": "/CARS/C200/GREY/mercedes-c200-grey-1.jpg"
   },
   {
-    "carName": "Mercedes GLC200",
-    "carSlug": "mercedes-glc300-black",
+    "carName": "Mercedes C200 White",
+    "carSlug": "mercedes-c200-white",
+    "category": "sedan",
+    "images": [
+      "/CARS/C200/WHITE/mercedes-c200-white-1.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-2.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-3.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-4.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-5.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-6.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-7.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-8.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-9.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-10.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-11.jpg",
+      "/CARS/C200/WHITE/mercedes-c200-white-12.jpg"
+    ],
+    "thumbnail": "/CARS/C200/WHITE/mercedes-c200-white-1.jpg"
+  },
+  {
+    "carName": "Mercedes G63 AMG Blue",
+    "carSlug": "mercedes-g63-amg-blue",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-gl-4-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-GL-3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-GL1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-Gl-2.jpg"
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-1.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-2.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-3.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-4.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-5.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-6.jpg",
+      "/CARS/G63/BLUE/mercedes-g63-amg-blue-7.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/02/Mercedes-GLC200-SQ-.jpg"
+    "thumbnail": "/CARS/G63/BLUE/mercedes-g63-amg-blue-1.jpg"
   },
   {
-    "carName": "Mercedes C200 Coupe",
-    "carSlug": "mercedes-c200-coupe",
-    "category": "convertible",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/C200-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-C200-Coupe-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-C200-Coupe-5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-C200-Coupe-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/Mercedes-C200-Coupe-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/C200-SQ.jpg"
-  },
-  {
-    "carName": "Mercedes C200 2024",
-    "carSlug": "rent-mercedes-c200-in-dubai",
-    "category": "all-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2024/11/Featured-image.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/11/1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/11/2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/11/3.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2024/11/4.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2024/11/Featured-image.jpg"
-  },
-  {
-    "carName": "Audi A6",
-    "carSlug": "audi-a6",
-    "category": "all-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-A6-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-3.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2023/06/Audi-A6-SQ.jpg"
-  },
-  {
-    "carName": "Audi A3",
-    "carSlug": "audi-a3",
-    "category": "all-cars",
-    "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-SQ-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-G1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-G5.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-G4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-g2.jpg"
-    ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2022/01/Audi-A3-SQ-.jpg"
-  },
-  {
-    "carName": "GMC Yukon",
-    "carSlug": "gmc-yukon",
+    "carName": "Nissan Xterra",
+    "carSlug": "nissan-xterra",
     "category": "suv",
     "images": [
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-SQ.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2022/02/UPTOWN-LOGO-BLACK-.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-2.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-1.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-4.jpg",
-      "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-3.jpg"
+      "/CARS/XTERRA/nissan-xterra-1.jpg",
+      "/CARS/XTERRA/nissan-xterra-2.jpg",
+      "/CARS/XTERRA/nissan-xterra-3.jpg",
+      "/CARS/XTERRA/nissan-xterra-4.jpg",
+      "/CARS/XTERRA/nissan-xterra-5.jpg",
+      "/CARS/XTERRA/nissan-xterra-6.jpg",
+      "/CARS/XTERRA/nissan-xterra-7.jpg",
+      "/CARS/XTERRA/nissan-xterra-8.jpg",
+      "/CARS/XTERRA/nissan-xterra-9.jpg",
+      "/CARS/XTERRA/nissan-xterra-10.jpg",
+      "/CARS/XTERRA/nissan-xterra-11.jpg",
+      "/CARS/XTERRA/nissan-xterra-12.jpg"
     ],
-    "thumbnail": "https://www.uptowndxb.com/wp-content/uploads/2021/10/GMC-Yukon-SQ.jpg"
+    "thumbnail": "/CARS/XTERRA/nissan-xterra-1.jpg"
+  },
+  {
+    "carName": "Range Rover Sport",
+    "carSlug": "range-rover-sport",
+    "category": "suv",
+    "images": [
+      "/CARS/Range Rover Sport/range-rover-sport-1.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-2.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-3.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-4.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-5.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-6.jpg",
+      "/CARS/Range Rover Sport/range-rover-sport-7.jpg"
+    ],
+    "thumbnail": "/CARS/Range Rover Sport/range-rover-sport-1.jpg"
+  },
+  {
+    "carName": "Lamborghini Urus S 2024",
+    "carSlug": "lamborghini-urus-s-2024",
+    "category": "suv",
+    "images": [
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-1.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-2.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-3.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-4.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-5.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-6.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-7.jpg",
+      "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-8.jpg"
+    ],
+    "thumbnail": "/CARS/Urus S 2024 Black/lamborghini-urus-s-2024-1.jpg"
   }
 ]

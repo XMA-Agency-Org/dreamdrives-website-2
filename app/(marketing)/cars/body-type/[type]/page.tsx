@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Section } from "@/components/ui";
 import { PageHero } from "@/components/sections/shared";
 import { StaticCarsGrid } from "@/components/sections/cars";
-import { getCarsByBodyType } from "@/data/cars";
+import { getCarsByBodyTypeAsync } from "@/data/cars";
 import { CAR_BODY_TYPES } from "@/lib/constants";
 
 interface BodyTypePageProps {
@@ -26,7 +26,7 @@ export async function generateMetadata({
 }: BodyTypePageProps): Promise<Metadata> {
   const { type } = await params;
   const typeLabel = getBodyTypeLabel(type);
-  const cars = getCarsByBodyType(type);
+  const cars = await getCarsByBodyTypeAsync(type);
 
   if (cars.length === 0) {
     return {
@@ -48,7 +48,7 @@ export async function generateMetadata({
 export default async function BodyTypePage({ params }: BodyTypePageProps) {
   const { type } = await params;
   const typeLabel = getBodyTypeLabel(type);
-  const cars = getCarsByBodyType(type);
+  const cars = await getCarsByBodyTypeAsync(type);
 
   if (cars.length === 0) {
     notFound();

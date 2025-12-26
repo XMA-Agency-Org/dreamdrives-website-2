@@ -67,6 +67,13 @@ export const CAR_BRANDS = [
   { id: "range-rover", label: "Range Rover" },
   { id: "audi", label: "Audi" },
   { id: "mclaren", label: "McLaren" },
+  { id: "hyundai", label: "Hyundai" },
+  { id: "kia", label: "Kia" },
+  { id: "mazda", label: "Mazda" },
+  { id: "nissan", label: "Nissan" },
+  { id: "gmc", label: "GMC" },
+  { id: "chevrolet", label: "Chevrolet" },
+  { id: "cadillac", label: "Cadillac" },
 ] as const;
 
 export const PRICE_RANGES = [

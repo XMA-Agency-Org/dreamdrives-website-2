@@ -115,6 +115,9 @@ const brandDisplayNames: Record<string, string> = {
   gmc: "GMC",
   nissan: "Nissan",
   maserati: "Maserati",
+  hyundai: "Hyundai",
+  kia: "Kia",
+  mazda: "Mazda",
 };
 
 export function getAllBrandsWithCount(): { id: string; name: string; count: number }[] {
@@ -211,4 +214,9 @@ export async function getSimilarCarsAsync(car: Car, limit: number = 4): Promise<
         (c.brand === car.brand || c.category === car.category),
     )
     .slice(0, limit);
+}
+
+export async function getCarsByBodyTypeAsync(bodyType: string): Promise<Car[]> {
+  const allCars = await getAllCarsAsync();
+  return allCars.filter((car) => car.category === bodyType && car.isAvailable);
 }

@@ -4,8 +4,8 @@ import { useMemo, useCallback, useEffect } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { CarCard } from "./CarCard";
 import { Heading, Pagination, Text } from "@/components/ui";
-import cars from "@/data/cars-data";
 import { PRICE_RANGES } from "@/lib/constants";
+import type { Car } from "@/types";
 
 const CARS_PER_PAGE = 12;
 
@@ -13,11 +13,12 @@ type ViewMode = "grid" | "list";
 type SortOption = "featured" | "price-low" | "price-high" | "name-asc" | "newest";
 
 interface CarsGridProps {
+  cars: Car[];
   sortBy?: SortOption;
   viewMode?: ViewMode;
 }
 
-export function CarsGrid({ sortBy = "featured", viewMode = "grid" }: CarsGridProps) {
+export function CarsGrid({ cars, sortBy = "featured", viewMode = "grid" }: CarsGridProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -97,8 +98,7 @@ export function CarsGrid({ sortBy = "featured", viewMode = "grid" }: CarsGridPro
       } else {
         params.set("page", String(page));
       }
-      router.push(`${pathname}?${params.toString()}`, { scroll: false });
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      router.push(`${pathname}?${params.toString()}`);
     },
     [searchParams, router, pathname]
   );

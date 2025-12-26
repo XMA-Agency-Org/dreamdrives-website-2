@@ -9,26 +9,24 @@ import {
   PricingCard,
   SimilarCars,
 } from "@/components/sections/car-detail";
-import { getCarBySlug, getSimilarCars } from "@/data/cars";
-import cars from "@/data/cars-data";
+import { getCarBySlugAsync, getSimilarCarsAsync, getAllCarsAsync } from "@/data/cars";
 
 interface CarDetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Generate static params for all cars
 export async function generateStaticParams() {
+  const cars = await getAllCarsAsync();
   return cars.map((car) => ({
     slug: car.slug,
   }));
 }
 
-// Generate metadata for each car
 export async function generateMetadata({
   params,
 }: CarDetailPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const car = getCarBySlug(slug);
+  const car = await getCarBySlugAsync(slug);
 
   if (!car) {
     return {
@@ -49,13 +47,13 @@ export async function generateMetadata({
 
 export default async function CarDetailPage({ params }: CarDetailPageProps) {
   const { slug } = await params;
-  const car = getCarBySlug(slug);
+  const car = await getCarBySlugAsync(slug);
 
   if (!car) {
     notFound();
   }
 
-  const similarCars = getSimilarCars(car, 4);
+  const similarCars = await getSimilarCarsAsync(car, 4);
 
   return (
     <>
