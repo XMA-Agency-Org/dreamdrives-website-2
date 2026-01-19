@@ -10,6 +10,8 @@ interface BodyTypePageProps {
   params: Promise<{ type: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return CAR_BODY_TYPES.filter((type) => type.id !== "all").map((type) => ({
     type: type.id,

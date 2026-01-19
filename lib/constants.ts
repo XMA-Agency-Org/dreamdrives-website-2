@@ -39,11 +39,8 @@ export const NAV_LINKS = [
 
 export const CAR_BODY_TYPES = [
   { id: "all", label: "All Types" },
-  { id: "supercar", label: "Supercars" },
-  { id: "luxury-sedan", label: "Sedans" },
+  { id: "sedan", label: "Sedans" },
   { id: "suv", label: "SUVs" },
-  { id: "sports", label: "Sports Cars" },
-  { id: "convertible", label: "Convertibles" },
 ] as const;
 
 export const CAR_CATEGORIES = [

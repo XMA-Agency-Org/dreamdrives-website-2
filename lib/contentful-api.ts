@@ -58,9 +58,7 @@ const VALID_BRANDS: CarBrand[] = [
   "nissan", "maserati"
 ];
 
-const VALID_CATEGORIES: CarCategory[] = [
-  "supercar", "luxury-sedan", "suv", "sports", "convertible", "coupe"
-];
+const VALID_CATEGORIES: CarCategory[] = ["sedan", "suv"];
 
 function extractTextFromRichText(richText?: ContentfulRichText): string {
   if (!richText?.content) return "";
@@ -90,11 +88,17 @@ function normalizeBrand(brandSlug?: string): CarBrand {
 }
 
 function normalizeCategory(categorySlug?: string): CarCategory {
-  if (!categorySlug) return "luxury-sedan";
+  if (!categorySlug) return "sedan";
   const normalized = categorySlug.toLowerCase().replace(/\s+/g, "-");
+
+  if (normalized === "suv" || normalized === "crossover") return "suv";
+  if (normalized.includes("sedan") || normalized.includes("coupe") ||
+      normalized.includes("sports") || normalized.includes("convertible") ||
+      normalized.includes("supercar")) return "sedan";
+
   return VALID_CATEGORIES.includes(normalized as CarCategory)
     ? (normalized as CarCategory)
-    : "luxury-sedan";
+    : "sedan";
 }
 
 function normalizeTransmission(transmission?: string): CarSpecs["transmission"] {

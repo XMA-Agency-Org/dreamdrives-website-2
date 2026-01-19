@@ -15,6 +15,8 @@ interface CarDetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const cars = await getAllCarsAsync();
   return cars.map((car) => ({

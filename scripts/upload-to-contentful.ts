@@ -79,12 +79,8 @@ const brandDisplayNames: Record<string, string> = {
 };
 
 const categoryDisplayNames: Record<string, string> = {
-  "luxury-sedan": "Luxury Sedan",
+  sedan: "Sedan",
   suv: "SUV",
-  supercar: "Supercar",
-  sports: "Sports Car",
-  convertible: "Convertible",
-  coupe: "Coupe",
 };
 
 async function main() {

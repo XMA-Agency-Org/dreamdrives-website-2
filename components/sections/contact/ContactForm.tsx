@@ -7,11 +7,8 @@ import { getWhatsAppUrl } from "@/lib/utils";
 import { trackContactFormSubmit } from "@/lib/analytics";
 
 const carCategories = [
-  { value: "supercar", label: "Supercars" },
-  { value: "luxury-sedan", label: "Luxury Sedans" },
+  { value: "sedan", label: "Sedans" },
   { value: "suv", label: "SUVs" },
-  { value: "sports", label: "Sports Cars" },
-  { value: "convertible", label: "Convertibles" },
 ];
 
 interface ContactFormProps {

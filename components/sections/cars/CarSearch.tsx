@@ -34,27 +34,15 @@ export function CarSearch({ cars, className }: CarSearchProps) {
   const popularSearches = useMemo(() => {
     const results: string[] = [];
 
-    const supercars = cars
-      .filter((car) => car.isAvailable && car.category === "supercar")
-      .slice(0, 3)
+    const sedans = cars
+      .filter((car) => car.isAvailable && car.category === "sedan")
+      .slice(0, 4)
       .map((car) => car.name);
-    results.push(...supercars);
-
-    const sportsCars = cars
-      .filter((car) => car.isAvailable && car.category === "sports")
-      .slice(0, 3)
-      .map((car) => car.name);
-    results.push(...sportsCars);
-
-    const convertibles = cars
-      .filter((car) => car.isAvailable && car.category === "convertible")
-      .slice(0, 2)
-      .map((car) => car.name);
-    results.push(...convertibles);
+    results.push(...sedans);
 
     const suvs = cars
       .filter((car) => car.isAvailable && car.category === "suv")
-      .slice(0, 1)
+      .slice(0, 4)
       .map((car) => car.name);
     results.push(...suvs);
 

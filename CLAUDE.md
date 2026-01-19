@@ -136,7 +136,7 @@ interface Car {
 type CarBrand = "rolls-royce" | "lamborghini" | "ferrari" | "bentley" | "mercedes" |
                 "bmw" | "porsche" | "range-rover" | "audi" | "mclaren" | ...
 
-type CarCategory = "supercar" | "luxury-sedan" | "suv" | "sports" | "convertible" | "coupe"
+type CarCategory = "sedan" | "suv"
 ```
 
 ## External Integrations

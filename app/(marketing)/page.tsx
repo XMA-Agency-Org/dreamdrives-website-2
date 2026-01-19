@@ -40,7 +40,7 @@ export default async function HomePage() {
         description="Lamborghini, Ferrari, McLaren. The experience lives up to the car."
         category="exotic"
         cars={cars}
-        viewAllHref="/cars/body-type/supercar"
+        viewAllHref="/cars"
         ctaText="View All Exotic Cars"
       />
 

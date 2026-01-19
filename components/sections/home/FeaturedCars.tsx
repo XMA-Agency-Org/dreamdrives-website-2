@@ -12,28 +12,18 @@ import type { Car } from "@/types";
 
 const categories = [
   { id: "all-cars", label: "All Cars" },
-  { id: "luxury-cars", label: "Luxury Cars" },
-  { id: "exotic-cars", label: "Exotic Cars" },
-  { id: "suv", label: "SUV" },
-  { id: "convertible", label: "Convertible" },
-  { id: "sport-cars", label: "Sport Cars" },
+  { id: "sedan", label: "Sedans" },
+  { id: "suv", label: "SUVs" },
+  { id: "luxury", label: "Luxury" },
 ] as const;
+
+const LUXURY_BRANDS = ["mercedes", "bmw", "range-rover", "lamborghini", "rolls-royce", "bentley", "ferrari", "porsche", "mclaren", "aston-martin"];
 
 const categoryMapping: Record<string, (car: Car) => boolean> = {
   "all-cars": () => true,
-  "luxury-cars": (car) =>
-    car.brand === "rolls-royce" ||
-    car.brand === "bentley" ||
-    car.category === "luxury-sedan",
-  "exotic-cars": (car) =>
-    car.brand === "lamborghini" ||
-    car.brand === "ferrari" ||
-    car.category === "supercar",
+  "sedan": (car) => car.category === "sedan",
   "suv": (car) => car.category === "suv",
-  "convertible": (car) => car.category === "convertible",
-  "sport-cars": (car) =>
-    car.category === "sports" ||
-    car.brand === "porsche",
+  "luxury": (car) => LUXURY_BRANDS.includes(car.brand),
 };
 
 interface FeaturedCarsProps {

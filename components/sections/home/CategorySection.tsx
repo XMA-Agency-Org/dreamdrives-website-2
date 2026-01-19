@@ -8,19 +8,18 @@ import { RevealOnScroll } from "@/components/animation";
 import { CarCard } from "@/components/sections/cars";
 import type { Car } from "@/types";
 
-type CategoryId = "featured" | "exotic" | "suv" | "convertible" | "sports";
+type CategoryId = "featured" | "exotic" | "suv" | "sedan" | "luxury";
+
+const LUXURY_BRANDS = ["mercedes", "bmw", "range-rover", "lamborghini", "rolls-royce", "bentley", "ferrari", "porsche", "mclaren", "aston-martin"];
 
 const categoryFilters: Record<CategoryId, (car: Car) => boolean> = {
   featured: (car) => car.isFeatured === true,
   exotic: (car) =>
     !car.isFeatured &&
-    (car.brand === "lamborghini" ||
-      car.brand === "ferrari" ||
-      car.category === "supercar"),
+    (car.brand === "lamborghini" || car.brand === "ferrari"),
   suv: (car) => !car.isFeatured && car.category === "suv",
-  convertible: (car) => !car.isFeatured && car.category === "convertible",
-  sports: (car) =>
-    !car.isFeatured && (car.category === "sports" || car.brand === "porsche"),
+  sedan: (car) => !car.isFeatured && car.category === "sedan",
+  luxury: (car) => !car.isFeatured && LUXURY_BRANDS.includes(car.brand),
 };
 
 interface CategorySectionProps {

@@ -1,10 +1,6 @@
 export type CarCategory =
-  | "supercar"
-  | "luxury-sedan"
-  | "suv"
-  | "sports"
-  | "convertible"
-  | "coupe";
+  | "sedan"
+  | "suv";
 
 export type CarBrand =
   | "rolls-royce"

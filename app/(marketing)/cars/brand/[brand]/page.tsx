@@ -13,6 +13,8 @@ interface BrandPageProps {
   params: Promise<{ brand: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const brands = getAllBrandsWithCount();
   return brands.map((brand) => ({

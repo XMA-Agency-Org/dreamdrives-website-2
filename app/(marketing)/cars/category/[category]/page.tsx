@@ -11,6 +11,8 @@ interface CategoryPageProps {
   params: Promise<{ category: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return CAR_CATEGORIES.filter((cat) => cat.id !== "all").map((cat) => ({
     category: cat.id,
@@ -32,7 +34,7 @@ async function getCarsByMarketingCategory(categoryId: string): Promise<Car[]> {
     case "business":
       return allCars.filter(
         (car) =>
-          car.category === "luxury-sedan" ||
+          car.category === "sedan" ||
           (car.pricing.daily >= 500 && car.pricing.daily < 2000),
       );
     case "economy":
