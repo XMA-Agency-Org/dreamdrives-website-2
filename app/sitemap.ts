@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllBrandsWithCount, getAllCarsAsync } from "@/data/cars";
 import { CAR_BODY_TYPES, CAR_CATEGORIES } from "@/lib/constants";
 
+export const dynamic = "force-static";
+
 const BASE_URL = "https://dreamdrives.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
