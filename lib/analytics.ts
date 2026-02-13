@@ -1,7 +1,8 @@
 import posthog from "posthog-js";
 
 const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY || "";
-const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com";
+const POSTHOG_HOST =
+  process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://app.posthog.com";
 
 let initialized = false;
 
@@ -11,7 +12,8 @@ export function initPostHog() {
   }
 
   posthog.init(POSTHOG_KEY, {
-    api_host: POSTHOG_HOST,
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+    defaults: "2026-01-30",
     capture_pageview: true,
     capture_pageleave: true,
     autocapture: true,
@@ -30,7 +32,14 @@ interface WhatsAppClickData {
   carBrand?: string;
   carCategory?: string;
   carPrice?: number;
-  source: "floating_cta" | "car_card" | "car_detail" | "booking_section" | "header" | "footer" | "mobile_menu";
+  source:
+    | "floating_cta"
+    | "car_card"
+    | "car_detail"
+    | "booking_section"
+    | "header"
+    | "footer"
+    | "mobile_menu";
 }
 
 export function trackWhatsAppClick(data: WhatsAppClickData) {
