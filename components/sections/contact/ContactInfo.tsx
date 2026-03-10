@@ -1,6 +1,7 @@
 "use client";
 
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import { Heading, Text } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
 import { COMPANY, LOCATIONS } from "@/lib/constants";
@@ -8,7 +9,7 @@ import { getWhatsAppUrl } from "@/lib/utils";
 import { trackPhoneClick } from "@/lib/analytics";
 
 interface ContactItem {
-  icon: typeof Phone;
+  icon: React.ComponentType<{ className?: string }>;
   label: string;
   value: string;
   href: string;
@@ -29,7 +30,7 @@ const contactItems: ContactItem[] = [
     href: `tel:${COMPANY.secondaryPhoneClean}`,
   },
   {
-    icon: MessageCircle,
+    icon: FaWhatsapp,
     label: "WhatsApp",
     value: COMPANY.phone,
     href: getWhatsAppUrl(),

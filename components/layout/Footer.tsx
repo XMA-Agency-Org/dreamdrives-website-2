@@ -20,7 +20,15 @@ export function Footer() {
               <Image
                 src="/logo-light.svg"
                 alt="Dream Drives"
-                className="h-20 w-full"
+                className="h-20 w-full show-on-dark"
+                width={120}
+                height={120}
+                priority
+              />
+              <Image
+                src="/logo-dark.svg"
+                alt="Dream Drives"
+                className="h-20 w-full show-on-light"
                 width={120}
                 height={120}
                 priority
