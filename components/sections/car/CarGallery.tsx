@@ -50,7 +50,7 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
               src={selectedImage?.src || "/images/cars/placeholder.jpg"}
               alt={selectedImage?.alt || carName}
               fill
-              className="object-cover object-bottom"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 60vw"
               priority
             />

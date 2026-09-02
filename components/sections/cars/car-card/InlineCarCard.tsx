@@ -51,7 +51,7 @@ export function InlineCarCard({
               src={primaryImage?.src || "/images/cars/placeholder.jpg"}
               alt={car.name}
               fill
-              className="object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 300px"
             />
 

@@ -45,7 +45,7 @@ export function StandardCarCard({
               src={primaryImage?.src || "/images/cars/placeholder.jpg"}
               alt={car.name}
               fill
-              className="object-cover object-bottom transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />
 
             <div className="absolute top-3 left-3 right-3 flex items-start justify-between">

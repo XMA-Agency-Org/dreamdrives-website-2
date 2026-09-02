@@ -39,7 +39,7 @@ export function CompactCarCard({
               src={primaryImage?.src || "/images/cars/placeholder.jpg"}
               alt={car.name}
               fill
-              className="object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
+              className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
 
