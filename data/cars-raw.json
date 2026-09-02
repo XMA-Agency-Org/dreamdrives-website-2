@@ -507,12 +507,12 @@
   {
     "id": "65",
     "slug": "mercedes-g63-amg-blue",
-    "name": "Mercedes G63 AMG Blue",
+    "name": "Mercedes-AMG G63 2023 Blue",
     "brand": "mercedes",
     "category": "suv",
-    "year": 2024,
-    "tagline": "Bold and iconic",
-    "description": "The Mercedes-AMG G63 in striking blue combines legendary G-Class heritage with AMG performance. Unmistakable presence.",
+    "year": 2023,
+    "tagline": "Navy over red",
+    "description": "A 2023 G63 in deep navy over a full red Nappa interior, with the AMG performance steering wheel and carbon trim. The colour combination that photographs best against the Marina skyline.",
     "pricing": {
       "daily": 1600,
       "weekly": 10000,
@@ -532,14 +532,16 @@
     },
     "features": [
       "AMG Performance Exhaust",
+      "Red Nappa Leather Interior",
       "Burmester 3D Sound",
       "AMG Ride Control",
-      "Night Package"
+      "Ambient Lighting",
+      "360° Camera"
     ],
     "isFeatured": true,
     "isAvailable": true,
     "color": "Brilliant Blue",
-    "interiorColor": "Black Nappa Leather"
+    "interiorColor": "Red Nappa Leather"
   },
   {
     "id": "66",
@@ -580,12 +582,12 @@
   {
     "id": "67",
     "slug": "range-rover-sport",
-    "name": "Range Rover Sport",
+    "name": "Range Rover Sport 2025",
     "brand": "range-rover",
     "category": "suv",
-    "year": 2024,
-    "tagline": "Sporting luxury",
-    "description": "The Range Rover Sport delivers dynamic performance with unmistakable Range Rover luxury. Athletic design meets refined capability.",
+    "year": 2025,
+    "tagline": "Black over red",
+    "description": "The 2025 Range Rover Sport in Santorini Black over a red leather cabin, with the pared-back curved dashboard and air suspension. The quiet alternative to a G-Wagon at the same seat count.",
     "pricing": {
       "daily": 1300,
       "weekly": 8300,
@@ -607,12 +609,14 @@
       "Terrain Response 2",
       "Meridian Sound System",
       "Air Suspension",
-      "Pixel LED Headlights"
+      "Pixel LED Headlights",
+      "Curved Digital Dashboard",
+      "Panoramic Roof"
     ],
     "isFeatured": true,
     "isAvailable": true,
-    "color": "Grey",
-    "interiorColor": "Ebony Leather"
+    "color": "Santorini Black",
+    "interiorColor": "Red Leather"
   },
   {
     "id": "68",
