@@ -26,6 +26,31 @@ updated together.
 **`public/CARS/` is gitignored.** New photo folders are not committed and must be copied to the
 server (or uploaded to Contentful) separately from the code deploy.
 
+## After reordering or curating photos
+
+Renaming, deleting or reordering files in a car's folder leaves `car-images.json` pointing at
+paths that no longer exist. Rebuild it from disk rather than editing the JSON by hand:
+
+```bash
+bun scripts/resync-images.ts            # show the drift, change nothing
+bun scripts/resync-images.ts --apply    # rewrite the manifest to match disk
+```
+
+Files are ordered by the number at the end of the filename, so `-01.jpg` and `-1.jpg` sort the
+same way and zero-padding a folder is safe. The first file becomes the thumbnail and the card
+hero, so putting the best exterior shot at `-01` is how you set the cover.
+
+Anything named `_unused` is ignored — retire a photo by renaming it rather than deleting it.
+
+Then push the new order to the CMS:
+
+```bash
+bun scripts/sync-contentful.ts --apply --only <slug> --reimage <slug>
+```
+
+`--reimage` uploads fresh assets and repoints the entry. The previous assets stay in the
+Contentful media library, unreferenced.
+
 ## Pushing to Contentful
 
 Contentful is the live source: `output: "export"` means the build reads it at build time and
