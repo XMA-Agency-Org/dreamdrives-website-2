@@ -25,7 +25,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Apple CarPlay", "Android Auto", "Rearview Camera", "Bluetooth Connectivity"],
+    "features": [
+      "Apple CarPlay",
+      "Android Auto",
+      "Rearview Camera",
+      "Bluetooth Connectivity"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Cloth"
@@ -56,7 +61,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Apple CarPlay", "Android Auto", "Lane Keep Assist", "Forward Collision Warning"],
+    "features": [
+      "Apple CarPlay",
+      "Android Auto",
+      "Lane Keep Assist",
+      "Forward Collision Warning"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Cloth"
@@ -87,7 +97,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["10.25-inch Touchscreen", "Wireless Apple CarPlay", "Blind Spot Monitoring", "Smart Cruise Control"],
+    "features": [
+      "10.25-inch Touchscreen",
+      "Wireless Apple CarPlay",
+      "Blind Spot Monitoring",
+      "Smart Cruise Control"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Leather"
@@ -118,7 +133,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Panoramic Sunroof", "Wireless Charging", "360° Camera", "Heated Seats"],
+    "features": [
+      "Panoramic Sunroof",
+      "Wireless Charging",
+      "360° Camera",
+      "Heated Seats"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Leather"
@@ -149,7 +169,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Panoramic Sunroof", "Bose Premium Audio", "Driver Attention Warning", "Smart Park Assist"],
+    "features": [
+      "Panoramic Sunroof",
+      "Bose Premium Audio",
+      "Driver Attention Warning",
+      "Smart Park Assist"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Leather"
@@ -180,7 +205,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Curved Display", "Harman Kardon Audio", "Highway Driving Assist", "Remote Smart Parking"],
+    "features": [
+      "Curved Display",
+      "Harman Kardon Audio",
+      "Highway Driving Assist",
+      "Remote Smart Parking"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Leather"
@@ -211,7 +241,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Bose Sound System", "i-Activsense Safety", "Heads-Up Display", "Adaptive Cruise Control"],
+    "features": [
+      "Bose Sound System",
+      "i-Activsense Safety",
+      "Heads-Up Display",
+      "Adaptive Cruise Control"
+    ],
     "isAvailable": true,
     "color": "Dark Blue",
     "interiorColor": "Black Leather"
@@ -242,7 +277,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Bose 11-Speaker Audio", "Ventilated Seats", "360° View Monitor", "Radar Cruise Control"],
+    "features": [
+      "Bose 11-Speaker Audio",
+      "Ventilated Seats",
+      "360° View Monitor",
+      "Radar Cruise Control"
+    ],
     "isAvailable": true,
     "color": "Silver",
     "interiorColor": "White Leather"
@@ -273,7 +313,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["i-Activ AWD", "Bose Premium Audio", "Heated Steering Wheel", "Power Liftgate"],
+    "features": [
+      "i-Activ AWD",
+      "Bose Premium Audio",
+      "Heated Steering Wheel",
+      "Power Liftgate"
+    ],
     "isAvailable": true,
     "color": "Navy Blue",
     "interiorColor": "Black Leather"
@@ -304,7 +349,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["i-Activ AWD", "Bose Premium Audio", "Heated Steering Wheel", "Power Liftgate"],
+    "features": [
+      "i-Activ AWD",
+      "Bose Premium Audio",
+      "Heated Steering Wheel",
+      "Power Liftgate"
+    ],
     "isAvailable": true,
     "color": "Soul Red Crystal",
     "interiorColor": "Black Leather"
@@ -319,10 +369,10 @@
     "tagline": "Sports activity coupe",
     "description": "The BMW X6 combines the versatility of an SUV with coupe-like dynamics. A powerful statement of athletic luxury.",
     "pricing": {
-      "daily": 1400,
-      "weekly": 8500,
-      "monthly": 28000,
-      "deposit": 5000,
+      "daily": 950,
+      "weekly": 5900,
+      "monthly": 19000,
+      "deposit": 3500,
       "currency": "AED"
     },
     "specs": {
@@ -335,7 +385,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["M Sport Package", "Harman Kardon Audio", "Panoramic Sunroof", "Adaptive LED Headlights"],
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Audio",
+      "Panoramic Sunroof",
+      "Adaptive LED Headlights"
+    ],
     "isFeatured": true,
     "isAvailable": true,
     "color": "Black Sapphire",
@@ -351,10 +406,10 @@
     "tagline": "Alpine elegance",
     "description": "The BMW X6 in Alpine White offers striking presence with commanding road dynamics. Luxury meets performance.",
     "pricing": {
-      "daily": 1400,
-      "weekly": 8500,
-      "monthly": 28000,
-      "deposit": 5000,
+      "daily": 950,
+      "weekly": 5900,
+      "monthly": 19000,
+      "deposit": 3500,
       "currency": "AED"
     },
     "specs": {
@@ -367,7 +422,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["M Sport Package", "Harman Kardon Audio", "Panoramic Sunroof", "Gesture Control"],
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Audio",
+      "Panoramic Sunroof",
+      "Gesture Control"
+    ],
     "isAvailable": true,
     "color": "Alpine White",
     "interiorColor": "Cognac Leather"
@@ -382,10 +442,10 @@
     "tagline": "Compact luxury",
     "description": "The Mercedes C200 delivers refined luxury in a compact package. German engineering meets sophisticated design.",
     "pricing": {
-      "daily": 450,
-      "weekly": 2800,
-      "monthly": 9000,
-      "deposit": 3000,
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
       "currency": "AED"
     },
     "specs": {
@@ -398,7 +458,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["MBUX Infotainment", "Burmester Sound", "Ambient Lighting", "Digital Cockpit"],
+    "features": [
+      "MBUX Infotainment",
+      "Burmester Sound",
+      "Ambient Lighting",
+      "Digital Cockpit"
+    ],
     "isAvailable": true,
     "color": "Selenite Grey",
     "interiorColor": "Black Leather"
@@ -413,10 +478,10 @@
     "tagline": "Pure elegance",
     "description": "The Mercedes C200 in Polar White offers timeless elegance with modern technology. Luxury defined.",
     "pricing": {
-      "daily": 450,
-      "weekly": 2800,
-      "monthly": 9000,
-      "deposit": 3000,
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
       "currency": "AED"
     },
     "specs": {
@@ -429,7 +494,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["MBUX Infotainment", "Burmester Sound", "Ambient Lighting", "Active Parking Assist"],
+    "features": [
+      "MBUX Infotainment",
+      "Burmester Sound",
+      "Ambient Lighting",
+      "Active Parking Assist"
+    ],
     "isAvailable": true,
     "color": "Polar White",
     "interiorColor": "Macchiato Beige"
@@ -444,10 +514,10 @@
     "tagline": "Bold and iconic",
     "description": "The Mercedes-AMG G63 in striking blue combines legendary G-Class heritage with AMG performance. Unmistakable presence.",
     "pricing": {
-      "daily": 2800,
-      "weekly": 17500,
-      "monthly": 60000,
-      "deposit": 7000,
+      "daily": 1600,
+      "weekly": 10000,
+      "monthly": 34000,
+      "deposit": 4000,
       "currency": "AED"
     },
     "specs": {
@@ -460,7 +530,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["AMG Performance Exhaust", "Burmester 3D Sound", "AMG Ride Control", "Night Package"],
+    "features": [
+      "AMG Performance Exhaust",
+      "Burmester 3D Sound",
+      "AMG Ride Control",
+      "Night Package"
+    ],
     "isFeatured": true,
     "isAvailable": true,
     "color": "Brilliant Blue",
@@ -492,7 +567,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Off-Road Mode", "Hill Descent Control", "Roof Rails", "All-Terrain Tires"],
+    "features": [
+      "Off-Road Mode",
+      "Hill Descent Control",
+      "Roof Rails",
+      "All-Terrain Tires"
+    ],
     "isAvailable": true,
     "color": "White",
     "interiorColor": "Black Cloth"
@@ -507,10 +587,10 @@
     "tagline": "Sporting luxury",
     "description": "The Range Rover Sport delivers dynamic performance with unmistakable Range Rover luxury. Athletic design meets refined capability.",
     "pricing": {
-      "daily": 1800,
-      "weekly": 11500,
-      "monthly": 40000,
-      "deposit": 6000,
+      "daily": 1300,
+      "weekly": 8300,
+      "monthly": 28000,
+      "deposit": 4500,
       "currency": "AED"
     },
     "specs": {
@@ -523,7 +603,12 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Terrain Response 2", "Meridian Sound System", "Air Suspension", "Pixel LED Headlights"],
+    "features": [
+      "Terrain Response 2",
+      "Meridian Sound System",
+      "Air Suspension",
+      "Pixel LED Headlights"
+    ],
     "isFeatured": true,
     "isAvailable": true,
     "color": "Grey",
@@ -539,10 +624,10 @@
     "tagline": "The super SUV evolved",
     "description": "The Lamborghini Urus S delivers even more refined performance and sportier design. The pinnacle of super SUV excellence.",
     "pricing": {
-      "daily": 4000,
-      "weekly": 25000,
-      "monthly": 85000,
-      "deposit": 10000,
+      "daily": 3300,
+      "weekly": 20500,
+      "monthly": 70000,
+      "deposit": 8500,
       "currency": "AED"
     },
     "specs": {
@@ -555,10 +640,379 @@
       "seats": 5,
       "doors": 4
     },
-    "features": ["Carbon Ceramic Brakes", "Adaptive Air Suspension", "Bang & Olufsen 3D Sound", "Akrapovic Exhaust"],
+    "features": [
+      "Carbon Ceramic Brakes",
+      "Adaptive Air Suspension",
+      "Bang & Olufsen 3D Sound",
+      "Akrapovic Exhaust"
+    ],
     "isFeatured": true,
     "isAvailable": true,
     "color": "Nero Noctis",
     "interiorColor": "Black Alcantara"
+  },
+  {
+    "id": "69",
+    "slug": "lamborghini-urus-performante-2024",
+    "name": "Lamborghini Urus Performante 2024",
+    "brand": "lamborghini",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Track-bred super SUV",
+    "description": "The Urus Performante strips weight, stiffens the chassis and adds a titanium exhaust to the super SUV formula. Rosso paintwork and a Dubai skyline are a natural pairing.",
+    "pricing": {
+      "daily": 3300,
+      "weekly": 20500,
+      "monthly": 70000,
+      "deposit": 8500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Twin-Turbo",
+      "horsepower": 657,
+      "acceleration": "3.3s",
+      "topSpeed": 306,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Carbon Fibre Body Package",
+      "Akrapovic Titanium Exhaust",
+      "Bang & Olufsen 3D Sound",
+      "Alcantara Sports Interior"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Rosso Anteros",
+    "interiorColor": "Black Alcantara with Yellow Stitching"
+  },
+  {
+    "id": "70",
+    "slug": "mercedes-g63-2025-sand",
+    "name": "Mercedes-AMG G63 2025 Sand",
+    "brand": "mercedes",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "Three-digit plate, desert finish",
+    "description": "A 2025 G63 in a soft desert-sand finish with a black brush guard and a three-digit Dubai plate. The most requested spec in the fleet.",
+    "pricing": {
+      "daily": 2500,
+      "weekly": 15500,
+      "monthly": 53000,
+      "deposit": 6500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 585,
+      "acceleration": "4.4s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Three-Digit Plate",
+      "AMG Performance Exhaust",
+      "Burmester 3D Sound",
+      "Brush Guard"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Desert Sand",
+    "interiorColor": "Black Nappa Leather"
+  },
+  {
+    "id": "71",
+    "slug": "mercedes-g63-2025-black",
+    "name": "Mercedes-AMG G63 2025 Black",
+    "brand": "mercedes",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "The 2025 G-Wagon, all in black",
+    "description": "The latest G63 in gloss black on black AMG wheels. Squared-off presence with 585hp of biturbo V8 behind it.",
+    "pricing": {
+      "daily": 1900,
+      "weekly": 11900,
+      "monthly": 40000,
+      "deposit": 5000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 585,
+      "acceleration": "4.4s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "AMG Night Package",
+      "AMG Performance Exhaust",
+      "Burmester 3D Sound",
+      "AMG Ride Control"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Obsidian Black",
+    "interiorColor": "Black Nappa Leather"
+  },
+  {
+    "id": "72",
+    "slug": "mercedes-g63-amg-black",
+    "name": "Mercedes G63 AMG Black",
+    "brand": "mercedes",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Blacked out, front to back",
+    "description": "A blacked-out G63 AMG with widened arches and a lowered stance. The classic Dubai silhouette at a friendlier daily rate.",
+    "pricing": {
+      "daily": 1600,
+      "weekly": 10000,
+      "monthly": 34000,
+      "deposit": 4000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 577,
+      "acceleration": "4.5s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "AMG Night Package",
+      "AMG Performance Exhaust",
+      "Widebody Arches",
+      "Burmester 3D Sound"
+    ],
+    "isAvailable": true,
+    "color": "Obsidian Black",
+    "interiorColor": "Black Nappa Leather"
+  },
+  {
+    "id": "73",
+    "slug": "range-rover-vogue-2024",
+    "name": "Range Rover Vogue 2024",
+    "brand": "range-rover",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Quiet authority",
+    "description": "The Vogue is the flagship Range Rover: a hushed cabin, a long wheelbase and the cleanest lines Land Rover has drawn. Effortless on Sheikh Zayed Road.",
+    "pricing": {
+      "daily": 1400,
+      "weekly": 8800,
+      "monthly": 30000,
+      "deposit": 4000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "3.0L I6 Mild-Hybrid",
+      "horsepower": 395,
+      "acceleration": "5.8s",
+      "topSpeed": 234,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Executive Rear Seating",
+      "Meridian Signature Sound",
+      "Air Suspension",
+      "Cabin Air Purification"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Santorini Black",
+    "interiorColor": "Ebony Windsor Leather"
+  },
+  {
+    "id": "74",
+    "slug": "cadillac-escalade-2025",
+    "name": "Cadillac Escalade 2025",
+    "brand": "cadillac",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "Full-size American luxury",
+    "description": "Seven seats, a 38-inch curved OLED dash and a 6.2L V8. The Escalade is the airport-run SUV when the group is large and the luggage is larger.",
+    "pricing": {
+      "daily": 1300,
+      "weekly": 8300,
+      "monthly": 28000,
+      "deposit": 3500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "6.2L V8",
+      "horsepower": 420,
+      "acceleration": "6.1s",
+      "topSpeed": 200,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "38-inch Curved OLED Display",
+      "AKG Studio Reference Sound",
+      "Magnetic Ride Control",
+      "Seven Seats"
+    ],
+    "isAvailable": true,
+    "color": "Black Raven",
+    "interiorColor": "Jet Black Leather"
+  },
+  {
+    "id": "75",
+    "slug": "gmc-yukon-2026",
+    "name": "GMC Yukon 2026",
+    "brand": "gmc",
+    "category": "suv",
+    "year": 2026,
+    "tagline": "Space for everyone",
+    "description": "The newest Yukon Denali: three rows, independent rear suspension and a cabin built for long drives. Practical without feeling plain.",
+    "pricing": {
+      "daily": 750,
+      "weekly": 4700,
+      "monthly": 16000,
+      "deposit": 2500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "5.3L V8",
+      "horsepower": 355,
+      "acceleration": "7.0s",
+      "topSpeed": 180,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "Three-Row Seating",
+      "Bose Premium Audio",
+      "Wireless Apple CarPlay",
+      "Power Tailgate"
+    ],
+    "isAvailable": true,
+    "color": "Onyx Black",
+    "interiorColor": "Jet Black Leather"
+  },
+  {
+    "id": "76",
+    "slug": "bmw-420i-2026",
+    "name": "BMW 420i 2026",
+    "brand": "bmw",
+    "category": "sedan",
+    "year": 2026,
+    "tagline": "Sharp four-door coupe",
+    "description": "The 4 Series Gran Coupe in black on black. Rear-wheel drive, a well-judged chassis and enough room in the back to stay useful.",
+    "pricing": {
+      "daily": 550,
+      "weekly": 3400,
+      "monthly": 11500,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.0L I4 TwinPower Turbo",
+      "horsepower": 184,
+      "acceleration": "7.7s",
+      "topSpeed": 240,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Sound",
+      "Live Cockpit Professional",
+      "Adaptive LED Headlights"
+    ],
+    "isAvailable": true,
+    "color": "Black Sapphire",
+    "interiorColor": "Black Sensatec"
+  },
+  {
+    "id": "77",
+    "slug": "gmc-yukon-2023",
+    "name": "GMC Yukon 2023",
+    "brand": "gmc",
+    "category": "suv",
+    "year": 2023,
+    "tagline": "Big SUV, small rate",
+    "description": "The previous-generation Yukon AT4 with the off-road stance and the same three rows of seats. The value pick for family trips.",
+    "pricing": {
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "5.3L V8",
+      "horsepower": 355,
+      "acceleration": "7.2s",
+      "topSpeed": 180,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "AT4 Off-Road Package",
+      "Three-Row Seating",
+      "Bose Audio",
+      "Apple CarPlay"
+    ],
+    "isAvailable": true,
+    "color": "Onyx Black",
+    "interiorColor": "Jet Black Leather"
+  },
+  {
+    "id": "78",
+    "slug": "audi-a3-2024",
+    "name": "Audi A3 2024",
+    "brand": "audi",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "The easy everyday choice",
+    "description": "A clean white A3 sedan with the virtual cockpit and a light footprint. Cheapest way into the fleet and simple to park anywhere in the city.",
+    "pricing": {
+      "daily": 250,
+      "weekly": 1600,
+      "monthly": 5300,
+      "deposit": 1500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.4L TFSI",
+      "horsepower": 150,
+      "acceleration": "8.4s",
+      "topSpeed": 225,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Audi Virtual Cockpit",
+      "Apple CarPlay",
+      "LED Headlights",
+      "Parking Sensors"
+    ],
+    "isAvailable": true,
+    "color": "Glacier White",
+    "interiorColor": "Black Leatherette"
   }
 ]

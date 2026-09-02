@@ -1,0 +1,8 @@
+{
+  "_comment": "Local slug -> the slug the vehicle already uses in Contentful. Used by scripts/sync-contentful.ts so a car that was loaded into the CMS under a different name is updated in place instead of duplicated. Contentful's slug stays canonical; the local urlSlug field is never overwritten for a mapped car.",
+  "mercedes-g63-2025-black": "mercedes-benz-g63-amg-2025",
+  "range-rover-vogue-2024": "land-rover-range-rover-vogue-2023",
+  "gmc-yukon-2026": "gmc-yukon-at4-2025",
+  "gmc-yukon-2023": "gmc-yukon-at4-2023",
+  "audi-a3-2024": "audi-a3"
+}

@@ -1,3 +1,11 @@
+/**
+ * DEPRECATED - use scripts/sync-contentful.ts instead.
+ *
+ * This script replaces an entry's fields wholesale, which erases any field it does not
+ * itself write (airConditioning, fuelConsumption, rating, reviewCount, features), and it
+ * unpublishes each entry mid-update. It also creates a "sedan" category that does not
+ * exist in the content model. Kept only for reference.
+ */
 import { createClient } from "contentful-management";
 import { readFileSync } from "fs";
 import { join } from "path";
@@ -76,6 +84,9 @@ const brandDisplayNames: Record<string, string> = {
   mercedes: "Mercedes-Benz",
   "range-rover": "Range Rover",
   lamborghini: "Lamborghini",
+  audi: "Audi",
+  cadillac: "Cadillac",
+  gmc: "GMC",
 };
 
 const categoryDisplayNames: Record<string, string> = {

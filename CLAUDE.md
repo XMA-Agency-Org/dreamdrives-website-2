@@ -160,4 +160,5 @@ NEXT_PUBLIC_GOOGLE_CONVERSION_ID=<id>
 
 ## Docs Reference
 
-See `docs/design-system.md` for comprehensive design system documentation including color tables, spacing scale, and component patterns.
+- `docs/design-system.md` — color tables, spacing scale, component patterns.
+- `docs/fleet-data.md` — how `cars-raw.json`, `car-images.json` and `public/CARS/` fit together, the image naming and resize convention, and the steps to add a vehicle. Note that `public/CARS/` is gitignored, so new photo folders ship separately from code.
