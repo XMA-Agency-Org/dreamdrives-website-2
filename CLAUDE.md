@@ -162,3 +162,7 @@ NEXT_PUBLIC_GOOGLE_CONVERSION_ID=<id>
 
 - `docs/design-system.md` — color tables, spacing scale, component patterns.
 - `docs/fleet-data.md` — how `cars-raw.json`, `car-images.json` and `public/CARS/` fit together, the image naming and resize convention, and the steps to add a vehicle. Note that `public/CARS/` is gitignored, so new photo folders ship separately from code.
+
+## Learnings & Corrections
+
+- ❌ Contentful's `luxury`/`economy` categories fell through to `sedan`, so SUVs like the Range Rover Vogue and G63 showed a SEDAN badge → ✅ Contentful categories can be tiers; body type comes from the category only when it names one, otherwise from `cars-raw.json` by slug.

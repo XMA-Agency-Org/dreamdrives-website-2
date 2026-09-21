@@ -1,6 +1,8 @@
 import { contentfulClient, isContentfulConfigured } from "./contentful";
 import type { Car, CarImage, CarBrand, CarCategory, CarSpecs, CarPricing } from "@/types/car";
 import type { Entry, Asset } from "contentful";
+import localFleet from "@/data/cars-raw.json";
+import localToContentfulSlug from "@/data/contentful-slug-map.json";
 
 interface ContentfulRichText {
   content?: Array<{
@@ -58,8 +60,6 @@ const VALID_BRANDS: CarBrand[] = [
   "nissan", "maserati"
 ];
 
-const VALID_CATEGORIES: CarCategory[] = ["sedan", "suv"];
-
 function extractTextFromRichText(richText?: ContentfulRichText): string {
   if (!richText?.content) return "";
 
@@ -87,8 +87,15 @@ function normalizeBrand(brandSlug?: string): CarBrand {
     : "mercedes";
 }
 
-function normalizeCategory(categorySlug?: string): CarCategory {
-  if (!categorySlug) return "sedan";
+const localBodyTypeByContentfulSlug = new Map<string, CarCategory>(
+  (localFleet as Array<{ slug: string; category: CarCategory }>).map((car) => [
+    (localToContentfulSlug as Record<string, string>)[car.slug] ?? car.slug,
+    car.category,
+  ])
+);
+
+function bodyTypeFromCategorySlug(categorySlug?: string): CarCategory | undefined {
+  if (!categorySlug) return undefined;
   const normalized = categorySlug.toLowerCase().replace(/\s+/g, "-");
 
   if (normalized === "suv" || normalized === "crossover") return "suv";
@@ -96,9 +103,15 @@ function normalizeCategory(categorySlug?: string): CarCategory {
       normalized.includes("sports") || normalized.includes("convertible") ||
       normalized.includes("supercar")) return "sedan";
 
-  return VALID_CATEGORIES.includes(normalized as CarCategory)
-    ? (normalized as CarCategory)
-    : "sedan";
+  return undefined;
+}
+
+function normalizeCategory(categorySlug: string | undefined, vehicleSlug: string): CarCategory {
+  return (
+    bodyTypeFromCategorySlug(categorySlug) ??
+    localBodyTypeByContentfulSlug.get(vehicleSlug) ??
+    "sedan"
+  );
 }
 
 function normalizeTransmission(transmission?: string): CarSpecs["transmission"] {
@@ -177,7 +190,7 @@ function transformContentfulToCar(entry: Entry<ContentfulRentalVehicle>): Car {
     slug: fields.urlSlug || entry.sys.id,
     name: fields.vehicleName || "Unknown Vehicle",
     brand: normalizeBrand(brandSlug),
-    category: normalizeCategory(categorySlug),
+    category: normalizeCategory(categorySlug, fields.urlSlug || entry.sys.id),
     year: fields.modelYear || extractYearFromName(fields.vehicleName || ""),
     tagline: fields.tagline || `Experience the ${fields.vehicleName || "luxury"}`,
     description: extractTextFromRichText(fields.description) || `Rent the ${fields.vehicleName} in Dubai.`,

@@ -80,6 +80,12 @@ the script to change that.
 Contentful curates `suv`, `luxury-sedan`, `economy` and `luxury`. `CATEGORY_SLUGS` maps
 between them — never let a bare `sedan` category get created.
 
+`economy` and `luxury` are tiers, not body types. When the site reads a vehicle filed under
+one of them, `normalizeCategory` in `lib/contentful-api.ts` takes the body type from
+`cars-raw.json` (matched through `contentful-slug-map.json`) instead of defaulting to
+`sedan`. A car that exists only in Contentful under a tier still falls back to `sedan`, so
+add it to `cars-raw.json` too.
+
 **Slug aliases.** `data/contentful-slug-map.json` maps a local slug to the slug a vehicle
 already uses in Contentful, so a car loaded into the CMS under another name is updated in
 place instead of duplicated. Contentful's slug stays canonical and `urlSlug` is not
