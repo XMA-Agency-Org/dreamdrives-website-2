@@ -39,10 +39,10 @@ export async function generateMetadata({
   return {
     title: `Rent ${brandName} Cars in Dubai`,
     alternates: { canonical: `/cars/brand/${brand}` },
-    description: `Browse our collection of ${cars.length} ${brandName} luxury vehicles available for rent in Dubai. Premium ${brandName} car rental with delivery.`,
+    description: `Rent a ${brandName} in Dubai with Dream Drives. Daily, weekly and monthly prices on every car, free delivery anywhere in Dubai.`,
     openGraph: {
       title: `${brandName} Car Rental Dubai | Dream Drives`,
-      description: `Rent ${brandName} luxury cars in Dubai. ${cars.length} vehicles available.`,
+      description: `Rent a ${brandName} in Dubai. Real photos, real prices, free delivery.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },
   };

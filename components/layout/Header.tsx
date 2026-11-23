@@ -36,12 +36,17 @@ export function Header() {
   return (
     <>
       <motion.header
-        className={cn(
-          "fixed top-0 left-0 py-6 right-0 z-50 transition-all duration-300 border",
-          useHeroStyle ? "bg-transparent border-transparent" : "glass",
-        )}
+        className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5"
       >
-        <Container>
+        {/* Floating island: transparent over the hero, glass pill once scrolled */}
+        <div
+          className={cn(
+            "mx-auto max-w-6xl rounded-full px-4 py-2.5 sm:px-6 transition-[background-color,box-shadow,backdrop-filter] duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]",
+            useHeroStyle
+              ? "bg-transparent"
+              : "bg-background/70 backdrop-blur-2xl shadow-[inset_0_0_0_1px_oklch(1_0_0/0.08),0_20px_50px_-20px_oklch(0_0_0/0.6)]",
+          )}
+        >
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex basis-0 grow mr-auto items-center">
@@ -77,16 +82,14 @@ export function Header() {
               <ThemeSwitcher />
 
               {/* WhatsApp CTA - Desktop */}
-              <Button
-                as="a"
-                href={getWhatsAppUrl()}
+              <a
+                href={getWhatsAppUrl(undefined, "header")}
                 target="_blank"
-                rel="noopener noreferrer"
-                size="sm"
-                className="hidden md:inline-flex"
+                rel="nofollow noopener"
+                className="hidden md:inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-neutral-950 transition-[transform,background-color] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-neutral-200 active:scale-[0.98]"
               >
-                Book Now
-              </Button>
+                Book on WhatsApp
+              </a>
 
               {/* Mobile Menu Toggle */}
               <button
@@ -103,7 +106,7 @@ export function Header() {
               </button>
             </div>
           </div>
-        </Container>
+        </div>
       </motion.header>
 
       {/* Mobile Menu */}

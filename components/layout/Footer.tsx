@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { Instagram } from "lucide-react";
 import { Container, Text } from "@/components/ui";
+import { MonogramDraw } from "@/components/brand";
 import { COMPANY, NAV_LINKS, SOCIAL, LOCATIONS, RENT_PAGES } from "@/lib/constants";
 import Image from "next/image";
 
@@ -9,8 +10,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background-elevated border-t border-border">
-      <Container className="py-16 lg:py-20">
+    <footer className="relative overflow-clip bg-black border-t border-white/[0.06]">
+      {/* Brand band: the monogram draws itself as the footer comes into view */}
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 pt-24 pb-16 text-center sm:px-6 lg:px-8">
+        <MonogramDraw className="w-24 text-white/90 sm:w-28" />
+        <p className="font-display text-[11px] font-semibold uppercase tracking-[0.45em] text-white/45">Dream Drives · Rent A Car · Dubai</p>
+      </div>
+      <Container className="border-t border-white/[0.06] py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="lg:col-span-1">

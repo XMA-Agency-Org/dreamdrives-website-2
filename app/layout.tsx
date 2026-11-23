@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue, Outfit, Montserrat_Alternates, Montserrat } from "next/font/google";
+import { Geist, Bebas_Neue, Montserrat } from "next/font/google";
 import { Suspense } from "react";
 import { AnalyticsTracker, Tags, ThemeProvider } from "@/components/providers";
 import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
-const inter = Inter({
+const body = Geist({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-body",
 });
 
 const outfit = Montserrat({
@@ -81,7 +81,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${outfit.variable} ${bebasNeue.variable}`}
+      className={`${body.variable} ${outfit.variable} ${bebasNeue.variable}`}
       suppressHydrationWarning
     >
       <head>

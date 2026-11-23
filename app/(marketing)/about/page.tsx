@@ -16,18 +16,19 @@ export const metadata: Metadata = {
     "Learn about Dream Drives - Dubai's premier luxury car rental service with exceptional vehicles and outstanding customer service.",
 };
 
+// Only claims we can stand behind. No fleet size, years or customer counts until the client confirms them.
 const stats: StatItem[] = [
-  { value: "100+", label: "Luxury Vehicles" },
-  { value: "5+", label: "Years Experience" },
-  { value: "2000+", label: "Happy Customers" },
-  { value: "24/7", label: "Support Available" },
+  { value: "5.0", label: "Rated on Google" },
+  { value: "Free", label: "Delivery anywhere in Dubai" },
+  { value: "AED", label: "Real price on every car" },
+  { value: "1", label: "WhatsApp message to book" },
 ];
 
 const missionBulletPoints = [
   "Handpicked selection of premium vehicles",
   "Personalized service tailored to your needs",
   "Flexible rental options and transparent pricing",
-  "Dedicated support team available around the clock",
+  "Booked on WhatsApp, delivered to your door",
 ];
 
 export default function AboutPage() {

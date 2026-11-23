@@ -148,16 +148,14 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center mx-auto"
         >
-          <Badge variant="outline" size="sm" font="display">
-            Testimonials
-          </Badge>
+          <p className="eyebrow">Google reviews</p>
 
-          <Heading as="h2" size="lg" className="mt-5 text-center">
-            5 Stars. 70 Reviews.
-          </Heading>
+          <h2 className="mt-6 text-center font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">
+            Rated 5.0 on Google.
+          </h2>
 
           <Text color="muted" size="lg" className="text-center mt-5 max-w-md">
-            Real reviews from real customers. No filtering, no editing.
+            In our customers&apos; own words, copied as written.
           </Text>
 
           <div className="mt-6">

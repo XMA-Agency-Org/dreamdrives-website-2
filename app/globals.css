@@ -59,7 +59,7 @@
   --color-glass-border: oklch(0.3 0 0 / 0.3);
 
   /* ========== TYPOGRAPHY ========== */
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-display-alt: var(--font-display-alt), "Bebas Neue", ui-sans-serif, system-ui,
     sans-serif;
@@ -75,6 +75,7 @@
   --ease-out: cubic-bezier(0, 0, 0.2, 1);
   --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-premium: cubic-bezier(0.32, 0.72, 0, 1);
 
   /* ========== SPACING ========== */
   --section-padding-mobile: 4rem;
@@ -408,4 +409,116 @@ body {
 
 [data-theme="light"] .show-on-light {
   opacity: 1;
+}
+
+
+/* ============================================================
+   Premium layer (23 Nov 2026)
+   ============================================================ */
+
+/* Film grain on a fixed, non-interactive layer (never on scrolling content). */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Eyebrow pill above section headings */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid oklch(1 0 0 / 0.12);
+  background: oklch(1 0 0 / 0.04);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-foreground-muted);
+}
+.eyebrow::before {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background: var(--color-primary-500);
+}
+
+/* Double bezel: outer machined tray + inner core with a top highlight */
+.bezel {
+  border-radius: 2rem;
+  padding: 0.375rem;
+  background: oklch(1 0 0 / 0.03);
+  box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.07);
+}
+.bezel-core {
+  border-radius: calc(2rem - 0.375rem);
+  background: var(--color-background-elevated);
+  box-shadow: inset 0 1px 0 0 oklch(1 0 0 / 0.08);
+  overflow: clip;
+}
+[data-theme="light"] .bezel { background: oklch(0 0 0 / 0.03); box-shadow: inset 0 0 0 1px oklch(0 0 0 / 0.06); }
+[data-theme="light"] .bezel-core { box-shadow: inset 0 1px 0 0 oklch(1 0 0 / 0.9), 0 30px 60px -30px oklch(0 0 0 / 0.18); }
+[data-theme="light"] .eyebrow { border-color: oklch(0 0 0 / 0.1); background: oklch(0 0 0 / 0.03); }
+
+/* Pill CTA with a nested icon circle (button-in-button) */
+.pill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  border-radius: 9999px;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: transform 500ms var(--ease-premium), background-color 500ms var(--ease-premium), box-shadow 500ms var(--ease-premium);
+}
+.pill-cta:active { transform: scale(0.98); }
+.pill-cta .pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  transition: transform 500ms var(--ease-premium);
+}
+.pill-cta:hover .pill-icon { transform: translate(3px, -1px) scale(1.06); }
+
+/* Scroll reveal (driven by components/brand/Reveal.tsx) */
+.reveal { opacity: 0; transform: translate3d(0, 3rem, 0); filter: blur(10px); transition: opacity 1000ms var(--ease-premium), transform 1000ms var(--ease-premium), filter 1000ms var(--ease-premium); }
+.reveal.is-in { opacity: 1; transform: none; filter: none; }
+
+/* Hero photo: slow push-in */
+@keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+.kenburns { animation: kenburns 2.4s var(--ease-premium) both; }
+
+/* Hero text stagger */
+@keyframes rise { from { opacity: 0; transform: translate3d(0, 2.5rem, 0); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 1.1s var(--ease-premium) both; }
+
+/* Monogram draw (components/brand/MonogramDraw.tsx) */
+.monogram path { fill-opacity: 0; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.monogram.is-in path { animation: monogram-stroke 1.8s var(--ease-premium) forwards, monogram-fill 1s var(--ease-premium) forwards; }
+.monogram.is-in path:nth-child(2) { animation-delay: 0.15s, 1.35s; }
+.monogram.is-in path:nth-child(3) { animation-delay: 0.3s, 1.5s; }
+.monogram.is-in path:nth-child(4) { animation-delay: 0.45s, 1.65s; }
+.monogram.is-in path:nth-child(1) { animation-delay: 0s, 1.2s; }
+@keyframes monogram-stroke { to { stroke-dashoffset: 0; } }
+@keyframes monogram-fill { to { fill-opacity: 1; } }
+
+/* Horizontal collection scroller */
+.snap-row { scroll-snap-type: x mandatory; scrollbar-width: none; }
+.snap-row::-webkit-scrollbar { display: none; }
+.snap-row > * { scroll-snap-align: start; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal.is-in { opacity: 1; transform: none; filter: none; transition: none; }
+  .kenburns, .rise { animation: none; }
+  .monogram path { fill-opacity: 1; stroke-dashoffset: 0; }
+  .monogram.is-in path { animation: none; }
 }

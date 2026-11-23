@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import {
   HeroSection,
-  CategorySection,
-  PricePromise,
+  MarqueeStrip,
+  CollectionShowcase,
+  SignatureSection,
+  StandardBento,
+  ClosingCTA,
   HowItWorks,
   DeliveryAreas,
   DocumentsSection,
@@ -11,7 +14,7 @@ import {
 import { FAQSection } from "@/components/sections/shared";
 import { faqData } from "@/data/faqs";
 import { PriceCalculator } from "@/components/sections/car";
-import { Container, Heading, Section, Text } from "@/components/ui";
+import { Reveal } from "@/components/brand";
 import { getAllCarsAsync } from "@/data/cars";
 import { getSiteSettings, ratingLine, vatNote } from "@/data/settings";
 import { JsonLd, businessLd, faqLd } from "@/components/seo/JsonLd";
@@ -31,7 +34,7 @@ const HERO_CAR = "lamborghini-urus-performante-2024";
 export default async function HomePage() {
   const [cars, settings] = await Promise.all([getAllCarsAsync(), getSiteSettings()]);
   const heroCar = cars.find((c) => c.slug === HERO_CAR) ?? cars.find((c) => c.isFeatured);
-  const fromPrice = Math.min(...cars.map((c) => c.pricing.daily));
+  // The calculator offers the premium range first; everyday cars stay a choice further down the list.
   const calculatorCars = [...cars].sort((a, b) => b.pricing.daily - a.pricing.daily);
 
   return (
@@ -39,71 +42,45 @@ export default async function HomePage() {
       <JsonLd data={businessLd(settings)} />
       <JsonLd data={faqLd(faqData.slice(0, 6))} />
 
-      <HeroSection car={heroCar} fleetCount={cars.length} fromPrice={fromPrice} rating={ratingLine(settings)} />
+      <HeroSection car={heroCar} rating={ratingLine(settings)} />
+      <MarqueeStrip />
+      <CollectionShowcase cars={cars} />
+      <SignatureSection />
+      <StandardBento settings={settings} />
 
-      <PricePromise settings={settings} />
-
-      <CategorySection
-        id="statement-cars"
-        subtitle="Lamborghini and G-Class"
-        title="Make your entrance"
-        description="The Urus and the G63, delivered to your door with the real plate and the real price."
-        category="statement"
-        cars={cars}
-        viewAllHref="/cars/body-type/suv"
-        ctaText="See all SUVs"
-      />
-
-      <CategorySection
-        id="family-cars"
-        subtitle="Seven seats"
-        title="The whole family in one car"
-        description="Escalade and Yukon, waiting at arrivals with room for everyone and the bags."
-        category="family"
-        cars={cars}
-        viewAllHref="/cars/body-type/suv"
-        ctaText="See all SUVs"
-      />
-
-      <Section spacing="lg" id="price-calculator">
-        <Container className="grid gap-10 lg:grid-cols-2 lg:items-start">
-          <div>
-            <Heading as="h2" size="lg" className="mb-4">See your total before you message us</Heading>
-            <Text color="muted" className="mb-4 max-w-lg">
-              Pick a car and your dates. Weekly and monthly rates apply automatically, delivery is free, and the deposit is
-              shown upfront. Then send the dates to us on WhatsApp in one tap.
-            </Text>
-          </div>
-          <PriceCalculator
-            cars={calculatorCars}
-            initialSlug={HERO_CAR}
-            src="calculator"
-            depositRefundDays={settings.depositRefundDays}
-            vatNote={vatNote(settings)}
-          />
-        </Container>
-      </Section>
-
-      <CategorySection
-        id="everyday-cars"
-        subtitle="Everyday and monthly"
-        title="Practical, without feeling plain"
-        description="Sedans and compact SUVs for a week or a month, with the monthly rate shown on every car."
-        category="everyday"
-        cars={cars}
-        viewAllHref="/cars"
-        ctaText={`See all ${cars.length} cars`}
-      />
+      <section id="price-calculator" className="scroll-mt-24 py-28 sm:py-40">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
+          <Reveal className="lg:col-span-5">
+            <p className="eyebrow mb-6">Your total, upfront</p>
+            <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] text-foreground sm:text-6xl">
+              See the price<span className="block text-foreground-muted">before you ask.</span>
+            </h2>
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-foreground-muted">
+              Choose the car and your dates. Weekly and monthly rates apply on their own, delivery is free, and the deposit is
+              shown before you message us.
+            </p>
+          </Reveal>
+          <Reveal delay={150} className="lg:col-span-6 lg:col-start-7">
+            <div className="bezel">
+              <PriceCalculator
+                cars={calculatorCars}
+                initialSlug={HERO_CAR}
+                src="calculator"
+                depositRefundDays={settings.depositRefundDays}
+                vatNote={vatNote(settings)}
+                className="rounded-[calc(2rem-0.375rem)] border-0 p-6 sm:p-8"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       <HowItWorks />
-
       <TestimonialsSection />
-
       <DeliveryAreas areas={settings.deliveryAreas} />
-
       <DocumentsSection settings={settings} />
-
       <FAQSection limit={6} />
+      <ClosingCTA />
     </>
   );
 }

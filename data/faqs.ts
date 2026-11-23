@@ -36,7 +36,7 @@ export const faqData = [
   {
     question: "What types of luxury cars are available?",
     answer:
-      "28 cars: the Mercedes-AMG G63, Lamborghini Urus S and Urus Performante, Cadillac Escalade, Range Rover Vogue and Sport, GMC Yukon and BMW X6, plus everyday cars from Mercedes, BMW, Audi, Nissan, Mazda, Kia and Hyundai. Every car page shows its daily, weekly and monthly price.",
+      "The Mercedes-AMG G63, Lamborghini Urus S and Urus Performante, Cadillac Escalade, Range Rover Vogue and Sport, GMC Yukon and BMW X6, plus everyday cars from Mercedes, BMW, Audi, Nissan, Mazda, Kia and Hyundai. Every car page shows its daily, weekly and monthly price.",
   },
   {
     question: "How do I book?",

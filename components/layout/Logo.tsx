@@ -10,8 +10,8 @@ export function Logo({ className, size = "md" }: { className?: string; size?: "s
   const mark = size === "sm" ? "h-7" : "h-8 md:h-10";
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
-      <Image src="/mark-light.svg" alt="" width={569} height={311} className={cn(mark, "w-auto show-on-dark")} priority />
-      <Image src="/mark-dark.svg" alt="" width={569} height={311} className={cn(mark, "w-auto show-on-light")} priority />
+      <Image src="/mark-light.svg" alt="" width={301} height={311} className={cn(mark, "w-auto show-on-dark")} priority />
+      <Image src="/mark-dark.svg" alt="" width={301} height={311} className={cn(mark, "w-auto show-on-light")} priority />
       <span className="flex flex-col leading-none">
         <span className="font-display text-sm md:text-base font-extrabold tracking-[0.08em] text-foreground">DREAM DRIVES</span>
         <span className="font-display text-[0.6rem] md:text-[0.65rem] font-semibold tracking-[0.28em] text-foreground-muted">RENT A CAR</span>

@@ -205,9 +205,7 @@ export function CarsDropdown({ className, useHeroStyle = false }: CarsDropdownPr
                         >
                           {brand.name}
                         </Text>
-                        <Text as="span" size="xs" color="subtle">
-                          {brand.count}
-                        </Text>
+
                       </Link>
                     );
                   })}
@@ -254,14 +252,6 @@ export function CarsDropdown({ className, useHeroStyle = false }: CarsDropdownPr
                           className="group-hover:text-foreground transition-colors"
                         >
                           {bodyType.label}
-                        </Text>
-                        <Text
-                          as="span"
-                          size="xs"
-                          color="subtle"
-                          className="bg-background-elevated px-1.5 py-0.5 rounded group-hover:bg-background transition-colors"
-                        >
-                          {count}
                         </Text>
                       </Link>
                     );

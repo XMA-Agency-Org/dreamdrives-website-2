@@ -62,10 +62,10 @@ export async function generateMetadata({
     // Marketing groupings overlap the brand and body-type pages; keep them out of the index.
     robots: { index: false, follow: true },
     alternates: { canonical: `/cars/category/${category}` },
-    description: `Browse our ${categoryLabel.toLowerCase()} car collection. ${cars.length} vehicles available for rent in Dubai with premium service.`,
+    description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai with Dream Drives. Daily price on every car, free delivery.`,
     openGraph: {
       title: `${categoryLabel} Car Rental Dubai | Dream Drives`,
-      description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai. ${cars.length} vehicles available.`,
+      description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai. Real photos, real prices.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },
   };

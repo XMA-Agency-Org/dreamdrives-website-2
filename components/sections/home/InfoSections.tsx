@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Car as CarIcon, MapPin, MessageCircle, ShieldCheck, Truck } from "lucide-react";
-import { Container, Heading, Section, Text } from "@/components/ui";
+import { Heading, Section, Text } from "@/components/ui";
+import { Reveal } from "@/components/brand";
 import type { SiteSettings } from "@/data/settings";
 
 /** "The price you see is the price you pay": only facts Site settings holds. */
@@ -36,65 +37,86 @@ export function HowItWorks() {
     { n: "3", title: "We deliver it", body: "To your hotel, home or the airport, anywhere in Dubai, free." },
   ];
   return (
-    <Section spacing="lg">
-      <Heading as="h2" size="lg" className="mb-10">How it works</Heading>
-      <ol className="grid gap-8 md:grid-cols-3">
-        {steps.map((s) => (
-          <li key={s.n} className="border-t border-border pt-5">
-            <span className="mb-3 block font-display text-3xl text-primary-500">{s.n}</span>
-            <Text weight="semibold" size="lg" className="mb-1">{s.title}</Text>
-            <Text color="muted">{s.body}</Text>
-          </li>
-        ))}
-      </ol>
-    </Section>
+    <section className="py-28 sm:py-36">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Reveal>
+          <p className="eyebrow mb-6">How it works</p>
+          <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">Three steps.<span className="text-foreground-muted"> One message.</span></h2>
+        </Reveal>
+        <ol className="mt-16 grid gap-5 md:grid-cols-3">
+          {steps.map((s, i) => (
+            <Reveal as="li" key={s.n} delay={i * 120}>
+              <div className="bezel h-full">
+                <div className="bezel-core flex h-full flex-col gap-12 p-8">
+                  <span className="font-display text-6xl font-extrabold leading-none text-white/10">{s.n}</span>
+                  <div>
+                    <p className="font-display text-xl font-bold">{s.title}</p>
+                    <p className="mt-2 text-foreground-muted">{s.body}</p>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </ol>
+      </div>
+    </section>
   );
 }
 
 export function DeliveryAreas({ areas }: { areas?: string[] }) {
   if (!areas?.length) return null;
   return (
-    <Section spacing="md">
-      <div className="grid gap-8 lg:grid-cols-[1fr_2fr] lg:items-center">
-        <div>
-          <Heading as="h2" size="md" className="mb-3">Free delivery anywhere in Dubai</Heading>
-          <Text color="muted">We bring the car to you and collect it at the end. These are the places we deliver to most.</Text>
-        </div>
-        <ul className="flex flex-wrap gap-2">
-          {areas.map((a) => (
-            <li key={a} className="inline-flex items-center gap-1.5 rounded-full border border-border px-4 py-2 text-sm">
-              <MapPin className="h-4 w-4 text-primary-500" aria-hidden />
-              {a}
-            </li>
-          ))}
-        </ul>
+    <section className="py-24 sm:py-32">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
+        <Reveal className="lg:col-span-5">
+          <p className="eyebrow mb-6">Delivery</p>
+          <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-5xl">Anywhere in Dubai.<span className="block text-foreground-muted">Free.</span></h2>
+          <p className="mt-5 text-lg text-foreground-muted">We bring the car to you and collect it at the end. These are the places we deliver to most.</p>
+        </Reveal>
+        <Reveal delay={150} className="lg:col-span-7">
+          <ul className="flex flex-wrap gap-2.5">
+            {areas.map((a) => (
+              <li key={a} className="inline-flex items-center gap-2 rounded-full bg-white/[0.04] px-5 py-2.5 text-sm ring-1 ring-inset ring-white/10">
+                <MapPin className="h-4 w-4 text-primary-400" strokeWidth={1.25} aria-hidden />
+                {a}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
-    </Section>
+    </section>
   );
 }
 
 export function DocumentsSection({ settings }: { settings: SiteSettings }) {
   if (!settings.documents?.length) return null;
   return (
-    <Section spacing="lg" className="bg-background-elevated">
-      <Heading as="h2" size="lg" className="mb-3">What you need to rent</Heading>
-      <Text color="muted" className="mb-8 max-w-2xl">
+    <section className="py-28 sm:py-36">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <Reveal>
+        <p className="eyebrow mb-6">Documents</p>
+        <h2 className="mb-5 font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-5xl">What you need to rent</h2>
+      </Reveal>
+      <Text color="muted" className="mb-10 max-w-2xl">
         Bring the original documents to the handover.
         {settings.minimumAge ? ` Minimum driver age is ${settings.minimumAge}.` : ""}
       </Text>
       <div className="grid gap-4 md:grid-cols-2">
         {settings.documents.map((d) => (
-          <div key={d._key} className="rounded-lg border border-border bg-background p-5">
-            <Text weight="semibold" className="mb-2">{d.who}</Text>
-            <ul className="list-disc space-y-1 pl-5 text-sm text-foreground-muted">
-              {d.needs.map((n) => <li key={n}>{n}</li>)}
-            </ul>
-          </div>
+          <Reveal key={d._key} className="bezel">
+            <div className="bezel-core h-full p-6">
+              <p className="mb-3 font-display font-bold">{d.who}</p>
+              <ul className="list-disc space-y-1 pl-5 text-sm text-foreground-muted">
+                {d.needs.map((n) => <li key={n}>{n}</li>)}
+              </ul>
+            </div>
+          </Reveal>
         ))}
       </div>
       <Text size="sm" color="muted" className="mt-6">
         Not sure about your licence? <Link href="/faq" className="text-primary-500 underline-offset-4 hover:underline">Read the FAQ</Link> or ask us on WhatsApp.
       </Text>
-    </Section>
+      </div>
+    </section>
   );
 }

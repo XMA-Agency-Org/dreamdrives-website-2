@@ -118,11 +118,7 @@ function SubNavLink({
       className="flex items-center justify-between py-2 text-foreground-muted hover:text-foreground transition-colors focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:outline-none rounded-sm"
     >
       <Text size="base">{children}</Text>
-      {count !== undefined && (
-        <Text size="sm" color="subtle">
-          {count}
-        </Text>
-      )}
+      {/* counts hidden on purpose: small numbers read as a small company */}
     </Link>
   );
 }

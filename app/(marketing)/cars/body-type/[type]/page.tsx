@@ -39,10 +39,10 @@ export async function generateMetadata({
   return {
     title: `Rent ${typeLabel} in Dubai`,
     alternates: { canonical: `/cars/body-type/${type}` },
-    description: `Browse our collection of ${cars.length} ${typeLabel.toLowerCase()} available for rent in Dubai. Premium ${typeLabel.toLowerCase()} rental with delivery.`,
+    description: `Rent luxury ${typeLabel.toLowerCase()} in Dubai with Dream Drives. Daily price on every car, free delivery anywhere in Dubai.`,
     openGraph: {
       title: `${typeLabel} Rental Dubai | Dream Drives`,
-      description: `Rent luxury ${typeLabel.toLowerCase()} in Dubai. ${cars.length} vehicles available.`,
+      description: `Rent luxury ${typeLabel.toLowerCase()} in Dubai. Real photos, real prices, free delivery.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },
   };

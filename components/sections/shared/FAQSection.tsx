@@ -32,12 +32,10 @@ export function FAQSection({
         {/* Section Header */}
         {showHeader && (
           <RevealOnScroll className="text-center mb-12">
-            <Badge variant="outline" size="sm" font="display" className="mb-4">
-              FAQ
-            </Badge>
-            <Heading as="h2" size="lg" className="mb-6">
-              Before You Ask
-            </Heading>
+            <p className="eyebrow mb-6">FAQ</p>
+            <h2 className="mb-6 font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">
+              Before you ask.
+            </h2>
             <Text color="muted" size="lg" className="max-w-2xl mx-auto">
               Quick answers to common questions. Still unsure? We&apos;re a
               WhatsApp away.
@@ -47,7 +45,7 @@ export function FAQSection({
 
         {/* FAQ Items */}
         <RevealOnScroll>
-          <div className="bg-background-elevated border border-border rounded-md p-6 lg:p-8">
+          <div className="bezel mx-auto max-w-4xl"><div className="bezel-core p-6 lg:p-10">
             {displayedFAQs.map((faq, index) => (
               <FAQItem
                 key={index}
@@ -56,7 +54,7 @@ export function FAQSection({
                 defaultOpen={index === 0}
               />
             ))}
-          </div>
+          </div></div>
         </RevealOnScroll>
 
         {/* View All Link */}
