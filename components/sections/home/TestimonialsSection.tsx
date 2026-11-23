@@ -130,7 +130,7 @@ function GoogleRatingBadge() {
           </div>
         </div>
         <span className="text-sm text-muted-foreground">
-          70 Google Reviews
+          on Google
         </span>
       </div>
     </a>
