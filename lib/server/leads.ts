@@ -5,7 +5,7 @@ import { after, type NextRequest } from "next/server";
 /**
  * Server side of lead tracking. Both integrations switch on by env var and are skipped silently
  * when unset, so the redirect to WhatsApp never depends on them.
- *   UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN  → store ref → click ids for 90 days (booking upload joins on it)
+ *   KV_REST_API_URL / KV_REST_API_TOKEN (Upstash "dreamdrives-leads") → store ref → click ids for 90 days (booking upload joins on it)
  *   NEXT_PUBLIC_META_PIXEL_ID + META_CAPI_TOKEN        → server-side Contact event, deduped with the Pixel by event_id
  *   LEADS_SHEET_URL + LEADS_SHEET_SECRET               → one row per tap in Amir's live Google Sheet (Apps Script web app)
  */
@@ -35,7 +35,8 @@ export function readAttribution(req: NextRequest): Record<string, string> {
 }
 
 async function storeLead(lead: LeadRecord) {
-  const url = process.env.UPSTASH_REDIS_REST_URL, token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  // Vercel's Upstash integration names them KV_REST_API_*; accept either.
+  const url = process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL, token = process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN;
   if (!url || !token) return;
   // Keep the IP out of storage: it is only needed for the Meta event.
   const { ip: _ip, ...stored } = lead;
