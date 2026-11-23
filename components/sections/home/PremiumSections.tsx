@@ -77,7 +77,7 @@ export function CollectionShowcase({ cars }: { cars: Car[] }) {
                     className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/90 via-black/40 to-transparent p-5 pt-20">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/50">{car.brandName}</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-white/60">{car.brandName}</p>
                     <div className="mt-1 flex items-end justify-between gap-3">
                       <p className="font-display text-lg font-bold leading-tight text-white">{car.variant ?? car.name}</p>
                       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden>

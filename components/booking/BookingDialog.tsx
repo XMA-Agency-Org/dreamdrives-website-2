@@ -170,11 +170,11 @@ export function BookingDialog() {
               <div className="grid grid-cols-2 gap-3">
                 <label className="block">
                   <span className="mb-1 block text-xs text-foreground-subtle">Pick up</span>
-                  <input type="date" min={today} value={from} onChange={(e) => onFrom(e.target.value)} className={field} required />
+                  <input type="date" min={today} value={from} onChange={(e) => onFrom(e.target.value)} className={cn(field, "px-3")} required />
                 </label>
                 <label className="block">
                   <span className="mb-1 block text-xs text-foreground-subtle">Return</span>
-                  <input type="date" min={addDays(from, 1)} value={to} onChange={(e) => setTo(e.target.value)} className={field} required />
+                  <input type="date" min={addDays(from, 1)} value={to} onChange={(e) => setTo(e.target.value)} className={cn(field, "px-3")} required />
                 </label>
               </div>
             </div>

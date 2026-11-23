@@ -55,7 +55,7 @@ export function Header() {
                 href="/"
                 className="relative flex items-center gap-2 text-xl font-bold tracking-tight"
               >
-                <Logo size="md" />
+                <Logo size="md" onDark={useHeroStyle} />
               </Link>
             </div>
 
@@ -83,7 +83,8 @@ export function Header() {
               <ThemeSwitcher />
 
               {/* WhatsApp CTA - Desktop */}
-              <BookButton compact src="header" className="hidden md:inline-flex">Book your car</BookButton>
+              {/* pill-cta sets display itself, so hide the wrapper, not the button */}
+              <span className="hidden md:contents"><BookButton compact src="header">Book your car</BookButton></span>
 
               {/* Mobile Menu Toggle */}
               <button

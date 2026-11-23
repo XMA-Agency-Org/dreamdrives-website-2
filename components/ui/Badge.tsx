@@ -18,7 +18,7 @@ const badgeVariants = cva(
           "bg-gradient-to-r from-primary-600 to-primary-400 text-neutral-950 shadow-lg shadow-primary-500/25",
       },
       size: {
-        xs: "px-2 py-0.5 text-[10px]",
+        xs: "px-2 py-0.5 text-[11px]",
         sm: "px-2.5 py-1 text-xs leading-5",
         md: "px-3 py-1.5 text-xs leading-5",
         lg: "px-4 py-2 text-sm",

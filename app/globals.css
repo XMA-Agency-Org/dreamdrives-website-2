@@ -137,6 +137,8 @@ html {
 }
 
 body {
+  /* clip, not hidden: stops sideways swipe from off-screen reveal transforms without breaking position: sticky */
+  overflow-x: clip;
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
@@ -427,6 +429,8 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* In the components layer so Tailwind utilities on these elements (hidden, w-full, padding) win. */
+@layer components {
 /* Eyebrow pill above section headings */
 .eyebrow {
   display: inline-flex;
@@ -471,6 +475,7 @@ body::after {
 .pill-cta {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between; /* when a column layout stretches it full width, the icon goes to the far edge */
   gap: 0.875rem;
   border-radius: 9999px;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
@@ -488,6 +493,7 @@ body::after {
   transition: transform 500ms var(--ease-premium);
 }
 .pill-cta:hover .pill-icon { transform: translate(3px, -1px) scale(1.06); }
+}
 
 /* Scroll reveal (driven by components/brand/Reveal.tsx) */
 .reveal { opacity: 0; transform: translate3d(0, 3rem, 0); filter: blur(10px); transition: opacity 1000ms var(--ease-premium), transform 1000ms var(--ease-premium), filter 1000ms var(--ease-premium); }
@@ -496,6 +502,8 @@ body::after {
 /* Hero photo: slow push-in */
 @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
 .kenburns { animation: kenburns 2.4s var(--ease-premium) both; }
+@keyframes hero-in { from { opacity: 0; transform: scale(1.06); } to { opacity: 1; transform: none; } }
+.hero-in { animation: hero-in 1.8s var(--ease-premium) both; }
 
 /* Hero text stagger */
 @keyframes rise { from { opacity: 0; transform: translate3d(0, 2.5rem, 0); } to { opacity: 1; transform: none; } }
@@ -518,7 +526,7 @@ body::after {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal, .reveal.is-in { opacity: 1; transform: none; filter: none; transition: none; }
-  .kenburns, .rise { animation: none; }
+  .kenburns, .hero-in, .rise { animation: none; }
   .monogram path { fill-opacity: 1; stroke-dashoffset: 0; }
   .monogram.is-in path { animation: none; }
 }

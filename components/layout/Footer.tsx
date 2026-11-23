@@ -139,22 +139,22 @@ export function Footer() {
           <Text size="sm" color="subtle">
             &copy; {currentYear} {COMPANY.name}. All rights reserved.
           </Text>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6">
             <Link
               href="/privacy"
-              className="text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
+              className="inline-flex min-h-11 items-center text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms"
-              className="text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
+              className="inline-flex min-h-11 items-center text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
             >
               Terms of Service
             </Link>
             <Link
               href="/insurance"
-              className="text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
+              className="inline-flex min-h-11 items-center text-sm text-foreground-subtle hover:text-foreground-muted transition-colors"
             >
               Insurance
             </Link>

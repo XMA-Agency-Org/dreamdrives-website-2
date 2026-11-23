@@ -182,8 +182,9 @@ export function Navigation({
               <DrilldownItem onClick={() => handleNavigate("categories")}>
                 Categories
               </DrilldownItem>
-              <NavLink href="/blog" onClick={onLinkClick} isActive={pathname?.startsWith("/blog")}>
-                Blog
+              {/* was /blog, which does not exist (404) */}
+              <NavLink href="/cars" onClick={onLinkClick} isActive={pathname === "/cars"}>
+                All cars
               </NavLink>
               <NavLink href="/about" onClick={onLinkClick} isActive={pathname === "/about"}>
                 About

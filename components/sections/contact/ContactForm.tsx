@@ -78,7 +78,7 @@ export function ContactForm({ className }: ContactFormProps) {
           />
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button type="submit" size="lg" className="flex-1">
+            <Button type="submit" size="lg" className="sm:flex-1">
               Send Message
             </Button>
             <Button

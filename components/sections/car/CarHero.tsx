@@ -31,7 +31,7 @@ export function CarHero({ car }: CarHeroProps) {
         <motion.div>
           <Link
             href="/cars"
-            className="inline-flex items-center gap-2 text-foreground-muted hover:text-primary-500 transition-colors"
+            className="inline-flex min-h-11 items-center gap-2 text-foreground-muted hover:text-primary-500 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Cars</span>
