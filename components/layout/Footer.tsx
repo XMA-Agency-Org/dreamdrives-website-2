@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { Instagram } from "lucide-react";
 import { Container, Text } from "@/components/ui";
-import { COMPANY, NAV_LINKS, SOCIAL, CAR_BRANDS, LOCATIONS } from "@/lib/constants";
+import { COMPANY, NAV_LINKS, SOCIAL, LOCATIONS, RENT_PAGES } from "@/lib/constants";
 import Image from "next/image";
 
 export function Footer() {
@@ -17,22 +18,7 @@ export function Footer() {
               href="/"
               className="inline-block text-2xl font-bold tracking-tight mb-4"
             >
-              <Image
-                src="/logo-light.svg"
-                alt="Dream Drives"
-                className="h-20 w-full show-on-dark"
-                width={120}
-                height={120}
-                priority
-              />
-              <Image
-                src="/logo-dark.svg"
-                alt="Dream Drives"
-                className="h-20 w-full show-on-light"
-                width={120}
-                height={120}
-                priority
-              />
+              <Logo size="md" />
             </Link>
             <Text color="muted" className="mb-6 max-w-xs">
               Luxury car rental in Dubai. Daily prices shown, free delivery anywhere in Dubai.
@@ -81,16 +67,16 @@ export function Footer() {
           {/* Popular Brands */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
-              Popular Brands
+              Popular rentals
             </p>
             <ul className="space-y-3">
-              {CAR_BRANDS.slice(0, 6).map((brand) => (
-                <li key={brand.id}>
+              {RENT_PAGES.map((page) => (
+                <li key={page.slug}>
                   <Link
-                    href={`/cars/brand/${brand.id}`}
+                    href={`/rent/${page.slug}`}
                     className="text-foreground-muted hover:text-primary-500 transition-colors"
                   >
-                    {brand.label}
+                    {page.label}
                   </Link>
                 </li>
               ))}

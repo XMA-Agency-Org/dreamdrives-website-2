@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllBrandsWithCount, getAllCarsAsync } from "@/data/cars";
+import { getLandingPages } from "@/data/landing";
 import { CAR_BODY_TYPES, SITE_URL } from "@/lib/constants";
 
 export const revalidate = 3600;
@@ -67,8 +68,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const landingPages: MetadataRoute.Sitemap = (await getLandingPages()).map((p) => ({
+    url: `${BASE_URL}/rent/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  }));
+
   return [
     ...staticPages,
+    ...landingPages,
     ...brandPages,
     ...bodyTypePages,
     ...carPages,

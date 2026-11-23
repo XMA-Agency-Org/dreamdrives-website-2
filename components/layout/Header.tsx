@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { Menu, Phone } from "lucide-react";
@@ -48,22 +49,7 @@ export function Header() {
                 href="/"
                 className="relative flex items-center gap-2 text-xl font-bold tracking-tight"
               >
-                <Image
-                  src="/logo-light.svg"
-                  alt="Dream Drives"
-                  className="h-8 md:h-14 w-auto show-on-dark"
-                  width={120}
-                  height={40}
-                  priority
-                />
-                <Image
-                  src="/logo-dark.svg"
-                  alt="Dream Drives"
-                  className="h-8 md:h-14 w-auto absolute inset-0 show-on-light"
-                  width={120}
-                  height={40}
-                  priority
-                />
+                <Logo size="md" />
               </Link>
             </div>
 

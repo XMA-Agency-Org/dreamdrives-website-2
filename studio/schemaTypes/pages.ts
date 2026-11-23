@@ -15,7 +15,15 @@ export const landingPage = defineType({
       description: "Two or three factual sentences: what, price, delivery. Search engines and AI answers quote this." }),
     defineField({ name: "cars", type: "array", of: [defineArrayMember({ type: "reference", to: [{ type: "car" }] })] }),
     defineField({ name: "body", type: "array", of: [defineArrayMember({ type: "block" })] }),
-    defineField({ name: "faqs", type: "array", of: [defineArrayMember({ type: "reference", to: [{ type: "faq" }] })] }),
+    defineField({
+      name: "faqs", title: "FAQs", type: "array",
+      description: "Only answers Dream Drives has confirmed. These also become FAQ rich results in Google.",
+      of: [defineArrayMember({ type: "object", fields: [
+        defineField({ name: "question", type: "string", validation: (r) => r.required() }),
+        defineField({ name: "answer", type: "text", rows: 3, validation: (r) => r.required() }),
+      ], preview: { select: { title: "question" } } })],
+    }),
+    defineField({ name: "order", type: "number" }),
     defineField({ name: "heroImage", type: "image", options: { hotspot: true }, fields: [defineField({ name: "alt", type: "string" })] }),
     defineField({ name: "whatsappText", title: "WhatsApp message", type: "string",
       description: 'Prefilled text. The ref code is added automatically. e.g. "Hi, I would like to rent a G63"' }),

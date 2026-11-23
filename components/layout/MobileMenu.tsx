@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Logo } from "./Logo";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Phone } from "lucide-react";
 import { Navigation } from "./Navigation";
@@ -72,18 +73,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               {/* Header */}
               <div className="flex items-center justify-between mb-8">
                 <div className="relative h-10 w-24">
-                  <Image
-                    src="/logo-light.svg"
-                    alt="Dream Drives"
-                    fill
-                    className="object-contain object-left show-on-dark"
-                  />
-                  <Image
-                    src="/logo-dark.svg"
-                    alt="Dream Drives"
-                    fill
-                    className="object-contain object-left show-on-light"
-                  />
+                  <Logo size="sm" />
                 </div>
                 <button
                   onClick={onClose}

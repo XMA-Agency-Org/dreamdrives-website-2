@@ -50,8 +50,11 @@ export function CategorySection({
   });
 
   const filterFn = categoryFilters[category];
+  // Statement and family rows lead with the top of the range; everyday leads with the cheapest.
+  const dir = category === "everyday" ? 1 : -1;
   const filteredCars = cars
     .filter((car) => filterFn(car) && car.isAvailable)
+    .sort((a, b) => dir * (a.pricing.daily - b.pricing.daily))
     .slice(0, 3);
 
   if (filteredCars.length === 0) return null;

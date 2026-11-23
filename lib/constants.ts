@@ -117,3 +117,13 @@ export const VALUE_PROPOSITIONS = [
     icon: "headphones",
   },
 ] as const;
+
+/** Model landing pages (Sanity landingPage docs, /rent/<slug>). Linked from the footer for internal linking. */
+export const RENT_PAGES = [
+  { slug: "rent-mercedes-g63-dubai", label: "G63 rental Dubai" },
+  { slug: "rent-lamborghini-urus-dubai", label: "Lamborghini Urus rental" },
+  { slug: "rent-cadillac-escalade-dubai", label: "Cadillac Escalade rental" },
+  { slug: "rent-range-rover-dubai", label: "Range Rover rental" },
+  { slug: "7-seater-car-rental-dubai", label: "7 seater car rental" },
+  { slug: "luxury-car-rental-dubai", label: "Luxury car rental Dubai" },
+] as const;
