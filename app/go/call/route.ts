@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { isRef, makeRef, PHONE_E164 } from "@/lib/contact";
-import { readAttribution, recordLead, requestMeta } from "@/lib/server/leads";
+import { isRealTap, readAttribution, recordLead, requestMeta } from "@/lib/server/leads";
 
 export const dynamic = "force-dynamic";
 
@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams;
   const ref = isRef(q.get("ref")) ? q.get("ref")! : makeRef();
-  await recordLead({
+  if (isRealTap(req, q.get("ref"))) await recordLead({
     ref, kind: "call", src: (q.get("src") ?? "unknown").slice(0, 40),
     ts: new Date().toISOString(), attr: readAttribution(req), ...requestMeta(req),
   });
@@ -21,6 +21,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   const q = req.nextUrl.searchParams;
   if (!isRef(q.get("ref"))) return new NextResponse(null, { status: 400 });
+  if (!isRealTap(req, q.get("ref"))) return new NextResponse(null, { status: 204 });
   await recordLead({
     ref: q.get("ref")!, kind: "call", src: (q.get("src") ?? "unknown").slice(0, 40),
     ts: new Date().toISOString(), attr: readAttribution(req), ...requestMeta(req),

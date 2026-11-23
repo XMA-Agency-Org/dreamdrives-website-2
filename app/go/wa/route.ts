@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { buildWhatsAppText, isRef, makeRef, WHATSAPP_NUMBER } from "@/lib/contact";
-import { readAttribution, recordLead, requestMeta } from "@/lib/server/leads";
+import { isRealTap, readAttribution, recordLead, requestMeta } from "@/lib/server/leads";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
     name: q.get("name")?.slice(0, 60) ?? undefined, loc: q.get("loc")?.slice(0, 80) ?? undefined,
     ts: new Date().toISOString(), attr: readAttribution(req), ...requestMeta(req),
   };
-  await recordLead(lead);
+  if (isRealTap(req, q.get("ref"))) await recordLead(lead);
   const est = Number(q.get("est")) || undefined, days = Number(q.get("days")) || undefined;
   const budget = q.get("budget")?.slice(0, 40) ?? undefined;
   const text = buildWhatsAppText({ car: lead.car, from: lead.from, to: lead.to, name: lead.name, loc: lead.loc, est, days, budget,

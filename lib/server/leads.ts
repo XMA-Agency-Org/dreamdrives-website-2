@@ -116,6 +116,19 @@ export async function recordLead(lead: LeadRecord) {
   });
 }
 
+/** Crawlers (Meta's meta-externalagent, Google AdsBot, link previews, scanners) fetch /go/ links straight from the HTML.
+ *  23 Nov 2026: 29 of the first 41 "leads" were crawlers, and each one sent Meta a server Contact. */
+const BOT_UA = /bot|crawl|spider|slurp|preview|externalagent|facebookexternalhit|headless|lighthouse|python|curl|wget|scanner|monitor|iPhone OS 13_2_3 like Mac OS X\) AppleWebKit\/605\.1\.15 \(KHTML, like Gecko\) Version\/13\.0\.3/i;
+export function isBot(ua?: string | null): boolean {
+  return !ua || BOT_UA.test(ua);
+}
+
+/** A real tap always carries the ref the browser added on click (AnalyticsProvider / booking form); a crawler fetching the
+ *  raw link does not. Only real, non-bot taps are logged and sent to Meta. */
+export function isRealTap(req: NextRequest, ref: string | null): boolean {
+  return !!ref && /^DD-[2-9A-Z]{4}$/.test(ref) && !isBot(req.headers.get("user-agent"));
+}
+
 export function requestMeta(req: NextRequest) {
   return {
     ua: req.headers.get("user-agent") ?? undefined,
