@@ -28,6 +28,16 @@ export interface CarImage {
   src: string;
   alt: string;
   isPrimary?: boolean;
+  angle?: string;
+}
+
+/** Per-car rental terms. Empty fields fall back to Site settings; still-empty fields are hidden, never guessed. */
+export interface CarIncluded {
+  kmPerDay?: number;
+  extraKmAed?: number;
+  insurance?: string;
+  depositRefundDays?: number;
+  minimumAge?: number;
 }
 
 export interface CarPricing {
@@ -66,6 +76,11 @@ export interface Car {
   isAvailable: boolean;
   color: string;
   interiorColor: string;
+  variant?: string;
+  plate?: string;
+  brandName?: string;
+  useCases?: string[];
+  included?: CarIncluded;
 }
 
 export interface CarFilters {

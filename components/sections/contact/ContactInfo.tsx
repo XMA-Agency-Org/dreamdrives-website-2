@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import { Heading, Text } from "@/components/ui";
 import { RevealOnScroll } from "@/components/animation";
@@ -35,12 +35,6 @@ const contactItems: ContactItem[] = [
     value: COMPANY.phone,
     href: getWhatsAppUrl(),
     isExternal: true,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: COMPANY.email,
-    href: `mailto:${COMPANY.email}`,
   },
 ];
 

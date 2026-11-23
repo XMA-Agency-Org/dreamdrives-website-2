@@ -13,7 +13,8 @@ interface BrandPageProps {
   params: Promise<{ brand: string }>;
 }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
   const brands = getAllBrandsWithCount();
@@ -36,7 +37,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Rent ${brandName} Cars in Dubai | Dream Drives`,
+    title: `Rent ${brandName} Cars in Dubai`,
+    alternates: { canonical: `/cars/brand/${brand}` },
     description: `Browse our collection of ${cars.length} ${brandName} luxury vehicles available for rent in Dubai. Premium ${brandName} car rental with delivery.`,
     openGraph: {
       title: `${brandName} Car Rental Dubai | Dream Drives`,

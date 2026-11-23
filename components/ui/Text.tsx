@@ -47,7 +47,7 @@ export function Text({
   return (
     <Component
       className={cn(
-        sizeStyles[size],
+        sizeStyles[size as keyof typeof sizeStyles],
         weightStyles[weight],
         colorStyles[color],
         "leading-relaxed",

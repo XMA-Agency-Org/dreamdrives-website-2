@@ -42,26 +42,8 @@ interface WhatsAppClickData {
     | "mobile_menu";
 }
 
-export function trackWhatsAppClick(data: WhatsAppClickData) {
-  if (!initialized) return;
-
-  posthog.capture("whatsapp_click", {
-    car_name: data.carName,
-    car_brand: data.carBrand,
-    car_category: data.carCategory,
-    car_price: data.carPrice,
-    source: data.source,
-  });
-
-  if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "conversion", {
-      send_to: process.env.NEXT_PUBLIC_GOOGLE_CONVERSION_ID,
-      event_category: "engagement",
-      event_label: data.source,
-      value: data.carPrice,
-    });
-  }
-}
+/** Superseded by the site-wide lead click handler (components/providers/AnalyticsProvider.tsx). Kept as a no-op so old call sites compile. */
+export function trackWhatsAppClick(_data: WhatsAppClickData) {}
 
 interface ContactFormData {
   formType: "inquiry" | "general" | "booking";
@@ -132,13 +114,8 @@ export function trackCarFilter(data: FilterData) {
   });
 }
 
-export function trackPhoneClick(source: string) {
-  if (!initialized) return;
-
-  posthog.capture("phone_click", {
-    source,
-  });
-}
+/** Superseded by the site-wide lead click handler. No-op. */
+export function trackPhoneClick(_source: string) {}
 
 declare global {
   interface Window {

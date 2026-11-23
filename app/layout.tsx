@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Outfit, Montserrat_Alternates, Montserrat } from "next/font/google";
-import Script from "next/script";
 import { Suspense } from "react";
-import { AnalyticsProvider, ThemeProvider } from "@/components/providers";
+import { AnalyticsTracker, Tags, ThemeProvider } from "@/components/providers";
+import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
-
-const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,19 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Dream Drives",
   },
   description:
-    "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more. Competitive rates with exceptional service.",
-  keywords: [
-    "luxury car rental dubai",
-    "car rental dubai",
-    "premium car hire",
-    "mercedes rental dubai",
-    "bmw rental dubai",
-    "range rover rental",
-    "suv rental dubai",
-    "sports car rental",
-    "dubai car rental",
-    "dream drives",
-  ],
+    "Luxury car rental in Dubai: Mercedes G63, Lamborghini Urus, Cadillac Escalade, Range Rover and more. Daily prices shown, free delivery anywhere in Dubai.",
   authors: [{ name: "Dream Drives" }],
   creator: "Dream Drives",
   publisher: "Dream Drives",
@@ -54,33 +40,22 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://dreamdrives.com"),
-  alternates: {
-    canonical: "/",
-  },
+  // Canonicals are set per page (each page's metadata), never here: a root canonical is inherited
+  // by every page and told Google they were all copies of the homepage.
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://dreamdrives.com",
     siteName: "Dream Drives",
     title: "Dream Drives | Luxury Car Rental Dubai",
     description:
-      "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dream Drives - Luxury Car Rental Dubai",
-      },
-    ],
+      "Luxury car rental in Dubai with daily prices shown and free delivery anywhere in Dubai.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Dream Drives | Luxury Car Rental Dubai",
     description:
-      "Experience premium luxury car rental in Dubai with Dream Drives. Rent Mercedes, BMW, Range Rover & more.",
-    images: ["/og-image.jpg"],
+      "Luxury car rental in Dubai with daily prices shown and free delivery anywhere in Dubai.",
   },
   robots: {
     index: true,
@@ -93,9 +68,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
+  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
+    verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },
+  }),
 };
 
 export default function RootLayout({
@@ -125,29 +100,15 @@ export default function RootLayout({
             `,
           }}
         />
-        {GOOGLE_ADS_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-ads" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GOOGLE_ADS_ID}');
-              `}
-            </Script>
-          </>
-        )}
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
         <ThemeProvider>
+          {children}
           <Suspense fallback={null}>
-            <AnalyticsProvider>{children}</AnalyticsProvider>
+            <AnalyticsTracker />
           </Suspense>
         </ThemeProvider>
+        <Tags />
       </body>
     </html>
   );

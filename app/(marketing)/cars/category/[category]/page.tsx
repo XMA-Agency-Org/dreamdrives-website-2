@@ -58,7 +58,10 @@ export async function generateMetadata({
   const cars = await getCarsByMarketingCategory(category);
 
   return {
-    title: `${categoryLabel} Cars for Rent in Dubai | Dream Drives`,
+    title: `${categoryLabel} Cars for Rent in Dubai`,
+    // Marketing groupings overlap the brand and body-type pages; keep them out of the index.
+    robots: { index: false, follow: true },
+    alternates: { canonical: `/cars/category/${category}` },
     description: `Browse our ${categoryLabel.toLowerCase()} car collection. ${cars.length} vehicles available for rent in Dubai with premium service.`,
     openGraph: {
       title: `${categoryLabel} Car Rental Dubai | Dream Drives`,

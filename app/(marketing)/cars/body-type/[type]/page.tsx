@@ -37,7 +37,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Rent ${typeLabel} in Dubai | Dream Drives`,
+    title: `Rent ${typeLabel} in Dubai`,
+    alternates: { canonical: `/cars/body-type/${type}` },
     description: `Browse our collection of ${cars.length} ${typeLabel.toLowerCase()} available for rent in Dubai. Premium ${typeLabel.toLowerCase()} rental with delivery.`,
     openGraph: {
       title: `${typeLabel} Rental Dubai | Dream Drives`,

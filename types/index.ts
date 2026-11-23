@@ -6,6 +6,7 @@ export type {
   CarPricing,
   CarSpecs,
   CarFilters,
+  CarIncluded,
 } from "./car";
 
 export type { Brand } from "./brand";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Container, Text } from "@/components/ui";
 import { COMPANY, NAV_LINKS, SOCIAL, CAR_BRANDS, LOCATIONS } from "@/lib/constants";
 import Image from "next/image";
@@ -35,8 +35,7 @@ export function Footer() {
               />
             </Link>
             <Text color="muted" className="mb-6 max-w-xs">
-              Premium luxury car rental in Dubai. Experience the finest vehicles
-              with unmatched service.
+              Luxury car rental in Dubai. Daily prices shown, free delivery anywhere in Dubai.
             </Text>
             {/* Social Links */}
             <div className="flex items-center gap-3">
@@ -48,24 +47,6 @@ export function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={SOCIAL.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 text-foreground-muted hover:text-primary-500 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={SOCIAL.youtube}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 text-foreground-muted hover:text-primary-500 transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -136,14 +117,6 @@ export function Footer() {
                   className="text-foreground-muted hover:text-primary-500 transition-colors"
                 >
                   {COMPANY.secondaryPhone}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${COMPANY.email}`}
-                  className="text-foreground-muted hover:text-primary-500 transition-colors"
-                >
-                  {COMPANY.email}
                 </a>
               </li>
             </ul>

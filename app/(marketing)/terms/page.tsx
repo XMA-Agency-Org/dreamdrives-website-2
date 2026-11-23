@@ -4,7 +4,8 @@ import { TermsContent } from "@/components/sections/terms";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Dream Drives Dubai",
+  title: "Terms and Conditions",
+  alternates: { canonical: "/terms" },
   description:
     "Read the terms and conditions for renting luxury cars from Dream Drives in Dubai. Understand our rental policies, insurance coverage, and payment terms.",
   openGraph: {

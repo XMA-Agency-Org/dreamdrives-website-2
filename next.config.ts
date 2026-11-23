@@ -1,38 +1,13 @@
 import type { NextConfig } from "next";
 
+/**
+ * No longer `output: "export"`: the site runs as a normal Next app on Vercel so it can use
+ * image optimisation, tag revalidation from Sanity (app/api/revalidate) and the /go/* tracking routes.
+ */
 const nextConfig: NextConfig = {
-  output: "export",
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "www.uptowndxb.com",
-      },
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.outrank.so",
-      },
-      {
-        protocol: "https",
-        hostname: "images.ctfassets.net",
-      },
-    ],
+    formats: ["image/avif", "image/webp"],
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
   },
 };
 

@@ -80,7 +80,7 @@ export function CompactCarCard({
             <Heading
               as="h3"
               size="sm"
-              grunge
+             
               className="group-hover:text-primary-500 transition-colors line-clamp-1 mb-2"
             >
               {car.name}

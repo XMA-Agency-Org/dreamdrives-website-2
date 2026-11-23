@@ -8,18 +8,16 @@ import { RevealOnScroll } from "@/components/animation";
 import { CarCard } from "@/components/sections/cars";
 import type { Car } from "@/types";
 
-type CategoryId = "featured" | "exotic" | "suv" | "sedan" | "luxury";
+type CategoryId = "featured" | "statement" | "family" | "suv" | "sedan" | "everyday";
 
-const LUXURY_BRANDS = ["mercedes", "bmw", "range-rover", "lamborghini", "rolls-royce", "bentley", "ferrari", "porsche", "mclaren", "aston-martin"];
-
+/** Rows follow the four buyer jobs (knowledge/CLIENT_PROFILE.md): statement, family arrival, everyday/monthly. */
 const categoryFilters: Record<CategoryId, (car: Car) => boolean> = {
   featured: (car) => car.isFeatured === true,
-  exotic: (car) =>
-    !car.isFeatured &&
-    (car.brand === "lamborghini" || car.brand === "ferrari"),
-  suv: (car) => !car.isFeatured && car.category === "suv",
-  sedan: (car) => !car.isFeatured && car.category === "sedan",
-  luxury: (car) => !car.isFeatured && LUXURY_BRANDS.includes(car.brand),
+  statement: (car) => car.brand === "lamborghini" || /g63|g-class/i.test(car.slug),
+  family: (car) => car.specs.seats >= 7,
+  suv: (car) => car.category === "suv",
+  sedan: (car) => car.category === "sedan",
+  everyday: (car) => car.pricing.daily <= 350,
 };
 
 interface CategorySectionProps {

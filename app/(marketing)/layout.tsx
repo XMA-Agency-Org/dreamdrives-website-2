@@ -1,5 +1,5 @@
 import { Header, Footer } from "@/components/layout";
-import { WhatsAppCTA } from "@/components/features";
+import { StickyLeadBar } from "@/components/features";
 
 export default function MarketingLayout({
   children,
@@ -9,9 +9,9 @@ export default function MarketingLayout({
   return (
     <>
       <Header />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen pb-16 lg:pb-0">{children}</main>
       <Footer />
-      <WhatsAppCTA />
+      <StickyLeadBar />
     </>
   );
 }

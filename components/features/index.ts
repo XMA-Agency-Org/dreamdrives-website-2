@@ -1,1 +1,1 @@
-export { WhatsAppCTA } from "./WhatsAppCTA";
+export { StickyLeadBar } from "./StickyLeadBar";

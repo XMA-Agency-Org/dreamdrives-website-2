@@ -9,9 +9,11 @@ export const COMPANY = {
   phoneClean: "971545555402",
   secondaryPhone: "+971 54 555 5403",
   secondaryPhoneClean: "971545555403",
-  email: "info@dreamdrives.com",
-  website: "https://dreamdrives.com",
+  website: "https://www.dreamdrivesdxb.com",
 } as const;
+
+/** The one canonical origin. Every canonical, sitemap and OG URL is built from this. */
+export const SITE_URL = "https://www.dreamdrivesdxb.com";
 
 export const LOCATIONS = [
   {
@@ -23,11 +25,9 @@ export const LOCATIONS = [
   },
 ] as const;
 
+/** Only accounts that exist. Placeholder handles were removed (they pointed at other people). */
 export const SOCIAL = {
-  instagram: "https://instagram.com/dreamdrives",
-  facebook: "https://facebook.com/dreamdrives",
-  youtube: "https://youtube.com/@dreamdrives",
-  tiktok: "https://tiktok.com/@dreamdrives",
+  instagram: "https://www.instagram.com/dreamdrives_/",
 } as const;
 
 export const NAV_LINKS = [
@@ -53,24 +53,19 @@ export const CAR_CATEGORIES = [
   { id: "special-offers", label: "Special Offers" },
 ] as const;
 
+/** Brands in the fleet only (Sanity, 23 Nov 2026), most wanted first. Never list a brand they cannot rent. */
 export const CAR_BRANDS = [
-  { id: "rolls-royce", label: "Rolls Royce" },
+  { id: "mercedes", label: "Mercedes-Benz" },
   { id: "lamborghini", label: "Lamborghini" },
-  { id: "ferrari", label: "Ferrari" },
-  { id: "bentley", label: "Bentley" },
-  { id: "mercedes", label: "Mercedes" },
-  { id: "bmw", label: "BMW" },
-  { id: "porsche", label: "Porsche" },
-  { id: "range-rover", label: "Range Rover" },
-  { id: "audi", label: "Audi" },
-  { id: "mclaren", label: "McLaren" },
-  { id: "hyundai", label: "Hyundai" },
-  { id: "kia", label: "Kia" },
-  { id: "mazda", label: "Mazda" },
-  { id: "nissan", label: "Nissan" },
-  { id: "gmc", label: "GMC" },
-  { id: "chevrolet", label: "Chevrolet" },
   { id: "cadillac", label: "Cadillac" },
+  { id: "range-rover", label: "Range Rover" },
+  { id: "gmc", label: "GMC" },
+  { id: "bmw", label: "BMW" },
+  { id: "audi", label: "Audi" },
+  { id: "nissan", label: "Nissan" },
+  { id: "mazda", label: "Mazda" },
+  { id: "kia", label: "Kia" },
+  { id: "hyundai", label: "Hyundai" },
 ] as const;
 
 export const PRICE_RANGES = [

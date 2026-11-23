@@ -2,36 +2,12 @@ import type { Brand } from "@/types";
 
 export const brands: Brand[] = [
   {
-    id: "rolls-royce",
-    name: "Rolls-Royce",
-    logo: "/brands/rolls-royce.svg",
-    description: "The pinnacle of luxury automotive craftsmanship since 1906.",
-    country: "United Kingdom",
-    founded: 1906,
-  },
-  {
     id: "lamborghini",
     name: "Lamborghini",
     logo: "/brands/lamborghini.svg",
     description: "Italian manufacturer of luxury sports cars and SUVs.",
     country: "Italy",
     founded: 1963,
-  },
-  {
-    id: "ferrari",
-    name: "Ferrari",
-    logo: "/brands/ferrari-logo-2002-download.png",
-    description: "Italian luxury sports car manufacturer synonymous with racing excellence.",
-    country: "Italy",
-    founded: 1947,
-  },
-  {
-    id: "bentley",
-    name: "Bentley",
-    logo: "/brands/bentley-logo-2002-download.png",
-    description: "British manufacturer of luxury grand tourers and SUVs.",
-    country: "United Kingdom",
-    founded: 1919,
   },
   {
     id: "mercedes",
@@ -48,14 +24,6 @@ export const brands: Brand[] = [
     description: "German multinational manufacturer of luxury vehicles and motorcycles.",
     country: "Germany",
     founded: 1916,
-  },
-  {
-    id: "porsche",
-    name: "Porsche",
-    logo: "/brands/porsche-logo-2014-download.png",
-    description: "German automobile manufacturer specializing in high-performance sports cars.",
-    country: "Germany",
-    founded: 1931,
   },
   {
     id: "audi",

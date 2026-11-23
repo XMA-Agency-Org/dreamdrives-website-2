@@ -9,3 +9,4 @@ export { TrustSignals } from "./TrustSignals";
 export { AdvantagesSection } from "./AdvantagesSection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { BookingSection } from "./BookingSection";
+export { PricePromise, HowItWorks, DeliveryAreas, DocumentsSection } from "./InfoSections";

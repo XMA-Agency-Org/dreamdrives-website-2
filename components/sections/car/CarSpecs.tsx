@@ -28,6 +28,12 @@ const specItems = [
 ];
 
 export function CarSpecs({ specs }: CarSpecsProps) {
+  // Hide anything unknown (0 or empty) rather than show an invented spec.
+  const items = specItems.filter((item) => {
+    const v = specs[item.key as keyof CarSpecsType];
+    return v !== 0 && v !== "" && v != null;
+  });
+  if (!items.length) return null;
   return (
     <div>
       <Heading as="h2" size="md" className="mb-6">
@@ -35,7 +41,7 @@ export function CarSpecs({ specs }: CarSpecsProps) {
       </Heading>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {specItems.map((item, index) => {
+        {items.map((item, index) => {
           const Icon = item.icon;
           const value = specs[item.key as keyof CarSpecsType];
 

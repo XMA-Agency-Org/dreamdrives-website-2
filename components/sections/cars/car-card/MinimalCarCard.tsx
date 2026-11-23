@@ -74,7 +74,7 @@ export function MinimalCarCard({
             <Heading
               as="h3"
               size="xs"
-              grunge
+             
               className="group-hover:text-primary-500 transition-colors line-clamp-1 mb-2"
             >
               {car.name}

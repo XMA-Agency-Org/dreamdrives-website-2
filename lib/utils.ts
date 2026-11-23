@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { waHref, type LeadSource } from "./contact";
 
 /**
  * Combines class names with Tailwind CSS merge support
@@ -29,23 +30,17 @@ export function formatNumber(num: number): string {
 }
 
 /**
- * Generate WhatsApp URL with pre-filled message
+ * WhatsApp link for general enquiries. Goes through /go/wa (lead logging + ref code), see lib/contact.ts.
  */
-export function getWhatsAppUrl(message?: string): string {
-  const phone = "971545555402";
-  const baseUrl = "https://api.whatsapp.com/send";
-  const encodedMessage = encodeURIComponent(
-    message || "Hello Dream Drives, I'm interested in renting a car. Please share your prices and current offers."
-  );
-  return `${baseUrl}?phone=${phone}&text=${encodedMessage}`;
+export function getWhatsAppUrl(message?: string, src: LeadSource = "cta_section"): string {
+  return waHref({ src, text: message });
 }
 
 /**
- * Generate WhatsApp URL for specific car inquiry
+ * WhatsApp link for one car. Names already carry the year where it matters, so the year is not repeated.
  */
-export function getCarInquiryUrl(carName: string, carYear: number): string {
-  const message = `Hello Dream Drives, I'm interested in renting the ${carYear} ${carName}. Please share availability and pricing.`;
-  return getWhatsAppUrl(message);
+export function getCarInquiryUrl(carName: string, _carYear?: number, src: LeadSource = "car_card"): string {
+  return waHref({ src, car: carName });
 }
 
 /**

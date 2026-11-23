@@ -11,6 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: "About Us",
+  alternates: { canonical: "/about" },
   description:
     "Learn about Dream Drives - Dubai's premier luxury car rental service with exceptional vehicles and outstanding customer service.",
 };

@@ -35,7 +35,7 @@ export function CarsFilters() {
     <div className="space-y-8">
       <FilterGroup
         title="Body Type"
-        items={CAR_BODY_TYPES}
+        items={[...CAR_BODY_TYPES]}
         value={currentCategory}
         onChange={(value) => updateFilter("category", value)}
         allOptionId="all"
@@ -43,7 +43,7 @@ export function CarsFilters() {
 
       <FilterGroup
         title="Brand"
-        items={CAR_BRANDS}
+        items={[...CAR_BRANDS]}
         value={currentBrand}
         onChange={(value) => updateFilter("brand", value)}
         scrollable
@@ -51,7 +51,7 @@ export function CarsFilters() {
 
       <FilterGroup
         title="Daily Price"
-        items={PRICE_RANGES}
+        items={[...PRICE_RANGES]}
         value={currentPriceRange}
         onChange={(value) => updateFilter("price", value)}
       />

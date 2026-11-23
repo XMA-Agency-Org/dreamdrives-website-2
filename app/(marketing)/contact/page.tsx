@@ -11,6 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Contact Us",
+  alternates: { canonical: "/contact" },
   description:
     "Get in touch with Dream Drives. Available 24/7 for luxury car rental inquiries in Dubai. Call, WhatsApp, or visit our office.",
 };

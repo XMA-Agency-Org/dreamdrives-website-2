@@ -4,7 +4,8 @@ import { InsuranceContent } from "@/components/sections/insurance";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "Insurance & Protection | Dream Drives Dubai",
+  title: "Insurance & Protection",
+  alternates: { canonical: "/insurance" },
   description:
     "Learn about our comprehensive insurance and protection options for luxury car rentals in Dubai. Collision damage, theft protection, and roadside assistance available.",
   openGraph: {

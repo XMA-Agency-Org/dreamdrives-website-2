@@ -4,7 +4,8 @@ import { PrivacyContent } from "@/components/sections/privacy";
 import { CTASection } from "@/components/sections/home";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Dream Drives Dubai",
+  title: "Privacy Policy",
+  alternates: { canonical: "/privacy" },
   description:
     "Learn how Dream Drives collects, uses, and protects your personal information. Read our privacy and cookie policy.",
   openGraph: {

@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getAllBrandsWithCount, getAllCarsAsync } from "@/data/cars";
-import { CAR_BODY_TYPES, CAR_CATEGORIES } from "@/lib/constants";
+import { CAR_BODY_TYPES, SITE_URL } from "@/lib/constants";
 
-export const dynamic = "force-static";
+export const revalidate = 3600;
 
-const BASE_URL = "https://dreamdrives.com";
+const BASE_URL = SITE_URL;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const brands = getAllBrandsWithCount();
@@ -59,14 +59,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  const categoryPages: MetadataRoute.Sitemap = CAR_CATEGORIES.filter(
-    (cat) => cat.id !== "all",
-  ).map((cat) => ({
-    url: `${BASE_URL}/cars/category/${cat.id}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
 
   const carPages: MetadataRoute.Sitemap = cars.map((car) => ({
     url: `${BASE_URL}/cars/${car.slug}`,
@@ -79,7 +71,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticPages,
     ...brandPages,
     ...bodyTypePages,
-    ...categoryPages,
     ...carPages,
   ];
 }

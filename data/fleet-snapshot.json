@@ -1,0 +1,2478 @@
+[
+  {
+    "id": "range-rover-sport",
+    "slug": "range-rover-sport",
+    "name": "Range Rover Sport 2025",
+    "brand": "range-rover",
+    "brandName": "Range Rover",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "Black over red",
+    "description": "The 2025 Range Rover Sport in Santorini Black over a red leather cabin, with the pared-back curved dashboard and air suspension. The quiet alternative to a G-Wagon at the same seat count.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b9c4fb58b1b5dbde835b0e730a66a1deaa1c7daf-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2ac3b243d46ecb0c09241f966239926968964850-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ddd01c26300e469128df1f0525d34bee92f40b77-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b423b03c57ac70999a44042726d80a0d1e9a1fec-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1ee7a92685424baffd17ec7a5edb14db2f90d8bf-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/6fd5cb4c8000993db72e2d9eb3855e7ebb84a6ca-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/711ed68f1b5f1d04b5d347dec581af2ddf51d853-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/131d0bcd4a8900b6e097ba79d1fd4ded5aa3d005-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f10b81bfb8f011c6f7f17d82cd2e614a1c88cf4f-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fb98eef029c13a0e71b9e8376d09c5f28d6431b8-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/726303aaba3321b440f80884454d010f494d27c1-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fb05088c341a0fa002060e00f63134c120768864-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Sport 2025",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1300,
+      "weekly": 8300,
+      "monthly": 28000,
+      "deposit": 4500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "3.0L I6 Turbo",
+      "horsepower": 395,
+      "acceleration": "5.8s",
+      "topSpeed": 242,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Terrain Response 2",
+      "Meridian Sound System",
+      "Air Suspension",
+      "Pixel LED Headlights",
+      "Curved Digital Dashboard",
+      "Panoramic Roof"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Santorini Black",
+    "interiorColor": "Red Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-g63-amg-blue",
+    "slug": "mercedes-g63-amg-blue",
+    "name": "Mercedes-AMG G63 2023 Blue",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "suv",
+    "year": 2023,
+    "tagline": "Navy over red",
+    "description": "A 2023 G63 in deep navy over a full red Nappa interior, with the AMG performance steering wheel and carbon trim. The colour combination that photographs best against the Marina skyline.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2f9c81e8278e352c2a251ad4078947f179dde69c-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b353137f99944a6ea37595c42ea98df6a37d4927-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f5ef44b9952df4eb1fa8f6c57e6c6241d708c5cd-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1cde53745148be688db3c0589200b5495cf6ac2e-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/39a3aeb4da8c665664c1c35068c6dc9b483ef136-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a83f2b45e9a5cca91ec2c62f726dedae09c554c3-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8ea58f1c1c05ad33e8900c6978344dd88e94799f-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/660abd23628bd911d98592a9e708837eb3b4c154-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/28f063daf5d028a783327ae2ff84b9ff359d2488-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8ca25841c353eebc8f6437ed98711da81bdca3ff-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2023 Blue",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1600,
+      "weekly": 10000,
+      "monthly": 34000,
+      "deposit": 4000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 577,
+      "acceleration": "4.5s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "AMG Performance Exhaust",
+      "Red Nappa Leather Interior",
+      "Burmester 3D Sound",
+      "AMG Ride Control",
+      "Ambient Lighting",
+      "360° Camera"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Brilliant Blue",
+    "interiorColor": "Red Nappa Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "land-rover-range-rover-vogue-2023",
+    "slug": "land-rover-range-rover-vogue-2023",
+    "name": "Range Rover Vogue 2027",
+    "brand": "range-rover",
+    "brandName": "Range Rover",
+    "category": "suv",
+    "year": 2027,
+    "tagline": "Quiet authority",
+    "description": "The Vogue is the flagship Range Rover: a hushed cabin, a long wheelbase and the cleanest lines Land Rover has drawn. Effortless on Sheikh Zayed Road.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c29cefe2079f6a53c7733e37caf0cbbd0a09ee4d-959x958.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d12fb5c364e4de578b4de5e969696101b2692c01-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b7c587c15db18feb0585d3fd981a44dbf5489ef4-1080x632.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/52e1f8f8c7cb6dd3af3a4d69f38d6d7ff1d0bf5e-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/08b7f1807c5854534c9fdc7b5df0e11f3cc67f58-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d02a21f58360e9106b1c385da674bb1ab798cd9f-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/0b34fcf4d646d684839bcd3dd4eea5769880811a-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f432170008622d034afefe6a1a8cbde9c64502ec-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/157423c1a9b9a0edc41d92dcebd23e9b75b17097-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/524d20bea53233131114e7153713a06b6e971d5f-1080x644.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/21f4ea88d2d03b1021db3e4dcd1354cd7c44c51b-1080x655.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/bfc5d1a511833890dd0290cb0f8037eca10a58ff-1080x612.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/163c85bc9911f9a241a13fd9827e1a8ac79d174d-1079x629.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Range Rover Vogue 2027",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1400,
+      "weekly": 8800,
+      "monthly": 30000,
+      "deposit": 4000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "3.0L I6 Mild-Hybrid",
+      "horsepower": 395,
+      "acceleration": "5.8s",
+      "topSpeed": 234,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Executive Rear Seating",
+      "Meridian Signature Sound",
+      "Air Suspension",
+      "Cabin Air Purification"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Santorini Black",
+    "interiorColor": "Ebony Windsor Leather",
+    "variant": "Range Rover Vogue",
+    "plate": "R 40444",
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-benz-g63-amg-2025",
+    "slug": "mercedes-benz-g63-amg-2025",
+    "name": "Mercedes-AMG G63 2025 Black",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "The 2025 G-Wagon, all in black",
+    "description": "The latest G63 in gloss black on black AMG wheels. Squared-off presence with 585hp of biturbo V8 behind it.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/12cb768987ae3314fa6386ab541ad3bbc3a2363c-960x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b06553e9b16538cc6015a7dc28faae3c84343e81-1240x913.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/937da1ef8fcad80b0c5490d14fdd7eef8003e455-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e50c2391ac94da7fc66675470d7392f72b0392e3-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1b962bc24342bdda0b6d0f6f09ebf4e5f433117c-1240x837.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/0f5b27516363370a3eff11f1a822b8d654941e83-832x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a33aec9948146bd46e9bcb29c02d4c641f3129f7-1240x930.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/673349caddb09bf14cfbfd2c1981aa29e0645545-1240x930.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b56b7b4dbcc19286668240bfb9c7d4c92115f28e-1240x1020.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9dd001ffe7316276770bae5be434e3e149f8484f-1240x866.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/dcee6a6bd6e670095ec64ee241492a1bd8a4f701-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/de3c757491b6307687f7b87bb5c06c7188affbde-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Black",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1900,
+      "weekly": 11900,
+      "monthly": 40000,
+      "deposit": 5000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 585,
+      "acceleration": "4.4s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "AMG Night Package",
+      "AMG Performance Exhaust",
+      "Burmester 3D Sound",
+      "AMG Ride Control"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Obsidian Black",
+    "interiorColor": "Black Nappa Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-g63-2025-sand",
+    "slug": "mercedes-g63-2025-sand",
+    "name": "Mercedes-AMG G63 2025 Sand",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "suv",
+    "year": 2025,
+    "tagline": "Three-digit plate, desert finish",
+    "description": "A 2025 G63 in a soft desert-sand finish with a black brush guard and a three-digit Dubai plate. The most requested spec in the fleet.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/5576fb79ea4d20c715b187463294c8a8715c7a9e-1240x1230.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4a2cf2d85df06997b9633f21ea53268e8281567c-1240x848.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/22906a40f8f7b27735afc65de921ee54b1c8db27-1240x930.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8f5d106d59f22f9ef9cc56022dcd12fdb84577b5-878x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/07beb70b1f79514b0f08d963018610f02f4e6a7a-1240x841.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c6b16aa17a2413f079d793f8b07904b089747a7f-1240x786.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/5285f17c6ae0399339819ce2eca96de51f7e8e68-1240x684.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4b6967f22cecdda0b58c35663ce32c63b7953c3d-958x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/deb4f5c44258dbb367099730977f4439b5ef2c64-1072x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/5f7e5b3aa1f1626ea86e7fa17c40d487b202d614-1240x788.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes-AMG G63 2025 Sand",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 2500,
+      "weekly": 15500,
+      "monthly": 53000,
+      "deposit": 6500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 585,
+      "acceleration": "4.4s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Three-Digit Plate",
+      "AMG Performance Exhaust",
+      "Burmester 3D Sound",
+      "Brush Guard"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Desert Sand",
+    "interiorColor": "Black Nappa Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "lamborghini-urus-performante-2024",
+    "slug": "lamborghini-urus-performante-2024",
+    "name": "Lamborghini Urus Performante 2024",
+    "brand": "lamborghini",
+    "brandName": "Lamborghini",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Track-bred super SUV",
+    "description": "The Urus Performante strips weight, stiffens the chassis and adds a titanium exhaust to the super SUV formula. Rosso paintwork and a Dubai skyline are a natural pairing.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/858b0a98de7ba2a96a15d0b447ba63af4fd0cca4-1280x836.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/30d12c703a64f73ac92ce8e4d53789842b152f44-1280x832.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7804eb276ecd40c5e2348301f18ad8d3890ffaed-1280x856.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/426dd48b26c843d7af8bc1b6a523fccf46d3c279-1280x964.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4a4396d1d40feda38dbc78a1a85028b395774cb2-1280x902.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/869b3afc2ea1296dd498398818f44f1b1457e12a-800x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/dee2effb64839e95388e5bd1b7c55c5d5767c1d6-997x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/164fdd7da85f52d18675b6395e62cec86f84f8d6-1280x830.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/76f97664965477efa54ea1d3dde6a4d0efac2986-1082x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1de67315d717b471ceb8925bf0a40d943211fc2d-870x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/01d462c9d055793621646dea1efc3161428307ef-1280x734.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/70b5ee3a7b506fad74934c36b315d7bf35ba9f40-1280x860.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/0ea81ac1437c40bc5ee57854418c0a694746c8ea-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/08565a48539ec132e60a7b769ec4d47e7d0b7308-1280x870.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus Performante 2024",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 3300,
+      "weekly": 20500,
+      "monthly": 70000,
+      "deposit": 8500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Twin-Turbo",
+      "horsepower": 657,
+      "acceleration": "3.3s",
+      "topSpeed": 306,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Carbon Fibre Body Package",
+      "Akrapovic Titanium Exhaust",
+      "Bang & Olufsen 3D Sound",
+      "Alcantara Sports Interior"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Rosso Anteros",
+    "interiorColor": "Black Alcantara with Yellow Stitching",
+    "variant": "Urus Performante",
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "audi-a3",
+    "slug": "audi-a3",
+    "name": "Audi A3 2024",
+    "brand": "audi",
+    "brandName": "Audi",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "The easy everyday choice",
+    "description": "A clean white A3 sedan with the virtual cockpit and a light footprint. Cheapest way into the fleet and simple to park anywhere in the city.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e36accb9db8a4ac30a0ee98890f36fc0d2a73aef-640x480.png?w=1600&q=80&fit=max&auto=format",
+        "alt": "Audi A3 2024",
+        "isPrimary": true
+      }
+    ],
+    "pricing": {
+      "daily": 250,
+      "weekly": 1600,
+      "monthly": 5300,
+      "deposit": 1500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.4L TFSI",
+      "horsepower": 150,
+      "acceleration": "8.4s",
+      "topSpeed": 225,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Audi Virtual Cockpit",
+      "Apple CarPlay",
+      "LED Headlights",
+      "Parking Sensors"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Glacier White",
+    "interiorColor": "Black Leatherette",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "gmc-yukon-at4-2023",
+    "slug": "gmc-yukon-at4-2023",
+    "name": "GMC Yukon 2023",
+    "brand": "gmc",
+    "brandName": "GMC",
+    "category": "suv",
+    "year": 2023,
+    "tagline": "Big SUV, small rate",
+    "description": "The previous-generation Yukon AT4 with the off-road stance and the same three rows of seats. The value pick for family trips.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/84c3fdd639237e42bf91327b56966d33cab6ef26-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f054159ac90bcfc2361e56ed6b41be6d9a7ca350-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/53431b29a1484c1ec9069a8919a802014a0ba010-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/81e9648c8f09c9f4768db0c3e9632b6a6ec3f0b3-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/19644791a698c16f2694f9c001f57ae0f862bf63-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e6d447b9cfef8df158d9396b9e735502411cbbef-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4698c17e3ba637cb89c9ca8164bb52032736cc74-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2023",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "5.3L V8",
+      "horsepower": 355,
+      "acceleration": "7.2s",
+      "topSpeed": 180,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "AT4 Off-Road Package",
+      "Three-Row Seating",
+      "Bose Audio",
+      "Apple CarPlay"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Onyx Black",
+    "interiorColor": "Jet Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "bmw-420i-2026",
+    "slug": "bmw-420i-2026",
+    "name": "BMW 420i 2026",
+    "brand": "bmw",
+    "brandName": "BMW",
+    "category": "sedan",
+    "year": 2026,
+    "tagline": "Sharp four-door coupe",
+    "description": "The 4 Series Gran Coupe in black on black. Rear-wheel drive, a well-judged chassis and enough room in the back to stay useful.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fd0d7e2dcfdd55349c637755906bf1dcd5adcc8b-1193x1210.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ba2edaa6f63dae16c7ec762e798d5b74b7d5a053-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7d5fa664cba349a45329723e8e7c3696325feaec-2858x3811.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8b71c8b2eaccb582bfb13767235f0658b10dd6af-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/949b303234a0cce5dd237039a8941a6643a738a9-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/17bd50417b4ce9c7129cf219ee06b72e61701691-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW 420i 2026",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 550,
+      "weekly": 3400,
+      "monthly": 11500,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.0L I4 TwinPower Turbo",
+      "horsepower": 184,
+      "acceleration": "7.7s",
+      "topSpeed": 240,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Sound",
+      "Live Cockpit Professional",
+      "Adaptive LED Headlights"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Black Sapphire",
+    "interiorColor": "Black Sensatec",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "gmc-yukon-at4-2025",
+    "slug": "gmc-yukon-at4-2025",
+    "name": "GMC Yukon 2026",
+    "brand": "gmc",
+    "brandName": "GMC",
+    "category": "suv",
+    "year": 2026,
+    "tagline": "Space for everyone",
+    "description": "The newest Yukon Denali: three rows, independent rear suspension and a cabin built for long drives. Practical without feeling plain.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1850ebfa96dc06205df39507cf5cc38404ee9065-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/87f577891e6058390569deac2f34abb170729cae-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/99ac5d34d6eb4c0a55b61eef948b7dae81768c0c-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c0c9c743c03907c600a15a3bdd8f75da757a3e08-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/386d09621ce0a380243c25b97ec7d13f7aebc231-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8795b1d7d298f33a498fbdee023441e09c1522ea-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8d1c84b8b49720eb7a97981418c9335198a7f097-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9ee862ac2fcb4a8f1103e66d1ac67871b1497a5d-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "GMC Yukon 2026",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 750,
+      "weekly": 4700,
+      "monthly": 16000,
+      "deposit": 2500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "5.3L V8",
+      "horsepower": 355,
+      "acceleration": "7.0s",
+      "topSpeed": 180,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "Three-Row Seating",
+      "Bose Premium Audio",
+      "Wireless Apple CarPlay",
+      "Power Tailgate"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Onyx Black",
+    "interiorColor": "Jet Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "cadillac-escalade-2025",
+    "slug": "cadillac-escalade-2025",
+    "name": "Cadillac Escalade 2026",
+    "brand": "cadillac",
+    "brandName": "Cadillac",
+    "category": "suv",
+    "year": 2026,
+    "tagline": "Full-size American luxury",
+    "description": "Seven seats, a 38-inch curved OLED dash and a 6.2L V8. The Escalade is the airport-run SUV when the group is large and the luggage is larger.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/50f3130e1ee9d91e1c3b86f68d04c31d3ef6dc20-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8f123e68d193e368b607740f3717ca2ebba39e06-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/19000edea139e205712b508375d191f09096c9b9-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fb1bc5496ec49f0ddebf817ba339956841ed245c-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/cf964b957839321f033b2b7b5aae7e520b1ce81e-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4ccd3e15919406838252bf1344d8b32096e98df6-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/675c9586cec19390408d157cfb60acd524cc43af-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/603a3c2376ba46dceddc5aa906c3717153769b97-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2d7f9d45ee21be2d5f09af89f12e4927406343c1-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Cadillac Escalade 2026",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1300,
+      "weekly": 8300,
+      "monthly": 28000,
+      "deposit": 3500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "6.2L V8",
+      "horsepower": 420,
+      "acceleration": "6.1s",
+      "topSpeed": 200,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 7,
+      "doors": 4
+    },
+    "features": [
+      "38-inch Curved OLED Display",
+      "AKG Studio Reference Sound",
+      "Magnetic Ride Control",
+      "Seven Seats"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Black Raven",
+    "interiorColor": "Jet Black Leather",
+    "variant": null,
+    "plate": "P 5503",
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-g63-amg-black",
+    "slug": "mercedes-g63-amg-black",
+    "name": "Mercedes G63 AMG Black",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Blacked out, front to back",
+    "description": "A blacked-out G63 AMG with widened arches and a lowered stance. The classic Dubai silhouette at a friendlier daily rate.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/188bfcef4716fd654b049b31fb95db8655f62121-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ca9f9755ab585e748264f6aa1129f05beaeeb9d1-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/bd80423462c7f23fc4f1bc2375a4e24d1c100855-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/81c5a69337dc246d679d65e66f46bd903b21560e-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/0c5791361ba1447a5c3d931f7bd2b790f5e1c72d-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ff098fb2533a8b44de2cf976876e9747c40223d5-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9cf7bd5cbbd6e760e91cb15074ca420fd3bfe560-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8a12503b4acc34c030c33220d14833ad77d7d488-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/01eb281b24ed498c3710672a28849c01391bf9e7-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes G63 AMG Black",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 1600,
+      "weekly": 10000,
+      "monthly": 34000,
+      "deposit": 4000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Biturbo",
+      "horsepower": 577,
+      "acceleration": "4.5s",
+      "topSpeed": 220,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "AMG Night Package",
+      "AMG Performance Exhaust",
+      "Widebody Arches",
+      "Burmester 3D Sound"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Obsidian Black",
+    "interiorColor": "Black Nappa Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "lamborghini-urus-s-2024",
+    "slug": "lamborghini-urus-s-2024",
+    "name": "Lamborghini Urus S 2024",
+    "brand": "lamborghini",
+    "brandName": "Lamborghini",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "The super SUV evolved",
+    "description": "The Lamborghini Urus S delivers even more refined performance and sportier design. The pinnacle of super SUV excellence.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/127fe982b5922d0c467f6ade79a18ef85bdf9bdf-1600x900.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f6670726256b1ceab151403a2f640b5ecd82715e-1600x870.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f6670726256b1ceab151403a2f640b5ecd82715e-1600x870.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ba9067dbd1bb429ff595339860b24f97865f261c-1600x900.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4a93f44a8403950bbe5ff7f9da1c0be79772f214-1600x900.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/90ff6dd2e8029ef447f4273f72ebd2a55a546d66-1600x1053.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f8c4f8bcd44cb17f4dc5fe3ec894608846de0914-1600x888.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/908757323fd246a90bae069082372895ad6d1eb3-1545x875.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Lamborghini Urus S 2024",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 3300,
+      "weekly": 20500,
+      "monthly": 70000,
+      "deposit": 8500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "4.0L V8 Twin-Turbo",
+      "horsepower": 666,
+      "acceleration": "3.5s",
+      "topSpeed": 305,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Carbon Ceramic Brakes",
+      "Adaptive Air Suspension",
+      "Bang & Olufsen 3D Sound",
+      "Akrapovic Exhaust"
+    ],
+    "isFeatured": true,
+    "isAvailable": true,
+    "color": "Nero Noctis",
+    "interiorColor": "Black Alcantara",
+    "variant": "Urus S",
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-c200-white",
+    "slug": "mercedes-c200-white",
+    "name": "Mercedes C200 White",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Pure elegance",
+    "description": "The Mercedes C200 in Polar White offers timeless elegance with modern technology. Luxury defined.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/3d62871650638dd90c4486d7acceead4b49e8066-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/996157d55dcb5243259fbcc5c6face2af19999c8-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/622fef1d5b73d4e7f44d49aede146586587bded7-1290x1275.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b5207d6425a0428e9500df7d83c18db8b9d52e2e-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/770495384d1580d160498e20bc6245a98775392a-1290x1271.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7a5f4059490b6a1b8b48779f88989816e88f922b-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/93575aad3c0b3e1e13d7f82838912f0402e5439f-1290x1291.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/54a3b7eab7b1dd38043130da48783f3048930fac-1280x781.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/abdd09f666732d670ff4219c121fb73b44064c9b-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4e69a85f7a76e4137fd6225c1294c2a708e61bc2-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9b0afc846eddc5dda34b54919db4b34091429eb6-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a21193d51a6477c03d5b45378cbaa1b492e55e37-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 White",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.5L I4 Turbo",
+      "horsepower": 204,
+      "acceleration": "7.3s",
+      "topSpeed": 246,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "MBUX Infotainment",
+      "Burmester Sound",
+      "Ambient Lighting",
+      "Active Parking Assist"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Polar White",
+    "interiorColor": "Macchiato Beige",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mercedes-c200-grey",
+    "slug": "mercedes-c200-grey",
+    "name": "Mercedes C200 Grey",
+    "brand": "mercedes",
+    "brandName": "Mercedes-Benz",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Compact luxury",
+    "description": "The Mercedes C200 delivers refined luxury in a compact package. German engineering meets sophisticated design.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c381d542e6bb9663268444ae621dca5a9409046b-1280x854.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/66e437ec6c1eb24e3e164a2f84838013758ae247-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2c01056fa23613c0302b68d99b8a99ebdcb070ee-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/58853228e9ceb75f2375df8f98c3d5401e1e6964-1280x930.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9e00b261a3b95cd30ea90d5cb5b86f61a16444c1-1290x1278.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/54a3b7eab7b1dd38043130da48783f3048930fac-1280x781.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/add445ead3a3189d5811b1bfce30813dd152440a-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9af90dfaf9bdd3b63aab5c2c027f0e48bf813d6f-1290x1298.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/93575aad3c0b3e1e13d7f82838912f0402e5439f-1290x1291.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4e69a85f7a76e4137fd6225c1294c2a708e61bc2-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9278defa3130ba9a3c67045c90cf30df9e41ad03-1290x1289.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fc0ec742d96841aaa96f94353586ff89ddc6c36f-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mercedes C200 Grey",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 500,
+      "weekly": 3100,
+      "monthly": 10000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.5L I4 Turbo",
+      "horsepower": 204,
+      "acceleration": "7.3s",
+      "topSpeed": 246,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "MBUX Infotainment",
+      "Burmester Sound",
+      "Ambient Lighting",
+      "Digital Cockpit"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Selenite Grey",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "bmw-x6-white",
+    "slug": "bmw-x6-white",
+    "name": "BMW X6 White",
+    "brand": "bmw",
+    "brandName": "BMW",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Alpine elegance",
+    "description": "The BMW X6 in Alpine White offers striking presence with commanding road dynamics. Luxury meets performance.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/09eee6c7d035475070a165ee99f71385ffae2a27-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2fcaffc9a0385711f0e7b6eaf6e3d62fa96d5fb1-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/13118e2dae7d7af52f212f5342aef9a3a96ea621-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/37dfa492dbf298a23c8006be72eed0b638c94171-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a4ec60a2e050682d0cc89adc4fbf7037b9a2820a-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/047e8b2378da3e45524ee414d566b3e24d4d6621-4480x6720.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c109dbb594b0bc6641c94ada11b83f3e592bde2b-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/6ef1c5955e61ab5f68446506e32ae38addda5e86-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9bb06349bbdc462d37f6c71609273776fecba3f3-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e0d61eea4ce157cc3debc5985e465bdc75b52578-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/db5c60278b166642816eed88b74ad852dda63104-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 White",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 950,
+      "weekly": 5900,
+      "monthly": 19000,
+      "deposit": 3500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "3.0L I6 Turbo",
+      "horsepower": 335,
+      "acceleration": "5.5s",
+      "topSpeed": 250,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Audio",
+      "Panoramic Sunroof",
+      "Gesture Control"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Alpine White",
+    "interiorColor": "Cognac Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "bmw-x6-black",
+    "slug": "bmw-x6-black",
+    "name": "BMW X6 Black",
+    "brand": "bmw",
+    "brandName": "BMW",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Sports activity coupe",
+    "description": "The BMW X6 combines the versatility of an SUV with coupe-like dynamics. A powerful statement of athletic luxury.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c8560c0dcb020708678a838652e7e38c95100320-1600x1358.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/72dd7f4e02a21538b3458ff58cd6887ff5aca6a3-1600x1156.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1eea9aadca9dafd671a9fb7d0770a9da21b7d2ca-1599x1154.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/738407466fd85d641a3f4446557f52256b31243c-1600x1056.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/59f09df9ba7aa9a745951e5dc31fb6664bfefbf1-1585x1144.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/996aabb3a5ebf3bd69b173b88138437d405782ec-6720x4480.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c109dbb594b0bc6641c94ada11b83f3e592bde2b-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9bb06349bbdc462d37f6c71609273776fecba3f3-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "BMW X6 Black",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 950,
+      "weekly": 5900,
+      "monthly": 19000,
+      "deposit": 3500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "3.0L I6 Turbo",
+      "horsepower": 335,
+      "acceleration": "5.5s",
+      "topSpeed": 250,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "M Sport Package",
+      "Harman Kardon Audio",
+      "Panoramic Sunroof",
+      "Adaptive LED Headlights"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Black Sapphire",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "nissan-xterra",
+    "slug": "nissan-xterra",
+    "name": "Nissan Xterra",
+    "brand": "nissan",
+    "brandName": "Nissan",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Built for adventure",
+    "description": "The Nissan Xterra is a rugged SUV designed for those who seek adventure. Off-road capability meets daily practicality.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/90ef5c309079371a5e2d1dbc4a9d8da3916f337a-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c79b66e02693a12a2a54dd8be650f562437ac5f8-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7843dc52117a3e20f448515eeb60476e13a2a081-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d99d389fba46224967d01b0cadb0e38f674512fe-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c41cb1acdd0e176202bfcccf41cdb8277a17eb4c-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/40c06f3b4e7b84a61e9b5a635b27708bf2b80340-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/243690adb8265c8c8456468955b79b5ab5c98503-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/87bef398b15968366f20ab748cf877e38d963658-1280x766.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/cd8f3a946723fd34c6010b46b1585b0078798796-1280x755.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/efc967edfecf322e93b6410ec9f20e8902c39c0f-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d43c16aef12d0eb5dfb6e3c246db9219a704b5b9-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/643166986a6d9ee2ab23a51d0907606838f702ce-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Nissan Xterra",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 350,
+      "weekly": 2100,
+      "monthly": 7000,
+      "deposit": 2500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4",
+      "horsepower": 170,
+      "acceleration": "9.8s",
+      "topSpeed": 180,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Off-Road Mode",
+      "Hill Descent Control",
+      "Roof Rails",
+      "All-Terrain Tires"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Cloth",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mazda-cx5-red",
+    "slug": "mazda-cx5-red",
+    "name": "Mazda CX-5 Red",
+    "brand": "mazda",
+    "brandName": "Mazda",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Soul red passion",
+    "description": "The Mazda CX-5 in Soul Red Crystal makes a bold statement. Premium craftsmanship with head-turning color.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e306d19dd23a7a1de72efdc638c41030766fe2c9-1599x1232.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8b05f34fe36e3e480e3dc1a93c380e8bef639ef2-1600x1245.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f7a67239097ea7a18395c19e4e1088db9f97af6f-1200x1600.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/22bf424d8ed300650f7a263c34403f722327520c-1600x1228.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/3d1d06db0070ea137618b0fea7a4ef4671147c37-1600x1142.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f32564c4697ab68759a4b26d2a6d73dd385acc50-1600x1235.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5 Red",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 280,
+      "weekly": 1700,
+      "monthly": 5500,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4 Turbo",
+      "horsepower": 256,
+      "acceleration": "7.5s",
+      "topSpeed": 210,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "i-Activ AWD",
+      "Bose Premium Audio",
+      "Heated Steering Wheel",
+      "Power Liftgate"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Soul Red Crystal",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mazda-cx5",
+    "slug": "mazda-cx5",
+    "name": "Mazda CX-5",
+    "brand": "mazda",
+    "brandName": "Mazda",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Driving matters",
+    "description": "The Mazda CX-5 combines crossover versatility with engaging dynamics. A refined SUV that delivers on every front.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/dc4735d10a4fa4305e667ee08c7d6c14b352e8f0-1600x747.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b88150da4ab88954433e6a5e8a4951c85915457b-747x1600.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b1bdedd876871fd308b2663173119a1710ec85b2-1600x747.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f2e889b1fa096e108a058bfeb11816a91171b78d-1600x747.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/216a3254bd867535fd422354204975a9834b339c-747x1600.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda CX-5",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 280,
+      "weekly": 1700,
+      "monthly": 5500,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4 Turbo",
+      "horsepower": 256,
+      "acceleration": "7.5s",
+      "topSpeed": 210,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "i-Activ AWD",
+      "Bose Premium Audio",
+      "Heated Steering Wheel",
+      "Power Liftgate"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Navy Blue",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mazda-6",
+    "slug": "mazda-6",
+    "name": "Mazda 6",
+    "brand": "mazda",
+    "brandName": "Mazda",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Sophisticated power",
+    "description": "The Mazda 6 offers premium sedan comfort with sporty dynamics. Elegance meets performance in this refined midsize sedan.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/23e9467ff88c536993e7eda546bd2ba6c5ffab4b-1600x885.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/afb5d5e9b2ebf3dce53e0bea919753105fec1787-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/db5d562b20d20a16445573a0492a3e4314b4669f-1600x754.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a0df23af84a7306f8552363e67f686e213702b8a-1600x968.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7fa696d44dc0226a32c95f3f4619eed26da297e9-1600x1110.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/0fda9397c089c5e199d3d5187d870d7a009b6f7e-1600x1249.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/81981e1ab9dac4086b5850a3db31929981a0f187-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fd39341049b62feee1bb124e649c91593f512730-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 6",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 250,
+      "weekly": 1500,
+      "monthly": 5000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4 Turbo",
+      "horsepower": 250,
+      "acceleration": "7.1s",
+      "topSpeed": 230,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Bose 11-Speaker Audio",
+      "Ventilated Seats",
+      "360° View Monitor",
+      "Radar Cruise Control"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Silver",
+    "interiorColor": "White Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "mazda-3",
+    "slug": "mazda-3",
+    "name": "Mazda 3",
+    "brand": "mazda",
+    "brandName": "Mazda",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Feel alive",
+    "description": "The Mazda 3 delivers a premium driving experience with elegant design and responsive handling. A driver's compact car.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9f5b5ecad309a2b1b4e6ded5c82f7b40dd5ea5b1-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/3aa29c72498d182d4b585b0fa7f7d3af4ae8d07d-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/cb3fa669aa2473dcb802ff6305600d86725f079c-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/8cbadbb77d750fd0f282251c9c69581cfd8c0272-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/85661c3137a4b1fe9ecee2073fd7a0a7d77efafe-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/b3c3b52cd96dcc218df4b799a68bf5e07fccef9e-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/530785bbaac0eef5af6e84749603832895c7ba35-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/17494d938d7535dad7b73df3b57ed25239004366-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c0c082ac488a790d74c016885641c93b585a1c62-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/16b1e0f0e470c5b197cc2bdf58b137132c5c444a-840x560.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Mazda 3",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 200,
+      "weekly": 1200,
+      "monthly": 4000,
+      "deposit": 1500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4",
+      "horsepower": 186,
+      "acceleration": "8.3s",
+      "topSpeed": 210,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Bose Sound System",
+      "i-Activsense Safety",
+      "Heads-Up Display",
+      "Adaptive Cruise Control"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "Dark Blue",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "kia-sportage",
+    "slug": "kia-sportage",
+    "name": "Kia Sportage",
+    "brand": "kia",
+    "brandName": "Kia",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Urban explorer",
+    "description": "The Kia Sportage combines bold design with practical versatility. A compact SUV that stands out in any setting.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/6db2b8718a82adc57896933310007cd4cb26812d-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a72bc7ea75c796e8c91fa46c0c227d0744f5a834-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/fbe9ae0012dbb1907288532659278ee285b86fb3-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1a7ec6b0b771b69d9bb5ff8b0ce1741b5b43e374-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ad029df3a9d54e3cb57561281315c891d137b6f4-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/29248e0db232d0fef046316a876cbfe1e132aea8-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4c9675b3dd44e046a0fed72c65d489f43ba369c2-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia Sportage",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 250,
+      "weekly": 1500,
+      "monthly": 5000,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4",
+      "horsepower": 187,
+      "acceleration": "8.8s",
+      "topSpeed": 195,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Curved Display",
+      "Harman Kardon Audio",
+      "Highway Driving Assist",
+      "Remote Smart Parking"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "kia-k5",
+    "slug": "kia-k5",
+    "name": "Kia K5",
+    "brand": "kia",
+    "brandName": "Kia",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Sporty sophistication",
+    "description": "The Kia K5 delivers sporty performance and premium features in a stylish midsize sedan. A compelling choice for drivers who want it all.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e5d2f38e6b4ce486e75eb0e3d34311e2b7f7a884-1300x712.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/17117fe1efe7f17d30032c6c6120cd5cd8da2055-1300x685.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7f5d739ff9653887f7976bc1130f4eaca0ceebeb-1504x1128.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c4b026aa2d0c6e2f21ca63cf788c5169f2425980-1504x1128.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d2c6096c361236058584c7507e917f85828646d3-640x448.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ead9fe002bd9b4265869744896264952b3359c3c-815x543.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Kia K5",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 220,
+      "weekly": 1300,
+      "monthly": 4500,
+      "deposit": 1500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4 Turbo",
+      "horsepower": 290,
+      "acceleration": "6.6s",
+      "topSpeed": 240,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Panoramic Sunroof",
+      "Bose Premium Audio",
+      "Driver Attention Warning",
+      "Smart Park Assist"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "hyundai-tucson",
+    "slug": "hyundai-tucson",
+    "name": "Hyundai Tucson",
+    "brand": "hyundai",
+    "brandName": "Hyundai",
+    "category": "suv",
+    "year": 2024,
+    "tagline": "Adventure awaits",
+    "description": "The Hyundai Tucson offers a perfect combination of style, comfort, and capability. Ideal for families and adventurers alike.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/a003b46b1dedf73ca8a2663b62d3f4608e074cad-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/95342b95c7ee6bbdaff62f8d49edec119aabd9d1-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/04d1b52b0dda8d6a3c3eff3232c2848e17b02aaa-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ae205ba5bf731eb2d329b2a24e6b631a2f6aa700-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f7430c2127d0068a7aff3089243ca7291588655b-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7590ddfa8fe47ab2be0d0f2b4c8d2d859f90c1f5-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/ab990c42530982ab751b660ec69dbdf2451813fb-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Tucson",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 280,
+      "weekly": 1700,
+      "monthly": 5500,
+      "deposit": 2000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.5L I4",
+      "horsepower": 187,
+      "acceleration": "8.5s",
+      "topSpeed": 200,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Panoramic Sunroof",
+      "Wireless Charging",
+      "360° Camera",
+      "Heated Seats"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "hyundai-elantra",
+    "slug": "hyundai-elantra",
+    "name": "Hyundai Elantra",
+    "brand": "hyundai",
+    "brandName": "Hyundai",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Bold and dynamic",
+    "description": "The Hyundai Elantra features striking angular design and advanced technology. A perfect blend of style and practicality.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2b35b1514741921339b9f828dd0309013bae4412-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/59fef417bcec93d394fd1d153f9e5de2ea6f215a-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/792eec1a31def9853fdb18fdd525e44f76a170a2-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/972f91cf4ee8c45da0894f07bdc907b4c3fc5c8f-1599x1172.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/eb5efa391282f698bc2d1b135f12edece8b06db0-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/1318fc417a951e59c1e23c4b42bc5fd0687a0972-1504x1128.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e35b0c8416d1b129acb0d387ff74ed9676d99d01-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f39667e16b5c0bc6820513a6cf5ce18a617d11d7-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2be13c1dfb8cfa0c6c081e571dd02f7741926d76-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2fd2a7b577e3bf314abafb379224e9edccd4b17b-1504x1128.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Elantra",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 200,
+      "weekly": 1200,
+      "monthly": 4000,
+      "deposit": 1500,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "2.0L I4",
+      "horsepower": 147,
+      "acceleration": "9.2s",
+      "topSpeed": 200,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "10.25-inch Touchscreen",
+      "Wireless Apple CarPlay",
+      "Blind Spot Monitoring",
+      "Smart Cruise Control"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Leather",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "hyundai-accent-2024",
+    "slug": "hyundai-accent-2024",
+    "name": "Hyundai Accent 2024",
+    "brand": "hyundai",
+    "brandName": "Hyundai",
+    "category": "sedan",
+    "year": 2024,
+    "tagline": "Modern compact sedan",
+    "description": "The 2024 Hyundai Accent brings updated styling and enhanced technology. A reliable choice for daily commuting.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/2eaa5596a36ef0efa1dfb377c891afd486720921-1600x1413.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/953eae38d79c21e5e9f95039f5e01127aba07933-1200x1600.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/28d33c8c5293251b8e4ab90235d5e66850458c5a-1600x1138.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/c3e5d75e6e95168a84af687da5dabbcf2dc98fc7-1600x924.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f569f4990b2c45cc12a4d979bde8faefa22947f9-1599x1152.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/7da900a154027b86a6362872ad34f83ba37a4445-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/3ff505b305e837efe587a3a60611c47fb6f2b86f-829x1600.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/f9f5ce6b764e6713844e385eedf41ea7ab95f841-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2024",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 180,
+      "weekly": 1050,
+      "monthly": 3500,
+      "deposit": 1000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.6L I4",
+      "horsepower": 120,
+      "acceleration": "10.5s",
+      "topSpeed": 185,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Apple CarPlay",
+      "Android Auto",
+      "Lane Keep Assist",
+      "Forward Collision Warning"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Cloth",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  },
+  {
+    "id": "hyundai-accent-2023",
+    "slug": "hyundai-accent-2023",
+    "name": "Hyundai Accent 2023",
+    "brand": "hyundai",
+    "brandName": "Hyundai",
+    "category": "sedan",
+    "year": 2023,
+    "tagline": "Efficient and stylish",
+    "description": "The Hyundai Accent offers excellent fuel economy and modern features in a compact sedan package. Perfect for city driving.",
+    "images": [
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/d26d39468b672a63c5baf47ade651c7f6ae34987-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "isPrimary": true
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e2fcf790fc77e3153cd2c46f0cebc4062e3e5ca2-1324x1440.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/9a2a3a3765f984abdb646d159d8162d8a03eaadd-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/448b01d495fd1592139a2a952640b5d77dc2711f-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/4926424f33084c32e17219003b45e2fb9db511f2-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/3905883a126559def3dbe56f67fa13de453e23f7-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      },
+      {
+        "src": "https://cdn.sanity.io/images/gzcp7ons/production/e85c8c9a09bd2b16f6de3ed7aa9ef982041999dc-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
+        "alt": "Hyundai Accent 2023",
+        "angle": null
+      }
+    ],
+    "pricing": {
+      "daily": 150,
+      "weekly": 900,
+      "monthly": 3000,
+      "deposit": 1000,
+      "currency": "AED"
+    },
+    "specs": {
+      "engine": "1.6L I4",
+      "horsepower": 120,
+      "acceleration": "10.5s",
+      "topSpeed": 185,
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "seats": 5,
+      "doors": 4
+    },
+    "features": [
+      "Apple CarPlay",
+      "Android Auto",
+      "Rearview Camera",
+      "Bluetooth Connectivity"
+    ],
+    "isFeatured": false,
+    "isAvailable": true,
+    "color": "White",
+    "interiorColor": "Black Cloth",
+    "variant": null,
+    "plate": null,
+    "useCases": null,
+    "included": null
+  }
+]

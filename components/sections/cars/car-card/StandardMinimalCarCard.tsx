@@ -60,6 +60,11 @@ export function StandardMinimalCarCard({
                 {" "}per day
               </Text>
             </Text>
+            {car.pricing.weekly > 0 && (
+              <Text size="xs" color="muted">
+                {formatPrice(car.pricing.weekly)} per week
+              </Text>
+            )}
           </div>
         </div>
       </Link>
