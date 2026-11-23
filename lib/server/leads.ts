@@ -71,9 +71,11 @@ async function sendMetaContact(lead: LeadRecord) {
     }],
     ...(process.env.META_TEST_EVENT_CODE && { test_event_code: process.env.META_TEST_EVENT_CODE }),
   };
-  await fetch(`https://graph.facebook.com/v21.0/${pixel}/events?access_token=${token}`, {
+  const res = await fetch(`https://graph.facebook.com/v21.0/${pixel}/events?access_token=${token}`, {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body), cache: "no-store",
   });
+  // A bad token used to fail silently (23 Nov 2026: the old token could not see the pixel). Log Meta's answer.
+  if (!res.ok) throw new Error(`Meta CAPI ${res.status}: ${(await res.text()).slice(0, 300)}`);
 }
 
 /** Fire-and-forget: errors are logged, never thrown, and never delay the redirect beyond ~1.5 s. */
