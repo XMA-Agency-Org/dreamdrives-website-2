@@ -51,9 +51,8 @@ export default async function HomePage() {
       <section id="price-calculator" className="scroll-mt-24 py-28 sm:py-40">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
           <Reveal className="lg:col-span-5">
-            <p className="eyebrow mb-6">Your total, upfront</p>
             <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] text-foreground sm:text-6xl">
-              See the price<span className="block text-foreground-muted">before you ask.</span>
+              Your car,<span className="block text-foreground-muted">your dates.</span>
             </h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-foreground-muted">
               Choose the car and your dates. Weekly and monthly rates apply on their own, delivery is free, and the deposit is

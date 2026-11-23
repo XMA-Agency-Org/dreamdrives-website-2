@@ -124,9 +124,8 @@ export function BookingDialog() {
             <X className="h-5 w-5" strokeWidth={1.5} />
           </button>
 
-          <p className="eyebrow mb-4">Booking request</p>
           <h2 className="font-display text-3xl font-extrabold tracking-[-0.02em]">Book your car</h2>
-          <p className="mt-2 text-sm text-foreground-muted">Tell us the car and dates. We confirm availability and the final price on WhatsApp.</p>
+          <p className="mt-2 text-sm text-foreground-muted">Tell us the car and your dates. We confirm your booking on WhatsApp.</p>
 
           <div className="mt-7 space-y-5">
             <label className="block">

@@ -21,7 +21,7 @@ export const faqData = [
   {
     question: "Is insurance included in the rental price?",
     answer:
-      "Yes, basic comprehensive insurance is included in all our rental prices. Additional coverage options, like collision damage waiver (CDW) and zero excess coverage, are available for extra peace of mind.",
+      "Yes, basic comprehensive insurance is included in all our rental prices. Additional coverage options, like collision damage waiver (CDW) and zero excess coverage, are available.",
   },
   {
     question: "Are there mileage limits when renting?",
@@ -41,7 +41,7 @@ export const faqData = [
   {
     question: "How do I book?",
     answer:
-      "Send us the car and your dates on WhatsApp. We confirm availability and the final price, then deliver the car to your hotel, home or the airport. Delivery anywhere in Dubai is free.",
+      "Send us the car and your dates on WhatsApp. We confirm your booking, then deliver the car to your hotel, home or the airport. Delivery anywhere in Dubai is free.",
   },
   {
     question: "Do I pay a security deposit?",

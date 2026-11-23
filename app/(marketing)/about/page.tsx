@@ -20,14 +20,14 @@ export const metadata: Metadata = {
 const stats: StatItem[] = [
   { value: "5.0", label: "Rated on Google" },
   { value: "Free", label: "Delivery anywhere in Dubai" },
-  { value: "AED", label: "Real price on every car" },
+  { value: "Daily", label: "Weekly and monthly rates" },
   { value: "1", label: "WhatsApp message to book" },
 ];
 
 const missionBulletPoints = [
   "Handpicked selection of premium vehicles",
   "Personalized service tailored to your needs",
-  "Flexible rental options and transparent pricing",
+  "Daily, weekly and monthly rentals",
   "Booked on WhatsApp, delivered to your door",
 ];
 

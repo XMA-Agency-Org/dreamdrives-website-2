@@ -65,7 +65,7 @@ export async function generateMetadata({
     description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai with Dream Drives. Daily price on every car, free delivery.`,
     openGraph: {
       title: `${categoryLabel} Car Rental Dubai | Dream Drives`,
-      description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai. Real photos, real prices.`,
+      description: `Rent ${categoryLabel.toLowerCase()} cars in Dubai. Daily prices, free delivery anywhere in Dubai.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },
   };

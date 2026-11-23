@@ -4,19 +4,16 @@ import { Heading, Section, Text } from "@/components/ui";
 import { Reveal } from "@/components/brand";
 import type { SiteSettings } from "@/data/settings";
 
-/** "The price you see is the price you pay": only facts Site settings holds. */
+/** Unused on the site (23 Nov 2026). Facts only from Site settings; no defensive "real price" lines (Amir). */
 export function PricePromise({ settings }: { settings: SiteSettings }) {
   const items = [
-    { icon: CarIcon, title: "Real price on every car", body: "Daily, weekly and monthly rates on each car page. No \"price on request\"." },
+    { icon: CarIcon, title: "Daily, weekly or monthly", body: "Keep the car a weekend or a season." },
     settings.freeDelivery && { icon: Truck, title: settings.freeDelivery, body: "Hotel, home or the airport. We bring the car and collect it." },
-    { icon: ShieldCheck, title: "Deposit shown upfront", body: settings.depositRefundDays
-        ? `Refundable, and back within ${settings.depositRefundDays} days of return.`
-        : "Every car page shows its refundable deposit before you message us." },
-    { icon: MessageCircle, title: "Book in one message", body: settings.replyPromise ?? "Send the car and your dates on WhatsApp. We confirm the final price there." },
+    { icon: MessageCircle, title: "Book in one message", body: settings.replyPromise ?? "Send the car and your dates on WhatsApp. We take care of the rest." },
   ].filter(Boolean) as { icon: typeof CarIcon; title: string; body: string }[];
   return (
     <Section spacing="md" className="border-y border-border bg-background-elevated">
-      <Heading as="h2" size="md" className="mb-8 text-center">The price you see is the price you pay</Heading>
+      <Heading as="h2" size="md" className="mb-8 text-center">Everything taken care of</Heading>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ icon: Icon, title, body }) => (
           <div key={title}>
@@ -32,15 +29,14 @@ export function PricePromise({ settings }: { settings: SiteSettings }) {
 
 export function HowItWorks() {
   const steps = [
-    { n: "1", title: "Pick a car", body: "Every car shows its real price and photos of that exact car." },
-    { n: "2", title: "WhatsApp your dates", body: "One message with the car and dates. We confirm availability and the final price." },
+    { n: "1", title: "Pick a car", body: "G-Class, Urus, Escalade, Range Rover and more, each with its daily rate." },
+    { n: "2", title: "WhatsApp your dates", body: "One message with the car and your dates, and it is booked." },
     { n: "3", title: "We deliver it", body: "To your hotel, home or the airport, anywhere in Dubai, free." },
   ];
   return (
     <section className="py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <p className="eyebrow mb-6">How it works</p>
           <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">Three steps.<span className="text-foreground-muted"> One message.</span></h2>
         </Reveal>
         <ol className="mt-16 grid gap-5 md:grid-cols-3">
@@ -69,7 +65,6 @@ export function DeliveryAreas({ areas }: { areas?: string[] }) {
     <section className="py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:items-center lg:px-8">
         <Reveal className="lg:col-span-5">
-          <p className="eyebrow mb-6">Delivery</p>
           <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-5xl">Anywhere in Dubai.<span className="block text-foreground-muted">Free.</span></h2>
           <p className="mt-5 text-lg text-foreground-muted">We bring the car to you and collect it at the end. These are the places we deliver to most.</p>
         </Reveal>
@@ -94,7 +89,6 @@ export function DocumentsSection({ settings }: { settings: SiteSettings }) {
     <section className="py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <Reveal>
-        <p className="eyebrow mb-6">Documents</p>
         <h2 className="mb-5 font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-5xl">What you need to rent</h2>
       </Reveal>
       <Text color="muted" className="mb-10 max-w-2xl">

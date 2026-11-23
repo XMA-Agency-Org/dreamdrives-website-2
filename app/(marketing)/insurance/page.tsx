@@ -21,7 +21,7 @@ export default function InsurancePage() {
       <PageHero
         tagline="Protection"
         title="Insurance & Coverage"
-        description="Drive with confidence. Explore our comprehensive insurance and protection options designed to give you peace of mind during your rental."
+        description="Insurance options for your rental with Dream Drives in Dubai."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Insurance" },

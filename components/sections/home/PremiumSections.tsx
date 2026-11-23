@@ -7,14 +7,13 @@ import { BookButton } from "@/components/booking";
 import { waHref } from "@/lib/contact";
 import { aed } from "@/lib/pricing";
 import type { Car } from "@/types";
-import type { SiteSettings } from "@/data/settings";
+import { ratingLine, type SiteSettings } from "@/data/settings";
 import { studioStill } from "@/data/studio-stills";
 
 
-function SectionHead({ eyebrow, title, sub, align = "left" }: { eyebrow: string; title: React.ReactNode; sub?: string; align?: "left" | "center" }) {
+function SectionHead({ title, sub, align = "left" }: { title: React.ReactNode; sub?: string; align?: "left" | "center" }) {
   return (
     <Reveal className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      <p className="eyebrow mb-6">{eyebrow}</p>
       <h2 className="font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] text-foreground sm:text-6xl">{title}</h2>
       {sub && <p className="mt-6 text-lg leading-relaxed text-foreground-muted">{sub}</p>}
     </Reveal>
@@ -53,9 +52,8 @@ export function CollectionShowcase({ cars }: { cars: Car[] }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <SectionHead
-            eyebrow="The collection"
-            title={<>Every car,<span className="text-foreground-muted"> as it really is.</span></>}
-            sub="Photographed in the studio with its own plate, priced on the page. Choose one and send us your dates."
+            title={<>Choose your car.<span className="text-foreground-muted"> We bring it to you.</span></>}
+            sub="The G-Class, the Urus, the Escalade and the Range Rover, ready for your days in Dubai."
           />
           <Reveal delay={150}>
             <PillLink href="/cars" tone="ghost">View every car</PillLink>
@@ -106,9 +104,8 @@ export function SignatureSection() {
       <div className="mx-auto flex max-w-5xl flex-col items-center px-4 text-center">
         <MonogramDraw className="w-40 text-white sm:w-56" />
         <Reveal delay={300} className="mt-14">
-          <p className="font-display text-[11px] font-semibold uppercase tracking-[0.45em] text-white/50">Dream Drives · Rent A Car</p>
-          <p className="mx-auto mt-8 max-w-3xl font-display text-3xl font-bold leading-[1.15] tracking-[-0.02em] text-white sm:text-5xl">
-            Every car photographed as it is. Every price on the page. Every key brought to your door.
+          <p className="mx-auto max-w-3xl font-display text-3xl font-bold leading-[1.15] tracking-[-0.02em] text-white sm:text-5xl">
+            The car you came to Dubai for, waiting at your door.
           </p>
         </Reveal>
       </div>
@@ -119,13 +116,11 @@ export function SignatureSection() {
 /* ------------------------------------------------------------------ */
 /** "The Dream Drives standard": asymmetric bento of the promises we can stand behind. */
 export function StandardBento({ settings }: { settings: SiteSettings }) {
-  const deposit = settings.depositRefundDays
-    ? `Refundable, back within ${settings.depositRefundDays} days of return.`
-    : "Shown on every car page before you message us. Refunded after the car comes back.";
+  const rating = ratingLine(settings);
   return (
     <section className="py-28 sm:py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHead eyebrow="The Dream Drives standard" title={<>No surprises.<span className="text-foreground-muted"> Just the car.</span></>} />
+        <SectionHead title={<>Everything taken care of.<span className="text-foreground-muted"> You just drive.</span></>} />
         <div className="mt-16 grid grid-cols-1 gap-5 md:grid-cols-12 md:grid-rows-2">
           <Reveal className="md:col-span-7 md:row-span-2">
             <div className="bezel h-full">
@@ -141,8 +136,8 @@ export function StandardBento({ settings }: { settings: SiteSettings }) {
             </div>
           </Reveal>
           {[
-            { icon: Tag, title: "The real price, on every car", body: "Daily, weekly and monthly rates on each car page. Never price on request." },
-            { icon: ShieldCheck, title: "Deposit shown upfront", body: deposit },
+            { icon: Tag, title: "A weekend or a whole season", body: "Daily, weekly and monthly rates. The longer you keep the car, the less each day costs." },
+            { icon: ShieldCheck, title: rating ?? "Five stars on Google", body: "From the guests who drove with us." },
           ].map((b, i) => (
             <Reveal key={b.title} delay={(i + 1) * 120} className="md:col-span-5">
               <div className="bezel h-full">
@@ -164,7 +159,7 @@ export function StandardBento({ settings }: { settings: SiteSettings }) {
                 <MessageCircle className="mt-1 h-6 w-6 shrink-0 text-primary-400" strokeWidth={1} aria-hidden />
                 <div>
                   <h3 className="font-display text-xl font-bold text-foreground">Booked in one message</h3>
-                  <p className="mt-1 text-foreground-muted">{settings.replyPromise ?? "Send the car and your dates. We confirm availability and the final price on WhatsApp."}</p>
+                  <p className="mt-1 text-foreground-muted">{settings.replyPromise ?? "Send the car and your dates on WhatsApp. We take care of the rest."}</p>
                 </div>
               </div>
               <BookButton src="bento">Book your car</BookButton>
@@ -185,7 +180,6 @@ export function ClosingCTA() {
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-background via-black/30 to-black/80" />
       <div className="mx-auto max-w-4xl px-4 text-center">
         <Reveal>
-          <p className="eyebrow mb-8">Ready when you are</p>
           <h2 className="font-display text-5xl font-extrabold leading-[0.95] tracking-[-0.03em] text-white sm:text-7xl">Tell us when.<span className="block text-white/55">We bring the car.</span></h2>
         </Reveal>
         <Reveal delay={200} className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">

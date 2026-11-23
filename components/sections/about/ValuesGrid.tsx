@@ -14,9 +14,9 @@ const defaultValues = [
   },
   {
     icon: Shield,
-    title: "Trust",
+    title: "Ease",
     description:
-      "Transparent pricing, comprehensive insurance, and complete peace of mind.",
+      "One message to book, the car brought to you, collected when you are done.",
   },
   {
     icon: Clock,

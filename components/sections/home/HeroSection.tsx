@@ -6,7 +6,7 @@ import { aed } from "@/lib/pricing";
 import type { Car } from "@/types";
 
 interface HeroSectionProps {
-  /** The car in the photo; its real price is shown under it. */
+  /** The car in the photo; its daily price is shown under it. */
   car?: Car;
   rating?: string | null;
 }
@@ -51,9 +51,6 @@ export function HeroSection({ car, rating }: HeroSectionProps) {
 
       <div className="mx-auto w-full max-w-7xl px-4 pb-[max(1.75rem,env(safe-area-inset-bottom))] pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
         <div className="max-w-[34rem] lg:max-w-[38rem]">
-          <p className="eyebrow rise mb-7 max-md:hidden! border-white/15! bg-white/5! text-white/80!" style={{ animationDelay: "0.1s" }}>
-            Luxury car rental · Dubai
-          </p>
           <h1
             className="rise text-balance font-display text-[2.35rem] font-extrabold leading-[0.98] tracking-[-0.035em] min-[380px]:text-[2.6rem] sm:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.2s" }}
@@ -65,8 +62,8 @@ export function HeroSection({ car, rating }: HeroSectionProps) {
             className="rise mt-5 max-w-md text-[0.98rem] leading-relaxed text-white/75 md:mt-7 md:text-lg"
             style={{ animationDelay: "0.35s" }}
           >
-            G63, Urus, Escalade and Range Rover.<span className="hidden sm:inline"> The real price on every car, free delivery
-            anywhere in Dubai, booked in one message.</span><span className="sm:hidden"> Real prices, free delivery, booked in one message.</span>
+            G63, Urus, Escalade and Range Rover, brought to your hotel, home or the airport.<span className="hidden sm:inline"> Free
+            delivery anywhere in Dubai, booked in one message.</span>
           </p>
 
           <div

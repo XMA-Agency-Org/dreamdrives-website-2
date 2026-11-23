@@ -42,7 +42,7 @@ export async function generateMetadata({
     description: `Rent a ${brandName} in Dubai with Dream Drives. Daily, weekly and monthly prices on every car, free delivery anywhere in Dubai.`,
     openGraph: {
       title: `${brandName} Car Rental Dubai | Dream Drives`,
-      description: `Rent a ${brandName} in Dubai. Real photos, real prices, free delivery.`,
+      description: `Rent a ${brandName} in Dubai. Daily prices on every car, free delivery anywhere in Dubai.`,
       images: cars[0]?.images[0]?.src ? [cars[0].images[0].src] : [],
     },
   };

@@ -148,9 +148,8 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center mx-auto"
         >
-          <p className="eyebrow">Google reviews</p>
 
-          <h2 className="mt-6 text-center font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">
+          <h2 className="text-center font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">
             Rated 5.0 on Google.
           </h2>
 

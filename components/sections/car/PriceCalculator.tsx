@@ -129,7 +129,7 @@ export function PriceCalculator({ cars, initialSlug, deposit, depositRefundDays,
         </div>
       </div>
       <Text size="xs" color="subtle" className="text-center mt-3">
-        Estimate. We confirm availability and the final price on WhatsApp.{vatNote ? ` ${vatNote}` : ""}
+        {vatNote ? `${vatNote} ` : ""}We confirm your car on WhatsApp.
       </Text>
     </div>
   );

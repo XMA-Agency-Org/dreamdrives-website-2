@@ -14,7 +14,6 @@ export function Footer() {
       {/* Brand band: the monogram draws itself as the footer comes into view */}
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 pt-24 pb-16 text-center sm:px-6 lg:px-8">
         <MonogramDraw className="w-24 text-white/90 sm:w-28" />
-        <p className="font-display text-[11px] font-semibold uppercase tracking-[0.45em] text-white/45">Dream Drives · Rent A Car · Dubai</p>
       </div>
       <Container className="border-t border-white/[0.06] py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-4">

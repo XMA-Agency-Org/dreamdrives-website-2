@@ -32,12 +32,11 @@ export function FAQSection({
         {/* Section Header */}
         {showHeader && (
           <RevealOnScroll className="text-center mb-12">
-            <p className="eyebrow mb-6">FAQ</p>
             <h2 className="mb-6 font-display text-4xl font-extrabold leading-[1] tracking-[-0.03em] sm:text-6xl">
-              Before you ask.
+              Good to know.
             </h2>
             <Text color="muted" size="lg" className="max-w-2xl mx-auto">
-              Quick answers to common questions. Still unsure? We&apos;re a
+              Quick answers to common questions. Anything else, we&apos;re a
               WhatsApp away.
             </Text>
           </RevealOnScroll>
