@@ -1,5 +1,6 @@
 import { Header, Footer } from "@/components/layout";
 import { StickyLeadBar } from "@/components/features";
+import { BookingDialog } from "@/components/booking";
 
 export default function MarketingLayout({
   children,
@@ -12,6 +13,7 @@ export default function MarketingLayout({
       <main className="min-h-screen pb-16 lg:pb-0">{children}</main>
       <Footer />
       <StickyLeadBar />
+      <BookingDialog />
     </>
   );
 }

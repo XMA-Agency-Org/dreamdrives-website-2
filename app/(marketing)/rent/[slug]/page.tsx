@@ -12,6 +12,7 @@ import { getAllCarsAsync } from "@/data/cars";
 import { getLandingPage, getLandingPages } from "@/data/landing";
 import { getSiteSettings, ratingLine, vatNote } from "@/data/settings";
 import { waHref } from "@/lib/contact";
+import { BookButton } from "@/components/booking";
 import { aed } from "@/lib/pricing";
 
 export const revalidate = 3600;
@@ -69,18 +70,13 @@ export default async function LandingPageRoute({ params }: Props) {
               </span>
             )}
           </div>
-          <div data-src="landing">
-            <Button
-              as="a"
-              href={waHref({ src: "landing", text: page.whatsappText, car: cars.length === 1 ? cars[0].name : undefined })}
-              target="_blank"
-              rel="nofollow noopener"
-              variant="whatsapp"
-              size="lg"
-              leftIcon={<FaWhatsapp className="h-5 w-5" />}
-            >
-              WhatsApp us your dates
-            </Button>
+          <div className="flex flex-col gap-3 sm:flex-row" data-src="landing">
+            <BookButton src="landing" car={cars[0].slug}>Book your car</BookButton>
+            <a href={waHref({ src: "landing", text: page.whatsappText, car: cars.length === 1 ? cars[0].name : undefined })} target="_blank" rel="nofollow noopener"
+              className="pill-cta group text-foreground ring-1 ring-inset ring-white/15 hover:bg-white/5">
+              <span>WhatsApp us</span>
+              <span className="pill-icon bg-[oklch(0.55_0.17_142)] text-white" aria-hidden><FaWhatsapp className="h-[18px] w-[18px]" /></span>
+            </a>
           </div>
         </Container>
       </Section>

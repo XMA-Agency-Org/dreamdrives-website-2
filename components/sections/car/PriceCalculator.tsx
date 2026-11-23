@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
-import { Phone } from "lucide-react";
+import { Phone, ArrowUpRight } from "lucide-react";
 import { Button, Text } from "@/components/ui";
 import { aed, daysBetween, estimate, isoDate } from "@/lib/pricing";
 import { telHref, waHref, type LeadSource } from "@/lib/contact";
@@ -106,22 +106,27 @@ export function PriceCalculator({ cars, initialSlug, deposit, depositRefundDays,
       )}
 
       <div className="space-y-3">
-        <Button
-          as="a"
-          href={waHref({ src, car: car.name, from: est ? from : undefined, to: est ? to : undefined })}
-          data-price={car.pricing.daily}
-          target="_blank"
-          rel="nofollow noopener"
-          variant="whatsapp"
-          size="lg"
-          className="w-full"
-          leftIcon={<FaWhatsapp className="w-5 h-5" />}
+        <button
+          type="button"
+          data-book=""
+          data-car={car.slug}
+          data-from={est ? from : undefined}
+          data-to={est ? to : undefined}
+          data-src={src}
+          className="pill-cta group w-full justify-between bg-white text-neutral-950 hover:bg-neutral-200"
         >
-          {est ? "Send these dates on WhatsApp" : "Ask on WhatsApp"}
-        </Button>
-        <Button as="a" href={telHref} variant="secondary" size="lg" className="w-full" leftIcon={<Phone className="w-5 h-5" />}>
-          Call us
-        </Button>
+          <span>{est ? "Book these dates" : "Book this car"}</span>
+          <span className="pill-icon bg-neutral-950/8" aria-hidden><ArrowUpRight className="h-[18px] w-[18px]" strokeWidth={1.5} /></span>
+        </button>
+        <div className="grid grid-cols-2 gap-3">
+          <Button as="a" href={waHref({ src, car: car.name, from: est ? from : undefined, to: est ? to : undefined })} data-price={car.pricing.daily}
+            target="_blank" rel="nofollow noopener" variant="whatsappOutline" size="md" className="w-full rounded-full" leftIcon={<FaWhatsapp className="w-5 h-5" />}>
+            WhatsApp
+          </Button>
+          <Button as="a" href={telHref} variant="secondary" size="md" className="w-full rounded-full" leftIcon={<Phone className="w-5 h-5" />}>
+            Call
+          </Button>
+        </div>
       </div>
       <Text size="xs" color="subtle" className="text-center mt-3">
         Estimate. We confirm availability and the final price on WhatsApp.{vatNote ? ` ${vatNote}` : ""}

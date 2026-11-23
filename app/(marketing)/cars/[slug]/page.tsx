@@ -14,6 +14,7 @@ import { getCarBySlugAsync, getSimilarCarsAsync, getAllCarsAsync } from "@/data/
 import { getSiteSettings, ratingLine, vatNote } from "@/data/settings";
 import { JsonLd, carLd, breadcrumbLd } from "@/components/seo/JsonLd";
 import { aed } from "@/lib/pricing";
+import { BookButton } from "@/components/booking";
 
 interface CarDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -78,7 +79,8 @@ export default async function CarDetailPage({ params }: CarDetailPageProps) {
 
       <Section spacing="none" containerSize="none" className="mb-16">
         <Container>
-          <header className="mb-6">
+          <header className="mb-6 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
             <Heading as="h1" size="lg" className="mb-2">
               Rent the {car.name} in Dubai
             </Heading>
@@ -86,6 +88,8 @@ export default async function CarDetailPage({ params }: CarDetailPageProps) {
               <span className="text-foreground font-semibold">{aed(car.pricing.daily)} a day</span>
               {facts.length ? ` · ${facts.join(" · ")}` : ""}
             </Text>
+            </div>
+            <BookButton car={car.slug} src="car_detail" className="self-start sm:self-auto">Book this car</BookButton>
           </header>
 
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, Key, MessageCircle, ShieldCheck, Tag } from "lucide-react";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import { MonogramDraw, PillLink, Reveal } from "@/components/brand";
+import { BookButton } from "@/components/booking";
 import { waHref } from "@/lib/contact";
 import { aed } from "@/lib/pricing";
 import type { Car } from "@/types";
@@ -175,11 +176,7 @@ export function StandardBento({ settings }: { settings: SiteSettings }) {
                   <p className="mt-1 text-foreground-muted">{settings.replyPromise ?? "Send the car and your dates. We confirm availability and the final price on WhatsApp."}</p>
                 </div>
               </div>
-              <div data-src="cta_section">
-                <PillLink href={waHref({ src: "cta_section" })} external tone="whatsapp" icon={<FaWhatsapp className="h-[18px] w-[18px]" />}>
-                  Message us
-                </PillLink>
-              </div>
+              <BookButton src="bento">Book your car</BookButton>
             </div>
           </div>
         </Reveal>
@@ -201,12 +198,12 @@ export function ClosingCTA() {
           <h2 className="font-display text-5xl font-extrabold leading-[0.95] tracking-[-0.03em] text-white sm:text-7xl">Tell us when.<span className="block text-white/55">We bring the car.</span></h2>
         </Reveal>
         <Reveal delay={200} className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <BookButton src="closing">Book your car</BookButton>
           <div data-src="cta_section">
-            <PillLink href={waHref({ src: "cta_section" })} external tone="whatsapp" icon={<FaWhatsapp className="h-[18px] w-[18px]" />}>
+            <PillLink href={waHref({ src: "cta_section" })} external tone="ghost" className="text-white" icon={<FaWhatsapp className="h-[18px] w-[18px]" />}>
               WhatsApp us
             </PillLink>
           </div>
-          <PillLink href="/cars" tone="ghost" className="text-white">See the collection</PillLink>
         </Reveal>
       </div>
     </section>

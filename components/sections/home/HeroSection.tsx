@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 import { PillLink } from "@/components/brand";
+import { BookButton } from "@/components/booking";
 import { waHref } from "@/lib/contact";
 import { aed } from "@/lib/pricing";
 import type { Car } from "@/types";
@@ -46,9 +47,7 @@ export function HeroSection({ car, rating }: HeroSectionProps) {
           </p>
 
           <div className="rise mt-10 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.5s" }} data-src="hero">
-            <PillLink href={waHref({ src: "hero" })} external tone="whatsapp" icon={<FaWhatsapp className="h-[18px] w-[18px]" />}>
-              WhatsApp us
-            </PillLink>
+            <BookButton src="hero">Book your car</BookButton>
             <PillLink href="#collection" tone="ghost" className="text-white">
               Explore the collection
             </PillLink>

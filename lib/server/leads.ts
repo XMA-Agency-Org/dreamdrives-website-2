@@ -15,6 +15,8 @@ export interface LeadRecord {
   car?: string;
   from?: string;
   to?: string;
+  name?: string;
+  loc?: string;
   ts: string;
   attr: Record<string, string>;
   ua?: string;

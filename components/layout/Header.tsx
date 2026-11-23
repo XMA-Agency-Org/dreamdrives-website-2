@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { BookButton } from "@/components/booking";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { Menu, Phone } from "lucide-react";
@@ -82,14 +83,7 @@ export function Header() {
               <ThemeSwitcher />
 
               {/* WhatsApp CTA - Desktop */}
-              <a
-                href={getWhatsAppUrl(undefined, "header")}
-                target="_blank"
-                rel="nofollow noopener"
-                className="hidden md:inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-neutral-950 transition-[transform,background-color] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-neutral-200 active:scale-[0.98]"
-              >
-                Book on WhatsApp
-              </a>
+              <BookButton compact src="header" className="hidden md:inline-flex">Book your car</BookButton>
 
               {/* Mobile Menu Toggle */}
               <button

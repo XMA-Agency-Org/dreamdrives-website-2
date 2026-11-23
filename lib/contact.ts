@@ -8,7 +8,7 @@ export const PHONE_E164 = "+971545555402";
 
 export type LeadSource =
   | "hero" | "sticky_bar" | "header" | "car_card" | "car_detail" | "calculator"
-  | "landing" | "footer" | "mobile_menu" | "cta_section" | "floating_cta" | "contact";
+  | "landing" | "footer" | "mobile_menu" | "cta_section" | "floating_cta" | "contact" | "booking_form";
 
 export interface WaParams {
   car?: string;
@@ -16,6 +16,11 @@ export interface WaParams {
   to?: string;
   src: LeadSource;
   text?: string; // custom opener, e.g. from a landing page
+  /** Booking form fields (all optional) */
+  name?: string;
+  loc?: string;
+  est?: number; // estimated rental total, AED
+  days?: number;
 }
 
 const ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"; // no 0/O/1/I/L: read aloud without confusion
@@ -37,8 +42,23 @@ function fmtDate(iso?: string): string | undefined {
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
 }
 
+/** Booking request from the form: one fact per line so Basil can read it at a glance. */
+export function buildBookingText(p: Omit<WaParams, "src">, ref?: string): string {
+  const from = fmtDate(p.from), to = fmtDate(p.to);
+  const lines = ["Hi Dream Drives, I'd like to book:"];
+  if (p.car) lines.push(`Car: ${p.car}`);
+  if (from && to) lines.push(`Dates: ${from} to ${to}${p.days ? ` (${p.days} ${p.days === 1 ? "day" : "days"})` : ""}`);
+  else if (from) lines.push(`From: ${from}`);
+  if (p.loc) lines.push(`Delivery: ${p.loc}`);
+  if (p.est) lines.push(`Estimate: AED ${Math.round(p.est).toLocaleString("en-US")}`);
+  if (p.name) lines.push(`Name: ${p.name}`);
+  if (ref) lines.push(`Ref ${ref}`);
+  return lines.join("\n");
+}
+
 /** The message the customer sees prefilled. Short: people edit long ones, and the ref must survive. */
 export function buildWhatsAppText(p: Omit<WaParams, "src">, ref?: string): string {
+  if (p.name || p.loc) return buildBookingText(p, ref);
   const from = fmtDate(p.from), to = fmtDate(p.to);
   let msg = p.text?.trim() || (p.car ? `Hi, I'd like to rent the ${p.car}` : "Hi, I'd like to rent a car");
   if (from && to) msg += ` from ${from} to ${to}`;
@@ -54,6 +74,10 @@ export function waHref(p: WaParams): string {
   if (p.from) q.set("from", p.from);
   if (p.to) q.set("to", p.to);
   if (p.text) q.set("text", p.text);
+  if (p.name) q.set("name", p.name);
+  if (p.loc) q.set("loc", p.loc);
+  if (p.est) q.set("est", String(Math.round(p.est)));
+  if (p.days) q.set("days", String(p.days));
   return `/go/wa?${q.toString()}`;
 }
 
