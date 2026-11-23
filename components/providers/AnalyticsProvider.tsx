@@ -20,7 +20,15 @@ function rememberAttribution(params: URLSearchParams) {
     const v = params.get(k);
     if (v) found[k] = v.slice(0, 200);
   }
-  if (!Object.keys(found).length) return;
+  if (!Object.keys(found).length) {
+    // No ad click: keep where an organic visitor came from (google.com, instagram.com...), first touch only.
+    if (document.cookie.includes(`${ATTR_COOKIE}=`)) return;
+    try {
+      const host = document.referrer ? new URL(document.referrer).hostname : "";
+      if (!host || host.endsWith("dreamdrivesdxb.com")) return;
+      found.ref_host = host.slice(0, 80);
+    } catch { return; }
+  }
   found.landing = window.location.pathname;
   found.ts = new Date().toISOString();
   document.cookie = `${ATTR_COOKIE}=${encodeURIComponent(JSON.stringify(found))}; Max-Age=${90 * 86400}; Path=/; SameSite=Lax; Secure`;

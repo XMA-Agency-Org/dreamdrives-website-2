@@ -1,12 +1,13 @@
 import "server-only";
 import { createHash } from "node:crypto";
-import type { NextRequest } from "next/server";
+import { after, type NextRequest } from "next/server";
 
 /**
  * Server side of lead tracking. Both integrations switch on by env var and are skipped silently
  * when unset, so the redirect to WhatsApp never depends on them.
  *   UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN  → store ref → click ids for 90 days (booking upload joins on it)
  *   NEXT_PUBLIC_META_PIXEL_ID + META_CAPI_TOKEN        → server-side Contact event, deduped with the Pixel by event_id
+ *   LEADS_SHEET_URL + LEADS_SHEET_SECRET               → one row per tap in Amir's live Google Sheet (Apps Script web app)
  */
 export interface LeadRecord {
   ref: string;
@@ -78,11 +79,40 @@ async function sendMetaContact(lead: LeadRecord) {
   if (!res.ok) throw new Error(`Meta CAPI ${res.status}: ${(await res.text()).slice(0, 300)}`);
 }
 
-/** Fire-and-forget: errors are logged, never thrown, and never delay the redirect beyond ~1.5 s. */
+/** Where the lead came from, in plain words for the sheet. */
+export function leadSource(attr: Record<string, string>): string {
+  if (attr.gclid || attr.gbraid || attr.wbraid) return "Google Ads";
+  const u = (attr.utm_source ?? "").toLowerCase();
+  if (attr.fbclid || /^(facebook|instagram|fb|ig|meta)/.test(u)) return "Meta ads";
+  if (u) return attr.utm_source;
+  const h = (attr.ref_host ?? "").toLowerCase();
+  if (/google\./.test(h)) return "Google search";
+  if (/bing\.|yahoo\.|duckduckgo/.test(h)) return "Other search";
+  if (/instagram|facebook|fb\.|tiktok|snapchat|t\.co$|x\.com/.test(h)) return `Social (${h})`;
+  if (h) return `Link (${h})`;
+  return "Direct";
+}
+
+async function appendSheet(lead: LeadRecord) {
+  const url = process.env.LEADS_SHEET_URL, secret = process.env.LEADS_SHEET_SECRET;
+  if (!url || !secret) return;
+  const res = await fetch(url, {
+    method: "POST", headers: { "Content-Type": "application/json" }, cache: "no-store", redirect: "follow",
+    body: JSON.stringify({
+      secret, ref: lead.ref, kind: lead.kind === "whatsapp" ? "WhatsApp" : "Call", car: lead.car ?? "", from: lead.from ?? "",
+      to: lead.to ?? "", source: leadSource(lead.attr), campaign: lead.attr.utm_campaign ?? "", button: lead.src,
+      page: lead.page ? new URL(lead.page).pathname : "", landing: lead.attr.landing ?? "", loc: lead.loc ?? "", name: lead.name ?? "",
+    }),
+  });
+  if (!res.ok) throw new Error(`Leads sheet ${res.status}`);
+}
+
+/** Runs after the redirect is sent (next/server after), so the customer reaches WhatsApp at once; errors are logged. */
 export async function recordLead(lead: LeadRecord) {
-  const work = Promise.allSettled([storeLead(lead), sendMetaContact(lead)]).then((r) =>
-    r.forEach((x) => x.status === "rejected" && console.error("lead tracking", x.reason)));
-  await Promise.race([work, new Promise((res) => setTimeout(res, 1500))]);
+  after(async () => {
+    const r = await Promise.allSettled([storeLead(lead), sendMetaContact(lead), appendSheet(lead)]);
+    r.forEach((x) => x.status === "rejected" && console.error("lead tracking", x.reason));
+  });
 }
 
 export function requestMeta(req: NextRequest) {
