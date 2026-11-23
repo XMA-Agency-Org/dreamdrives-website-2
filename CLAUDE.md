@@ -46,33 +46,26 @@ components/
 └── ui/             # Primitive UI components with CVA (Button, Input, Badge, etc.)
 ```
 
-### Data Layer (Dual-Mode Pattern)
-The data layer uses a **sync/async dual-mode pattern** for CMS fallback:
-- Sync functions (`getAllCars`, `getCarBySlug`) - Use static data from `data/cars-data.ts`
-- Async functions (`getAllCarsAsync`, `getCarBySlugAsync`) - Try Contentful first, fallback to static
+### Data Layer (Sanity)
+Sanity project **gzcp7ons** (dataset `production`, public read) is the source of truth for cars, landing pages and
+site settings (every business fact the site states). Studio lives in `studio/` (`cd studio && bun dev`, deploy to
+dreamdrives.sanity.studio). Contentful was retired 23 Nov 2026 (`scripts/migrate-contentful-to-sanity.ts`).
+- `data/cars.ts`: async functions read Sanity (tag `cars`); sync functions read `data/fleet-snapshot.json`
+  (regenerate with `bun scripts/snapshot-fleet.ts`) for client components and as fallback.
+- `data/settings.ts`: Site settings. **Empty means unknown: hide it, never guess.**
+- `data/landing.ts` + `app/(marketing)/rent/[slug]`: model landing pages (Google Ads destinations).
+- `app/api/revalidate`: Sanity webhook target (secret `SANITY_REVALIDATE_SECRET`).
+- Document ids use dashes (`car-<slug>`). Dotted ids are private paths the public API cannot read.
 
-```tsx
-// In Server Components, prefer async versions
-const cars = await getAllCarsAsync();
-
-// Sync versions for static generation or when CMS is not needed
-const cars = getAllCars();
-```
-
-Key files:
-- `data/cars.ts` - Query functions (both sync and async)
-- `data/cars-data.ts` - Static car data
-- `data/car-images.json` - Image URL mapping per car slug
-
-### CMS Integration (Contentful)
-- `lib/contentful.ts` - Client init, `isContentfulConfigured()` check
-- `lib/contentful-api.ts` - Data fetching and Car type transformation
-- Content automatically falls back to static data when Contentful is unavailable
-
-### Analytics
-- `lib/analytics.ts` - PostHog and Google Ads tracking functions
-- `components/providers/AnalyticsProvider.tsx` - Client-side analytics initialization
-- Tracking: WhatsApp clicks, contact forms, car detail views
+### Analytics and lead tracking
+- Every WhatsApp button links to `/go/wa?car=&from=&to=&src=` (`lib/contact.ts` `waHref`). A site-wide click
+  handler (`components/providers/AnalyticsProvider.tsx`) adds a ref code (DD-XXXX) and fires Google Ads, GA4,
+  Meta Pixel (eventID = ref) and PostHog via `lib/track.ts`. `/go/wa` stores the lead + click ids (Upstash) and
+  sends Meta CAPI `Contact`, then 302s to wa.me with "Ref DD-XXXX" in the text. Call buttons dial `tel:` and log by beacon.
+- Click ids (gclid, fbclid, UTMs) are kept 90 days in the `dd_attr` cookie.
+- Tags load from `components/providers/Tags.tsx` only when their env var is set.
+- `AnalyticsTracker` must sit in its own Suspense beside the page, never around it (wrapping the page made every page
+  ship as an empty shell).
 
 ### Utility Functions
 - `lib/utils.ts` - `cn()`, `formatPrice()`, `getWhatsAppUrl()`, `getCarInquiryUrl()`, `slugify()`
@@ -142,7 +135,7 @@ type CarCategory = "sedan" | "suv"
 ## External Integrations
 
 - **WhatsApp Business**: Car inquiries via `getWhatsAppUrl()` and `getCarInquiryUrl()` in `lib/utils.ts`
-- **Contentful CMS**: Vehicle data (Space: `tsz5b6wk9hsp`)
+- **Sanity CMS**: project `gzcp7ons` (Contentful retired 23 Nov 2026)
 - **PostHog**: Product analytics
 - **Google Ads**: Conversion tracking (gtag.js)
 - **Embla Carousel**: Touch-friendly carousels (`embla-carousel-react`)
@@ -150,12 +143,13 @@ type CarCategory = "sedan" | "suv"
 ## Environment Variables
 
 ```
-CONTENTFUL_SPACE_ID=tsz5b6wk9hsp
-CONTENTFUL_ACCESS_TOKEN=<token>
-NEXT_PUBLIC_POSTHOG_KEY=<key>
-NEXT_PUBLIC_POSTHOG_HOST=https://app.posthog.com
-NEXT_PUBLIC_GOOGLE_ADS_ID=<id>
-NEXT_PUBLIC_GOOGLE_CONVERSION_ID=<id>
+NEXT_PUBLIC_SANITY_PROJECT_ID=gzcp7ons      NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_REVALIDATE_SECRET=                   NEXT_PUBLIC_GSC_VERIFICATION=
+NEXT_PUBLIC_POSTHOG_KEY / _HOST
+NEXT_PUBLIC_GOOGLE_ADS_ID=AW-...            NEXT_PUBLIC_GOOGLE_ADS_WA_LABEL= / _CALL_LABEL=
+NEXT_PUBLIC_GA4_ID=G-...
+NEXT_PUBLIC_META_PIXEL_ID=403198836109362   META_CAPI_TOKEN=   META_TEST_EVENT_CODE=
+UPSTASH_REDIS_REST_URL=                     UPSTASH_REDIS_REST_TOKEN=
 ```
 
 ## Docs Reference
@@ -166,3 +160,7 @@ NEXT_PUBLIC_GOOGLE_CONVERSION_ID=<id>
 ## Learnings & Corrections
 
 - ❌ Contentful's `luxury`/`economy` categories fell through to `sedan`, so SUVs like the Range Rover Vogue and G63 showed a SEDAN badge → ✅ Contentful categories can be tiers; body type comes from the category only when it names one, otherwise from `cars-raw.json` by slug.
+
+- ❌ `canonical` in the root layout was inherited by every page, and `metadataBase` was `dreamdrives.com` (someone else's domain) → ✅ canonicals are per page; `SITE_URL` in `lib/constants.ts` is the only origin.
+- ❌ Contentful mapping filled missing specs with invented defaults (V8, 400 HP) → ✅ unknown specs are 0/"" and hidden.
+- ❌ The site listed brands they do not rent (Ferrari, Rolls-Royce, Bentley, McLaren, Porsche) → ✅ brands come from the fleet only.
