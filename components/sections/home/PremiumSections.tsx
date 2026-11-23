@@ -21,15 +21,30 @@ function SectionHead({ title, sub, align = "left" }: { title: React.ReactNode; s
 }
 
 /* ------------------------------------------------------------------ */
-/** Brand names in the fleet, drifting. Only brands they actually rent. */
+/** The badges of the brands in the fleet, in polished chrome with a light sweep, drifting. Only brands they rent.
+ *  Logos are single-colour SVGs (Simple Icons, CC0; GMC drawn) in public/logos, used as masks over a chrome gradient. */
+const BADGES = [
+  { file: "mercedes", name: "Mercedes-Benz", w: 44, h: 44 },
+  { file: "lamborghini", name: "Lamborghini", w: 58, h: 58 },
+  { file: "cadillac", name: "Cadillac", w: 70, h: 70 },
+  { file: "landrover", name: "Range Rover", w: 84, h: 84 },
+  { file: "gmc", name: "GMC", w: 78, h: 28 },
+  { file: "bmw", name: "BMW", w: 44, h: 44 },
+];
 export function MarqueeStrip() {
-  const names = ["Mercedes-AMG", "Lamborghini", "Cadillac", "Range Rover", "GMC", "BMW"];
-  const row = [...names, ...names];
+  const row = [...BADGES, ...BADGES];
   return (
-    <div className="relative overflow-clip border-y border-white/[0.06] bg-black py-7" aria-hidden>
-      <div className="flex w-max animate-[scroll_40s_linear_infinite] gap-16 pr-16">
-        {[...row, ...row].map((n, i) => (
-          <span key={i} className="whitespace-nowrap font-display text-xl font-semibold uppercase tracking-[0.3em] text-white/25">{n}</span>
+    <div className="relative overflow-clip border-y border-white/[0.06] bg-black py-8 sm:py-10" aria-hidden>
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-black to-transparent sm:w-32" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-black to-transparent sm:w-32" />
+      <div className="flex w-max animate-[scroll_45s_linear_infinite] items-center gap-16 pr-16 sm:gap-24 sm:pr-24">
+        {[...row, ...row].map((b, i) => (
+          <span key={i} className="chrome-glow flex h-20 items-center">
+            <span
+              className="chrome-badge block"
+              style={{ width: b.w, height: b.h, maskImage: `url(/logos/${b.file}.svg)`, WebkitMaskImage: `url(/logos/${b.file}.svg)`, animationDelay: `${(i % 6) * 0.7}s` }}
+            />
+          </span>
         ))}
       </div>
     </div>

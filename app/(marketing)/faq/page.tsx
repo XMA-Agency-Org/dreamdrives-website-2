@@ -14,6 +14,7 @@ export default function FAQPage() {
   return (
     <>
       <PageHero
+        align="center"
         title="Frequently Asked Questions"
         description="Everything you need to know about renting a luxury car in Dubai. Can't find what you're looking for? Contact us directly."
       />

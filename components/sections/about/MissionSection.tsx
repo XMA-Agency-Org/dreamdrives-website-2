@@ -27,7 +27,7 @@ export function MissionSection({
   return (
     <Section spacing="xl" className={className}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <RevealOnScroll direction="left">
+          <RevealOnScroll>
             <div className="relative aspect-[4/5] overflow-clip bg-background-elevated rounded-lg">
               <Image
                 src={image}
@@ -39,7 +39,7 @@ export function MissionSection({
             </div>
           </RevealOnScroll>
 
-          <RevealOnScroll direction="right">
+          <RevealOnScroll>
             <div>
               <Text
                 size="sm"

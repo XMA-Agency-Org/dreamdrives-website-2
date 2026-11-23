@@ -20,7 +20,6 @@ export interface PageHeroProps {
 }
 
 export function PageHero({
-  tagline,
   title,
   gradientText,
   description,
@@ -29,9 +28,11 @@ export function PageHero({
   className,
   breadcrumbs,
 }: PageHeroProps) {
-  const hasContent = tagline || description;
 
+  // Wraps itself in a centred Section with header clearance (it used to render bare, so on wide screens the title sat
+  // jammed against the left edge under the header, 23 Nov 2026).
   return (
+    <Section spacing="none" className={cn("pt-32 pb-4 lg:pt-40", className)}>
     <div
       className={cn(
         "mb-8",
@@ -42,20 +43,10 @@ export function PageHero({
         {breadcrumbs && breadcrumbs.length > 0 && (
           <Breadcrumbs items={breadcrumbs} className="mb-6" />
         )}
-        {tagline && (
-          <Text
-            size="sm"
-            color="primary"
-            weight="semibold"
-            className="uppercase tracking-widest mb-4"
-          >
-            {tagline}
-          </Text>
-        )}
         <Heading as="h1" size="2xl" className={description ? "mb-6" : undefined}>
           {title}{" "}
           {gradientText && (
-            <span className="text-gradient">{gradientText}</span>
+            <span className="text-foreground-muted">{gradientText}</span>
           )}
         </Heading>
         {description && (
@@ -69,6 +60,6 @@ export function PageHero({
         )}
       </RevealOnScroll>
     </div>
-
+    </Section>
   );
 }

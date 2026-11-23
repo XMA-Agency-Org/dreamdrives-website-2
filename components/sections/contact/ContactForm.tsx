@@ -17,7 +17,7 @@ interface ContactFormProps {
 
 export function ContactForm({ className }: ContactFormProps) {
   return (
-    <RevealOnScroll direction="right" className={className}>
+    <RevealOnScroll className={className}>
       <div className="p-8 bg-background-elevated border border-border rounded-lg">
         <Heading as="h2" size="lg" className="mb-2">
           Send us a Message

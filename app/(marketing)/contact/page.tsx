@@ -25,14 +25,12 @@ const hours: HoursItem[] = [
 export default function ContactPage() {
   return (
     <>
-      <Section spacing="none" className="pt-32 lg:pt-40 pb-12">
-        <PageHero
+      <PageHero className="pb-12"
           tagline="Get in Touch"
           title="We're Here to"
           gradientText="Help"
           description="Have a question about our cars or need assistance with a booking? Our team is available 24/7 to provide you with exceptional service."
         />
-      </Section>
 
       <Section spacing="none" className="pb-24">
           <div className="grid lg:grid-cols-5 gap-12">
