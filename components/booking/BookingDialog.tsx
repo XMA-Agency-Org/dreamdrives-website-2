@@ -73,8 +73,8 @@ export function BookingDialog() {
     trackEvent("booking_submit", { car: car.name, days: est.days, value: est.total, placement: src, has_location: !!loc });
     const href = waHref({ src: "booking_form", car: car.name, from, to, loc: loc.trim() || undefined, name: name.trim() || undefined, est: est.total, days: est.days });
     const url = `${href}&ref=${leadRef}`;
-    const w = window.open(url, "_blank");
-    if (w) w.opener = null; else window.location.href = url; // pop-up blocked: same tab
+    // Same-origin /go/wa then a 302 to wa.me; if the browser blocks the new tab, continue in this one.
+    if (!window.open(url, "_blank")) window.location.assign(url);
     ref.current?.close();
   };
 
