@@ -21,6 +21,7 @@ export interface WaParams {
   loc?: string;
   est?: number; // estimated rental total, AED
   days?: number;
+  budget?: string; // e.g. "AED 1,000 to 2,000 a day"
 }
 
 const ALPHABET = "23456789ABCDEFGHJKMNPQRSTUVWXYZ"; // no 0/O/1/I/L: read aloud without confusion
@@ -49,6 +50,7 @@ export function buildBookingText(p: Omit<WaParams, "src">, ref?: string): string
   if (p.car) lines.push(`Car: ${p.car}`);
   if (from && to) lines.push(`Dates: ${from} to ${to}${p.days ? ` (${p.days} ${p.days === 1 ? "day" : "days"})` : ""}`);
   else if (from) lines.push(`From: ${from}`);
+  if (p.budget) lines.push(`Budget: ${p.budget}`);
   if (p.loc) lines.push(`Delivery: ${p.loc}`);
   if (p.est) lines.push(`Estimate: AED ${Math.round(p.est).toLocaleString("en-US")}`);
   if (p.name) lines.push(`Name: ${p.name}`);
@@ -78,6 +80,7 @@ export function waHref(p: WaParams): string {
   if (p.loc) q.set("loc", p.loc);
   if (p.est) q.set("est", String(Math.round(p.est)));
   if (p.days) q.set("days", String(p.days));
+  if (p.budget) q.set("budget", p.budget);
   return `/go/wa?${q.toString()}`;
 }
 

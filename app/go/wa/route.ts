@@ -17,7 +17,8 @@ export async function GET(req: NextRequest) {
   };
   await recordLead(lead);
   const est = Number(q.get("est")) || undefined, days = Number(q.get("days")) || undefined;
-  const text = buildWhatsAppText({ car: lead.car, from: lead.from, to: lead.to, name: lead.name, loc: lead.loc, est, days,
+  const budget = q.get("budget")?.slice(0, 40) ?? undefined;
+  const text = buildWhatsAppText({ car: lead.car, from: lead.from, to: lead.to, name: lead.name, loc: lead.loc, est, days, budget,
     text: q.get("text")?.slice(0, 120) ?? undefined }, ref);
   const res = NextResponse.redirect(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, 302);
   res.headers.set("X-Robots-Tag", "noindex, nofollow");
