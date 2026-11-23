@@ -8,19 +8,8 @@ import { waHref } from "@/lib/contact";
 import { aed } from "@/lib/pricing";
 import type { Car } from "@/types";
 import type { SiteSettings } from "@/data/settings";
+import { studioStill } from "@/data/studio-stills";
 
-/* ------------------------------------------------------------------ */
-/* Studio stills: the approved studio set, real plates seated (ad batch 7 to 9 Nov). */
-export const STUDIO_STILLS: Record<string, string> = {
-  "lamborghini-urus-s-2024": "/collection/lamborghini-urus-s-2024.jpg",
-  "mercedes-g63-2025-sand": "/collection/mercedes-g63-2025-sand.jpg",
-  "cadillac-escalade-2025": "/collection/cadillac-escalade-2025.jpg",
-  "land-rover-range-rover-vogue-2023": "/collection/land-rover-range-rover-vogue-2023.jpg",
-  "mercedes-g63-amg-black": "/collection/mercedes-g63-amg-black.jpg",
-  "mercedes-g63-amg-blue": "/collection/mercedes-g63-amg-blue.jpg",
-  "gmc-yukon-at4-2025": "/collection/gmc-yukon-at4-2025.jpg",
-  "bmw-x6-black": "/collection/bmw-x6-black.jpg",
-};
 
 function SectionHead({ eyebrow, title, sub, align = "left" }: { eyebrow: string; title: React.ReactNode; sub?: string; align?: "left" | "center" }) {
   return (
@@ -51,9 +40,11 @@ export function MarqueeStrip() {
 /* ------------------------------------------------------------------ */
 /** The collection: studio portraits in a horizontal snap row, each opening its car page. */
 export function CollectionShowcase({ cars }: { cars: Car[] }) {
+  // The top of the range leads; every car has a studio still, so cap the row and send the rest to /cars.
   const items = cars
-    .filter((c) => STUDIO_STILLS[c.slug])
-    .sort((a, b) => b.pricing.daily - a.pricing.daily);
+    .filter((c) => studioStill(c.slug))
+    .sort((a, b) => b.pricing.daily - a.pricing.daily)
+    .slice(0, 12);
   if (!items.length) return null;
   return (
     <section id="collection" className="relative scroll-mt-24 overflow-clip py-28 sm:py-40">
@@ -79,7 +70,7 @@ export function CollectionShowcase({ cars }: { cars: Car[] }) {
               <div className="bezel">
                 <div className="bezel-core relative aspect-[9/14] bg-neutral-900">
                   <Image
-                    src={STUDIO_STILLS[car.slug]}
+                    src={studioStill(car.slug)!}
                     alt={`${car.name} in the Dream Drives studio`}
                     fill
                     sizes="(min-width: 640px) 340px, 72vw"

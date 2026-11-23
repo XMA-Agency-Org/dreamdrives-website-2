@@ -10,4 +10,4 @@ export { AdvantagesSection } from "./AdvantagesSection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { BookingSection } from "./BookingSection";
 export { PricePromise, HowItWorks, DeliveryAreas, DocumentsSection } from "./InfoSections";
-export { MarqueeStrip, CollectionShowcase, SignatureSection, StandardBento, ClosingCTA, STUDIO_STILLS } from "./PremiumSections";
+export { MarqueeStrip, CollectionShowcase, SignatureSection, StandardBento, ClosingCTA } from "./PremiumSections";

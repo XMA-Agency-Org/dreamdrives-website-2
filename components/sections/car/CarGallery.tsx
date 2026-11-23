@@ -50,7 +50,7 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
               src={selectedImage?.src || "/images/cars/placeholder.jpg"}
               alt={selectedImage?.alt || carName}
               fill
-              className="object-cover object-center"
+              className="object-cover object-[50%_62%]"
               sizes="(max-width: 1024px) 100vw, 60vw"
               priority
             />
@@ -107,7 +107,7 @@ export function CarGallery({ images, carName }: CarGalleryProps) {
                   src={image.src || "/images/cars/placeholder.jpg"}
                   alt={image.alt || `${carName} view ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover object-[50%_62%]"
                   sizes="96px"
                 />
               </button>

@@ -11,9 +11,15 @@
     "description": "The 2025 Range Rover Sport in Santorini Black over a red leather cabin, with the pared-back curved dashboard and air suspension. The quiet alternative to a G-Wagon at the same seat count.",
     "images": [
       {
+        "src": "/collection/range-rover-sport.jpg",
+        "alt": "Range Rover Sport 2025 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/b9c4fb58b1b5dbde835b0e730a66a1deaa1c7daf-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Range Rover Sport 2025",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/2ac3b243d46ecb0c09241f966239926968964850-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
@@ -117,9 +123,15 @@
     "description": "A 2023 G63 in deep navy over a full red Nappa interior, with the AMG performance steering wheel and carbon trim. The colour combination that photographs best against the Marina skyline.",
     "images": [
       {
+        "src": "/collection/mercedes-g63-amg-blue.jpg",
+        "alt": "Mercedes-AMG G63 2023 Blue in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/2f9c81e8278e352c2a251ad4078947f179dde69c-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes-AMG G63 2023 Blue",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/b353137f99944a6ea37595c42ea98df6a37d4927-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
@@ -213,9 +225,15 @@
     "description": "The Vogue is the flagship Range Rover: a hushed cabin, a long wheelbase and the cleanest lines Land Rover has drawn. Effortless on Sheikh Zayed Road.",
     "images": [
       {
+        "src": "/collection/land-rover-range-rover-vogue-2023.jpg",
+        "alt": "Range Rover Vogue 2027 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/c29cefe2079f6a53c7733e37caf0cbbd0a09ee4d-959x958.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Range Rover Vogue 2027",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/d12fb5c364e4de578b4de5e969696101b2692c01-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
@@ -322,9 +340,15 @@
     "description": "The latest G63 in gloss black on black AMG wheels. Squared-off presence with 585hp of biturbo V8 behind it.",
     "images": [
       {
+        "src": "/collection/mercedes-benz-g63-amg-2025.jpg",
+        "alt": "Mercedes-AMG G63 2025 Black in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/12cb768987ae3314fa6386ab541ad3bbc3a2363c-960x960.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes-AMG G63 2025 Black",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/b06553e9b16538cc6015a7dc28faae3c84343e81-1240x913.jpg?w=1600&q=80&fit=max&auto=format",
@@ -426,9 +450,15 @@
     "description": "A 2025 G63 in a soft desert-sand finish with a black brush guard and a three-digit Dubai plate. The most requested spec in the fleet.",
     "images": [
       {
+        "src": "/collection/mercedes-g63-2025-sand.jpg",
+        "alt": "Mercedes-AMG G63 2025 Sand in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/5576fb79ea4d20c715b187463294c8a8715c7a9e-1240x1230.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes-AMG G63 2025 Sand",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/4a2cf2d85df06997b9633f21ea53268e8281567c-1240x848.jpg?w=1600&q=80&fit=max&auto=format",
@@ -520,9 +550,15 @@
     "description": "The Urus Performante strips weight, stiffens the chassis and adds a titanium exhaust to the super SUV formula. Rosso paintwork and a Dubai skyline are a natural pairing.",
     "images": [
       {
+        "src": "/collection/lamborghini-urus-performante-2024.jpg",
+        "alt": "Lamborghini Urus Performante 2024 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/858b0a98de7ba2a96a15d0b447ba63af4fd0cca4-1280x836.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Lamborghini Urus Performante 2024",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/30d12c703a64f73ac92ce8e4d53789842b152f44-1280x832.jpg?w=1600&q=80&fit=max&auto=format",
@@ -634,9 +670,15 @@
     "description": "A clean white A3 sedan with the virtual cockpit and a light footprint. Cheapest way into the fleet and simple to park anywhere in the city.",
     "images": [
       {
+        "src": "/collection/audi-a3.jpg",
+        "alt": "Audi A3 2024 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/e36accb9db8a4ac30a0ee98890f36fc0d2a73aef-640x480.png?w=1600&q=80&fit=max&auto=format",
         "alt": "Audi A3 2024",
-        "isPrimary": true
+        "isPrimary": false
       }
     ],
     "pricing": {
@@ -683,9 +725,15 @@
     "description": "The previous-generation Yukon AT4 with the off-road stance and the same three rows of seats. The value pick for family trips.",
     "images": [
       {
+        "src": "/collection/gmc-yukon-at4-2023.jpg",
+        "alt": "GMC Yukon 2023 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/84c3fdd639237e42bf91327b56966d33cab6ef26-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "GMC Yukon 2023",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/f054159ac90bcfc2361e56ed6b41be6d9a7ca350-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
@@ -762,9 +810,15 @@
     "description": "The 4 Series Gran Coupe in black on black. Rear-wheel drive, a well-judged chassis and enough room in the back to stay useful.",
     "images": [
       {
+        "src": "/collection/bmw-420i-2026.jpg",
+        "alt": "BMW 420i 2026 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/fd0d7e2dcfdd55349c637755906bf1dcd5adcc8b-1193x1210.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "BMW 420i 2026",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/ba2edaa6f63dae16c7ec762e798d5b74b7d5a053-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
@@ -836,9 +890,15 @@
     "description": "The newest Yukon Denali: three rows, independent rear suspension and a cabin built for long drives. Practical without feeling plain.",
     "images": [
       {
+        "src": "/collection/gmc-yukon-at4-2025.jpg",
+        "alt": "GMC Yukon 2026 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/1850ebfa96dc06205df39507cf5cc38404ee9065-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "GMC Yukon 2026",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/87f577891e6058390569deac2f34abb170729cae-3024x4032.jpg?w=1600&q=80&fit=max&auto=format",
@@ -920,9 +980,15 @@
     "description": "Seven seats, a 38-inch curved OLED dash and a 6.2L V8. The Escalade is the airport-run SUV when the group is large and the luggage is larger.",
     "images": [
       {
+        "src": "/collection/cadillac-escalade-2025.jpg",
+        "alt": "Cadillac Escalade 2026 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/50f3130e1ee9d91e1c3b86f68d04c31d3ef6dc20-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Cadillac Escalade 2026",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/8f123e68d193e368b607740f3717ca2ebba39e06-3072x4096.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1009,9 +1075,15 @@
     "description": "A blacked-out G63 AMG with widened arches and a lowered stance. The classic Dubai silhouette at a friendlier daily rate.",
     "images": [
       {
+        "src": "/collection/mercedes-g63-amg-black.jpg",
+        "alt": "Mercedes G63 AMG Black in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/188bfcef4716fd654b049b31fb95db8655f62121-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes G63 AMG Black",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/ca9f9755ab585e748264f6aa1129f05beaeeb9d1-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1098,9 +1170,15 @@
     "description": "The Lamborghini Urus S delivers even more refined performance and sportier design. The pinnacle of super SUV excellence.",
     "images": [
       {
+        "src": "/collection/lamborghini-urus-s-2024.jpg",
+        "alt": "Lamborghini Urus S 2024 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/127fe982b5922d0c467f6ade79a18ef85bdf9bdf-1600x900.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Lamborghini Urus S 2024",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/f6670726256b1ceab151403a2f640b5ecd82715e-1600x870.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1182,9 +1260,15 @@
     "description": "The Mercedes C200 in Polar White offers timeless elegance with modern technology. Luxury defined.",
     "images": [
       {
+        "src": "/collection/mercedes-c200-white.jpg",
+        "alt": "Mercedes C200 White in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/3d62871650638dd90c4486d7acceead4b49e8066-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes C200 White",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/996157d55dcb5243259fbcc5c6face2af19999c8-1280x960.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1286,9 +1370,15 @@
     "description": "The Mercedes C200 delivers refined luxury in a compact package. German engineering meets sophisticated design.",
     "images": [
       {
+        "src": "/collection/mercedes-c200-grey.jpg",
+        "alt": "Mercedes C200 Grey in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/c381d542e6bb9663268444ae621dca5a9409046b-1280x854.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mercedes C200 Grey",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/66e437ec6c1eb24e3e164a2f84838013758ae247-960x1280.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1390,9 +1480,15 @@
     "description": "The BMW X6 in Alpine White offers striking presence with commanding road dynamics. Luxury meets performance.",
     "images": [
       {
+        "src": "/collection/bmw-x6-white.jpg",
+        "alt": "BMW X6 White in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/09eee6c7d035475070a165ee99f71385ffae2a27-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "BMW X6 White",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/2fcaffc9a0385711f0e7b6eaf6e3d62fa96d5fb1-1156x867.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1489,9 +1585,15 @@
     "description": "The BMW X6 combines the versatility of an SUV with coupe-like dynamics. A powerful statement of athletic luxury.",
     "images": [
       {
+        "src": "/collection/bmw-x6-black.jpg",
+        "alt": "BMW X6 Black in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/c8560c0dcb020708678a838652e7e38c95100320-1600x1358.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "BMW X6 Black",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/72dd7f4e02a21538b3458ff58cd6887ff5aca6a3-1600x1156.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1573,9 +1675,15 @@
     "description": "The Nissan Xterra is a rugged SUV designed for those who seek adventure. Off-road capability meets daily practicality.",
     "images": [
       {
+        "src": "/collection/nissan-xterra.jpg",
+        "alt": "Nissan Xterra in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/90ef5c309079371a5e2d1dbc4a9d8da3916f337a-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Nissan Xterra",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/c79b66e02693a12a2a54dd8be650f562437ac5f8-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1677,9 +1785,15 @@
     "description": "The Mazda CX-5 in Soul Red Crystal makes a bold statement. Premium craftsmanship with head-turning color.",
     "images": [
       {
+        "src": "/collection/mazda-cx5-red.jpg",
+        "alt": "Mazda CX-5 Red in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/e306d19dd23a7a1de72efdc638c41030766fe2c9-1599x1232.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mazda CX-5 Red",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/8b05f34fe36e3e480e3dc1a93c380e8bef639ef2-1600x1245.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1751,9 +1865,15 @@
     "description": "The Mazda CX-5 combines crossover versatility with engaging dynamics. A refined SUV that delivers on every front.",
     "images": [
       {
+        "src": "/collection/mazda-cx5.jpg",
+        "alt": "Mazda CX-5 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/dc4735d10a4fa4305e667ee08c7d6c14b352e8f0-1600x747.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mazda CX-5",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/b88150da4ab88954433e6a5e8a4951c85915457b-747x1600.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1820,9 +1940,15 @@
     "description": "The Mazda 6 offers premium sedan comfort with sporty dynamics. Elegance meets performance in this refined midsize sedan.",
     "images": [
       {
+        "src": "/collection/mazda-6.jpg",
+        "alt": "Mazda 6 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/23e9467ff88c536993e7eda546bd2ba6c5ffab4b-1600x885.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mazda 6",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/afb5d5e9b2ebf3dce53e0bea919753105fec1787-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1904,9 +2030,15 @@
     "description": "The Mazda 3 delivers a premium driving experience with elegant design and responsive handling. A driver's compact car.",
     "images": [
       {
+        "src": "/collection/mazda-3.jpg",
+        "alt": "Mazda 3 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/9f5b5ecad309a2b1b4e6ded5c82f7b40dd5ea5b1-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Mazda 3",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/3aa29c72498d182d4b585b0fa7f7d3af4ae8d07d-1920x1080.jpg?w=1600&q=80&fit=max&auto=format",
@@ -1998,9 +2130,15 @@
     "description": "The Kia Sportage combines bold design with practical versatility. A compact SUV that stands out in any setting.",
     "images": [
       {
+        "src": "/collection/kia-sportage.jpg",
+        "alt": "Kia Sportage in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/6db2b8718a82adc57896933310007cd4cb26812d-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Kia Sportage",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/a72bc7ea75c796e8c91fa46c0c227d0744f5a834-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
@@ -2077,9 +2215,15 @@
     "description": "The Kia K5 delivers sporty performance and premium features in a stylish midsize sedan. A compelling choice for drivers who want it all.",
     "images": [
       {
+        "src": "/collection/kia-k5.jpg",
+        "alt": "Kia K5 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/e5d2f38e6b4ce486e75eb0e3d34311e2b7f7a884-1300x712.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Kia K5",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/17117fe1efe7f17d30032c6c6120cd5cd8da2055-1300x685.jpg?w=1600&q=80&fit=max&auto=format",
@@ -2151,9 +2295,15 @@
     "description": "The Hyundai Tucson offers a perfect combination of style, comfort, and capability. Ideal for families and adventurers alike.",
     "images": [
       {
+        "src": "/collection/hyundai-tucson.jpg",
+        "alt": "Hyundai Tucson in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/a003b46b1dedf73ca8a2663b62d3f4608e074cad-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Hyundai Tucson",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/95342b95c7ee6bbdaff62f8d49edec119aabd9d1-1024x683.jpg?w=1600&q=80&fit=max&auto=format",
@@ -2230,9 +2380,15 @@
     "description": "The Hyundai Elantra features striking angular design and advanced technology. A perfect blend of style and practicality.",
     "images": [
       {
+        "src": "/collection/hyundai-elantra.jpg",
+        "alt": "Hyundai Elantra in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/2b35b1514741921339b9f828dd0309013bae4412-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Hyundai Elantra",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/59fef417bcec93d394fd1d153f9e5de2ea6f215a-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
@@ -2324,9 +2480,15 @@
     "description": "The 2024 Hyundai Accent brings updated styling and enhanced technology. A reliable choice for daily commuting.",
     "images": [
       {
+        "src": "/collection/hyundai-accent-2024.jpg",
+        "alt": "Hyundai Accent 2024 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/2eaa5596a36ef0efa1dfb377c891afd486720921-1600x1413.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Hyundai Accent 2024",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/953eae38d79c21e5e9f95039f5e01127aba07933-1200x1600.jpg?w=1600&q=80&fit=max&auto=format",
@@ -2408,9 +2570,15 @@
     "description": "The Hyundai Accent offers excellent fuel economy and modern features in a compact sedan package. Perfect for city driving.",
     "images": [
       {
+        "src": "/collection/hyundai-accent-2023.jpg",
+        "alt": "Hyundai Accent 2023 in the Dream Drives studio",
+        "isPrimary": true,
+        "angle": "studio"
+      },
+      {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/d26d39468b672a63c5baf47ade651c7f6ae34987-1600x1200.jpg?w=1600&q=80&fit=max&auto=format",
         "alt": "Hyundai Accent 2023",
-        "isPrimary": true
+        "isPrimary": false
       },
       {
         "src": "https://cdn.sanity.io/images/gzcp7ons/production/e2fcf790fc77e3153cd2c46f0cebc4062e3e5ca2-1324x1440.jpg?w=1600&q=80&fit=max&auto=format",

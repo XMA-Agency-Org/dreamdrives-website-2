@@ -35,7 +35,7 @@ export function StandardMinimalCarCard({
               src={primaryImage?.src || "/images/cars/placeholder.jpg"}
               alt={car.name}
               fill
-              className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              className="object-cover object-[50%_62%] transition-transform duration-700 group-hover:scale-105"
             />
 
             {showBadge && (

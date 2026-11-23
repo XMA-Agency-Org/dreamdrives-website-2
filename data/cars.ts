@@ -3,6 +3,7 @@ import { sanityFetch } from "@/lib/sanity/client";
 import { imageUrl } from "@/lib/sanity/image";
 import { ALL_CARS, CAR_BY_SLUG } from "@/lib/sanity/queries";
 import snapshot from "./fleet-snapshot.json";
+import { studioStill } from "./studio-stills";
 
 /**
  * Fleet data. Sanity (project gzcp7ons) is the source of truth.
@@ -39,8 +40,11 @@ function fuel(f?: string): CarSpecs["fuelType"] {
 
 /** No invented defaults: a missing spec becomes 0 or "", and the UI hides it. */
 export function toCar(c: SanityCar): Car {
+  const still = studioStill(c.slug);
   const images = [
-    ...(c.mainImage?.asset ? [{ src: imageUrl(c.mainImage), alt: c.mainImage.alt || c.name, isPrimary: true }] : []),
+    // The studio still leads (consistent premium look); his real photos follow in the gallery.
+    ...(still ? [{ src: still, alt: `${c.name} in the Dream Drives studio`, isPrimary: true, angle: "studio" }] : []),
+    ...(c.mainImage?.asset ? [{ src: imageUrl(c.mainImage), alt: c.mainImage.alt || c.name, isPrimary: !still }] : []),
     ...(c.gallery ?? []).filter((g) => g?.asset).map((g) => ({ src: imageUrl(g), alt: g.alt || c.name, angle: g.angle })),
   ];
   return {
